@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Statistik Sektoral Terintegrasi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased">
+
+  <!-- Navbar -->
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="logo-dbest.png" alt="Logo dBest" class="h-10">
+        <img src="logo-bps.png" alt="Logo BPS" class="h-10">
+      </div>
+      <!-- Nav Links -->
+      <nav>
+        <ul class="hidden md:flex gap-6 text-sm font-semibold">
+          <li><a href="#" class="hover:text-yellow-400">Beranda</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Layanan</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Infografis</a></li>
+          <li><a href="#" class="hover:text-yellow-400">Kontak</a></li>
+        </ul>
+      </nav>
+      <!-- Auth -->
+      <div class="flex gap-3">
+        <a href="#" class="px-4 py-2 rounded-lg border border-white">Daftar</a>
+        <a href="#" class="px-4 py-2 rounded-lg bg-yellow-400 text-blue-900 font-semibold">Masuk</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6 py-16">
+      <div>
+        <h1 class="text-4xl font-bold leading-snug mb-4">Selamat Datang di <br>Dashboard Statistik Sektoral Terintegrasi</h1>
+        <p class="mb-6">Rumah impian hadir untuk temukan rumah terbaik untukmu, untuk dijual ataupun disewa dengan sumber terpercaya.</p>
+        <a href="#" class="px-6 py-3 bg-yellow-400 text-blue-900 font-semibold rounded-lg">Temukan Rumah</a>
+      </div>
+      <div>
+        <img src="/assets/foto-bps-pusat.jpg" alt="Hero Image" class="rounded-lg shadow-lg">
+      </div>
+    </div>
+  </section>
+
+  <!-- Layanan Kami -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-7xl mx-auto text-center px-6">
+      <h2 class="text-2xl font-bold mb-2">Layanan Kami</h2>
+      <p class="mb-10 text-gray-600">Tempat impian hadir menjadi solusi bagi kamu</p>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Card -->
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <img src="house-1.png" alt="Property Baru" class="h-16 mx-auto mb-4">
+          <h3 class="text-lg font-semibold mb-2">Property Baru</h3>
+          <p class="text-sm text-gray-600">Rumah impian kini jadi kenyataan, beli rumah baru dengan fasilitas terbaik dan lingkungan yang nyaman.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <img src="assets-1.png" alt="Sewa Rumah" class="h-16 mx-auto mb-4">
+          <h3 class="text-lg font-semibold mb-2">Sewa Rumah</h3>
+          <p class="text-sm text-gray-600">Sewa rumah yang indah untuk keluarga anda, pilihan terbaik untuk tempat tinggal keluarga mu.</p>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-md">
+          <img src="town-1.png" alt="Beli Rumah" class="h-16 mx-auto mb-4">
+          <h3 class="text-lg font-semibold mb-2">Beli Rumah</h3>
+          <p class="text-sm text-gray-600">Beli rumah sempurna dengan harga terbaik, kualitas terjamin dari sumber terpercaya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cari Data -->
+  <section class="relative py-16 bg-gray-100">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-2xl font-bold mb-2">Temukan Data Impianmu</h2>
+      <p class="mb-6 text-gray-600">Sekarang Anda dapat menghemat semua hal stres, waktu, dan biaya tersembunyi dengan ratusan data untuk anda.</p>
+      <div class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row gap-4">
+        <select class="border p-2 rounded flex-1">
+          <option>Tipe Rumah</option>
+        </select>
+        <select class="border p-2 rounded flex-1">
+          <option>Range Harga</option>
+        </select>
+        <input type="text" placeholder="Cari berdasarkan lokasi, ID, Property" class="border p-2 rounded flex-1">
+        <button class="px-6 py-2 bg-blue-900 text-white rounded-lg">Cari</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rekomendasi Layanan -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto text-center px-6">
+      <h2 class="text-2xl font-bold mb-10">Rekomendasi Layanan Kami Untuk Mu</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg shadow-md bg-white">
+          <img src="/assets/layanan/Logo DC Warna (1).png" alt="Desa Cantik" class="h-16 mx-auto mb-4">
+          <h3 class="font-semibold">Desa Cantik</h3>
+        </div>
+        <div class="p-6 rounded-lg shadow-md bg-white">
+          <img src="/assets/layanan/Logo Pojok Statistik (1).png" alt="Pojok Statistik" class="h-16 mx-auto mb-4">
+          <h3 class="font-semibold">Pojok Statistik</h3>
+        </div>
+        <div class="p-6 rounded-lg shadow-md bg-white">
+          <img src="/assets/layanan/Logo PSS@2x.png" alt="Statistik Sektoral" class="h-16 mx-auto mb-4">
+          <h3 class="font-semibold">Statistik Sektoral</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Terbaru -->
+  <section class="bg-gray-50 py-16">
+    <div class="max-w-5xl mx-auto text-center px-6">
+      <h2 class="text-2xl font-bold mb-6">Info Terbaru</h2>
+      <div class="flex gap-6 overflow-x-auto">
+        <div class="min-w-[250px] bg-white p-6 rounded-lg shadow">Berita 1</div>
+        <div class="min-w-[250px] bg-white p-6 rounded-lg shadow">Berita 2</div>
+        <div class="min-w-[250px] bg-white p-6 rounded-lg shadow">Berita 3</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Infografis -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex justify-between items-center mb-8">
+        <h2 class="text-2xl font-bold">Infografis</h2>
+        <a href="#" class="text-blue-900 font-semibold">Lihat Semua..</a>
+      </div>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">Infografis 1
+             <img src="/assets/infografis/Ekspor2@3x-100.jpg" alt="Perkembangan Nilai Ekspor Komoditas Utama Nonmigas">
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">Infografis 2
+             <img src="/assets/infografis/Infografis Naker@4x.png" alt="Beberapa Fakta Tentang Ketenagakerjaan di Banten">
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">Infografis 3
+            <img src="/assets/infografis/Infografis pojok_Kemiskinan@4x.png" alt="Kemiskinan di Banten">
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">Infografis 4
+             <img src="/assets/infografis/KamisInfografis@4x.png" alt="Keadaan Iklim di Banten">
+        </div> 
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+      <div>
+        <img src="/assets/kantor  new (2).JPG" class="">
+        <h2 class="text-2xl font-bold mb-4">Butuh Konsultasi..?</h2>
+        <p class="mb-6">Silahkan kontak kami. Kami siap membantu</p>
+        <p class="text-gray-700 mb-2">Jl. Pelajar Pejuang 123 Majalaya Bandung, Indonesia</p>
+        <p class="text-gray-700 mb-2">Telp: 022-6545-2041</p>
+        <p class="text-gray-700 mb-2">Email: rumahimpian@gmail.com</p>
+        <div class="flex gap-4 mt-4">
+          <a href="#"><img src="twitter.png" class="h-6"></a>
+          <a href="#"><img src="facebook.png" class="h-6"></a>
+          <a href="#"><img src="instagram.png" class="h-6"></a>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h3 class="font-semibold mb-4">Ada pertanyaan..?</h3>
+        <input type="email" placeholder="Masukan email anda" class="w-full border p-2 rounded mb-4">
+        <textarea placeholder="Pertanyaan Anda.." class="w-full border p-2 rounded mb-4"></textarea>
+        <button class="w-full bg-blue-900 text-white py-2 rounded-lg">Kirim</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    <p>Copyright © 2025 Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
