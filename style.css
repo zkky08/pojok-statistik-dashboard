@@ -384,3 +384,30 @@ body.loaded #info-terbaru .slide:nth-child(1) {
   }
 }
 
+/* infografis */
+/* Animasi garis bawah judul */
+@keyframes highlightLine {
+  0% { width: 40%; opacity: 0.6; }
+  100% { width: 100%; opacity: 1; }
+}
+
+/* Card hover effect */
+section .grid > div {
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+section .grid > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(30, 58, 138, 0.2); /* biru glow */
+}
+
+/* Image hover effect */
+section .grid > div img {
+  transition: transform 0.4s ease;
+}
+
+section .grid > div:hover img {
+  transform: scale(1.08);
+}
+
