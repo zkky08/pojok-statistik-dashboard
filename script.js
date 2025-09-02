@@ -1,6 +1,7 @@
 
-// Info Terbaruconst track = document.querySelector(".slider-track");
+// Info Terbaru
 const slides = document.querySelectorAll(".slide");
+const track = document.querySelector(".slider-track"); // ✅ tambahkan ini
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 const dotsContainer = document.querySelector(".dots");
