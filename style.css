@@ -62,10 +62,12 @@ html, body {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: white;
+  background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* parallax effect */
+  background-attachment: fixed; /* Parallax */
   overflow: hidden;
 }
 
@@ -73,51 +75,109 @@ html, body {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(30, 58, 138, 0.8); /* overlay biru */
+  background: rgba(30, 58, 138, 0.6); /* overlay semi-transparan */
 }
 
 .hero-content {
   position: relative;
   z-index: 10;
-  max-width: 768px;
+  max-width: 800px;
+  text-align: center;
   padding: 0 1.5rem;
+  animation: fadeInUp 1.2s ease forwards;
 }
 
-.hero-content h1 {
-  font-size: 2.25rem;
+.hero-title {
   font-weight: 700;
-  animation: fadeInLeft 1s ease forwards;
+  line-height: 1.2;
+  margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
-  .hero-content h1 {
-    font-size: 3rem;
-  }
+.hero-title-line1 {
+  display: block;
+  font-size: 2rem;
+  color: #facc15; /* Highlight */
 }
 
-.hero-content p {
-  margin-top: 1rem;
+.hero-title-line2 {
+  display: block;
+  font-size: 3rem;
+  color: white;
+  margin-top: 0.3rem;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
   line-height: 1.6;
-  animation: fadeInLeft 1.2s ease forwards;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 0.3s;
 }
 
 .btn-cta {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.75rem 1.5rem;
-  background: #facc15;
-  color: #1e3a8a;
+  background-color: #facc15;  /* warna awal */
+  color: #1e3a8a;             /* teks biru */
   font-weight: 600;
   border-radius: 0.5rem;
-  transition: all 0.3s ease;
-  animation: zoomIn 1.5s ease forwards;
+  transition: all 0.3s ease;  /* smooth transition */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* efek ringan */
 }
 
+/* Hover effect: zoom & highlight */
 .btn-cta:hover {
-  background: #fbbf24;
-  transform: scale(1.08);
+  transform: scale(1.1);        /* zoom sedikit */
+  background-color: #fbbf24;    /* warna lebih terang/bold */
+  font-weight: 700;              /* teks lebih tebal */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* shadow lebih kuat */
 }
 
+/* Animasi */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title-line1 {
+    font-size: 2.5rem;
+  }
+  .hero-title-line2 {
+    font-size: 4rem;
+  }
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+}
+
+/* Pastikan navbar selalu di atas overlay */
+header {
+  position: relative;
+  z-index: 20;
+}
+
+
+----------------------------------------------------------/* Layanan Kami */
 /* Animasi Background Zoom In */
 .service-card {
   transition: all 0.3s ease;
@@ -409,5 +469,16 @@ section .grid > div img {
 
 section .grid > div:hover img {
   transform: scale(1.08);
+}
+
+/* Kontak */
+/* Kontak Parallax Background */
+.contact-section {
+  position: relative;
+  background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');
+  background-size: cover;
+  background-position: center var(--bg-position, 0px);
+  background-attachment: fixed; /* parallax */
+  overflow: hidden;
 }
 

@@ -1,4 +1,5 @@
-const track = document.querySelector(".slider-track");
+
+// Info Terbaruconst track = document.querySelector(".slider-track");
 const slides = document.querySelectorAll(".slide");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
@@ -77,3 +78,38 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", checkVisibility);
   checkVisibility();
 });
+
+// Hero Section
+// Parallax effect
+const hero = document.querySelector('.hero::before'); // Pseudo-element tidak bisa di-query langsung
+const heroSection = document.querySelector('.hero');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  // Latar belakang bergerak lebih lambat dibanding scroll konten
+  heroSection.style.setProperty('--bg-position', `${scrollY * 0.5}px`);
+});
+
+// Animasi muncul saat halaman selesai load
+// window.addEventListener('load', () => {
+//   document.querySelector('.hero-content').classList.add('loaded');
+// });
+
+// // Efek parallax background saat scroll
+// window.addEventListener('scroll', () => {
+//   const hero = document.querySelector('.hero');
+//   const scrolled = window.scrollY;
+//   hero.style.backgroundPositionY = `${scrolled * 0.4}px`; // sesuaikan kecepatan
+// });
+
+
+// Kontak
+const contactSection = document.querySelector('.contact-section');
+
+window.addEventListener('scroll', () => {
+  const scrollY = window.scrollY;
+  // Background bergerak lebih lambat dibanding scroll konten
+  contactSection.style.setProperty('--bg-position', `${scrollY * 0.3}px`);
+});
+
+

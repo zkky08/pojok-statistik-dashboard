@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Statistik Sektoral Terintegrasi</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  
+
   <!-- AOS CSS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans antialiased">
 
@@ -42,17 +44,22 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero" style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
-    <div class="hero-content space-y-4">
-      <h1>
-        Selamat Datang di Dashboard Statistik Sektoral Terintegrasi
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-title-line1">Selamat Datang di</span>
+        <span class="hero-title-line2">Dashboard Statistik Sektoral Terintegrasi</span>
       </h1>
-      <p>
+      <p class="hero-subtitle">
         Rumah impian hadir untuk temukan rumah terbaik untukmu, untuk dijual ataupun disewa dengan sumber terpercaya.
       </p>
       <a href="#" class="btn-cta">Temukan Rumah</a>
     </div>
   </section>
+
+
+
 
 
 
@@ -254,7 +261,7 @@
 
 
   <!-- Kontak -->
-  <section class="relative py-20 bg-cover bg-center" style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
+  <section class="relative py-20 contact-section bg-cover bg-center" style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
     <!-- Overlay gelap -->
     <div class="absolute inset-0 bg-black bg-opacity-60"></div>
 
@@ -305,6 +312,7 @@
       once: true     // hanya jalan sekali
     });
   </script>
+  
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
