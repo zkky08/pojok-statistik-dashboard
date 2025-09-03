@@ -6,6 +6,9 @@
   <title>Dashboard Statistik Sektoral Terintegrasi</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <!-- Icon font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -19,32 +22,27 @@
   <!-- Navbar -->
   <header class="bg-blue-900 text-white">
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10">
-      <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
-    </div>
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10">
+        <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
+      </div>
 
-    <!-- Nav Links -->
-    <nav>
-      <ul class="hidden md:flex gap-6 text-sm font-semibold">
-        <li><a href="#" class="nav-link">Beranda</a></li>
-        <li><a href="#" class="nav-link">Layanan</a></li>
-        <li><a href="#" class="nav-link">Infografis</a></li>
-        <li><a href="#" class="nav-link">Kontak</a></li>
-      </ul>
-    </nav>
-
-    <!-- Auth -->
-    <div class="flex gap-3">
-      <a href="#" class="btn-outline">Daftar</a>
-      <a href="#" class="btn-primary">Masuk</a>
+      <!-- Nav Links -->
+      <nav>
+        <ul class="hidden md:flex gap-6 text-sm font-semibold">
+          <li><a href="#beranda" class="nav-link">Beranda</a></li>
+          <li><a href="#layanan" class="nav-link">Layanan</a></li>
+          <li><a href="#infografis" class="nav-link">Infografis</a></li>
+          <li><a href="#info-terbaru" class="nav-link">Info terbaru</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
     </div>
-  </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="beranda" class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1 class="hero-title">
@@ -54,7 +52,7 @@
       <p class="hero-subtitle">
         Akses data statistik sektoral terbaru dan terpercaya dalam satu platform. Mudah, cepat, dan akurat untuk mendukung analisis dan pengambilan keputusan.
       </p>
-      <a href="#" class="btn-cta">Jelajahi Data</a>
+      <a href="#cari-data" class="btn-cta">Jelajahi Data</a>
     </div>
   </section>
 
@@ -78,7 +76,7 @@
   </section> -->
 
   <!-- Layanan Kami -->
-  <section class="bg-gray-50 py-16">
+  <section id="layanan" class="bg-gray-50 py-16">
     <div class="max-w-7xl mx-auto text-center px-6">
       <!-- Judul -->
       <h2 data-aos="fade-up" class="text-2xl font-bold mb-2">
@@ -100,7 +98,7 @@
               fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path d="M4 20h16M6 16V8m6 8V4m6 12v-6"/>
           </svg>
-          <h3 class="text-lg font-semibold mb-2">Infografis Baru</h3>
+          <h3 class="text-lg font-semibold mb-2">Infografis</h3>
           <p class="text-sm text-gray-600">
             Visualisasi data terbaru yang membantu memahami tren dan indikator sektoral secara cepat.
           </p>
@@ -143,7 +141,7 @@
 
 
   <!-- Cari Data -->
-  <section class="relative py-16 bg-gray-100">
+  <section id="cari-data" class="relative py-16 bg-gray-100">
     <div class="max-w-4xl mx-auto text-center px-6">
       <h2 data-aos="fade-up" class="text-2xl font-bold mb-2">
         Temukan Data Statistik Anda
@@ -180,25 +178,28 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Dari kiri -->
-        <div data-aos="fade-left" data-aos-duration="1200"
-            class="p-6 rounded-lg shadow-md bg-white">
+        <a href="https://dcbanten2024.my.canva.site/#desa-cantik-2024" target="_blank"
+            data-aos="fade-left" data-aos-duration="1200"
+            class="p-6 rounded-lg shadow-md bg-white block hover:bg-yellow-100 hover:shadow-xl hover:scale-105 transition duration-300">
           <img src="/assets/layanan/Logo DC Warna (1).png" alt="Desa Cantik" class="h-16 mx-auto mb-4">
           <h3 class="font-semibold">Desa Cantik</h3>
-        </div>
+        </a>
 
         <!-- Dari bawah -->
-        <div data-aos="fade-up" data-aos-duration="1200"
-            class="p-6 rounded-lg shadow-md bg-white">
+        <a href="https://bit.ly/potikuniba" target="_blank" 
+            data-aos="fade-up" data-aos-duration="1200"
+            class="p-6 rounded-lg shadow-md bg-white block hover:bg-yellow-100 hover:shadow-xl hover:scale-105 transition duration-300">
           <img src="/assets/layanan/Logo Pojok Statistik (1).png" alt="Pojok Statistik" class="h-16 mx-auto mb-4">
           <h3 class="font-semibold">Pojok Statistik</h3>
-        </div>
+        </a>
 
         <!-- Dari kanan -->
-        <div data-aos="fade-right" data-aos-duration="1200"
-            class="p-6 rounded-lg shadow-md bg-white">
+        <a href="https://jawarastatistik.id/bestie/" target="_blank" 
+            data-aos="fade-right" data-aos-duration="1200"
+            class="p-6 rounded-lg shadow-md bg-white block hover:bg-yellow-100 hover:shadow-xl hover:scale-105 transition duration-300">
           <img src="/assets/layanan/Logo PSS@2x.png" alt="Statistik Sektoral" class="h-16 mx-auto mb-4">
           <h3 class="font-semibold">Statistik Sektoral</h3>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -215,23 +216,25 @@
       <div class="slider overflow-hidden relative rounded-lg shadow">
         <div class="slider-track flex transition-transform duration-700">
           <div class="slide min-w-full p-6 bg-white">
-            <img src="thumb1.jpg" alt="Berita 1" class="w-full h-48 object-cover rounded mb-4">
+            <img src="/assets/buletin/Pembinaan Layout Design Publikasi dan Infografis (1).jpeg" alt="Berita 1" class="w-full h-48 object-cover rounded mb-4">
             <h3 class="font-semibold text-lg mb-2">Berita 1</h3>
-            <p class="text-gray-600 text-sm mb-2">Ringkasan singkat berita 1...</p>
+            <p class="text-gray-600 text-sm mb-2">Kegiatan pembinaan ini bertujuan untuk meningkatkan kualitas desain publikasi dan infografis statistik sektoral. Peserta dilatih memahami prinsip desain visual yang informatif sekaligus menarik, sehingga data yang disajikan dapat lebih mudah dipahami oleh masyarakat maupun pemangku kebijakan.</p>
             <a href="#" class="text-blue-900 font-semibold hover:underline">Baca Selengkapnya →</a>
           </div>
 
           <div class="slide min-w-full p-6 bg-white">
-            <img src="thumb2.jpg" alt="Berita 2" class="w-full h-48 object-cover rounded mb-4">
+            <img src="/assets/buletin/Humas 3600 (hasil edit).png" alt="Berita 2" class="w-full h-48 object-cover rounded mb-4">
             <h3 class="font-semibold text-lg mb-2">Berita 2</h3>
-            <p class="text-gray-600 text-sm mb-2">Ringkasan singkat berita 2...</p>
+            <p class="text-gray-600 text-sm mb-2">Badan Pusat Statistik (BPS) Provinsi Banten hadir di Universitas Bina Bangsa, Kota Serang. Bersama tim Humas 3600 BPS Banten, kita akan belajar cara menyampaikan data dengan lebih menarik dan mudah dipahami di era digital 🌐💡<br>
+              Yuk ikuti dan jangan sampai ketinggalan! 🚀</p>
             <a href="#" class="text-blue-900 font-semibold hover:underline">Baca Selengkapnya →</a>
           </div>
 
           <div class="slide min-w-full p-6 bg-white">
-            <img src="thumb3.jpg" alt="Berita 3" class="w-full h-48 object-cover rounded mb-4">
+            <img src="/assets/buletin/Penabur (hasil edit).jpg" alt="Berita 3" class="w-full h-48 object-cover rounded mb-4">
             <h3 class="font-semibold text-lg mb-2">Berita 3</h3>
-            <p class="text-gray-600 text-sm mb-2">Ringkasan singkat berita 3...</p>
+            <p class="text-gray-600 text-sm mb-2">Badan Pusat Statistik (BPS) Provinsi Banten hadir di BPK PENABUR SMAK Penabur Serang. Melalui kegiatan ini, BPS ingin mengajak para pelajar untuk lebih peduli dan melek data, khususnya terkait kependudukan dan peran lembaga keuangan dalam pembangunan 📊💡<br>
+              Yuk jadi generasi muda yang cerdas data dan siap menghadapi tantangan masa depan! 🚀</p>
             <a href="#" class="text-blue-900 font-semibold hover:underline">Baca Selengkapnya →</a>
           </div>
         </div>
@@ -249,7 +252,7 @@
 
 
   <!-- Infografis -->
-  <section class="py-16">
+  <section id="infografis" class="py-16">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex justify-between items-center mb-8">
       <!-- Placeholder kiri untuk menyeimbangkan -->
@@ -294,66 +297,78 @@
   </section>
 
 
-
   <!-- Kontak -->
   <section 
+    id="kontak"
     class="relative py-20 contact-section bg-cover bg-center" 
     style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
-    <!-- Overlay gelap -->
-    <!-- <div class="absolute inset-0 bg-black bg-opacity-60"></div> -->
 
     <!-- Overlay biru -->
     <div class="absolute inset-0 bg-blue-900 bg-opacity-40 pointer-events-none"></div>
 
-
-    <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-6 items-center text-white">
+    <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 items-start">
       
-      <!-- Info Kontak -->
-      <div data-aos="fade-right">
+      <!-- Info Kontak (Kiri) -->
+      <div data-aos="fade-right" class="flex flex-col justify-center text-white">
         <h2 class="text-3xl font-bold mb-4">Butuh Konsultasi..?</h2>
         <p class="mb-6 text-gray-200">
           Butuh informasi lebih lanjut atau bantuan dalam mengakses data sektoral? <br>
           Tim kami siap membantu kapan saja.
         </p>
 
-        <p class="mb-2">📍 Jl. Pelajar Pejuang 123 Majalaya Bandung</p>
-        <p class="mb-2">📞 022-6545-2041</p>
-        <p class="mb-2">✉️ rumahimpian@gmail.com</p>
+        <!-- Kontak Utama -->
+        <div class="flex flex-col gap-3 text-gray-200">
+          <a href="https://maps.google.com?q=JL+Raya+Serang+Jakarta+KM+03+No+1B+Serang+Banten"
+            target="_blank"
+            class="flex items-center gap-3 hover:text-yellow-400 transition">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>JL Raya Serang – Jakarta, KM. 03 No. 1B, Panancangan, Kec. Cipocok Jaya, Kota Serang, Banten 42124</span>
+          </a>
+          <a href="https://wa.me/6287741111144"
+            target="_blank"
+            class="flex items-center gap-3 hover:text-yellow-400 transition">
+            <i class="fab fa-whatsapp"></i>
+            <span>+62 877-4111-1144</span>
+          </a>
+          <a href="mailto:bps3600@bps.go.id"
+            class="flex items-center gap-3 hover:text-yellow-400 transition">
+            <i class="fas fa-envelope"></i>
+            <span>bps3600@bps.go.id</span>
+          </a>
+        </div>
 
-        <div class="flex gap-4 mt-6">
-          <a href="#">
-            <img src="/assets/icon/twitter.png" 
-                alt="Twitter" 
-                class="h-7 hover:scale-110 transition" />
+        <!-- Sosial Media -->
+        <div class="flex flex-col gap-3 mt-6">
+          <a href="https://x.com/bps_banten" target="_blank" 
+            class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+            <i class="fab fa-x-twitter"></i>
+            <span>@bps_banten</span>
           </a>
-          <a href="#">
-            <img src="/assets/icon/facebook.png" 
-                alt="Facebook" 
-                class="h-7 hover:scale-110 transition" />
+          <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" 
+            class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+            <i class="fab fa-youtube"></i>
+            <span>BPS Provinsi Banten</span>
           </a>
-          <a href="#">
-            <img src="/assets/icon/instagram.png" 
-                alt="Instagram" 
-                class="h-7 hover:scale-110 transition" />
+          <a href="https://www.instagram.com/bps_banten" target="_blank" 
+            class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+            <i class="fab fa-instagram"></i>
+            <span>@bps_banten</span>
           </a>
         </div>
       </div>
 
-      <!-- Form -->
-      <div class="bg-white text-gray-900 p-8 rounded-xl shadow-lg" data-aos="fade-left">
+      <!-- Form (Kanan) -->
+      <div data-aos="fade-left" class="bg-white text-gray-900 p-8 rounded-xl shadow-lg">
         <h3 class="text-xl font-semibold mb-4">Ada pertanyaan..?</h3>
-
         <input 
           type="email" 
           placeholder="Masukan email anda" 
           class="w-full border p-3 rounded mb-4 
                 focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-
         <textarea 
           placeholder="Pertanyaan Anda.." 
           class="w-full border p-3 rounded mb-4 h-28 
                 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-
         <button 
           class="w-full bg-blue-900 text-white py-3 rounded-lg 
                 hover:bg-blue-800 transition transform 
@@ -361,9 +376,9 @@
             Kirim
         </button>
       </div>
-
     </div>
   </section>
+
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 text-center text-sm">
