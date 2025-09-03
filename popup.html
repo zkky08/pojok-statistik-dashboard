@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Download Materi</title>
+  <link rel="stylesheet" href="style.css"> <!-- kalau mau pake CSS yang sama -->
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; }
+    .container {
+      max-width: 400px; margin: 100px auto; background: white;
+      padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 6px; }
+    button { padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; }
+    .btn-download { background: #1e3a8a; color: white; font-weight: bold; }
+    .btn-download:hover { background: #2563eb; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Masukkan Email Anda</h2>
+    <input type="email" id="userEmail" placeholder="contoh@email.com" required>
+    <button class="btn-download" onclick="validateAndDownload()">Download Materi</button>
+  </div>
+
+  <script>
+    function validateAndDownload() {
+      const email = document.getElementById("userEmail").value;
+      const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      if (!pattern.test(email)) {
+        alert("Masukkan email yang valid!");
+        return;
+      }
+      // Kalau valid, langsung download
+      window.location.href = "assets/materi/materi.pdf"; // ganti path sesuai file
+    }
+  </script>
+</body>
+</html>
