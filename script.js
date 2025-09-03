@@ -91,18 +91,6 @@ window.addEventListener('scroll', () => {
   heroSection.style.setProperty('--bg-position', `${scrollY * 0.5}px`);
 });
 
-// Animasi muncul saat halaman selesai load
-// window.addEventListener('load', () => {
-//   document.querySelector('.hero-content').classList.add('loaded');
-// });
-
-// // Efek parallax background saat scroll
-// window.addEventListener('scroll', () => {
-//   const hero = document.querySelector('.hero');
-//   const scrolled = window.scrollY;
-//   hero.style.backgroundPositionY = `${scrolled * 0.4}px`; // sesuaikan kecepatan
-// });
-
 
 // Kontak
 const contactSection = document.querySelector('.contact-section');
@@ -114,3 +102,23 @@ window.addEventListener('scroll', () => {
 });
 
 
+
+// tombol back-to-top
+const backToTopBtn = document.getElementById("backToTopBtn");
+
+// Tampilkan tombol saat scroll lebih dari 300px
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+// Scroll ke atas saat tombol diklik
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});

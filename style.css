@@ -485,3 +485,23 @@ section .grid > div:hover img {
   background-attachment: fixed; /* parallax */
   overflow: hidden;
 }
+
+/* Tombol back-to-top */
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem; /* 24px */
+  right: 1.5rem;
+  background-color: #facc15; /* kuning */
+  color: white;
+  padding: 0.75rem;
+  border-radius: 9999px; /* full bulat */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: none; /* default sembunyi */
+}
+
+.back-to-top:hover {
+  background-color: #eab308; /* kuning lebih gelap */
+  transform: scale(1.1);
+}
