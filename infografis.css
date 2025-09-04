@@ -93,3 +93,25 @@
 #detailImg {
   @apply max-w-2xl w-full h-auto; /* max 768px, tetap responsif */
 }
+
+/* styling untuk deskripsi */
+#detailDesc {
+  text-align: justify;    /* teks rata kiri-kanan */
+  max-width: 800px;       /* batasi lebar biar enak dibaca */
+  margin: 0 auto;         /* posisikan di tengah */
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+
+#detailDesc p {
+  margin-bottom: 15px;
+}
+
+#detailDesc ol {
+  margin: 15px auto;
+  padding-left: 40px;     /* indentasi list */
+}
+#detailDesc li {
+  margin-bottom: 8px;
+}
