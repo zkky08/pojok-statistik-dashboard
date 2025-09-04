@@ -105,19 +105,18 @@ window.addEventListener('scroll', () => {
 // tombol back-to-top
 const backToTopBtn = document.getElementById("backToTopBtn");
 
-// Tampilkan tombol saat scroll lebih dari 300px
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
-    backToTopBtn.style.display = "block";
+    backToTopBtn.classList.add("show");
   } else {
-    backToTopBtn.style.display = "none";
+    backToTopBtn.classList.remove("show");
   }
 });
 
-// Scroll ke atas saat tombol diklik
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth"
   });
 });
+

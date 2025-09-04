@@ -490,19 +490,51 @@ section .grid > div:hover img {
 /* Tombol back-to-top */
 .back-to-top {
   position: fixed;
-  bottom: 1.5rem; /* 24px */
+  bottom: 1.5rem;
   right: 1.5rem;
-  background-color: #facc15; /* kuning */
+  width: 50px;
+  height: 50px;
+  background-color: #1d4ed8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 0.75rem;
-  border-radius: 9999px; /* full bulat */
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: none; /* default sembunyi */
+
+  /* state tersembunyi (awal) */
+  opacity: 0;
+  transform: translateY(30px);
+  visibility: hidden;
+  pointer-events: none;
+
+  /* penting: tunda visibility agar fade-out terlihat */
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    background-color 0.3s ease,
+    visibility 0s linear 0.4s; /* delay 0.4s = durasi fade */
 }
 
 .back-to-top:hover {
-  background-color: #eab308; /* kuning lebih gelap */
-  transform: scale(1.1);
+  background-color: #facc15;  /* kuning */
+  color: #1d4ed8;
+  transform: scale(1.1) translateY(0);
+}
+
+/* state tampil */
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+
+  /* saat muncul, visibility langsung visible tanpa delay */
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    background-color 0.3s ease,
+    visibility 0s;
 }
