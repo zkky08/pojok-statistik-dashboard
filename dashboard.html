@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <title>Dashboard Demo</title>
+  <title>Dashboard Drive </title>
   <style>
     body{font-family:sans-serif;padding:20px;background:#f6f7fb}
     .card{background:#fff;padding:24px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);max-width:800px;margin:auto}
@@ -20,15 +20,13 @@
       Buka di tab baru
     </a>
 
-    <!-- Tampilan embed folder Google Drive -->
     <iframe src="https://drive.google.com/embeddedfolderview?id=17NU-6fHaTTcMFw-fOh9jqAOBtuLHiXdW#grid"></iframe>
   </div>
 
   <script>
     const user = sessionStorage.getItem("demoUser");
     if (!user) {
-      // Kalau belum login, balikin ke index.html
-      window.location.href = "index.html";
+      window.location.href = "login-drive1.html"; // balikin ke login
     } else {
       document.getElementById("user").textContent = user;
     }
