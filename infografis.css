@@ -1,3 +1,55 @@
+/* Navbar links */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #facc15; /* kuning Tailwind (yellow-400) */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #facc15;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Buttons */
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #1e3a8a; /* blue-900 */
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: #facc15;
+  color: #1e3a8a;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #fbbf24; /* yellow-500 */
+  transform: scale(1.05);
+}
+
 /* Style tambahan di halaman daftar infografis */
 /* Ukuran gambar lebih kecil agar tidak sesak */
 .card-img {
