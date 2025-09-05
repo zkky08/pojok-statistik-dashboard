@@ -1,21 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Statistik Sektoral Terintegrasi</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <!-- Icon font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="utf-8" />
+  <title>Demo Login (BUKAN Google)</title>
+  <style>
+    body{font-family:sans-serif;display:grid;place-items:center;min-height:100vh;background:#f6f7fb;margin:0}
+    .card{background:#fff;padding:24px;max-width:360px;width:100%;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+    h1{margin:0 0 12px}
+    label{display:block;margin:12px 0 6px}
+    input{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px}
+    button{margin-top:16px;width:100%;padding:12px;border:0;border-radius:8px;background:#111;color:#fff;cursor:pointer}
+    .error{color:#c62828;margin-top:8px;font-size:13px;display:none}
+    .notice{background:#fff7e6;border:1px solid #ffe6b3;color:#8a6100;padding:10px;border-radius:10px;margin-bottom:12px;font-size:13px}
+  </style>
 </head>
 <body class="font-sans antialiased">
 
@@ -373,34 +370,27 @@
    <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800, // durasi animasi (ms)
-      once: true     // hanya jalan sekali
-    });
-  </script>
-  
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      loop: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      breakpoints: {
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 }
-      }
-    });
-  </script>
+    const form = document.getElementById("form");
+    const emailEl = document.getElementById("email");
+    const passEl = document.getElementById("pass");
+    const errEl = document.getElementById("err");
 
-  <script src="script.js"></script>
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = emailEl.value.trim().toLowerCase();
+      const pass  = passEl.value;
+
+      if (!/^[^@\s]+@gmail\.com$/.test(email)) {
+        errEl.textContent = "Email harus berakhiran @gmail.com";
+        errEl.style.display = "block";
+        return;
+      }
+
+      // Simpan user demo
+      sessionStorage.setItem("demoUser", email);
+      // Redirect ke dashboard
+      window.location.href = "dashboard.html";
+    });
+  </script>
 </body>
 </html>
