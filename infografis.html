@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Infografis - BPS Banten</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="infografis.css">
+  <link rel="stylesheet" href="/css/infografis.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
@@ -99,8 +99,21 @@
     
     <!-- Gambar Infografis -->
     <div class="text-center mb-6">
-        <img id="detailImg" src="" alt="Detail Infografis" class="mx-auto rounded-lg shadow-lg mb-4">
-        <a id="downloadBtn" href="#" download class="btn-download">⬇️ Download Materi</a>
+        <img id="detailImg" src="" alt="Detail Infografis" 
+            class="mx-auto rounded-lg shadow-lg mb-4">
+
+        <button id="downloadBtn"
+                class="w-full bg-blue-900 text-white py-3 rounded-lg 
+                        hover:bg-blue-800 transition transform 
+                        hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+            <span>Download Materi</span>
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                class="w-5 h-5" fill="none" viewBox="0 0 24 24" 
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+            </svg>
+        </button>
     </div>
 
     <!-- Judul & Deskripsi -->
@@ -129,6 +142,6 @@
     </div>
   </footer>
 
-  <script src="infografis.js"></script>
+  <script src="/js/infografis.js"></script>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfirmasi Unduh Materi</title>
+  <link rel="stylesheet" href="css/confirm.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
+    <h1 class="text-2xl font-bold text-gray-800 mb-4">Konfirmasi Unduh</h1>
+    <p class="text-gray-600 mb-6">Masukkan alamat email Anda untuk melanjutkan mengunduh materi.</p>
+
+    <form id="confirmForm" class="space-y-4">
+      <input 
+        type="email" 
+        id="emailInput" 
+        placeholder="Alamat email" 
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+        required
+      />
+      <button 
+        type="submit" 
+        class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
+        Konfirmasi & Unduh
+      </button>
+    </form>
+
+    <a id="backBtn" class="inline-block mt-6 text-blue-700 hover:underline cursor-pointer">
+      ⬅ Kembali ke Infografis
+    </a>
+  </div>
+
+  <script src="js/confirm.js"></script>
+</body>
+</html>
