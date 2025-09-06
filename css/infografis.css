@@ -134,25 +134,63 @@
 }
 
 .btn-nav {
-  @apply px-6 py-2 bg-gray-200 text-gray-800 rounded-lg hover:bg-blue-600 hover:text-white transition;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #1e3a8a; /* blue-900 */
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-nav:hover {
+  background-color: #facc15; /* yellow-400 */
+  color: #1e3a8a; /* blue-900 */
+}
+/* Khusus tombol berikutnya agar anak panah di atas dan teks di bawah */
+#nextBtn {
+  flex-direction: column;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+#nextBtn .arrow {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+#nextBtn .text {
+  font-size: 1rem;
+  line-height: 1;
 }
 
 /* Tombol Download */
 .btn-download {
-  @apply inline-flex items-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-lg transition-all duration-300;
+  @apply bg-blue-900 text-white py-3 rounded-lg shadow-lg transition-colors duration-300 transform hover:-translate-y-1 hover:shadow-xl;
 }
 
 .btn-download:hover {
-  @apply bg-green-700;
+  @apply bg-yellow-400;
+}
+
+.btn-download:hover .btn-text {
+  @apply text-blue-900; /* teks jadi biru saat hover */
 }
 
 .arrow-icon {
   transition: transform 0.3s ease;
 }
 
-.btn-download:hover .arrow-icon {
-  transform: translateX(5px); /* animasi panah geser saat hover */
+#downloadBtn:hover .arrow-icon {
+  transform: translateX(5px);
 }
+
+
 
 #detailImg {
   @apply max-w-2xl w-full h-auto;

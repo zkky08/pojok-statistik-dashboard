@@ -102,16 +102,13 @@
         <img id="detailImg" src="" alt="Detail Infografis" 
             class="mx-auto rounded-lg shadow-lg mb-4">
 
-        <button id="downloadBtn"
-                class="w-full bg-blue-900 text-white py-3 rounded-lg 
-                        hover:bg-blue-800 transition transform 
-                        hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+        <button id="downloadBtn" class="btn-nav w-full flex items-center justify-center gap-2">
             <span>Download Materi</span>
             <svg xmlns="http://www.w3.org/2000/svg" 
-                class="w-5 h-5" fill="none" viewBox="0 0 24 24" 
+                class="w-5 h-5 arrow-icon" fill="none" viewBox="0 0 24 24" 
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                        d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
+                    d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
             </svg>
         </button>
     </div>
@@ -121,10 +118,13 @@
     <p id="detailDesc" class="text-gray-600 mb-8 text-justify"></p>
 
     <!-- Navigasi -->
-    <div class="flex justify-center gap-4">
-        <button id="prevBtn" class="btn-nav">← Sebelumnya</button>
-        <a href="infografis.html" class="btn-back">Kembali</a>
-        <button id="nextBtn" class="btn-nav">Berikutnya →</button>
+    <div class="max-w-md mx-auto mt-8 flex justify-between items-center space-x-4">
+      <button id="prevBtn" class="btn-nav flex-1">← Sebelumnya</button>
+      <a href="infografis.html" class="btn-nav flex-1">Kembali</a>
+      <button id="nextBtn" class="btn-nav flex-1">
+        <span class="arrow">→</span>
+        <span class="text">Berikutnya</span>
+      </button>
     </div>
     </section>
 
