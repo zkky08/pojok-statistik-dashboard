@@ -1,36 +1,69 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Konfirmasi Unduh Materi</title>
-  <link rel="stylesheet" href="css/confirm.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Unduh Materi</title>
+    <link rel="stylesheet" href="css/confirm.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-md text-center">
-    <h1 class="text-2xl font-bold text-gray-800 mb-4">Konfirmasi Unduh</h1>
-    <p class="text-gray-600 mb-6">Masukkan alamat email Anda untuk melanjutkan mengunduh materi.</p>
+<body class="relative flex items-center justify-center min-h-screen">
 
-    <form id="confirmForm" class="space-y-4">
-      <input 
-        type="email" 
-        id="emailInput" 
-        placeholder="Alamat email" 
-        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
-        required
-      />
-      <button 
-        type="submit" 
-        class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
-        Konfirmasi & Unduh
-      </button>
-    </form>
+    <!-- Background foto dengan overlay + blur -->
+    <div class="absolute inset-0 w-full h-full"
+        style="animation: fadeIn 1s ease-out forwards;">
+    <img src="/assets/background/banten 2021 (hasil edit).JPG" 
+        alt="Background"
+        class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"
+        style="animation: fadeOverlay 1.2s ease-out forwards;"></div>
+    </div>
 
-    <a id="backBtn" class="inline-block mt-6 text-blue-700 hover:underline cursor-pointer">
-      ⬅ Kembali ke Infografis
-    </a>
-  </div>
+    <!-- Kontainer utama -->
+    <div class="relative z-10 bg-white/95 backdrop-blur-md 
+            p-8 rounded-2xl shadow-2xl 
+            w-full max-w-md text-center"
+        style="animation: scaleIn 0.6s ease-out forwards;">
 
-  <script src="js/confirm.js"></script>
+        <h1 class="text-2xl font-bold text-blue-900 mb-3">Konfirmasi Unduh</h1>
+        <p class="text-gray-600 mb-6">Masukkan alamat email Anda untuk melanjutkan unduh materi.</p>
+
+        <form id="confirmForm" class="space-y-4">
+        <input 
+            type="email" 
+            id="emailInput" 
+            placeholder="Alamat email" 
+            class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" 
+            required
+        />
+        <button 
+            type="submit" 
+            class="w-full bg-blue-900 text-white py-3 rounded-lg 
+                hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
+            Konfirmasi & Unduh
+        </button>
+        </form>
+
+        <!-- Progress bar -->
+        <div id="progressContainer" class="hidden mt-6">
+        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+            <div id="progressBar" class="bg-yellow-400 h-3 w-0 transition-all duration-100 ease-linear"></div>
+        </div>
+        <p id="countdownText" class="mt-2 text-sm text-gray-700 font-medium"></p>
+        </div>
+
+        <a id="backBtn" class="inline-block mt-6 text-blue-700 hover:underline cursor-pointer">
+        ⬅ Kembali ke Infografis
+        </a>
+    </div>
+
+    <!-- Toast Notifikasi -->
+    <div id="toast" 
+        class="fixed top-6 left-1/2 -translate-x-1/2 
+                bg-blue-900 text-white px-5 py-3 rounded-xl 
+                shadow-lg opacity-0 translate-y-[-20px] 
+                transition-all duration-500 text-sm font-medium z-50">
+    </div>
+    <script src="js/confirm.js"></script>
 </body>
 </html>
