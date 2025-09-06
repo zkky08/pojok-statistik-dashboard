@@ -16,21 +16,22 @@ const progressContainer = document.getElementById("progressContainer");
 const progressBar = document.getElementById("progressBar");
 const countdownText = document.getElementById("countdownText");
 
+// === Event Submit ===
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const email = document.getElementById("emailInput").value;
+  const email = document.getElementById("emailInput").value.trim();
   if (!email) {
-    showToast("⚠️ Silakan masukkan alamat email.");
+    showPopup("⚠️ Form Belum Lengkap", "Silakan masukkan alamat email Anda terlebih dahulu.");
     return;
   }
 
   if (!id || !data[id]) {
-    showToast("❌ File tidak ditemukan!");
+    showPopup("❌ File Tidak Ditemukan", "Maaf, file materi tidak tersedia. Silakan coba lagi.");
     return;
   }
 
-  // Tampilkan progress bar
+  // --- Lanjut proses countdown & download ---
   progressContainer.classList.remove("hidden");
   progressBar.style.width = "0%";
 
@@ -41,7 +42,7 @@ form.addEventListener("submit", (e) => {
   let progress = 0;
   const interval = setInterval(() => {
     countdown--;
-    progress += 20; // karena 5 detik → 100%
+    progress += 20;
     progressBar.style.width = `${progress}%`;
 
     if (countdown > 0) {
@@ -65,7 +66,7 @@ form.addEventListener("submit", (e) => {
       // Notifikasi selesai
       showToast("✅ Selesai mendownload! Terima kasih telah mendownload materi 🙏", 6000);
 
-      // Auto redirect kembali ke halaman deskripsi infografis
+      // Redirect ke halaman deskripsi infografis
       setTimeout(() => {
         window.location.href = `infografis.html?id=${id}`;
       }, 4000);
@@ -73,16 +74,14 @@ form.addEventListener("submit", (e) => {
   }, 1000);
 });
 
-// Fungsi notifikasi toast (Tailwind animasi)
+// === Toast ===
 function showToast(message, duration = 5000) {
   const toast = document.getElementById("toast");
   toast.textContent = message;
 
-  // Tampilkan
   toast.classList.remove("opacity-0", "translate-y-[-20px]");
   toast.classList.add("opacity-100", "translate-y-0");
 
-  // Reset timer biar tidak tabrakan
   clearTimeout(toast.timer);
   toast.timer = setTimeout(() => {
     toast.classList.remove("opacity-100", "translate-y-0");
@@ -90,35 +89,29 @@ function showToast(message, duration = 5000) {
   }, duration);
 }
 
-// Fungsi popup modal
+// === Popup ===
 function showPopup(title, message) {
-  const popup = document.getElementById("popup");
+  const overlay = document.getElementById("popup");
+  const content = overlay.querySelector(".popup-content");
   document.getElementById("popupTitle").textContent = title;
   document.getElementById("popupMessage").textContent = message;
 
-  popup.classList.remove("hidden");
-  popup.querySelector("div").classList.add("animate-popup");
+  document.body.style.overflow = "hidden";
+  overlay.classList.remove("hidden");
+
+  // restart animasi
+  content.classList.remove("popup-content");
+  void content.offsetWidth;
+  content.classList.add("popup-content");
 }
 
 function closePopup() {
-  const popup = document.getElementById("popup");
-  popup.classList.add("hidden");
+  const overlay = document.getElementById("popup");
+  overlay.classList.add("hidden");
+  document.body.style.overflow = "";
 }
 
-// ==== Update validasi form ====
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const email = document.getElementById("emailInput").value;
-  if (!email) {
-    showPopup("⚠️ Form Belum Lengkap", "Silakan masukkan alamat email Anda terlebih dahulu.");
-    return;
-  }
-
-  if (!id || !data[id]) {
-    showPopup("❌ File Tidak Ditemukan", "Maaf, file materi tidak tersedia. Silakan coba lagi.");
-    return;
-  }
-
-  // lanjut proses download seperti biasa ...
+document.getElementById("popup").addEventListener("click", (e) => {
+  if (e.target.id === "popup") closePopup();
 });
+document.getElementById("popupOkBtn").addEventListener("click", closePopup);

@@ -1,27 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Konfirmasi Unduh Materi</title>
-    <link rel="stylesheet" href="css/confirm.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konfirmasi Unduh Materi</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/confirm.css">
 </head>
 <body class="relative flex items-center justify-center min-h-screen">
 
-    <!-- Background foto dengan overlay + blur -->
-    <div class="absolute inset-0 w-full h-full">
-    <img src="/assets/background/banten 2021 (hasil edit).JPG"
-        alt="Background"
-        class="w-full h-full object-cover" />
+  <!-- Background foto dengan overlay + blur -->
+  <div class="absolute inset-0 w-full h-full">
+    <img src="/assets/background/banten-2021-edit.jpg" alt="Background" class="w-full h-full object-cover" />
     <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
-    </div>
+  </div>
 
     <!-- Kontainer utama -->
-    <div class="relative z-10 bg-white/95 backdrop-blur-md 
-            p-8 rounded-2xl shadow-2xl 
-            w-full max-w-md text-center"
-        style="animation: scaleIn 0.6s ease-out forwards;">
+    <div class="relative z-10 bg-white/95 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-md text-center animate-scale-in">
 
         <h1 class="text-2xl font-bold text-blue-900 mb-3">Konfirmasi Unduh</h1>
         <p class="text-gray-600 mb-6">Masukkan alamat email Anda untuk melanjutkan unduh materi.</p>
@@ -36,10 +31,9 @@
         />
         <button 
             type="submit" 
-            class="btn-nav w-full bg-blue-900 text-white py-3 rounded-lg 
-                hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
+            class="w-full py-3 rounded-lg font-semibold transition">
             Konfirmasi & Unduh
-        </button>
+        </button>   
         </form>
 
         <!-- Progress bar -->
@@ -64,18 +58,17 @@
     </div>
 
     <!-- Popup Modal -->
-    <div id="popup" 
-        class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
-        <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full text-center animate-scale-in">
-            <h2 id="popupTitle" class="text-xl font-bold text-red-600 mb-3">Peringatan</h2>
-            <p id="popupMessage" class="text-gray-700 mb-6">Pesan akan muncul di sini.</p>
-            <button onclick="closePopup()" 
-                    class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
+    <div id="popup" class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+        <div class="popup-content bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full text-center">
+        <h2 id="popupTitle" class="text-xl font-bold text-red-600 mb-3">Peringatan</h2>
+        <p id="popupMessage" class="text-gray-700 mb-6">Pesan akan muncul di sini.</p>
+        <button id="popupOkBtn"
+                class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
             OK
-            </button>
+        </button>
         </div>
     </div>
 
-    <script src="js/confirm.js"></script>
+  <script src="js/confirm.js"></script>
 </body>
 </html>
