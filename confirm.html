@@ -36,7 +36,7 @@
         />
         <button 
             type="submit" 
-            class="w-full bg-blue-900 text-white py-3 rounded-lg 
+            class="btn-nav w-full bg-blue-900 text-white py-3 rounded-lg 
                 hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
             Konfirmasi & Unduh
         </button>
@@ -62,6 +62,20 @@
                 shadow-lg opacity-0 translate-y-[-20px] 
                 transition-all duration-500 text-sm font-medium z-50">
     </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" 
+        class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl shadow-2xl p-6 max-w-sm w-full text-center animate-scale-in">
+            <h2 id="popupTitle" class="text-xl font-bold text-red-600 mb-3">Peringatan</h2>
+            <p id="popupMessage" class="text-gray-700 mb-6">Pesan akan muncul di sini.</p>
+            <button onclick="closePopup()" 
+                    class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
+            OK
+            </button>
+        </div>
+    </div>
+
     <script src="js/confirm.js"></script>
 </body>
 </html>

@@ -89,3 +89,36 @@ function showToast(message, duration = 5000) {
     toast.classList.add("opacity-0", "translate-y-[-20px]");
   }, duration);
 }
+
+// Fungsi popup modal
+function showPopup(title, message) {
+  const popup = document.getElementById("popup");
+  document.getElementById("popupTitle").textContent = title;
+  document.getElementById("popupMessage").textContent = message;
+
+  popup.classList.remove("hidden");
+  popup.querySelector("div").classList.add("animate-popup");
+}
+
+function closePopup() {
+  const popup = document.getElementById("popup");
+  popup.classList.add("hidden");
+}
+
+// ==== Update validasi form ====
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const email = document.getElementById("emailInput").value;
+  if (!email) {
+    showPopup("⚠️ Form Belum Lengkap", "Silakan masukkan alamat email Anda terlebih dahulu.");
+    return;
+  }
+
+  if (!id || !data[id]) {
+    showPopup("❌ File Tidak Ditemukan", "Maaf, file materi tidak tersedia. Silakan coba lagi.");
+    return;
+  }
+
+  // lanjut proses download seperti biasa ...
+});
