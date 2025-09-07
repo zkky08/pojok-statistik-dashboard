@@ -120,3 +120,68 @@ backToTopBtn.addEventListener("click", () => {
   });
 });
 
+// Email Otomatis
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const userEmail = document.getElementById("userEmail");
+  const userQuestion = document.getElementById("userQuestion");
+
+  const emailError = document.getElementById("emailError");
+  const emailSuccess = document.getElementById("emailSuccess");
+  const questionError = document.getElementById("questionError");
+  const questionSuccess = document.getElementById("questionSuccess");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let isValid = true;
+
+    // Reset state sebelum validasi baru dijalankan 
+    [userEmail, userQuestion].forEach(el => {
+      el.classList.remove("border-red-600", "border-green-600");
+    });
+    [emailError, emailSuccess, questionError, questionSuccess].forEach(el => { 
+      el.textContent = "";
+      el.classList.add("hidden");
+    });
+
+    // Validasi email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Pola dasar email sederhana
+      emailError.textContent = "Email tidak boleh kosong!";
+    if (!emailPattern.test(userEmail.value.trim())) { // Cek format email
+      emailError.textContent = "Masukkan alamat email yang valid!";
+      emailError.classList.remove("hidden");
+      userEmail.classList.add("border-red-600");
+      isValid = false; // Set isValid ke false
+    } else {
+      emailSuccess.textContent = "Email valid ✅";
+      emailSuccess.classList.remove("hidden");
+      userEmail.classList.add("border-green-600");
+    }
+
+    // Validasi pertanyaan
+    if (userQuestion.value.trim() === "") { // Cek kalau kosong
+      questionError.textContent = "Pertanyaan tidak boleh kosong!";
+      questionError.classList.remove("hidden");
+      userQuestion.classList.add("border-red-600");
+      isValid = false; // Set isValid ke false
+    } else {
+      questionSuccess.textContent = "Pertanyaan siap dikirim ✅";
+      questionSuccess.classList.remove("hidden");
+      userQuestion.classList.add("border-green-600");
+    }
+
+    // Kalau ada error → hentikan
+    if (!isValid) return;
+
+    // Kalau valid → buka email
+    const emailTujuan = "bpsbanten@bps.go.id"; // Ganti dengan email tujuan yang diinginkan
+    const subject = encodeURIComponent(userQuestion.value.trim()); // Gunakan pertanyaan sebagai subjek
+    const body = encodeURIComponent(
+      "Email: " + userEmail.value.trim() + "\n\nPertanyaan:\n" + userQuestion.value.trim()
+    );
+
+    window.location.href = `mailto:${emailTujuan}?subject=${subject}&body=${body}`;
+  });
+});
+
+
