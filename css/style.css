@@ -33,6 +33,16 @@ html {
   width: 100%;
 }
 
+/* #logoReload {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#logoReload:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+} */
+
+
 /* Buttons */
 .btn-outline {
   padding: 0.5rem 1rem;
