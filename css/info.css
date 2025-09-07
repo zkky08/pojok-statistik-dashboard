@@ -16,6 +16,30 @@ body {
   padding: 0 1rem;
 }
 
+/* ===================== Navbar ===================== */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #facc15;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #facc15;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
 
 /* ===== INFO TERBARU ===== */
 .info-terbaru {

@@ -6,10 +6,38 @@
   <title>Info Terbaru</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/info.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-    
+    <!-- Navbar -->
+    <header class="bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <a href="index.html">
+            <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" id="logoReload" class="h-10">
+            </a>
+            <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
+        </div>
+
+        <!-- Nav Links -->
+        <nav>
+            <ul class="hidden md:flex gap-6 text-sm font-semibold">
+            <li><a href="index.html" class="nav-link">Beranda</a></li>
+            <li><a href="infografis.html" class="nav-link">Infografis</a></li>
+            <li><a href="#info-terbaru" class="nav-link">Info terbaru</a></li>
+            <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="infografis" class="bg-blue-800 text-white py-16 text-center">
+        <h1 class="text-3xl font-bold mb-3">Info Terbaru</h1>
+        <p class="text-gray-200">Berita, laporan, dan insight terbaru mengenai data sektoral dan layanan yang kami sediakan. Selalu up-to-date untuk Anda.</p>
+    </section>
 
   <!-- ================= INFO TERBARU ================= -->
   <section id="info-terbaru" class="py-16 max-w-7xl mx-auto px-4">
@@ -95,6 +123,11 @@
       <button id="nextBtn" class="btn-nav flex-1">Berikutnya →</button>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+  </footer>
 
   <script src="js/info.js"></script>
 </body>
