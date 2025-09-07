@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isValid) return;
 
     // Kalau valid → buka email client
-    const emailTujuan = "bpsbanten@bps.go.id";
+    const emailTujuan = "bps3600@bps.go.id ";
     const subject = encodeURIComponent(userQuestion.value.trim());
     const body = encodeURIComponent(
       "Email: " + userEmail.value.trim() + "\n\nPertanyaan:\n" + userQuestion.value.trim()
