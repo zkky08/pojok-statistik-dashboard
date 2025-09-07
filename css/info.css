@@ -178,3 +178,19 @@ body {
   background-color: #facc15; /* yellow-400 */
   color: #1e3a8a; /* blue-900 */
 }
+
+/* Khusus tombol berikutnya agar anak panah di atas dan teks di bawah */
+#nextBtn {
+  flex-direction: column;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+#nextBtn .arrow {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+#nextBtn .text {
+  font-size: 1rem;
+  line-height: 1;
+}
