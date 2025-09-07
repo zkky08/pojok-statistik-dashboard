@@ -1,14 +1,16 @@
-
+// =============================
 // Info Terbaru
-const slides = document.querySelectorAll(".slide");
-const track = document.querySelector(".slider-track"); // ✅ tambahkan ini
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const dotsContainer = document.querySelector(".dots");
+// =============================
+const infoSection = document.getElementById("info-terbaru");
+const slides = infoSection.querySelectorAll(".slide");
+const track = infoSection.querySelector(".slider-track");
+const prevBtn = infoSection.querySelector(".prev");
+const nextBtn = infoSection.querySelector(".next");
+const dotsContainer = infoSection.querySelector(".dots");
 
 let index = 0;
 let slideInterval;
-const intervalTime = 3000; // ganti durasi di sini (ms) → 4000 = 4 detik
+const intervalTime = 3000; // 3000 ms = 3 detik
 
 // Buat dots sesuai jumlah slide
 slides.forEach((_, i) => {
@@ -17,12 +19,14 @@ slides.forEach((_, i) => {
   dot.addEventListener("click", () => goToSlide(i));
   dotsContainer.appendChild(dot);
 });
-const dots = document.querySelectorAll(".dots button");
+const dots = dotsContainer.querySelectorAll("button");
 
 function updateSlide() {
   track.style.transform = `translateX(-${index * 100}%)`;
-  dots.forEach(dot => dot.classList.remove("active"));
-  dots[index].classList.add("active");
+  if (dots.length > 0) {
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
 }
 
 function goToSlide(i) {
@@ -55,56 +59,45 @@ function resetInterval() {
 }
 startInterval();
 
-// ✅ Pause ketika hover slider
-const slider = document.querySelector(".slider");
+// Pause ketika hover slider
+const slider = infoSection.querySelector(".slider");
 slider.addEventListener("mouseenter", () => clearInterval(slideInterval));
 slider.addEventListener("mouseleave", startInterval);
 
-window.addEventListener("load", () => {
-  document.body.classList.add("loaded");
-});
-
-// animasi section info terbaru
-document.addEventListener("DOMContentLoaded", function () {
-  const section = document.getElementById("info-terbaru");
-
-  function checkVisibility() {
-    const rect = section.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 100) {
-      section.classList.add("show");
-      window.removeEventListener("scroll", checkVisibility);
-    }
+// Animasi muncul saat discroll
+function checkVisibility() {
+  const rect = infoSection.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    infoSection.classList.add("show");
+    window.removeEventListener("scroll", checkVisibility);
   }
+}
+window.addEventListener("scroll", checkVisibility);
+checkVisibility();
 
-  window.addEventListener("scroll", checkVisibility);
-  checkVisibility();
-});
-
-// Hero Section
-// Parallax effect
-const hero = document.querySelector('.hero::before'); // Pseudo-element tidak bisa di-query langsung
+// =============================
+// Hero Section - Parallax
+// =============================
 const heroSection = document.querySelector('.hero');
-
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  // Latar belakang bergerak lebih lambat dibanding scroll konten
+  // Gunakan CSS variable untuk background position ::before
   heroSection.style.setProperty('--bg-position', `${scrollY * 0.5}px`);
 });
 
-
-// Kontak
+// =============================
+// Contact Section - Parallax
+// =============================
 const contactSection = document.querySelector('.contact-section');
-
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY;
-  // Background bergerak lebih lambat dibanding scroll konten
   contactSection.style.setProperty('--bg-position', `${scrollY * 0.3}px`);
 });
 
-
-// tombol back-to-top
+// =============================
+// Tombol Back-to-Top
+// =============================
 const backToTopBtn = document.getElementById("backToTopBtn");
-
 window.addEventListener("scroll", () => {
   if (window.scrollY > 300) {
     backToTopBtn.classList.add("show");
@@ -112,7 +105,6 @@ window.addEventListener("scroll", () => {
     backToTopBtn.classList.remove("show");
   }
 });
-
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
@@ -120,7 +112,9 @@ backToTopBtn.addEventListener("click", () => {
   });
 });
 
-// Email Otomatis
+// =============================
+// Form Kontak - Email Otomatis
+// =============================
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("contactForm");
   const userEmail = document.getElementById("userEmail");
@@ -129,10 +123,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const questionError = document.getElementById("questionError");
 
   form.addEventListener("submit", function(e) {
-    e.preventDefault(); // cegah reload halaman
+    e.preventDefault();
     let isValid = true;
 
-    // Reset error state
+    // Reset error
     emailError.textContent = "";
     emailError.classList.add("hidden");
     userEmail.classList.remove("border-red-600");
@@ -142,7 +136,7 @@ document.addEventListener("DOMContentLoaded", () => {
     userQuestion.classList.remove("border-red-600");
 
     // Validasi email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // pola sederhana untuk email
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(userEmail.value.trim())) {
       emailError.textContent = "Masukkan alamat email yang valid!";
       emailError.classList.remove("hidden");
@@ -151,19 +145,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Validasi pertanyaan
-    if (userQuestion.value.trim() === "") { // cek kosong
+    if (userQuestion.value.trim() === "") {
       questionError.textContent = "Pertanyaan tidak boleh kosong!";
       questionError.classList.remove("hidden");
       userQuestion.classList.add("border-red-600");
       isValid = false;
     }
 
-    // Kalau tidak valid → hentikan
     if (!isValid) return;
 
-    // Kalau valid → buka email
-    const emailTujuan = "bpsbanten@bps.go.id"; // ganti dengan email tujuan
-    const subject = encodeURIComponent(userQuestion.value.trim()); // gunakan pertanyaan sebagai subjek
+    // Kalau valid → buka email client
+    const emailTujuan = "bpsbanten@bps.go.id";
+    const subject = encodeURIComponent(userQuestion.value.trim());
     const body = encodeURIComponent(
       "Email: " + userEmail.value.trim() + "\n\nPertanyaan:\n" + userQuestion.value.trim()
     );
@@ -171,6 +164,3 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = `mailto:${emailTujuan}?subject=${subject}&body=${body}`;
   });
 });
-
-
-
