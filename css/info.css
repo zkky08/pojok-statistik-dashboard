@@ -1,0 +1,117 @@
+/* ===== RESET SEDERHANA ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #111827;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ===== INFO TERBARU ===== */
+.info-terbaru {
+  padding: 4rem 1rem;
+  background: #f9fafb; /* abu soft */
+}
+
+.info-terbaru .section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a; /* biru elegan */
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.info-terbaru .grid-news {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.news-card {
+  background: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.news-date {
+  font-size: 0.875rem;
+  color: #6b7280; /* abu-abu */
+  margin-bottom: 0.5rem;
+}
+
+.news-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #1f2937; /* abu gelap */
+}
+
+.news-excerpt {
+  font-size: 0.95rem;
+  color: #374151; /* abu medium */
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.btn-readmore {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  background: #1e3a8a;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-readmore:hover {
+  background: #2563eb; /* biru lebih terang */
+}
+  
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .info-terbaru .grid-news {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .info-terbaru .grid-news {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .info-terbaru .grid-news {
+    grid-template-columns: 1fr;
+  }
+}
