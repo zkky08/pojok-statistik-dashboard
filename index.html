@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard Statistik Sektoral Terintegrasi</title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 
   <!-- Icon font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -24,9 +24,7 @@
     <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
       <!-- Logo -->
       <div class="flex items-center gap-3">
-        <a href="index.html">
-          <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" id="logoReload" class="h-10">
-        </a>
+        <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10">
         <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
       </div>
 
@@ -34,6 +32,7 @@
       <nav>
         <ul class="hidden md:flex gap-6 text-sm font-semibold">
           <li><a href="#beranda" class="nav-link">Beranda</a></li>
+          <li><a href="#layanan" class="nav-link">Layanan</a></li>
           <li><a href="#infografis" class="nav-link">Infografis</a></li>
           <li><a href="#info-terbaru" class="nav-link">Info terbaru</a></li>
           <li><a href="#kontak" class="nav-link">Kontak</a></li>
@@ -340,37 +339,21 @@
       <!-- Form (Kanan) -->
       <div data-aos="fade-left" class="bg-white text-gray-900 p-8 rounded-xl shadow-lg">
         <h3 class="text-xl font-semibold mb-4">Ada pertanyaan..?</h3>
-        
-        <form id="contactForm" novalidate>
-          <div class="mb-4">
-            <input 
-              type="email" 
-              id="userEmail"
-              placeholder="Masukan email anda" 
-              required
-              class="w-full border p-3 rounded 
-                    focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-            <p id="emailError" class="text-red-600 text-sm mt-1 hidden"></p>
-          </div>
-          
-          <div class="mb-4">
-            <textarea 
-              id="userQuestion"
-              placeholder="Pertanyaan Anda.." 
-              required
-              class="w-full border p-3 rounded h-28 
-                    focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-            <p id="questionError" class="text-red-600 text-sm mt-1 hidden"></p>
-          </div>
-          
-          <button 
-            type="submit"
-            class="w-full bg-blue-900 text-white py-3 rounded-lg 
-                  hover:bg-blue-800 transition transform 
-                  hover:-translate-y-1 hover:shadow-lg">
+        <input 
+          type="email" 
+          placeholder="Masukan email anda" 
+          class="w-full border p-3 rounded mb-4 
+                focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+        <textarea 
+          placeholder="Pertanyaan Anda.." 
+          class="w-full border p-3 rounded mb-4 h-28 
+                focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <button 
+          class="w-full bg-blue-900 text-white py-3 rounded-lg 
+                hover:bg-blue-800 transition transform 
+                hover:-translate-y-1 hover:shadow-lg">
             Kirim
-          </button>
-        </form>
+        </button>
       </div>
     </div>
   </section>
@@ -418,6 +401,6 @@
     });
   </script>
 
-  <script src="/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
