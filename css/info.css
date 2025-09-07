@@ -157,3 +157,24 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.btn-nav {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #1e3a8a; /* blue-900 */
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-nav:hover {
+  background-color: #facc15; /* yellow-400 */
+  color: #1e3a8a; /* blue-900 */
+}
