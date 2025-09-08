@@ -1,20 +1,3 @@
-// Animasi muncul saat scroll
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelectorAll('.news-card');
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.remove('opacity-0', 'translate-y-8');
-        entry.target.classList.add('opacity-100', 'translate-y-0');
-        observer.unobserve(entry.target); // biar cuma muncul sekali
-      }
-    });
-  }, { threshold: 0.2 });
-
-  cards.forEach(card => observer.observe(card));
-});
-
 // Data semua berita
 const beritaData = {
   berita1: { title: "BPS Goes to School: Edukasi Pentingnya Data Kependudukan dan Lembaga Keuangan", desc: "Badan Pusat Statistik (BPS) Provinsi Banten mengadakan kegiatan BPS Goes to School di BPK PENABUR SMAK Penabur Serang pada 15 Mei 2025...", img: "/assets/buletin/info-terbaru/Penabur 15052025@2x-100 (1).jpg", date: "7 September 2025" },
@@ -28,7 +11,29 @@ const beritaData = {
 const keysBerita = Object.keys(beritaData);
 let currentIndex = 0;
 
-// Fungsi render detail
+// ================= GENERATE CARD =================
+const newsGrid = document.querySelector('#info-terbaru .grid');
+
+keysBerita.forEach((key, idx) => {
+  const item = beritaData[key];
+
+  const card = document.createElement('div');
+  card.className = 'bg-white rounded-lg shadow hover:shadow-lg transition flex flex-col news-card opacity-0 translate-y-8 duration-700 ease-out cursor-pointer';
+
+  card.innerHTML = `
+    <img src="${item.img}" alt="${item.title}" class="w-full h-44 object-cover rounded-t-lg transition-transform duration-500 hover:scale-105">
+    <div class="p-4 flex flex-col flex-grow">
+      <p class="text-sm text-gray-500 mb-1">${item.date}</p>
+      <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
+      <p class="text-gray-700 text-sm flex-grow">${item.desc}</p>
+    </div>
+  `;
+
+  card.addEventListener('click', () => renderBerita(idx));
+  newsGrid.appendChild(card);
+});
+
+// ================= RENDER DETAIL =================
 function renderBerita(index) {
   const item = beritaData[keysBerita[index]];
   document.getElementById("info-terbaru").classList.add("hidden");
@@ -43,18 +48,12 @@ function renderBerita(index) {
   currentIndex = index;
 }
 
-// Klik card untuk buka detail
-document.querySelectorAll(".news-card").forEach((card, idx) => {
-  card.addEventListener("click", () => renderBerita(idx));
-});
-
-// Tombol Kembali
-document.getElementById("backBtn").addEventListener("click", () => {
+// ================= NAVIGASI =================
+document.getElementById("backBtn")?.addEventListener("click", () => {
   document.getElementById("detailBerita").classList.add("hidden");
   document.getElementById("info-terbaru").classList.remove("hidden");
 });
 
-// Navigasi Next/Prev
 document.getElementById("nextBtn").addEventListener("click", () => {
   let nextIndex = (currentIndex + 1) % keysBerita.length;
   renderBerita(nextIndex);
@@ -64,7 +63,7 @@ document.getElementById("prevBtn").addEventListener("click", () => {
   renderBerita(prevIndex);
 });
 
-// Animasi fade-in saat scroll
+// ================= ANIMASI FADE-IN =================
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".news-card");
   const observer = new IntersectionObserver(entries => {
@@ -78,16 +77,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.2 });
 
   cards.forEach(card => observer.observe(card));
-});
-
-
-// Navigasi Next/Prev
-document.getElementById("nextBtn").addEventListener("click", () => {
-    let nextIndex = (currentIndex + 1) % keysBerita.length;
-    renderBerita(nextIndex);
-});
-
-document.getElementById("prevBtn").addEventListener("click", () => {
-    let prevIndex = (currentIndex - 1 + keysBerita.length) % keysBerita.length;
-    renderBerita(prevIndex);
 });
