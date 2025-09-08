@@ -3,127 +3,110 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak Kami - Dashboard Statistik</title>
+  <title>Kontak Kami - Universitas Bina Bangsa</title>
 
-  <!-- Tailwind CDN -->
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="kontak.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/css/kontak.css">
 </head>
 <body class="font-sans bg-gray-50">
 
   <!-- Header -->
-  <header class="bg-blue-900 text-white">
-    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-      <div class="flex items-center gap-3">
-        <a href="index.html">
-          <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10">
-        </a>
-        <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
-      </div>
+  <header class="bg-blue-900 text-white py-4">
+    <div class="max-w-5xl mx-auto flex justify-between items-center px-4">
+      <h1 class="text-xl font-bold">Universitas Bina Bangsa</h1>
       <nav>
-        <ul class="hidden md:flex gap-6 text-sm font-semibold">
-          <li><a href="index.html#beranda" class="hover:text-yellow-400">Beranda</a></li>
-          <li><a href="index.html#infografis" class="hover:text-yellow-400">Infografis</a></li>
-          <li><a href="index.html#info-terbaru" class="hover:text-yellow-400">Info terbaru</a></li>
+        <ul class="flex gap-4 text-sm font-semibold">
+          <li><a href="index.html" class="hover:text-yellow-400">Beranda</a></li>
           <li><a href="kontak.html" class="text-yellow-400">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Lokasi Kami + Google Map -->
+  <section class="bg-gray-100 py-8">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold text-blue-900 mb-4">Lokasi Kami</h2>
+      <div id="map" class="w-full h-80 md:h-96 rounded-lg shadow-lg"></div>
+    </div>
+  </section>
+
   <!-- Kontak Section -->
-  <section class="relative py-20 bg-cover bg-center" 
-    style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
 
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-blue-900 bg-opacity-40"></div>
-
-    <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 items-start">
-      
       <!-- Info Kontak -->
-      <div class="text-white">
-        <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
-        <p class="mb-6 text-gray-200">
-          Ada pertanyaan seputar data sektoral atau butuh bantuan? Silakan hubungi tim kami melalui kontak di bawah ini.
-        </p>
-
-        <div class="flex flex-col gap-3 text-gray-200">
-          <a href="https://maps.google.com?q=JL+Raya+Serang+Jakarta+KM+03+No+1B+Serang+Banten"
-            target="_blank" class="flex items-center gap-3 hover:text-yellow-400">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>JL Raya Serang – Jakarta, KM. 03 No. 1B, Panancangan, Serang, Banten</span>
-          </a>
-          <a href="https://wa.me/6287741111144" target="_blank" 
-            class="flex items-center gap-3 hover:text-yellow-400">
-            <i class="fab fa-whatsapp"></i>
-            <span>+62 877-4111-1144</span>
-          </a>
-          <a href="mailto:bps3600@bps.go.id" 
-            class="flex items-center gap-3 hover:text-yellow-400">
-            <i class="fas fa-envelope"></i>
-            <span>bps3600@bps.go.id</span>
-          </a>
-        </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-4 text-blue-900">Info Hubungi Kami</h3>
+        <ul class="space-y-3 text-gray-700">
+          <li>
+            <i class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+            Jalan Raya Serang–Jakarta, KM 03 No 1B, Pakupatan, Serang, Banten 42124
+          </li>
+          <li>
+            <i class="fas fa-phone text-blue-600 mr-2"></i>
+            (0254) 220158
+          </li>
+          <li>
+            <i class="fas fa-envelope text-blue-600 mr-2"></i>
+            <a href="mailto:universitas@binabangsa.ac.id" class="hover:text-blue-800">
+              universitas@binabangsa.ac.id
+            </a>
+          </li>
+        </ul>
 
         <!-- Sosial Media -->
-        <div class="flex flex-col gap-3 mt-6">
-          <a href="https://x.com/bps_banten" target="_blank" class="flex items-center gap-2 hover:text-yellow-400">
-            <i class="fab fa-x-twitter"></i><span>@bps_banten</span>
-          </a>
-          <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" class="flex items-center gap-2 hover:text-yellow-400">
-            <i class="fab fa-youtube"></i><span>BPS Provinsi Banten</span>
-          </a>
-          <a href="https://www.instagram.com/bps_banten" target="_blank" class="flex items-center gap-2 hover:text-yellow-400">
-            <i class="fab fa-instagram"></i><span>@bps_banten</span>
-          </a>
+        <div class="mt-6 space-x-4">
+          <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
 
       <!-- Form -->
-      <div class="bg-white text-gray-900 p-8 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-4">Kirim Pertanyaan</h3>
-        
-        <form id="contactForm" novalidate>
-          <div class="mb-4">
-            <input type="email" id="userEmail" placeholder="Masukan email anda" required
-              class="w-full border p-3 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-            <p id="emailError" class="text-red-600 text-sm mt-1 hidden"></p>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-4 text-blue-900">Kirim Pesan</h3>
+        <form id="contactForm" novalidate class="space-y-4">
+          <div>
+            <input type="text" id="userName" placeholder="Nama Anda" required
+              class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-500">
+            <p id="nameError" class="text-red-600 text-sm hidden"></p>
           </div>
-          
-          <div class="mb-4">
-            <textarea id="userQuestion" placeholder="Pertanyaan Anda.." required
-              class="w-full border p-3 rounded h-28 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-            <p id="questionError" class="text-red-600 text-sm mt-1 hidden"></p>
+          <div>
+            <input type="email" id="userEmail" placeholder="Email Anda" required
+              class="w-full border p-3 rounded focus:ring-2 focus:ring-blue-500">
+            <p id="emailError" class="text-red-600 text-sm hidden"></p>
           </div>
-          
+          <div>
+            <textarea id="userMessage" placeholder="Pesan Anda..." required
+              class="w-full border p-3 rounded h-32 focus:ring-2 focus:ring-blue-500"></textarea>
+            <p id="messageError" class="text-red-600 text-sm hidden"></p>
+          </div>
           <button type="submit"
-            class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
-            Kirim
+            class="w-full bg-blue-900 text-white py-2 rounded hover:bg-blue-800 transition">
+            Kirim Pesan
           </button>
+          <p id="successMessage" class="text-green-600 mt-2 hidden"></p>
         </form>
       </div>
-    </div>
-  </section>
 
-  <!-- Google Maps -->
-  <section class="h-80 w-full">
-    <iframe class="w-full h-full border-0"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.347472588585!2d106.165558!3d-6.189180!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418a5d1234567%3A0x123456789abcdef!2sBPS%20Provinsi%20Banten!5e0!3m2!1sid!2sid!4v1677891234567"
-      allowfullscreen="" loading="lazy">
-    </iframe>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-blue-900 text-white py-6 text-center text-sm">
-    <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+    <p>&copy; 2025 Universitas Bina Bangsa. All Rights Reserved.</p>
   </footer>
 
-  <!-- Custom JS -->
-  <script src="/js/kontak.js"></script>
+  <script src="kontak.js"></script>
+
+  <!-- Google Maps API -->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+  </script>
 </body>
 </html>

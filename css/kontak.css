@@ -1,17 +1,13 @@
-/* kontak.css */
 body {
   scroll-behavior: smooth;
 }
 
-input:invalid, textarea:invalid {
-  border-color: #e3342f;
+/* Pesan sukses fade-in */
+#successMessage {
+  animation: fadeIn 0.5s ease-in-out;
 }
 
-#contactForm .success-message {
-  background: #38a169;
-  color: white;
-  padding: 10px;
-  border-radius: 6px;
-  text-align: center;
-  margin-bottom: 12px;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
