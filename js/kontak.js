@@ -1,33 +1,35 @@
-// Inisialisasi peta
+// Inisialisasi Google Maps
 function initMap() {
-  // Koordinat tepat Universitas Bina Bangsa
-const unibaCoords = [-6.130356, 106.178132];
+  const unibaCoords = { lat: -6.120574570319566, lng: 106.19099966972281 };
 
-const map = L.map("map").setView(unibaCoords, 16);
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 16,
+    center: unibaCoords,
+  });
 
-L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "© OpenStreetMap contributors"
-}).addTo(map);
+  const marker = new google.maps.Marker({
+    position: unibaCoords,
+    map: map,
+    title: "Universitas Bina Bangsa",
+  });
 
-const popupContent = `
-  <b>Universitas Bina Bangsa</b><br>
-  Serang, Banten<br>
-  <a href="https://www.google.com/maps?q=-6.130356,106.178132" target="_blank" class="text-blue-600 underline">
-    Buka di Google Maps
-  </a>
-`;
+  const infoWindow = new google.maps.InfoWindow({
+    content: `<b>Universitas Bina Bangsa</b><br>Serang, Banten
+              <br><a href="https://www.google.com/maps?q=-6.130356,106.178132" target="_blank">
+              Buka di Google Maps</a>`
+  });
 
-L.marker(unibaCoords).addTo(map).bindPopup(popupContent).openPopup();
-
+  marker.addListener("click", () => infoWindow.open(map, marker));
+  infoWindow.open(map, marker);
 }
 
-// Jalankan saat halaman siap
-    document.addEventListener("DOMContentLoaded", initMap);
-
 // Form handling
-    document.getElementById("contactForm").addEventListener("submit", function (e) {
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
     document.getElementById("formMessage").textContent =
-        "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.";
+      "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.";
     this.reset();
-    });
+  });
+});
