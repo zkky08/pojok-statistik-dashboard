@@ -36,14 +36,6 @@
     </div>
   </header>
 
-  <!-- 🔹 Google Maps Section (langsung setelah header) -->
-  <section class="w-full h-96">
-    <iframe class="w-full h-full border-0"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.347472588585!2d106.165558!3d-6.189180!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418a5d1234567%3A0x123456789abcdef!2sBPS%20Provinsi%20Banten!5e0!3m2!1sid!2sid!4v1677891234567"
-      allowfullscreen="" loading="lazy">
-    </iframe>
-  </section>
-
   <!-- Kontak Section -->
   <section class="relative py-20 bg-cover bg-center" 
     style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
@@ -109,4 +101,29 @@
             <p id="questionError" class="text-red-600 text-sm mt-1 hidden"></p>
           </div>
           
-          <button type="su
+          <button type="submit"
+            class="w-full bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition transform hover:-translate-y-1 hover:shadow-lg">
+            Kirim
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Maps -->
+  <section class="h-80 w-full">
+    <iframe class="w-full h-full border-0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.347472588585!2d106.165558!3d-6.189180!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e418a5d1234567%3A0x123456789abcdef!2sBPS%20Provinsi%20Banten!5e0!3m2!1sid!2sid!4v1677891234567"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="/js/kontak.js"></script>
+</body>
+</html>
