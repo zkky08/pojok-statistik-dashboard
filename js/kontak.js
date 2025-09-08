@@ -1,70 +1,34 @@
-// Form validation
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const name = document.getElementById("userName").value.trim();
-  const email = document.getElementById("userEmail").value.trim();
-  const message = document.getElementById("userMessage").value.trim();
-
-  const nameError = document.getElementById("nameError");
-  const emailError = document.getElementById("emailError");
-  const messageError = document.getElementById("messageError");
-  const successMessage = document.getElementById("successMessage");
-
-  let valid = true;
-
-  [nameError, emailError, messageError].forEach(el => {
-    el.textContent = "";
-    el.classList.add("hidden");
-  });
-
-  if (!name) {
-    nameError.textContent = "Nama tidak boleh kosong.";
-    nameError.classList.remove("hidden");
-    valid = false;
-  }
-  if (!email || !/\S+@\S+\.\S+/.test(email)) {
-    emailError.textContent = "Masukkan email yang valid.";
-    emailError.classList.remove("hidden");
-    valid = false;
-  }
-  if (!message) {
-    messageError.textContent = "Pesan tidak boleh kosong.";
-    messageError.classList.remove("hidden");
-    valid = false;
-  }
-
-  if (valid) {
-    successMessage.textContent = "Pesan berhasil dikirim!";
-    successMessage.classList.remove("hidden");
-    this.reset();
-
-    setTimeout(() => {
-      successMessage.classList.add("hidden");
-    }, 5000);
-  }
-});
-
-// Google Maps API init
+// Inisialisasi peta
 function initMap() {
-  const binaBangsa = { lat: -6.1210418, lng: 106.1889862 };
+  const unibaCoords = [-6.1436, 106.1639];
 
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 16,
-    center: binaBangsa,
-  });
+  // Buat map
+  const map = L.map("map").setView(unibaCoords, 16);
 
-  const marker = new google.maps.Marker({
-    position: binaBangsa,
-    map: map,
-    title: "Universitas Bina Bangsa",
-  });
+  // Layer OSM
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "© OpenStreetMap contributors"
+  }).addTo(map);
 
-  const infoWindow = new google.maps.InfoWindow({
-    content: "<b>Universitas Bina Bangsa</b><br>Serang, Banten",
-  });
+  // Marker dengan popup + link ke Google Maps
+  const popupContent = `
+    <b>Universitas Bina Bangsa</b><br>
+    Serang, Banten<br>
+    <a href="https://www.google.com/maps?q=-6.1436,106.1639" target="_blank" class="text-blue-600 underline">
+      Buka di Google Maps
+    </a>
+  `;
 
-  marker.addListener("click", () => {
-    infoWindow.open(map, marker);
-  });
+  L.marker(unibaCoords).addTo(map).bindPopup(popupContent).openPopup();
 }
+
+// Jalankan saat halaman siap
+document.addEventListener("DOMContentLoaded", initMap);
+
+// Form handling
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("formMessage").textContent =
+    "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.";
+  this.reset();
+});
