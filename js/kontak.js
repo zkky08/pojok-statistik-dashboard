@@ -1,7 +1,6 @@
 // Inisialisasi Google Maps
 function initMap() {
   const unibaCoords = { lat: -6.120574570319566, lng: 106.19099966972281 };
-
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 16,
     center: unibaCoords,
@@ -23,13 +22,50 @@ function initMap() {
   infoWindow.open(map, marker);
 }
 
-// Form handling
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
-    document.getElementById("formMessage").textContent =
-      "Pesan berhasil dikirim! Kami akan segera menghubungi Anda.";
-    this.reset();
-  });
+// Form handling & validasi field spesifik
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const errorName = document.getElementById("errorName");
+  const errorEmail = document.getElementById("errorEmail");
+  const errorMessage = document.getElementById("errorMessage");
+  const formMessage = document.getElementById("formMessage");
+
+  // Reset error messages
+  errorName.textContent = "";
+  errorEmail.textContent = "";
+  errorMessage.textContent = "";
+  formMessage.textContent = "";
+
+  let isValid = true;
+  const emailPattern = /^\S+@\S+\.\S+$/;
+
+  if(!name) {
+    errorName.textContent = "Nama wajib diisi.";
+    isValid = false;
+  }
+  if(!email || !emailPattern.test(email)) {
+    errorEmail.textContent = "Email wajib diisi dengan format benar.";
+    isValid = false;
+  }
+  if(!message) {
+    errorMessage.textContent = "Pesan wajib diisi.";
+    isValid = false;
+  }
+
+  if(!isValid) return;
+
+  // Draft WhatsApp
+  const waNumber = "6281234567890"; // ganti nomor Pa Ibenk
+  const text = `Halo Pa Ibenk,%0A%0ANama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APesan: ${encodeURIComponent(message)}`;
+  window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
+
+  formMessage.textContent = "Draft pesan terbuka di WhatsApp. Silakan klik kirim.";
+  formMessage.style.color = "green";
+
+  this.reset();
 });
