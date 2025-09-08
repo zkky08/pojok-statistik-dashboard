@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak Kami</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="/css/kontak.css">
 
-  <!-- Leaflet CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
-  <!-- Font Awesome (Free CDN) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Font Awesome (Free CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
-  <!-- Hero -->
-  <section class="bg-blue-900 text-white text-center py-12" data-aos="fade-down">
-    <h1 class="text-4xl font-bold mb-2">Kontak Kami</h1>
-    <p class="text-lg">Hubungi kami untuk informasi lebih lanjut</p>
-  </section>
+    <!-- Hero -->
+    <section class="bg-blue-900 text-white text-center py-12" data-aos="fade-down">
+        <h1 class="text-4xl font-bold mb-2">Kontak Kami</h1>
+        <p class="text-lg">Hubungi kami untuk informasi lebih lanjut</p>
+    </section>
 
-  <!-- Map Section -->
-  <section class="py-10 text-center" data-aos="fade-up">
-    <h2 class="text-2xl font-bold mb-4">📍 Lokasi Kami</h2>
-    <div id="map" class="w-[90%] md:w-[80%] h-[400px] mx-auto rounded-xl shadow-lg"></div>
-  </section>
+    <!-- Map Section -->
+    <section class="py-10 text-center" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-4">📍 Lokasi Kami</h2>
+        <div id="map" class="w-[90%] md:w-[80%] h-[400px] mx-auto rounded-xl shadow-lg"></div>
+    </section>
 
-  <!-- Kontak & Form -->
-  <section class="grid md:grid-cols-2 gap-8 px-6 md:px-16 py-12">
-    <!-- Info -->
-    <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-right">
-      <h3 class="text-xl font-semibold text-blue-900 mb-6">Informasi Kontak</h3>
+    <!-- Kontak & Form -->
+    <section class="grid md:grid-cols-2 gap-8 px-6 md:px-16 py-12">
+        <!-- Info -->
+        <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-right">
+        <h3 class="text-xl font-semibold text-blue-900 mb-6">Informasi Kontak</h3>
 
-      <p class="flex items-start gap-3 mb-4">
-        <i class="fa-solid fa-location-dot text-blue-900 mt-1"></i>
-        <span><strong>Alamat:</strong><br> Jl. Raya Serang – Jakarta KM. 03 No. 1B, Panancangan, Kota Serang, Banten</span>
-      </p>
+        <p class="flex items-start gap-3 mb-4">
+            <i class="fa-solid fa-location-dot text-blue-900 mt-1"></i>
+            <span><strong>Alamat:</strong><br> Jl. Raya Serang – Jakarta KM. 03 No. 1B, Panancangan, Kota Serang, Banten</span>
+        </p>
 
-      <p class="flex items-start gap-3 mb-4">
-        <i class="fa-solid fa-phone text-blue-900 mt-1"></i>
-        <span><strong>Telepon:</strong><br> +62 877-4111-1144</span>
-      </p>
+        <p class="flex items-start gap-3 mb-4">
+            <i class="fa-solid fa-phone text-blue-900 mt-1"></i>
+            <span><strong>Telepon:</strong><br> +62 877-4111-1144</span>
+        </p>
 
-      <p class="flex items-start gap-3 mb-6">
-        <i class="fa-solid fa-envelope text-blue-900 mt-1"></i>
-        <span><strong>Email:</strong><br> bps3600@bps.go.id</span>
-      </p>
+        <p class="flex items-start gap-3 mb-6">
+            <i class="fa-solid fa-envelope text-blue-900 mt-1"></i>
+            <span><strong>Email:</strong><br> bps3600@bps.go.id</span>
+        </p>
 
-      <div class="mt-4 flex flex-col gap-3 text-lg">
-        <a href="https://x.com/bps_banten" target="_blank" class="flex items-center gap-2 text-blue-500 hover:underline">
-          <i class="fa-brands fa-twitter"></i> Twitter
-        </a>
-        <a href="https://www.instagram.com/bps_banten" target="_blank" class="flex items-center gap-2 text-pink-500 hover:underline">
-          <i class="fa-brands fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" class="flex items-center gap-2 text-red-600 hover:underline">
-          <i class="fa-brands fa-youtube"></i> YouTube
-        </a>
-      </div>
-    </div>
+        <div class="mt-4 flex flex-col gap-3 text-lg">
+            <a href="https://x.com/bps_banten" target="_blank" class="flex items-center gap-2 text-blue-500 hover:underline">
+            <i class="fa-brands fa-twitter"></i> Twitter
+            </a>
+            <a href="https://www.instagram.com/bps_banten" target="_blank" class="flex items-center gap-2 text-pink-500 hover:underline">
+            <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" class="flex items-center gap-2 text-red-600 hover:underline">
+            <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
+        </div>
+        </div>
 
-    <!-- Form -->
-    <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-left">
-      <h3 class="text-xl font-semibold text-blue-900 mb-4">Kirim Pesan</h3>
-      <form id="contactForm" class="flex flex-col gap-4">
-        <input type="text" id="name" placeholder="Nama Anda" required
-          class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <input type="email" id="email" placeholder="Email Anda" required
-          class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <textarea id="message" placeholder="Pesan Anda..." required
-          class="p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-        <button type="submit"
-          class="bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">
-          Kirim
-        </button>
-      </form>
-      <p id="formMessage" class="text-green-600 text-sm mt-3"></p>
-    </div>
-  </section>
+        <!-- Form -->
+        <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-left">
+        <h3 class="text-xl font-semibold text-blue-900 mb-4">Kirim Pesan</h3>
+        <form id="contactForm" class="flex flex-col gap-4">
+            <input type="text" id="name" placeholder="Nama Anda" required
+            class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <input type="email" id="email" placeholder="Email Anda" required
+            class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <textarea id="message" placeholder="Pesan Anda..." required
+            class="p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <button type="submit"
+            class="bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">
+            Kirim
+            </button>
+        </form>
+        <p id="formMessage" class="text-green-600 text-sm mt-3"></p>
+        </div>
+    </section>
 
-  <!-- Leaflet JS -->
-  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // durasi animasi (ms)
-      once: true     // hanya jalan sekali
-    });
-  </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 800, // durasi animasi (ms)
+        once: true     // hanya jalan sekali
+        });
+    </script>
 
-  <script src="kontak.js"></script>
+    <script src="/js/kontak.js"></script>
 </body>
 </html>
