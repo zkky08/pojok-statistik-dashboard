@@ -278,106 +278,98 @@
 
 
   <!-- Kontak -->
-  <!-- Kontak di bawah halaman index -->
   <section 
-    id="kontak-index"
+    id="kontak"
     class="relative py-20 contact-section bg-cover bg-center" 
     style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
 
     <!-- Overlay biru -->
     <div class="absolute inset-0 bg-blue-900 bg-opacity-40 pointer-events-none"></div>
 
-    <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 items-start">
-
-      <!-- Info Kontak (Kiri) -->
-      <div data-aos="fade-right" class="flex flex-col justify-center text-white">
-        <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
-        <p class="mb-6 text-gray-200">
-          Butuh bantuan atau informasi lebih lanjut? Tim kami siap membantu Anda kapan saja.
+      <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 items-start">
+      
+      <!-- Info Kontak Singkat -->
+      <div class="flex flex-col gap-4" data-aos="fade-right">
+        <h2 class="text-3xl font-bold mb-4 text-white">Butuh Konsultasi?</h2>
+        <p class="text-gray-200 mb-4">
+          Hubungi kami untuk informasi lebih lanjut atau bantuan dalam mengakses data sektoral.
         </p>
 
-        <!-- Kontak Utama -->
-        <div class="flex flex-col gap-3 text-gray-200">
-          <a href="https://maps.google.com?q=JL+Raya+Serang+Jakarta+KM+03+No+1B+Serang+Banten"
-            target="_blank"
-            class="flex items-center gap-3 hover:text-yellow-400 transition">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>JL Raya Serang – Jakarta, KM. 03 No. 1B, Panancangan, Kec. Cipocok Jaya, Kota Serang, Banten 42124</span>
-          </a>
-          <a href="https://wa.me/6287741111144"
-            target="_blank"
-            class="flex items-center gap-3 hover:text-yellow-400 transition">
-            <i class="fab fa-whatsapp"></i>
-            <span>+62 877-4111-1144</span>
-          </a>
-          <a href="mailto:bps3600@bps.go.id"
-            class="flex items-center gap-3 hover:text-yellow-400 transition">
-            <i class="fas fa-envelope"></i>
-            <span>bps3600@bps.go.id</span>
-          </a>
+        <div class="flex flex-col gap-2 text-gray-200">
+          <p class="flex items-start gap-2">
+            <i class="fas fa-map-marker-alt mt-1"></i>
+            Jl. Raya Serang – Jakarta KM. 03 No. 1B, Panancangan, Kota Serang, Banten
+          </p>
+          <p class="flex items-start gap-2">
+            <i class="fas fa-phone mt-1"></i>
+            +62 877-4111-1144
+          </p>
+          <p class="flex items-start gap-2">
+            <i class="fas fa-envelope mt-1"></i>
+            bps3600@bps.go.id
+          </p>
         </div>
 
         <!-- Sosial Media -->
-        <div class="flex flex-col gap-3 mt-6">
-          <a href="https://x.com/bps_banten" target="_blank" 
-            class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+        <div class="flex gap-4 mt-4 text-lg text-white">
+          <a href="https://x.com/bps_banten" target="_blank" class="hover:text-yellow-400 transition">
             <i class="fab fa-x-twitter"></i>
-            <span>@bps_banten</span>
           </a>
-          <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" 
-            class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+          <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" class="hover:text-yellow-400 transition">
             <i class="fab fa-youtube"></i>
-            <span>BPS Provinsi Banten</span>
           </a>
-          <a href="https://www.instagram.com/bps_banten" target="_blank" 
-            class="flex items-center gap-2 text-gray-200 hover:text-yellow-400 transition">
+          <a href="https://www.instagram.com/bps_banten" target="_blank" class="hover:text-yellow-400 transition">
             <i class="fab fa-instagram"></i>
-            <span>@bps_banten</span>
           </a>
         </div>
+
+        <!-- Tombol ke halaman kontak -->
+        <a href="kontak.html" class="mt-4 inline-block bg-yellow-400 text-blue-900 font-semibold py-2 px-4 rounded hover:bg-yellow-300 transition">
+          Selengkapnya →
+        </a>
       </div>
 
-      <!-- Form (Kanan) -->
+      <!-- FAQ (Kanan) -->
       <div data-aos="fade-left" class="bg-white text-gray-900 p-8 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-4">Kirim Pertanyaan Anda</h3>
+        <h3 class="text-xl font-semibold mb-4">FAQ</h3>
         
-        <form id="contactFormIndex" novalidate>
-          <div class="mb-4">
-            <input 
-              type="email" 
-              id="userEmailIndex"
-              placeholder="Masukan email Anda" 
-              required
-              class="w-full border p-3 rounded 
-                    focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-            <p id="emailErrorIndex" class="text-red-600 text-sm mt-1 hidden"></p>
+        <div class="space-y-2">
+          <!-- FAQ Item 1 -->
+          <div class="border-b border-gray-200">
+            <button type="button" class="w-full text-left py-3 flex justify-between items-center faq-btn">
+              Bagaimana cara mengakses data sektoral terbaru?
+              <span class="transition-transform duration-300 transform">+</span>
+            </button>
+            <p class="faq-content hidden text-gray-700 py-2">
+              Anda dapat mengakses melalui Dashboard Statistik Sektoral Terintegrasi di halaman utama atau melalui menu layanan Infografis dan Statistik Sektoral.
+            </p>
           </div>
-          
-          <div class="mb-4">
-            <textarea 
-              id="userQuestionIndex"
-              placeholder="Pertanyaan Anda.." 
-              required
-              class="w-full border p-3 rounded h-28 
-                    focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-            <p id="questionErrorIndex" class="text-red-600 text-sm mt-1 hidden"></p>
+          <!-- FAQ Item 2 -->
+          <div class="border-b border-gray-200">
+            <button type="button" class="w-full text-left py-3 flex justify-between items-center faq-btn">
+              Apakah saya bisa meminta data tertentu secara khusus?
+              <span class="transition-transform duration-300 transform">+</span>
+            </button>
+            <p class="faq-content hidden text-gray-700 py-2">
+              Ya, silakan hubungi kami melalui email atau WhatsApp, tim kami akan membantu menyediakan data yang Anda butuhkan.
+            </p>
           </div>
-          
-          <button 
-            type="submit"
-            class="w-full bg-blue-900 text-white py-3 rounded-lg 
-                  hover:bg-blue-800 transition transform 
-                  hover:-translate-y-1 hover:shadow-lg">
-            Kirim
-          </button>
-        </form>
+          <!-- FAQ Item 3 -->
+          <div class="border-b border-gray-200">
+            <button type="button" class="w-full text-left py-3 flex justify-between items-center faq-btn">
+              Apakah data dapat digunakan untuk penelitian?
+              <span class="transition-transform duration-300 transform">+</span>
+            </button>
+            <p class="faq-content hidden text-gray-700 py-2">
+              Semua data yang tersedia dapat digunakan untuk penelitian, analisis, atau publikasi dengan menyertakan sumber dari BPS Provinsi Banten.
+            </p>
+          </div>
+        </div>
       </div>
-
     </div>
   </section>
 
-  
-  
+
   <!-- Tombol Back to Top -->
   <button id="backToTopBtn" class="back-to-top">
   <i class="fas fa-chevron-up"></i>

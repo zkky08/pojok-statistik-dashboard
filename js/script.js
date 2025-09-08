@@ -162,3 +162,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+// =============================
+
+// Accordion FAQ
+const faqButtons = document.querySelectorAll(".faq-btn");
+faqButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const content = btn.nextElementSibling;
+    const icon = btn.querySelector("span");
+    content.classList.toggle("hidden");
+    icon.textContent = content.classList.contains("hidden") ? "+" : "-";
+  });
+});
