@@ -22,7 +22,7 @@ function initMap() {
   infoWindow.open(map, marker);
 }
 
-// Form handling & validasi field spesifik
+// Form handling & validasi field
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -60,8 +60,8 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   if(!isValid) return;
 
   // Draft WhatsApp
-  const waNumber = "6281234567890"; // ganti nomor Pa Ibenk
-  const text = `Halo Pa Ibenk,%0A%0ANama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APesan: ${encodeURIComponent(message)}`;
+  const waNumber = "6285715190363"; // ganti nomor Pa Ibenk
+  const text = `Halo Bapak/Ibu,%0A%0ANama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APesan: ${encodeURIComponent(message)}`;
   window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
 
   formMessage.textContent = "Draft pesan terbuka di WhatsApp. Silakan klik kirim.";

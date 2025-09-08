@@ -49,6 +49,7 @@
         <span><strong>Email:</strong><br> bps3600@bps.go.id</span>
       </p>
 
+      <!-- Sosial Media -->
       <div class="mt-4 flex flex-col gap-3 text-lg">
         <a href="https://x.com/bps_banten" target="_blank" class="flex items-center gap-2 text-blue-500 hover:underline">
           <i class="fa-brands fa-twitter"></i> Twitter
@@ -66,9 +67,18 @@
     <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-left">
       <h3 class="text-xl font-semibold text-blue-900 mb-4">Kirim Pesan</h3>
       <form id="contactForm" class="flex flex-col gap-4">
-        <input type="text" id="name" placeholder="Nama Anda" required class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <input type="email" id="email" placeholder="Email Anda" required class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-        <textarea id="message" placeholder="Pesan Anda..." required class="p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        <div>
+          <input type="text" id="name" placeholder="Nama Anda" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <p id="errorName" class="text-red-500 text-sm mt-1"></p>
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Email Anda" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <p id="errorEmail" class="text-red-500 text-sm mt-1"></p>
+        </div>
+        <div>
+          <textarea id="message" placeholder="Pesan Anda..." class="p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <p id="errorMessage" class="text-red-500 text-sm mt-1"></p>
+        </div>
         <button type="submit" class="bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">
           Kirim
         </button>
