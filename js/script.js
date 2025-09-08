@@ -113,54 +113,52 @@ backToTopBtn.addEventListener("click", () => {
 });
 
 // =============================
-// Form Kontak - Email Otomatis
+// Form Kontak Index - Email Otomatis
 // =============================
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("contactForm");
-  const userEmail = document.getElementById("userEmail");
-  const userQuestion = document.getElementById("userQuestion");
-  const emailError = document.getElementById("emailError");
-  const questionError = document.getElementById("questionError");
+  const formIndex = document.getElementById("contactFormIndex");
+  if (formIndex) {
+    const userEmailIndex = document.getElementById("userEmailIndex");
+    const userQuestionIndex = document.getElementById("userQuestionIndex");
+    const emailErrorIndex = document.getElementById("emailErrorIndex");
+    const questionErrorIndex = document.getElementById("questionErrorIndex");
 
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-    let isValid = true;
+    formIndex.addEventListener("submit", function(e) {
+      e.preventDefault();
+      let isValid = true;
 
-    // Reset error
-    emailError.textContent = "";
-    emailError.classList.add("hidden");
-    userEmail.classList.remove("border-red-600");
+      emailErrorIndex.textContent = "";
+      emailErrorIndex.classList.add("hidden");
+      userEmailIndex.classList.remove("border-red-600");
 
-    questionError.textContent = "";
-    questionError.classList.add("hidden");
-    userQuestion.classList.remove("border-red-600");
+      questionErrorIndex.textContent = "";
+      questionErrorIndex.classList.add("hidden");
+      userQuestionIndex.classList.remove("border-red-600");
 
-    // Validasi email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(userEmail.value.trim())) {
-      emailError.textContent = "Masukkan alamat email yang valid!";
-      emailError.classList.remove("hidden");
-      userEmail.classList.add("border-red-600");
-      isValid = false;
-    }
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(userEmailIndex.value.trim())) {
+        emailErrorIndex.textContent = "Masukkan alamat email yang valid!";
+        emailErrorIndex.classList.remove("hidden");
+        userEmailIndex.classList.add("border-red-600");
+        isValid = false;
+      }
 
-    // Validasi pertanyaan
-    if (userQuestion.value.trim() === "") {
-      questionError.textContent = "Pertanyaan tidak boleh kosong!";
-      questionError.classList.remove("hidden");
-      userQuestion.classList.add("border-red-600");
-      isValid = false;
-    }
+      if (userQuestionIndex.value.trim() === "") {
+        questionErrorIndex.textContent = "Pertanyaan tidak boleh kosong!";
+        questionErrorIndex.classList.remove("hidden");
+        userQuestionIndex.classList.add("border-red-600");
+        isValid = false;
+      }
 
-    if (!isValid) return;
+      if (!isValid) return;
 
-    // Kalau valid → buka email client
-    const emailTujuan = "bps3600@bps.go.id ";
-    const subject = encodeURIComponent(userQuestion.value.trim());
-    const body = encodeURIComponent(
-      "Email: " + userEmail.value.trim() + "\n\nPertanyaan:\n" + userQuestion.value.trim()
-    );
+      const emailTujuan = "bps3600@bps.go.id";
+      const subject = encodeURIComponent(userQuestionIndex.value.trim());
+      const body = encodeURIComponent(
+        "Email: " + userEmailIndex.value.trim() + "\n\nPertanyaan:\n" + userQuestionIndex.value.trim()
+      );
 
-    window.location.href = `mailto:${emailTujuan}?subject=${subject}&body=${body}`;
-  });
+      window.location.href = `mailto:${emailTujuan}?subject=${subject}&body=${body}`;
+    });
+  }
 });

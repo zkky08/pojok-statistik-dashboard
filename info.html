@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Info Terbaru</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="css/info.css">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Terbaru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/info.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-900">
 
@@ -27,14 +30,14 @@
             <li><a href="index.html" class="nav-link">Beranda</a></li>
             <li><a href="infografis.html" class="nav-link">Infografis</a></li>
             <li><a href="#info-terbaru" class="nav-link">Info terbaru</a></li>
-            <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            <li><a href="kontak.html" class="nav-link">Kontak</a></li>
             </ul>
         </nav>
         </div>
     </header>
 
     <!-- Hero -->
-    <section id="infografis" class="bg-blue-800 text-white py-16 text-center">
+    <section id="infografis" class="bg-blue-800 text-white py-16 text-center" data-aos="fade-down">
         <h1 class="text-3xl font-bold mb-3">Info Terbaru</h1>
         <p class="text-gray-200">Berita, laporan, dan insight terbaru mengenai data sektoral dan layanan yang kami sediakan. Selalu up-to-date untuk Anda.</p>
     </section>
@@ -132,6 +135,12 @@
     <footer class="bg-blue-900 text-white py-6 text-center text-sm">
         <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
     </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
 
     <script src="js/info.js"></script>
 </body>

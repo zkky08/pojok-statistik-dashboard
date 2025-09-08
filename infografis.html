@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Infografis - BPS Banten</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/css/infografis.css">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infografis - BPS Banten</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/infografis.css">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
 
@@ -25,14 +29,14 @@
                 <li><a href="index.html" class="nav-link">Beranda</a></li>
                 <li><a href="#infografis" class="nav-link">Infografis</a></li>
                 <li><a href="info.html" class="nav-link">Info terbaru</a></li>
-                <li><a href="#kontak" class="nav-link">Kontak</a></li>
+                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Hero -->
-    <section id="infografis" class="bg-blue-800 text-white py-16 text-center">
+    <section id="infografis" class="bg-blue-800 text-white py-16 text-center" data-aos="fade-down">
         <h1 class="text-3xl font-bold mb-3">Infografis Statistik</h1>
         <p class="text-gray-200">Kumpulan visualisasi data terbaru yang memudahkan Anda memahami informasi dengan cepat dan menarik.</p>
     </section>
@@ -93,7 +97,7 @@
     </section>
 
 
-  <!-- Halaman Detail Infografis -->
+<!-- Halaman Detail Infografis -->
     <section id="detailSection" class="max-w-4xl mx-auto px-6 py-12 hidden">
     
     <!-- Gambar Infografis -->
@@ -118,29 +122,35 @@
 
     <!-- Navigasi -->
     <div class="max-w-md mx-auto mt-8 flex justify-between items-center space-x-4">
-      <button id="prevBtn" class="btn-nav flex-1">← Sebelumnya</button>
-      <a href="infografis.html" class="btn-nav flex-1">Kembali</a>
-      <button id="nextBtn" class="btn-nav flex-1">
+    <button id="prevBtn" class="btn-nav flex-1">← Sebelumnya</button>
+    <a href="infografis.html" class="btn-nav flex-1">Kembali</a>
+    <button id="nextBtn" class="btn-nav flex-1">
         <span class="arrow">→</span>
         <span class="text">Berikutnya</span>
-      </button>
+    </button>
     </div>
     </section>
 
 
-  <!-- Tombol Back to Top -->
-  <button id="backToTop" 
-    class="hidden fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-yellow-400 transition">
-    ▲
-  </button>
+    <!-- Tombol Back to Top -->
+    <button id="backToTop" 
+        class="hidden fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 flex items-center justify-center rounded-full shadow-lg hover:bg-yellow-400 transition">
+        ▲
+    </button>
 
-  <!-- Footer -->
-  <footer class="bg-blue-900 text-white py-6 mt-10">
-    <div class="max-w-7xl mx-auto text-center text-sm">
-      Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 mt-10">
+        <div class="max-w-7xl mx-auto text-center text-sm">
+        Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.
+        </div>
+    </footer>
 
-  <script src="/js/infografis.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
+    <script src="/js/infografis.js"></script>
 </body>
 </html>

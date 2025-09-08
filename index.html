@@ -278,8 +278,9 @@
 
 
   <!-- Kontak -->
+  <!-- Kontak di bawah halaman index -->
   <section 
-    id="kontak"
+    id="kontak-index"
     class="relative py-20 contact-section bg-cover bg-center" 
     style="background-image: url('/assets/background/foto-bps-pempro-banten-1024x750.jpg');">
 
@@ -287,13 +288,12 @@
     <div class="absolute inset-0 bg-blue-900 bg-opacity-40 pointer-events-none"></div>
 
     <div class="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 items-start">
-      
+
       <!-- Info Kontak (Kiri) -->
       <div data-aos="fade-right" class="flex flex-col justify-center text-white">
-        <h2 class="text-3xl font-bold mb-4">Butuh Konsultasi..?</h2>
+        <h2 class="text-3xl font-bold mb-4">Hubungi Kami</h2>
         <p class="mb-6 text-gray-200">
-          Butuh informasi lebih lanjut atau bantuan dalam mengakses data sektoral? <br>
-          Tim kami siap membantu kapan saja.
+          Butuh bantuan atau informasi lebih lanjut? Tim kami siap membantu Anda kapan saja.
         </p>
 
         <!-- Kontak Utama -->
@@ -339,28 +339,28 @@
 
       <!-- Form (Kanan) -->
       <div data-aos="fade-left" class="bg-white text-gray-900 p-8 rounded-xl shadow-lg">
-        <h3 class="text-xl font-semibold mb-4">Ada pertanyaan..?</h3>
+        <h3 class="text-xl font-semibold mb-4">Kirim Pertanyaan Anda</h3>
         
-        <form id="contactForm" novalidate>
+        <form id="contactFormIndex" novalidate>
           <div class="mb-4">
             <input 
               type="email" 
-              id="userEmail"
-              placeholder="Masukan email anda" 
+              id="userEmailIndex"
+              placeholder="Masukan email Anda" 
               required
               class="w-full border p-3 rounded 
                     focus:outline-none focus:ring-2 focus:ring-blue-500"/>
-            <p id="emailError" class="text-red-600 text-sm mt-1 hidden"></p>
+            <p id="emailErrorIndex" class="text-red-600 text-sm mt-1 hidden"></p>
           </div>
           
           <div class="mb-4">
             <textarea 
-              id="userQuestion"
+              id="userQuestionIndex"
               placeholder="Pertanyaan Anda.." 
               required
               class="w-full border p-3 rounded h-28 
                     focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-            <p id="questionError" class="text-red-600 text-sm mt-1 hidden"></p>
+            <p id="questionErrorIndex" class="text-red-600 text-sm mt-1 hidden"></p>
           </div>
           
           <button 
@@ -372,8 +372,10 @@
           </button>
         </form>
       </div>
+
     </div>
   </section>
+
   
   
   <!-- Tombol Back to Top -->

@@ -1,105 +1,133 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kontak Kami</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Kontak Kami</title>
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/kontak.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/kontak.css">
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
 
-  <!-- Hero -->
-  <section class="bg-blue-900 text-white text-center py-12" data-aos="fade-down">
-    <h1 class="text-4xl font-bold mb-2">Kontak Kami</h1>
-    <p class="text-lg">Hubungi kami untuk informasi lebih lanjut</p>
-  </section>
-
-  <!-- Map Section -->
-  <section class="py-10 text-center" data-aos="fade-up">
-    <h2 class="text-2xl font-bold mb-4">📍 Lokasi Kami</h2>
-    <div id="map" class="w-[90%] md:w-[80%] h-[400px] mx-auto rounded-xl shadow-lg"></div>
-  </section>
-
-  <!-- Kontak & Form -->
-  <section class="grid md:grid-cols-2 gap-8 px-6 md:px-16 py-12">
-    <!-- Info -->
-    <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-right">
-      <h3 class="text-xl font-semibold text-blue-900 mb-6">Informasi Kontak</h3>
-      <p class="flex items-start gap-3 mb-4">
-        <i class="fa-solid fa-location-dot text-blue-900 mt-1"></i>
-        <span><strong>Alamat:</strong><br> Jl. Raya Serang – Jakarta KM. 03 No. 1B, Panancangan, Kota Serang, Banten</span>
-      </p>
-      <p class="flex items-start gap-3 mb-4">
-        <i class="fa-solid fa-phone text-blue-900 mt-1"></i>
-        <span><strong>Telepon:</strong><br> +62 877-4111-1144</span>
-      </p>
-      <p class="flex items-start gap-3 mb-6">
-        <i class="fa-solid fa-envelope text-blue-900 mt-1"></i>
-        <span><strong>Email:</strong><br> bps3600@bps.go.id</span>
-      </p>
-
-      <!-- Sosial Media -->
-      <div class="mt-4 flex flex-col gap-3 text-lg">
-        <a href="https://x.com/bps_banten" target="_blank" class="flex items-center gap-2 text-blue-500 hover:underline">
-          <i class="fa-brands fa-twitter"></i> Twitter
-        </a>
-        <a href="https://www.instagram.com/bps_banten" target="_blank" class="flex items-center gap-2 text-pink-500 hover:underline">
-          <i class="fa-brands fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" class="flex items-center gap-2 text-red-600 hover:underline">
-          <i class="fa-brands fa-youtube"></i> YouTube
-        </a>
-      </div>
-    </div>
-
-    <!-- Form -->
-    <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-left">
-      <h3 class="text-xl font-semibold text-blue-900 mb-4">Kirim Pesan</h3>
-      <form id="contactForm" class="flex flex-col gap-4">
-        <div>
-          <input type="text" id="name" placeholder="Nama Anda" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <p id="errorName" class="text-red-500 text-sm mt-1"></p>
+    <!-- Navbar -->
+    <header class="bg-blue-900 text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+            <a href="index.html">
+            <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" id="logoReload" class="h-10">
+            </a>
+            <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
         </div>
-        <div>
-          <input type="email" id="email" placeholder="Email Anda" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-          <p id="errorEmail" class="text-red-500 text-sm mt-1"></p>
+
+        <!-- Nav Links -->
+        <nav>
+            <ul class="hidden md:flex gap-6 text-sm font-semibold">
+            <li><a href="index.html" class="nav-link">Beranda</a></li>
+            <li><a href="infografis.html" class="nav-link">Infografis</a></li>
+            <li><a href="info.html" class="nav-link">Info terbaru</a></li>
+            <li><a href="#kontak" class="nav-link">Kontak</a></li>
+            </ul>
+        </nav>
         </div>
-        <div>
-          <textarea id="message" placeholder="Pesan Anda..." class="p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-          <p id="errorMessage" class="text-red-500 text-sm mt-1"></p>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-blue-800 text-white text-center py-12" data-aos="fade-down">
+        <h1 class="text-4xl font-bold mb-2">Kontak Kami</h1>
+        <p class="text-lg">Hubungi kami untuk informasi lebih lanjut</p>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-10 text-center" data-aos="fade-up">
+        <h2 class="text-2xl font-bold mb-4">📍 Lokasi Kami</h2>
+        <div id="map" class="w-[90%] md:w-[80%] h-[400px] mx-auto rounded-xl shadow-lg"></div>
+    </section>
+
+    <!-- Kontak & Form -->
+    <section class="grid md:grid-cols-2 gap-8 px-6 md:px-16 py-12">
+        <!-- Info -->
+        <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-right">
+        <h3 class="text-xl font-semibold text-blue-900 mb-6">Informasi Kontak</h3>
+        <p class="flex items-start gap-3 mb-4">
+            <i class="fa-solid fa-location-dot text-blue-900 mt-1"></i>
+            <span><strong>Alamat:</strong><br> Jl. Raya Serang – Jakarta KM. 03 No. 1B, Panancangan, Kota Serang, Banten</span>
+        </p>
+        <p class="flex items-start gap-3 mb-4">
+            <i class="fa-solid fa-phone text-blue-900 mt-1"></i>
+            <span><strong>Telepon:</strong><br> +62 877-4111-1144</span>
+        </p>
+        <p class="flex items-start gap-3 mb-6">
+            <i class="fa-solid fa-envelope text-blue-900 mt-1"></i>
+            <span><strong>Email:</strong><br> bps3600@bps.go.id</span>
+        </p>
+
+        <!-- Sosial Media -->
+        <div class="mt-4 flex flex-col gap-3 text-lg">
+            <a href="https://x.com/bps_banten" target="_blank" class="flex items-center gap-2 text-blue-500 hover:underline">
+            <i class="fa-brands fa-twitter"></i> Twitter
+            </a>
+            <a href="https://www.instagram.com/bps_banten" target="_blank" class="flex items-center gap-2 text-pink-500 hover:underline">
+            <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.youtube.com/@BPSProvinsiBanten36" target="_blank" class="flex items-center gap-2 text-red-600 hover:underline">
+            <i class="fa-brands fa-youtube"></i> YouTube
+            </a>
         </div>
-        <button type="submit" class="bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">
-          Kirim
-        </button>
-      </form>
-      <p id="formMessage" class="text-sm mt-3"></p>
-    </div>
-  </section>
+        </div>
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, once: true });
-  </script>
+        <!-- Form -->
+        <div class="bg-white rounded-xl shadow-md p-8 transform transition-transform duration-300 hover:shadow-xl hover:-translate-y-1" data-aos="fade-left">
+        <h3 class="text-xl font-semibold text-blue-900 mb-4">Kirim Pesan</h3>
+        <form id="contactForm" class="flex flex-col gap-4">
+            <div>
+            <input type="text" id="name" placeholder="Nama Anda" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p id="errorName" class="text-red-500 text-sm mt-1"></p>
+            </div>
+            <div>
+            <input type="email" id="email" placeholder="Email Anda" class="p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <p id="errorEmail" class="text-red-500 text-sm mt-1"></p>
+            </div>
+            <div>
+            <textarea id="message" placeholder="Pesan Anda..." class="p-3 border rounded-lg h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+            <p id="errorMessage" class="text-red-500 text-sm mt-1"></p>
+            </div>
+            <button type="submit" class="bg-blue-900 text-white py-3 rounded-lg hover:bg-blue-800 transition">
+            Kirim
+            </button>
+        </form>
+        <p id="formMessage" class="text-sm mt-3"></p>
+        </div>
+    </section>
 
-  <!-- Custom JS -->
-  <script src="js/kontak.js"></script>
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+        <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+    </footer>
 
-  <!-- Google Maps API -->
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnYEfH3d8yjYx6FMM3VZniuOtAdoKEock&callback=initMap">
-  </script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/kontak.js"></script>
+
+    <!-- Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnYEfH3d8yjYx6FMM3VZniuOtAdoKEock&callback=initMap">
+    </script>
 
 </body>
 </html>
