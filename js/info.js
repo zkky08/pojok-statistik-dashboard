@@ -79,3 +79,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach(card => observer.observe(card));
 });
+
+
+// Navigasi Next/Prev
+document.getElementById("nextBtn").addEventListener("click", () => {
+    let nextIndex = (currentIndex + 1) % keysBerita.length;
+    renderBerita(nextIndex);
+});
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+    let prevIndex = (currentIndex - 1 + keysBerita.length) % keysBerita.length;
+    renderBerita(prevIndex);
+});
