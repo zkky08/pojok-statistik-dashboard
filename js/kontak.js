@@ -60,7 +60,7 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   if(!isValid) return;
 
   // Draft WhatsApp
-  const waNumber = "6285715190363"; // ganti nomor Pa Ibenk
+  const waNumber = "6287741111144"; // ganti nomor Pa Ibenk
   const text = `Halo Bapak/Ibu,%0A%0ANama: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APesan: ${encodeURIComponent(message)}`;
   window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
 
