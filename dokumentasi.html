@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dokumentasi Lapangan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/dokumentasi.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+<!-- Navbar -->
+<header class="bg-blue-900 text-white">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <div class="flex items-center gap-3">
+      <a href="index.html"><img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10"></a>
+      <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
+    </div>
+    <nav>
+      <ul class="hidden md:flex gap-6 text-sm font-semibold">
+        <li><a href="index.html" class="nav-link">Beranda</a></li>
+        <li><a href="infografis.html" class="nav-link">Infografis</a></li>
+        <li><a href="info.html" class="nav-link">Info Terbaru</a></li>
+        <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+        <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="bg-blue-800 text-white py-16 text-center" data-aos="fade-down">
+  <h1 class="text-3xl font-bold mb-3">Dokumentasi Lapangan</h1>
+  <p class="text-gray-200">Kumpulan foto kegiatan lapangan terbaru yang dilakukan oleh tim.</p>
+</section>
+
+<!-- Grid Dokumentasi -->
+<section id="dokumentasi" class="py-16 max-w-7xl mx-auto px-4">
+  <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Galeri Dokumentasi</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+</section>
+
+<!-- Detail Dokumentasi -->
+<section id="detailDokumentasi" class="max-w-4xl mx-auto px-6 py-12 hidden">
+  <div class="text-center mb-6">
+    <img id="detailImg" src="" alt="Detail Dokumentasi" class="mx-auto rounded-lg shadow-lg mb-4">
+  </div>
+  <h1 id="detailTitle" class="text-2xl font-bold mb-4 text-center"></h1>
+  <p id="detailDate" class="text-gray-500 mb-4 text-center"></p>
+  <p id="detailDesc" class="text-gray-700 mb-8 text-justify"></p>
+
+  <div class="max-w-md mx-auto mt-8 flex justify-between items-center space-x-4">
+    <button id="prevBtn" class="btn-nav flex-1">← Sebelumnya</button>
+    <a href="dokumentasi.html" class="btn-nav flex-1">Kembali</a>
+    <button id="nextBtn" class="btn-nav flex-1">
+      <span class="arrow">→</span>
+      <span class="text">Berikutnya</span>
+    </button>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-blue-900 text-white py-6 text-center text-sm">
+  <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+<script src="js/dokumentasi.js"></script>
+</body>
+</html>
