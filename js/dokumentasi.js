@@ -3,26 +3,32 @@ const fotoData = {
   foto1: { 
     title: "Survey Pertanian 2025", 
     desc: "Tim melakukan pendataan lapangan di wilayah Serang untuk survey pertanian musiman.",
-    img: "/assets/dokumentasi/pertanian1.jpg", 
+    img: "/assets/dokumentasi/eksotik_23_10_24_(1).jpeg", 
     date: "5 Maret 2025" 
   },
   foto2: { 
     title: "Sosialisasi Statistik Desa", 
     desc: "Sosialisasi pemanfaatan data statistik kepada masyarakat desa di Kabupaten Pandeglang.",
-    img: "/assets/dokumentasi/sosialisasi1.jpg", 
+    img: "/assets/dokumentasi/eksotik_10_12_24_(2).jpeg", 
     date: "10 Maret 2025" 
   },
   foto3: { 
     title: "Pelatihan Enumerator", 
     desc: "Enumerator mendapatkan pembekalan sebelum turun ke lapangan.",
-    img: "/assets/dokumentasi/pelatihan1.jpg", 
+    img: "/assets/dokumentasi/rapat_potik.jpeg", 
     date: "15 Maret 2025" 
   },
   foto4: { 
     title: "Pendataan Ekonomi", 
     desc: "Pendataan ekonomi dilakukan di pasar tradisional untuk mengumpulkan data harga kebutuhan pokok.",
-    img: "/assets/dokumentasi/ekonomi1.jpg", 
+    img: "/assets/dokumentasi/pembinaan_agen_11_24.jpeg", 
     date: "20 Maret 2025" 
+  },
+  foto5: { 
+    title: "Pendataan Ekonomi", 
+    desc: "Pendataan ekonomi dilakukan di pasar tradisional untuk mengumpulkan data harga kebutuhan pokok.",
+    img: "/assets/dokumentasi/pembinaan_agen_LayoutDesignPublikasi.jpeg", 
+    date: "25 Maret 2025" 
   }
 };
 
