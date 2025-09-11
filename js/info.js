@@ -3,46 +3,170 @@ const beritaData = {
   berita1: {
     title: "BPS Goes to School: Edukasi Pentingnya Data Kependudukan dan Lembaga Keuangan",
     date: "15 Mei 2025",
-    desc: "Program BPS Goes To School yang dilaksanakan oleh Badan Pusat Statistik (BPS) Provinsi Banten merupakan salah satu bentuk nyata dari upaya meningkatkan literasi statistik di kalangan generasi muda, khususnya pelajar sekolah menengah. Pada kesempatan ini, kegiatan dilaksanakan di BPK Penabur, SMAK Penabur Serang pada hari Kamis, 15 Mei 2025 pukul 13.00–16.00 WIB dengan mengangkat tema “Stop STECU (Stelan Cuek) terhadap Pentingnya Data Kependudukan dan Lembaga Keuangan.” Melalui kegiatan ini, BPS Provinsi Banten berfokus untuk menumbuhkan kesadaran dan pemahaman siswa mengenai pentingnya data kependudukan serta peran data lembaga keuangan dalam mendukung pembangunan nasional. Data statistik, yang sering kali dianggap abstrak, diperkenalkan dengan cara yang lebih komunikatif, interaktif, dan sesuai dengan konteks kehidupan sehari-hari pelajar. Dengan demikian, siswa diharapkan dapat lebih menghargai fungsi data sebagai dasar pengambilan keputusan yang berkualitas, baik di bidang pendidikan, sosial, maupun ekonomi. Selain itu, kegiatan ini menjadi bagian dari rangkaian program Eksposisi Statistik (EKSOTIK) dan Pojok Statistik yang diinisiasi BPS. Melalui kedua program tersebut, BPS tidak hanya menyampaikan informasi mengenai data, tetapi juga mengajak generasi muda untuk aktif berdiskusi, bertanya, dan memahami proses penyusunan data statistik hingga manfaatnya dalam kehidupan masyarakat. Hal ini juga sejalan dengan visi BPS dalam membangun budaya melek data (data literacy) menjelang pelaksanaan Sensus Ekonomi 2026, yang membutuhkan partisipasi aktif seluruh lapisan masyarakat, termasuk para pelajar sebagai generasi penerus bangsa. Dokumentasi kegiatan ini memperlihatkan sinergi antara BPS Provinsi Banten dengan pihak sekolah dalam menciptakan suasana pembelajaran yang dinamis, inspiratif, dan sarat akan nilai edukasi. Kehadiran para pegawai BPS di sekolah juga menunjukkan komitmen lembaga untuk terus mendekatkan statistik kepada masyarakat luas, khususnya generasi muda, sehingga data tidak hanya menjadi angka-angka semata, melainkan informasi yang bermakna, relevan, dan bermanfaat dalam kehidupan sehari-hari.",
+    desc: `
+      <p>Program <strong>BPS Goes To School</strong> yang dilaksanakan oleh 
+      <strong>Badan Pusat Statistik (BPS) Provinsi Banten</strong> merupakan salah satu bentuk nyata 
+      dari upaya meningkatkan literasi statistik di kalangan generasi muda.</p>
+
+      <p>Kegiatan dilaksanakan di <em>BPK Penabur, SMAK Penabur Serang</em> pada 
+      <strong>Kamis, 15 Mei 2025</strong> pukul 13.00–16.00 WIB dengan tema: 
+      <strong>“Stop STECU (Stelan Cuek) terhadap Pentingnya Data Kependudukan dan Lembaga Keuangan.”</strong></p>
+
+      <p>Tujuan kegiatan ini antara lain:</p>
+      <ul class="list-disc pl-6">
+        <li>Menumbuhkan kesadaran siswa mengenai pentingnya data kependudukan.</li>
+        <li>Memahami peran data lembaga keuangan dalam pembangunan nasional.</li>
+        <li>Mengenalkan data dengan cara <em>komunikatif</em>, interaktif, dan kontekstual.</li>
+      </ul>
+
+      <p>Kegiatan ini juga bagian dari program <em>Eksposisi Statistik (EKSOTIK)</em> dan 
+      <em>Pojok Statistik</em>. BPS mendorong generasi muda untuk:</p>
+      <ul class="list-disc pl-6">
+        <li>Aktif berdiskusi dan bertanya.</li>
+        <li>Memahami proses penyusunan data statistik.</li>
+        <li>Mengetahui manfaat data dalam kehidupan masyarakat.</li>
+      </ul>
+
+      <p>Hal ini sejalan dengan visi membangun budaya <strong>melek data (data literacy)</strong> 
+      menjelang <strong>Sensus Ekonomi 2026</strong>.</p>
+    `,
     img: "/assets/buletin/info-terbaru/Penabur 15052025@2x-100 (1).jpg",
-    file: "/assets/materi/Stop_Stecu_kependudukan.ppt" // Contoh file materi
+    file: "/assets/materi/Stop_Stecu_kependudukan.ppt"
   },
+
   berita2: {
     title: "BPS Goes to Campus: Komunikasi Data Statistik di Era Digital",
     date: "26 Februari 2025",
-    desc: "Badan Pusat Statistik (BPS) Provinsi Banten kembali melaksanakan kegiatan BPS Goes To Campus sebagai bagian dari program edukasi statistik kepada civitas akademika. Kegiatan ini dilaksanakan di Universitas Bina Bangsa Kota Serang pada hari Rabu, 26 Februari 2025 pukul 13.00–15.00 WIB dengan menghadirkan kuliah tamu bertajuk “Mengkomunikasikan Data BPS di Media Digital” bersama tim Humas 3600 BPS Provinsi Banten. Kegiatan ini bertujuan untuk memberikan pemahaman lebih luas mengenai strategi komunikasi publik, khususnya dalam mengemas dan menyampaikan data statistik BPS secara efektif melalui platform digital. Di era informasi yang serba cepat, kemampuan mengomunikasikan data secara menarik, mudah dipahami, dan relevan menjadi kunci untuk meningkatkan literasi statistik di kalangan masyarakat, termasuk mahasiswa sebagai agen perubahan. Melalui diskusi interaktif, mahasiswa diajak untuk memahami bagaimana peran media digital dalam membangun citra lembaga, meningkatkan aksesibilitas informasi statistik, serta memperluas jangkauan data BPS agar dapat dimanfaatkan secara optimal oleh masyarakat. Tidak hanya berfokus pada teori, sesi ini juga membahas praktik terbaik dalam mengolah konten digital, teknik storytelling berbasis data, serta etika komunikasi publik dalam menjaga kredibilitas informasi. Kegiatan ini merupakan bagian dari upaya BPS dalam memperkuat kolaborasi dengan perguruan tinggi, sekaligus mendukung visi untuk membangun generasi muda yang melek data (data literate) dan mampu berperan aktif dalam pemanfaatan informasi statistik untuk pengambilan keputusan yang lebih baik. Kehadiran tim Humas 3600 BPS Provinsi Banten menegaskan komitmen lembaga untuk terus berinovasi dalam menyampaikan data, agar tidak hanya akurat dan terpercaya, tetapi juga komunikatif, inklusif, dan sesuai dengan kebutuhan masyarakat modern.",
+    desc: `
+      <p><strong>BPS Provinsi Banten</strong> melaksanakan kegiatan 
+      <em>BPS Goes To Campus</em> di <em>Universitas Bina Bangsa, Kota Serang</em> 
+      pada <strong>Rabu, 26 Februari 2025</strong>.</p>
+
+      <p>Kegiatan menghadirkan kuliah tamu bertajuk 
+      <strong>“Mengkomunikasikan Data BPS di Media Digital”</strong> bersama 
+      <em>Humas 3600 BPS</em>.</p>
+
+      <p><strong>Tujuan:</strong></p>
+      <ul class="list-disc pl-6">
+        <li>Meningkatkan pemahaman strategi komunikasi publik.</li>
+        <li>Mengemas dan menyampaikan data statistik melalui platform digital.</li>
+        <li>Mendorong literasi statistik di kalangan mahasiswa.</li>
+      </ul>
+
+      <p>Selain teori, juga dibahas:</p>
+      <ul class="list-disc pl-6">
+        <li><em>Best practices</em> storytelling berbasis data.</li>
+        <li>Teknik pengolahan konten digital.</li>
+        <li>Etika komunikasi publik untuk menjaga kredibilitas.</li>
+      </ul>
+    `,
     img: "/assets/buletin/info-terbaru/Humas 26022025@4x (1).png",
-    file: null // File belum tersedia
+    file: null
   },
+
   berita3: {
     title: "Edustat-Talk Series #2 Bahas Pemanfaatan Data Statistik di Sektor Industri",
     date: "22 Maret 2025",
-    desc: "Banten, 22 Maret 2025 – Badan Pusat Statistik (BPS) bersama sejumlah perguruan tinggi menyelenggarakan Edustat-Talk Series #2 Pojok Statistik Nasional dengan tema “Utilization of Data in Statistical Administration Activities in Industrial Sector”. Acara yang digelar secara daring melalui Zoom ini menghadirkan dua narasumber, yaitu Enang Sumarna, S.Si., M.M. (Statistisi Muda BPS Provinsi Banten) dan Dr. Faula Arina, S.Si., M.Si. (Dosen Statistika Universitas Sultan Ageng Tirtayasa). Dalam pemaparannya, Enang Sumarna menekankan pentingnya memahami klasifikasi usaha dan industri yang diatur dalam PP Nomor 7 Tahun 2021 serta Perka BPS Nomor 45 Tahun 2018. Klasifikasi tersebut berpengaruh besar pada perizinan, akses pendanaan, hingga kebijakan ekonomi. Ia juga menyoroti perkembangan pesat industri di Banten, mulai dari sektor baja di Cilegon hingga industri makanan, minuman, tekstil, dan kimia yang memberi kontribusi signifikan terhadap Produk Domestik Bruto (PDB) regional. Sementara itu, Dr. Faula Arina menegaskan bahwa data statistik merupakan fondasi penting dalam penyusunan kebijakan berbasis bukti (evidence-based policy). Menurutnya, riset akademik tidak boleh berhenti di jurnal ilmiah, melainkan perlu dihilirisasikan agar dapat diimplementasikan dalam kebijakan publik dan sektor industri. Ia menekankan pentingnya kolaborasi antara akademisi, industri, dan pemerintah untuk mendorong inovasi yang berdaya guna bagi masyarakat. Sesi diskusi turut membahas isu-isu aktual, seperti perbedaan data pertanian antara BPS dan ATR/BPN, penyajian data industri mikro dan kecil (IMK) yang bersifat agregat, serta metode pemilihan sampel dalam pendataan PDRB. Para narasumber menjelaskan bahwa perbedaan data umumnya terjadi karena perbedaan metodologi dan lingkup kewenangan masing-masing instansi, sehingga diperlukan koordinasi intensif untuk menyajikan informasi yang lebih akurat. Melalui kegiatan ini, peserta memperoleh wawasan mengenai peran data statistik dalam mendukung pembangunan sektor industri sekaligus memahami bagaimana hilirisasi riset dapat meningkatkan daya saing nasional. Edustat-Talk Series #2 diharapkan mampu memperkuat sinergi antara dunia akademik, industri, dan pemerintah dalam mewujudkan pembangunan ekonomi yang inklusif dan berkelanjutan.",
+    desc: `
+      <p><strong>Banten, 22 Maret 2025</strong> – <em>Pojok Statistik Nasional</em> 
+      menggelar <strong>Edustat-Talk Series #2</strong> bertema 
+      <em>“Utilization of Data in Statistical Administration Activities in Industrial Sector.”</em></p>
+
+      <p><strong>Narasumber:</strong></p>
+      <ul class="list-disc pl-6">
+        <li>Enang Sumarna, S.Si., M.M. – Statistisi Muda BPS Banten</li>
+        <li>Dr. Faula Arina, S.Si., M.Si. – Dosen Statistika Untirta</li>
+      </ul>
+
+      <p><strong>Poin utama:</strong></p>
+      <ul class="list-disc pl-6">
+        <li>Klasifikasi usaha & industri (PP No. 7/2021, Perka BPS No. 45/2018).</li>
+        <li>Kontribusi industri Banten: baja, makanan, tekstil, kimia.</li>
+        <li>Perbedaan data antar instansi (contoh: pertanian BPS vs ATR/BPN).</li>
+        <li>Hilirisasi riset akademik agar berguna dalam kebijakan.</li>
+      </ul>
+
+      <p>Diskusi menegaskan bahwa <strong>data statistik adalah fondasi evidence-based policy</strong>.</p>
+    `,
     img: "/assets/buletin/info-terbaru/Pamfleet Edustat 2 (1).jpg",
-    file: null // File belum tersedia
+    file: null
   },
+
   berita4: {
     title: "Pembinaan Agen Pojok Statistik: Pembuatan Layout Desain Publikasi dan Infografis",
     date: "September 2025",
-    desc: "Badan Pusat Statistik (BPS) Provinsi Banten kembali melaksanakan kegiatan pembinaan bagi Agen Pojok Statistik. Kegiatan kali ini berfokus pada pelatihan desain layout publikasi, dengan tujuan meningkatkan keterampilan mahasiswa dalam mengolah data dan menyajikannya secara visual, informatif, dan menarik. Dalam kegiatan tersebut, para agen statistik mendapat bimbingan langsung dari pegawai BPS mengenai penggunaan bahan publikasi, cara membaca data statistik, serta teknik menyusun informasi menjadi media komunikasi yang mudah dipahami masyarakat. Para peserta terlihat antusias, aktif berdiskusi, dan mempraktikkan langsung pembuatan desain publikasi menggunakan contoh data resmi BPS. Melalui pembinaan ini, diharapkan para agen statistik mampu menjadi perpanjangan tangan BPS dalam mengedukasi masyarakat mengenai pentingnya data. Selain itu, keterampilan desain publikasi yang dimiliki juga dapat membantu memperluas jangkauan informasi statistik agar lebih inklusif, khususnya di lingkungan kampus. Kegiatan ini sejalan dengan misi Pojok Statistik untuk menghadirkan layanan data yang informatif, mudah diakses, dan relevan dengan kebutuhan pengguna.",
+    desc: `
+      <p><strong>BPS Provinsi Banten</strong> melaksanakan pembinaan bagi 
+      <em>Agen Pojok Statistik</em> dengan fokus pada 
+      <strong>desain layout publikasi</strong>.</p>
+
+      <p><strong>Materi yang diberikan:</strong></p>
+      <ul class="list-disc pl-6">
+        <li>Penggunaan bahan publikasi.</li>
+        <li>Cara membaca data statistik.</li>
+        <li>Teknik menyusun informasi menjadi media yang mudah dipahami.</li>
+      </ul>
+
+      <p>Peserta aktif berdiskusi dan mempraktikkan langsung pembuatan desain 
+      menggunakan data resmi BPS.</p>
+
+      <p><em>Outcome:</em> agen statistik siap menjadi perpanjangan tangan BPS dalam 
+      mengedukasi masyarakat tentang pentingnya data.</p>
+    `,
     img: "/assets/buletin/info-terbaru/pembinaan_agen_LayoutDesignPublikasi.jpeg",
-    file: null // File belum tersedia
+    file: null
   },
+
   berita5: {
     title: "EKSOTIK Pojok Statistik UNIBA: Meningkatkan Literasi Statistik Mahasiswa",
     date: "10 Desember 2024",
-    desc: "Serang, 10 Desember 2024 – Pojok Statistik Universitas Bina Bangsa (UNIBA) kembali menyelenggarakan kegiatan Edukasi Statistik Tematik (EKSOTIK) dengan tujuan memperkuat literasi statistik di kalangan mahasiswa. Kegiatan ini dilaksanakan di salah satu ruang perkuliahan UNIBA dan menghadirkan pemateri dari Badan Pusat Statistik (BPS) yang memberikan penjelasan mendalam terkait peran data statistik dalam berbagai aspek kehidupan. Dalam sesi kali ini, pemateri menyampaikan pentingnya pemahaman statistik, mulai dari konsep dasar, proses pengumpulan data, hingga pemanfaatannya dalam pengambilan keputusan. Materi juga menyoroti bagaimana data statistik dapat digunakan untuk mendukung perumusan kebijakan, perencanaan pembangunan, serta penelitian akademik. Mahasiswa terlihat sangat antusias mengikuti rangkaian acara. Mereka mendengarkan paparan materi dengan seksama, mencatat poin-poin penting, serta aktif mengajukan pertanyaan. Diskusi yang terjalin tidak hanya memperkaya wawasan mahasiswa mengenai teori statistik, tetapi juga memperlihatkan bagaimana data berperan langsung dalam berbagai sektor, seperti ekonomi, pendidikan, hingga sosial kemasyarakatan. Kegiatan EKSOTIK ini menjadi salah satu program unggulan Pojok Statistik UNIBA yang rutin dilaksanakan sebagai bentuk sinergi antara perguruan tinggi dan BPS. Melalui kegiatan ini, mahasiswa diharapkan tidak hanya memahami statistik secara teoritis, tetapi juga mampu mengaplikasikannya dalam riset akademik maupun dalam kehidupan sehari-hari. Selain itu, kegiatan ini juga menegaskan komitmen Pojok Statistik UNIBA untuk terus menjadi pusat informasi dan pembelajaran statistik bagi civitas akademika. Dengan adanya kegiatan EKSOTIK, mahasiswa dapat semakin dekat dengan data dan memiliki kesadaran lebih tinggi akan pentingnya literasi statistik sebagai bekal menghadapi perkembangan zaman yang serba berbasis data.",
+    desc: `
+      <p><strong>Serang, 10 Desember 2024</strong> – Pojok Statistik UNIBA 
+      menggelar <em>Edukasi Statistik Tematik (EKSOTIK)</em> dengan tujuan 
+      memperkuat literasi statistik mahasiswa.</p>
+
+      <p><strong>Isi kegiatan:</strong></p>
+      <ul class="list-disc pl-6">
+        <li>Penjelasan konsep dasar statistik.</li>
+        <li>Proses pengumpulan data.</li>
+        <li>Pemanfaatan data dalam pengambilan keputusan.</li>
+      </ul>
+
+      <p>Mahasiswa <strong>antusias</strong>: mendengarkan, mencatat, bertanya, dan berdiskusi.</p>
+
+      <p>Kegiatan ini memperlihatkan peran data dalam sektor ekonomi, pendidikan, 
+      dan sosial kemasyarakatan.</p>
+    `,
     img: "/assets/buletin/info-terbaru/Eksotik 101224 (2).jpeg",
-    file: null // File belum tersedia
+    file: null
   },
+
   berita6: {
     title: "Pembinaan Agen Statistik UNIBA",
     date: "November 2024",
-    desc: "Serang, November 2024 – Pojok Statistik Universitas Bina Bangsa (UNIBA) bersama Badan Pusat Statistik (BPS) Provinsi Banten menyelenggarakan kegiatan Pembinaan Agen Statistik yang diikuti oleh mahasiswa dari berbagai program studi. Kegiatan ini bertujuan memperkuat kapasitas mahasiswa sebagai agen literasi statistik yang mampu menjadi jembatan pengetahuan antara BPS dengan masyarakat akademik. Dalam pembinaan ini, narasumber dari BPS memberikan materi terkait pentingnya peran agen statistik dalam menyebarkan pemahaman tentang data resmi. Materi yang disampaikan meliputi cara mengakses data BPS, memahami metodologi statistik, hingga strategi komunikasi data agar informasi yang disampaikan mudah dipahami oleh berbagai kalangan. Mahasiswa terlihat antusias mengikuti rangkaian pembinaan, ditandai dengan interaksi aktif selama sesi berlangsung. Beberapa peserta juga mengajukan pertanyaan seputar penggunaan data statistik dalam penelitian, pemanfaatan publikasi BPS untuk mendukung tugas akademik, serta bagaimana peran agen statistik dapat berkontribusi dalam meningkatkan kesadaran literasi data di lingkungan kampus maupun masyarakat. Kegiatan ini sekaligus menegaskan pentingnya sinergi antara perguruan tinggi dan BPS dalam membangun generasi muda yang melek data. Melalui agen statistik, diharapkan mahasiswa tidak hanya mampu memahami data, tetapi juga berperan sebagai penggerak dalam menyebarluaskan informasi statistik yang akurat, terpercaya, dan bermanfaat untuk pengambilan keputusan. Dengan adanya pembinaan rutin ini, Pojok Statistik UNIBA terus memperkuat perannya sebagai pusat edukasi data yang mendukung pengembangan kompetensi mahasiswa, sekaligus menjadi mitra strategis BPS dalam meningkatkan literasi statistik di kalangan generasi muda.",
+    desc: `
+      <p><strong>Serang, November 2024</strong> – <em>Pojok Statistik UNIBA</em> 
+      bekerja sama dengan <strong>BPS Provinsi Banten</strong> mengadakan 
+      <strong>Pembinaan Agen Statistik</strong>.</p>
+
+      <p><strong>Materi yang diberikan:</strong></p>
+      <ul class="list-disc pl-6">
+        <li>Cara mengakses data BPS.</li>
+        <li>Memahami metodologi statistik.</li>
+        <li>Strategi komunikasi data yang mudah dipahami.</li>
+      </ul>
+
+      <p>Mahasiswa aktif bertanya, terutama soal penggunaan data statistik dalam riset 
+      akademik dan tugas kampus.</p>
+
+      <p>Kegiatan ini menegaskan pentingnya sinergi perguruan tinggi–BPS dalam 
+      membangun <strong>generasi melek data</strong>.</p>
+    `,
     img: "/assets/buletin/info-terbaru/Pembinaan agen 1124 (4).jpeg",
-    file: null // File belum tersedia
+    file: null
   }
 };
+
 
 const keysBerita = Object.keys(beritaData);
 let currentIndex = 0;
