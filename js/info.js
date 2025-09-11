@@ -22,9 +22,9 @@ const beritaData = {
     file: "/assets/materi/berita3.pdf"
   },
   berita4: {
-    title: "BPS Banten dan Dinas Kominfo Banten Gelar Workshop Data dan Statistik",
+    title: "Pembinaan Agen Pojok Statistik – Pembuatan Layout Desain Publikasi dan Infografis",
     date: "4 September 2025",
-    desc: "Badan Pusat Statistik (BPS) Provinsi Banten bekerja sama dengan Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Banten mengadakan Workshop Data dan Statistik...",
+    desc: "Foto ini mendokumentasikan kegiatan Pembinaan Agen Pojok Statistik yang berfokus pada peningkatan keterampilan dalam pembuatan layout desain publikasi dan infografis. Kegiatan ini bertujuan untuk membekali para agen dengan kemampuan menyusun desain berbasis data statistik yang informatif, menarik, dan mudah dipahami oleh masyarakat luas. Dalam kegiatan ini, pendamping memberikan arahan langsung mengenai teknik penyusunan layout publikasi serta praktik penyajian informasi statistik dalam bentuk visual yang komunikatif. Para agen tampak aktif berdiskusi, mencatat, serta berlatih menggunakan materi dan contoh desain yang tersedia. Dokumentasi ini menggambarkan suasana pembinaan yang interaktif, kolaboratif, dan produktif dalam mendukung penguatan literasi statistik di lingkungan kampus.",
     img: "/assets/buletin/info-terbaru/pembinaan_agen_LayoutDesignPublikasi.jpeg",
     file: "/assets/materi/berita4.pdf"
   },
@@ -47,6 +47,11 @@ const beritaData = {
 const keysBerita = Object.keys(beritaData);
 let currentIndex = 0;
 
+// ================= HELPER UNTUK POTONG TEKS =================
+function truncateText(text, maxLength) {
+  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+}
+
 // ================= GENERATE CARD =================
 const newsGrid = document.querySelector('#info-terbaru .grid');
 
@@ -61,7 +66,9 @@ keysBerita.forEach((key, idx) => {
     <div class="p-4 flex flex-col flex-grow">
       <p class="text-sm text-gray-500 mb-1">${item.date}</p>
       <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
-      <p class="text-gray-700 text-sm flex-grow">${item.desc}</p>
+      <p class="text-gray-700 text-sm flex-grow">
+        ${truncateText(item.desc, 120)}
+      </p>
     </div>
   `;
 
@@ -81,10 +88,10 @@ function renderBerita(index) {
   document.getElementById("detailDesc").innerText = item.desc;
   document.getElementById("detailImg").src = item.img;
 
-  // ✅ Fix tombol download
+  // tombol download
   document.getElementById("downloadBtn").onclick = () => {
     if (item.file) {
-      window.location.href = item.file; // langsung download
+      window.location.href = item.file;
     } else {
       alert("File materi belum tersedia.");
     }
@@ -93,7 +100,7 @@ function renderBerita(index) {
   currentIndex = index;
 }
 
-// ================= NAVIGASI =================
+// ================= NAVIGASI NEXT / PREV =================
 document.getElementById("nextBtn").addEventListener("click", () => {
   let nextIndex = (currentIndex + 1) % keysBerita.length;
   renderBerita(nextIndex);
