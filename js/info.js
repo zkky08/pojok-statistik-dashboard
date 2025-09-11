@@ -20,6 +20,27 @@ const beritaData = {
     desc: "Pojok Statistik Nasional menggelar Edustat-Talk Series #2 dengan tema pemanfaatan data...",
     img: "/assets/buletin/info-terbaru/Pamfleet Edustat 2 (1).jpg",
     file: "/assets/materi/berita3.pdf"
+  },
+  berita4: {
+    title: "BPS Banten dan Dinas Kominfo Banten Gelar Workshop Data dan Statistik",
+    date: "4 September 2025",
+    desc: "Badan Pusat Statistik (BPS) Provinsi Banten bekerja sama dengan Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Banten mengadakan Workshop Data dan Statistik...",
+    img: "/assets/buletin/info-terbaru/pembinaan_agen_LayoutDesignPublikasi.jpeg",
+    file: "/assets/materi/berita4.pdf"
+  },
+  berita5: {
+    title: "BPS Banten dan Dinas Kominfo Banten Gelar Workshop Data dan Statistik",
+    date: "4 September 2025",
+    desc: "Badan Pusat Statistik (BPS) Provinsi Banten bekerja sama dengan Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Banten mengadakan Workshop Data dan Statistik...",
+    img: "/assets/buletin/info-terbaru/Eksotik 101224 (2).jpeg",
+    file: null // File belum tersedia
+  },
+  berita6: {
+    title: "BPS Banten dan Dinas Kominfo Banten Gelar Workshop Data dan Statistik",
+    date: "4 September 2025",
+    desc: "Badan Pusat Statistik (BPS) Provinsi Banten bekerja sama dengan Dinas Komunikasi dan Informatika (Diskominfo) Provinsi Banten mengadakan Workshop Data dan Statistik...",
+    img: "/assets/buletin/info-terbaru/Pembinaan agen 1124 (4).jpeg",
+    file: null // File belum tersedia
   }
 };
 
