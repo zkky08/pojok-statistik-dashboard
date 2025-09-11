@@ -167,14 +167,14 @@ const beritaData = {
   }
 };
 
+// ======================= UTIL FUNCTION =======================
+function truncateText(text, maxLength) {
+  if (!text) return "";
+  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
+}
 
 const keysBerita = Object.keys(beritaData);
 let currentIndex = 0;
-
-// ================= HELPER UNTUK POTONG TEKS =================
-function truncateText(text, maxLength) {
-  return text.length > maxLength ? text.substring(0, maxLength) + "..." : text;
-}
 
 // ================= GENERATE CARD =================
 const newsGrid = document.querySelector('#info-terbaru .grid');
@@ -191,7 +191,7 @@ keysBerita.forEach((key, idx) => {
       <p class="text-sm text-gray-500 mb-1">${item.date}</p>
       <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
       <p class="text-gray-700 text-sm flex-grow">
-        ${truncateText(item.desc, 120)}
+        ${truncateText(item.desc.replace(/<[^>]+>/g, ''), 120)}
       </p>
     </div>
   `;
@@ -209,7 +209,7 @@ function renderBerita(index) {
 
   document.getElementById("detailTitle").innerText = item.title;
   document.getElementById("detailDate").innerText = item.date;
-  document.getElementById("detailDesc").innerHTML = item.desc;
+  document.getElementById("detailDesc").innerHTML = item.desc; // pakai innerHTML
   document.getElementById("detailImg").src = item.img;
 
   // tombol download
