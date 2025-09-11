@@ -1,11 +1,26 @@
-// Data semua berita
+// ================= DATA BERITA =================
 const beritaData = {
-  berita1: { title: "BPS Goes to School: Edukasi Pentingnya Data Kependudukan dan Lembaga Keuangan", desc: "Badan Pusat Statistik (BPS) Provinsi Banten mengadakan kegiatan BPS Goes to School di BPK PENABUR SMAK Penabur Serang pada 15 Mei 2025...", img: "/assets/buletin/info-terbaru/Penabur 15052025@2x-100 (1).jpg", date: "7 September 2025" },
-  berita2: { title: "BPS Goes to Campus: Komunikasi Data Statistik di Era Digital", desc: "Badan Pusat Statistik (BPS) Provinsi Banten menyelenggarakan kuliah tamu bertajuk...", img: "/assets/buletin/info-terbaru/Humas 26022025@4x (1).png", date: "6 September 2025" },
-  berita3: { title: "Edustat-Talk Series #2 Bahas Pemanfaatan Data Statistik di Sektor Industri", desc: "Pojok Statistik Nasional menggelar Edustat-Talk Series #2 dengan tema pemanfaatan data dalam kegiatan administrasi statistik di sektor industri...", img: "/assets/buletin/info-terbaru/Pamfleet Edustat 2 (1).jpg", date: "5 September 2025" },
-  berita4: { title: "Pembinaan Desain Publikasi dan Infografis untuk Mahasiswa", desc: "Kegiatan pembinaan desain publikasi dan infografis ini diikuti oleh mahasiswa guna meningkatkan keterampilan mereka dalam menyusun konten visual...", img: "/assets/buletin/info-terbaru/Pembinaan Layout Design Publikasi dan Infografis (1).jpeg", date: "4 September 2025" },
-  berita5: { title: "Pembinaan Agen Statistik Mahasiswa", desc: "Kegiatan pembinaan agen statistik dilaksanakan dengan melibatkan mahasiswa sebagai peserta aktif. Melalui forum ini...", img: "/assets/buletin/info-terbaru/Pembinaan agen 1124 (4).jpeg", date: "4 September 2025" },
-  berita6: { title: "Eksotik: Kegiatan Statistik Mahasiswa", desc: "Kegiatan pembinaan agen statistik dilaksanakan dengan melibatkan mahasiswa sebagai peserta aktif. Melalui forum ini...", img: "/assets/buletin/info-terbaru/Eksotik 101224 (2).jpeg", date: "4 September 2025" }
+  berita1: {
+    title: "BPS Goes to School: Edukasi Pentingnya Data Kependudukan dan Lembaga Keuangan",
+    date: "7 September 2025",
+    desc: "Badan Pusat Statistik (BPS) Provinsi Banten mengadakan kegiatan BPS Goes to School di BPK PENABUR SMAK Penabur Serang pada 15 Mei 2025...",
+    img: "/assets/buletin/info-terbaru/Penabur 15052025@2x-100 (1).jpg",
+    file: "/assets/materi/berita1.pdf"
+  },
+  berita2: {
+    title: "BPS Goes to Campus: Komunikasi Data Statistik di Era Digital",
+    date: "6 September 2025",
+    desc: "Badan Pusat Statistik (BPS) Provinsi Banten menyelenggarakan kuliah tamu bertajuk...",
+    img: "/assets/buletin/info-terbaru/Humas 26022025@4x (1).png",
+    file: "/assets/materi/berita2.pdf"
+  },
+  berita3: {
+    title: "Edustat-Talk Series #2 Bahas Pemanfaatan Data Statistik di Sektor Industri",
+    date: "5 September 2025",
+    desc: "Pojok Statistik Nasional menggelar Edustat-Talk Series #2 dengan tema pemanfaatan data...",
+    img: "/assets/buletin/info-terbaru/Pamfleet Edustat 2 (1).jpg",
+    file: "/assets/materi/berita3.pdf"
+  }
 };
 
 const keysBerita = Object.keys(beritaData);
@@ -45,27 +60,19 @@ function renderBerita(index) {
   document.getElementById("detailDesc").innerText = item.desc;
   document.getElementById("detailImg").src = item.img;
 
+  // ✅ Fix tombol download
   document.getElementById("downloadBtn").onclick = () => {
-  const item = beritaData[keys[index]];
-  if (item.file) {
-    window.open(item.file, "_blank"); // buka file di tab baru
-    // atau pakai:
-    // window.location.href = item.file; // langsung download
-  } else {
-    alert("File materi belum tersedia.");
-  }
-};
-
+    if (item.file) {
+      window.location.href = item.file; // langsung download
+    } else {
+      alert("File materi belum tersedia.");
+    }
+  };
 
   currentIndex = index;
 }
 
 // ================= NAVIGASI =================
-document.getElementById("backBtn")?.addEventListener("click", () => {
-  document.getElementById("detailBerita").classList.add("hidden");
-  document.getElementById("info-terbaru").classList.remove("hidden");
-});
-
 document.getElementById("nextBtn").addEventListener("click", () => {
   let nextIndex = (currentIndex + 1) % keysBerita.length;
   renderBerita(nextIndex);
