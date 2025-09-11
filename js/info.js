@@ -31,7 +31,7 @@ const beritaData = {
       menjelang <strong>Sensus Ekonomi 2026</strong>.</p>
     `,
     img: "/assets/buletin/info-terbaru/Penabur 15052025@2x-100 (1).jpg",
-    file: "/assets/materi/Stop_Stecu_kependudukan.ppt"
+    file: "/assets/materi/Stop_Stecu_kependudukan.pptm"
   },
 
   berita2: {
@@ -209,20 +209,24 @@ function renderBerita(index) {
 
   document.getElementById("detailTitle").innerText = item.title;
   document.getElementById("detailDate").innerText = item.date;
-  document.getElementById("detailDesc").innerHTML = item.desc; // pakai innerHTML
+  document.getElementById("detailDesc").innerHTML = item.desc;
   document.getElementById("detailImg").src = item.img;
 
-  // tombol download
-  document.getElementById("downloadBtn").onclick = () => {
-    if (item.file) {
-      window.location.href = item.file;
-    } else {
-      alert("File materi belum tersedia.");
-    }
-  };
-
   currentIndex = index;
+
+  // 🔥 Tombol download binding ulang
+  const downloadBtn = document.getElementById("downloadBtn");
+  downloadBtn.onclick = () => {
+  if (item.file) {
+    window.location.href = `confirm.html?file=${encodeURIComponent(item.file)}&source=info`;
+  } else {
+    showNotif("File materi belum tersedia.");
+  }
+};
+
 }
+
+
 
 // ================= NAVIGASI NEXT / PREV =================
 document.getElementById("nextBtn").addEventListener("click", () => {
@@ -249,3 +253,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach(card => observer.observe(card));
 });
+
+// ================= NOTIFIKASI =================
+function showNotif(message) {
+  const notif = document.getElementById("notif");
+  const notifMsg = document.getElementById("notifMsg");
+
+  notifMsg.textContent = message; // isi pesan
+  notif.classList.add("show");
+
+  // otomatis hilang setelah 3 detik
+  setTimeout(() => {
+    hideNotif();
+  }, 3000);
+}
+
+function hideNotif() {
+  const notif = document.getElementById("notif");
+  notif.classList.remove("show");
+}

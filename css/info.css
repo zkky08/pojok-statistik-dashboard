@@ -207,3 +207,19 @@ body {
   font-size: 1rem;
   line-height: 1;
 }
+
+/* Styling untuk detail berita */
+#detailDesc p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+#detailDesc ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+#detailDesc li {
+  margin-bottom: 0.5rem;
+}
