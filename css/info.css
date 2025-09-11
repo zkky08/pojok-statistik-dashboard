@@ -179,6 +179,19 @@ body {
   color: #1e3a8a; /* blue-900 */
 }
 
+.btn-download {
+  @apply bg-blue-900 text-white py-3 rounded-lg shadow-lg transition-colors duration-300 transform hover:-translate-y-1 hover:shadow-xl;
+}
+
+.btn-download:hover {
+  @apply bg-yellow-400;
+}
+
+.btn-download:hover .btn-text {
+  @apply text-blue-900;
+}
+
+
 /* Khusus tombol berikutnya agar anak panah di atas dan teks di bawah */
 #nextBtn {
   flex-direction: column;

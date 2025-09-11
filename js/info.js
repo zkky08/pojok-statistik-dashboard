@@ -45,6 +45,18 @@ function renderBerita(index) {
   document.getElementById("detailDesc").innerText = item.desc;
   document.getElementById("detailImg").src = item.img;
 
+  document.getElementById("downloadBtn").onclick = () => {
+  const item = beritaData[keys[index]];
+  if (item.file) {
+    window.open(item.file, "_blank"); // buka file di tab baru
+    // atau pakai:
+    // window.location.href = item.file; // langsung download
+  } else {
+    alert("File materi belum tersedia.");
+  }
+};
+
+
   currentIndex = index;
 }
 
