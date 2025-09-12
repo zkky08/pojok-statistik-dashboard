@@ -43,7 +43,8 @@ keysFoto.forEach((key, idx) => {
   card.className = 'doc-card';
 
   card.innerHTML = `
-    <img src="${item.img}" alt="${item.title}">
+    <img src="${item.img}" alt="${item.title}" class="w-full h-44 object-cover rounded-t-lg transition-transform duration-500 hover:scale-105">
+
     <div class="content">
       <p class="text-sm text-gray-500 mb-1">${item.date}</p>
       <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
