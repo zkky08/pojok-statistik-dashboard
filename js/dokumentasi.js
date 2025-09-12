@@ -32,13 +32,13 @@ const fotoData = {
   },
   foto6: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Pandeglang Tahap 1", 
-    desc: "",
+    desc: "Acara dimulai dengan pembukaan oleh Lurah Juhut, Muhamad Syahrul, dilanjutkan pemaparan materi dari tim Desa Cantik BPS Kabupaten Pandeglang. Materi utama menekankan bahwa desa kini dipandang sebagai subyek sekaligus ujung tombak pembangunan, sehingga penguatan literasi dan pengelolaan data menjadi kunci untuk pembangunan yang tepat sasaran. Program Desa Cantik bertujuan meningkatkan literasi statistik perangkat desa dan masyarakat, menstandardisasi pengelolaan data, mengoptimalkan pemanfaatan data, serta membentuk agen statistik sebagai aktor utama. Tahapan pelaksanaan mencakup koordinasi, identifikasi potensi desa, perencanaan, hingga pelaksanaan, dengan rujukan pada Sistem Statistik Nasional (SSN) dan Generic Statistical Business Process Model (GSBPM). Output yang ditargetkan antara lain monografi desa, publikasi desa dalam angka, infografis, serta meningkatnya kemampuan agen statistik dalam menyajikan data. Dalam sesi diskusi, ditegaskan bahwa agen statistik tidak memperoleh honor finansial, tetapi perannya penting dalam keberhasilan program. Agen statistik diutamakan berasal dari perangkat desa dengan jumlah sesuai keputusan kepala desa, dan penerapan standar internasional GSBPM dilakukan secara bertahap. Program Desa Cantik tidak mencakup penyediaan otomatisasi atau pengadaan barang, melainkan fokus pada peningkatan kapasitas SDM. Saat ini beberapa desa telah memiliki SK agen statistik, dengan pembinaan lanjutan yang dijadwalkan fleksibel sesuai kesepakatan. Kerja sama BPS dengan desa berlangsung hingga Oktober 2024, namun pembinaan tetap melekat sehingga desa dapat meminta pendampingan meski di luar periode program.",
     img: "/assets/dokumentasi/pembinaanDCpandeglang1.jpg", 
     date: "9 Mei 2025" 
   },
   foto7: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Pandeglang Tahap 2", 
-    desc: "",
+    desc: "Acara dimoderatori oleh Fajar Sidik Karimulloh dari tim Desa Cantik BPS Pandeglang, dengan materi utama tentang Metadata Statistik, Satu Data Desa Indonesia, serta Identifikasi Kebutuhan Desa. Metadata dijelaskan sebagai informasi yang menggambarkan data statistik secara detail, mencakup terminologi, definisi, klasifikasi, lokasi, metodologi, dan publikasi. Manfaat metadata berbeda bagi pembina, produsen, wali, dan pengguna data, antara lain untuk meningkatkan efisiensi, menghindari duplikasi, mencegah kesalahan, serta memudahkan pemahaman dan pengelolaan data. Identifikasi kebutuhan desa menjadi tahap awal Program Desa Cantik, dengan tujuan mengetahui profil, potensi, masalah, dan program yang diperlukan desa, menggunakan teknik wawancara, forum diskusi, serta instrumen online yang dikirimkan ke BPS. Kegiatan juga dilanjutkan dengan pendampingan pengisian tabel publikasi output Desa Cantik 2025. Dalam sesi diskusi, dibahas contoh dokumen metadata, perbedaan pencatatan penduduk berdasarkan data defacto (BPS) dan dejure (Disdukcapil), serta pentingnya menghindari duplikasi data meski tidak ada larangan tertulis. Pengisian form identifikasi dilakukan bertahap sesuai ketersediaan data desa, dan untuk metadata diperlukan akun yang dikoordinasikan dengan kecamatan dan Diskominfo. Selain itu, publikasi data desa diharapkan selengkap mungkin dengan meminta data tambahan dari pihak terkait, seperti puskesmas atau bidan desa, agar hasil publikasi lebih komprehensif.",
     img: "/assets/dokumentasi/pembinaanDCpandeglang2.jpg", 
     date: "20 Mei 2025" 
   },
@@ -95,6 +95,18 @@ const fotoData = {
     desc: "Pada tanggal 18 Juni 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik tahap Finalisasi. Kegiatan ini menjadi penutup rangkaian pembinaan tahun 2025 yang sebelumnya mencakup identifikasi kebutuhan data, teknik pengumpulan, pengolahan, penyimpanan, analisis, penyajian, dan manajemen kualitas data. Pada sesi ini, peserta melakukan evaluasi hasil pembinaan, meninjau kembali data yang telah dihimpun, serta memastikan kelengkapan, konsistensi, dan keterpaduan informasi yang akan digunakan desa. Melalui tahap finalisasi ini, diharapkan Desa Sumurbandung memiliki sistem pengelolaan data yang terstruktur dan siap dimanfaatkan untuk mendukung perencanaan pembangunan yang berbasis data.",
     img: "/assets/dokumentasi/pembinaanDClebak8.png", 
     date: "18 Juni 2025" 
+  },
+  foto17: { 
+    title: "Pembinaan Program Desa Cantik Statistik (DesaCantik) Kab. Tangerang", 
+    desc: "Kegiatan pembinaan literasi statistik bertema *Generic Statistical Business Process Model (GSBPM)* dan manajemen data di Aula Desa Sukawali dihadiri lengkap oleh aparat desa, agen statistik, mahasiswa magang, serta perwakilan warga, sehingga tingkat partisipasi mencapai 100%. Acara dibuka oleh Kepala Desa Sukawali yang menekankan pentingnya literasi statistik bagi desa dalam pengambilan keputusan berbasis data, disusul sambutan Kepala BPS Kabupaten Tangerang yang menegaskan urgensi GSBPM dan manajemen data dalam pembangunan desa serta apresiasi atas dukungan desa dalam penyelenggaraan kegiatan. Materi inti disampaikan oleh Pembina Desa Cantik BPS Kabupaten Tangerang, meliputi regulasi Sistem Statistik Nasional (SSN), konsep kegiatan statistik, GSBPM dengan delapan tahapan siklus statistik, serta prinsip *Satu Data Indonesia* yang menekankan standar data, metadata, interoperabilitas, dan penggunaan data induk. Dalam sesi diskusi, peserta menanyakan relevansi standardisasi, manfaat praktis GSBPM, kesiapan desa tanpa latar belakang statistik, penyusunan metadata, serta penerapan standar data dan interoperabilitas di tingkat desa. Jawaban narasumber menekankan bahwa standar data dan GSBPM justru mempermudah desa mengelola data agar konsisten, dapat dibandingkan, serta langsung terhubung dengan sistem kabupaten hingga pusat. Manfaat nyata GSBPM dan manajemen data bagi desa antara lain mempercepat pengusulan program, meningkatkan kepercayaan pemerintah pusat, menghindari tumpang tindih data, serta menghadirkan kebijakan berbasis bukti yang lebih tepat sasaran. Dengan demikian, Program Desa Cantik tidak hanya memperkuat kapasitas aparat desa sebagai produsen data, tetapi juga meneguhkan peran desa dalam mendukung Sistem Statistik Nasional dan mewujudkan Satu Data Indonesia.",
+    img: "/assets/dokumentasi/pembinaanDCtangerang.png", 
+    date: "02 Mei 2025" 
+  },
+  foto18: { 
+    title: "lanjut di Kab. Serang besok", 
+    desc: "",
+    img: "/assets/dokumentasi/pembinaanDCtangerang.png", 
+    date: "02 Mei 2025" 
   },
 };
 
