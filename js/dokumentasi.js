@@ -120,6 +120,12 @@ const fotoData = {
     img: "/assets/dokumentasi/pembinaanDCserang3.png", 
     date: "26 Juni 2025" 
   },
+  foto21: { 
+    title: "Evaluasi Akhir Program Desa Cinta Statistik (DesaCantik) Kab. Serang: Ekpos Data Desa Cinta Statistik Cikande Permai", 
+    desc: "Ekspose Data Desa Cantik Cikande Permai dilaksanakan pada 31 Juli 2025 di Kantor Desa Cikande Permai, dipimpin oleh Kepala Desa dan dihadiri Camat Mochamad Agus, tim BPS Kabupaten Serang, serta aparat desa. Dalam sambutannya, Camat menyampaikan harapan agar Desa Cikande Permai dapat meraih prestasi hingga tingkat nasional melalui program ini. Novian Tamara menegaskan bahwa dalam tiga bulan pembinaan, desa berhasil meningkatkan literasi statistik aparat dengan membentuk 17 agen statistik—jumlah terbanyak di Provinsi Banten—yang kini mampu membuat infografis, publikasi, serta melaksanakan survei secara mandiri. Survei Kepuasan Layanan Infrastruktur menghasilkan indeks 85,15, sementara indeks Kinerja Pemerintah Desa mencapai 85,65, keduanya menunjukkan tingkat kepuasan masyarakat yang sangat tinggi. Selain itu, Asep Suryana menyampaikan bahwa Desa Cikande Permai berhasil meluncurkan dua website penyajian data, yakni website Digides dan website Desa Cantik, yang kini dapat diakses masyarakat dengan fitur cukup lengkap. Capaian ini memperlihatkan kesiapan desa dalam mengelola dan mendiseminasikan data secara profesional serta memperkuat posisinya sebagai desa percontohan statistik di Kabupaten Serang.",
+    img: "/assets/dokumentasi/pembinaanDCserang4.png", 
+    date: "31 Juli 2025" 
+  },
 };
 
 const keysFoto = Object.keys(fotoData);
