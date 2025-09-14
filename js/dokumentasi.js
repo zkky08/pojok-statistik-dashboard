@@ -192,6 +192,36 @@ const fotoData = {
     img: "/assets/dokumentasi/pembinaanDCserkot5.png", 
     date: "11 Juni 2025" 
   },
+  foto32: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 6", 
+    desc: "Pembinaan pada pertemuan keenam masih difokuskan pada pengolahan data menggunakan aplikasi SPSS 22 dengan melibatkan tiga orang agen statistik dari aparat kelurahan. Materi menggunakan raw data Survei Preneur yang telah terkumpul. Kegiatan dimulai dengan pemeriksaan dan validasi data untuk memastikan tidak ada kesalahan atau ketidakkonsistenan. Selanjutnya, agen statistik diajarkan cara membuat tabel-tabel sederhana dari hasil Survei Preneur dan langsung mempraktikkannya. Beberapa tabel berhasil disusun oleh peserta, dan mereka didorong untuk terus mencoba serta memperdalam pemahaman pengolahan data dengan SPSS secara mandiri.",
+    img: "/assets/dokumentasi/pembinaanDCserkot6.png", 
+    date: "18 Juni 2025" 
+  },
+  foto33: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 7", 
+    desc: "Pembinaan Desa/Kelurahan Cantik kali ini membahas teknik membuat infografis dengan pemateri dari tim Pojok Statistik UNIBA Serang serta Pembina Desa Cantik BPS Provinsi Banten. Peserta diperkenalkan pada berbagai aplikasi yang dapat digunakan untuk membuat infografis, seperti Adobe, PowerPoint, Canva, maupun aplikasi daring lainnya. Pemateri menekankan bahwa penggunaan Adobe dan PowerPoint lebih disarankan karena fleksibilitas serta hasil desain yang lebih optimal untuk kebutuhan publikasi data kelurahan.",
+    img: "/assets/dokumentasi/pembinaanDCserkot7.png", 
+    date: "25 Juni 2025" 
+  },
+  foto34: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 8", 
+    desc: "Pembinaan kali ini berfokus pada teknik menyajikan dan memaparkan data menggunakan PowerPoint dengan peserta sebanyak 7 agen statistik dari aparat kelurahan. Materi menekankan pentingnya penyajian data dalam bentuk point-point singkat, sehingga pemaparan lebih ringkas dan mudah dipahami. Peserta diarahkan untuk memaksimalkan penggunaan tabel dan grafik dalam presentasi, serta jika memungkinkan menambahkan infografis agar data lebih menarik dan komunikatif ketika dipaparkan kepada audiens.",
+    img: "/assets/dokumentasi/pembinaanDCserkot8.png", 
+    date: "02 Juli 2025" 
+  },
+  foto35: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 9", 
+    desc: "Pembinaan menghadirkan tim Pembina Desa Cantik BPS Provinsi Banten serta Pembina Desa Cantik BPS Kota Serang sebagai narasumber. Peserta terdiri dari agen statistik aparat kelurahan, mahasiswa UPG yang sedang KKM, serta tim Pembina Desa Cantik BPS Kota Serang. Materi yang dipaparkan meliputi statistik kriminalitas oleh BPS Provinsi Banten dan profil Kelurahan Curug beserta statistik ketenagakerjaan oleh BPS Kota Serang. Kegiatan dilanjutkan dengan sesi tanya jawab untuk memperdalam pemahaman peserta.",
+    img: "/assets/dokumentasi/pembinaanDCserkot9.png", 
+    date: "09 Juli 2025" 
+  },
+  foto36: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 10", 
+    desc: "Pembinaan kali ini berfokus pada penyelesaian penyusunan Publikasi Kelurahan Curug dalam Angka dengan peserta utama dari agen statistik kelurahan. Kegiatan diarahkan untuk meninjau kembali kelengkapan data yang sudah dihimpun, mengidentifikasi tabel-tabel yang masih kosong, serta menelusuri sumber data yang diperlukan agar publikasi dapat tersusun secara lengkap dan akurat. Selain itu, peserta juga mendiskusikan kebutuhan penambahan tabel-tabel penting terkait kondisi Kelurahan Curug agar publikasi menjadi lebih komprehensif. Pada sektor pertanian, diputuskan untuk menggunakan data Sensus Pertanian 2023 sebagai sumber resmi, sehingga informasi yang disajikan dalam publikasi sesuai dengan data terbaru dan dapat dipertanggungjawabkan.",
+    img: "/assets/dokumentasi/pembinaanDCserkot10.png", 
+    date: "16 Juli 2025" 
+  },
 };
 
 const keysFoto = Object.keys(fotoData);
