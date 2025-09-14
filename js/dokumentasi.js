@@ -180,6 +180,18 @@ const fotoData = {
     img: "/assets/dokumentasi/pembinaanDCserkot3.png", 
     date: "28 Mei 2025" 
   },
+  foto30: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 4", 
+    desc: "Pembinaan Desa/Kelurahan Cantik kali ini difokuskan pada penyusunan publikasi Kelurahan Curug dalam Angka. Kegiatan diikuti oleh tiga aparat staf kelurahan yang memiliki kemampuan mengoperasikan Microsoft Word dan Excel, serta tiga pegawai organik BPS Kota Serang. Publikasi yang disusun mengacu pada Kecamatan dalam Angka dan Kota Serang dalam Angka, dengan sumber data berasal dari kelurahan, instansi terkait di tingkat kelurahan, kecamatan, maupun Kota Serang. Adapun rencana penyelesaian publikasi ditargetkan pada pertengahan Juli 2025, sehingga diperlukan koordinasi dan konsolidasi data secara intensif agar publikasi dapat tersusun dengan baik, lengkap, dan tepat waktu.",
+    img: "/assets/dokumentasi/pembinaanDCserkot4.png", 
+    date: "04 Mei 2025" 
+  },
+  foto31: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 5", 
+    desc: "Pembinaan kali ini difokuskan pada pengolahan data menggunakan aplikasi SPSS 22. Peserta yang direncanakan tiga orang staf kelurahan, namun yang hadir hanya dua orang karena satu peserta berhalangan. Sebelumnya, aplikasi SPSS 22 telah berhasil diinstal pada dua laptop yang digunakan dalam pelatihan. Materi pembelajaran menggunakan raw data Survei Preneur yang sudah selesai dikumpulkan. Langkah awal dilakukan pemeriksaan serta validasi data untuk mengidentifikasi kesalahan dan ketidakkonsistenan. Walaupun proses pemeriksaan data belum selesai, peserta langsung diajarkan cara membuat tabulasi data dan mempraktikkannya secara langsung menggunakan SPSS.",
+    img: "/assets/dokumentasi/pembinaanDCserkot5.png", 
+    date: "11 Juni 2025" 
+  },
 };
 
 const keysFoto = Object.keys(fotoData);
