@@ -164,7 +164,67 @@ const beritaData = {
     `,
     img: "/assets/buletin/info-terbaru/Pembinaan agen 1124 (4).jpeg",
     file: null
-  }
+  },
+
+  berita7: {
+    title: "Eksotik: Statistik Itu Estetik, Biar Paham Bukan Cuma Posting”",
+    date: "25 Juli 2025",
+    desc: `
+      Badan Pusat Statistik (BPS) Provinsi Banten melalui program Eksotik akan menggelar edukasi dan sosialisasi statistik di Universitas Bina Bangsa pada 25 Juli 2025. Acara ini mengangkat tema “Statistik Itu Estetik: Biar Paham, Bukan Cuma Posting” dengan menghadirkan Maulani, S.Stat., M.Si. sebagai narasumber.
+    `,
+    img: "/assets/buletin/info-terbaru/Eksotik_(3).png",
+    file: null
+  },
+
+  berita7: {
+    title: "Kuliah Tamu BPS Provinsi Banten Tingkatkan Pemahaman Data Statistik",
+    date: "26 Februari 2025",
+    desc: `
+      BPS Provinsi Banten menggelar kuliah tamu yang diikuti antusias oleh mahasiswa di kampus. Kegiatan ini menghadirkan tim Humas BPS untuk berbagi wawasan tentang pentingnya memahami dan mengomunikasikan data statistik secara efektif di era digital.
+    `,
+    img: "/assets/buletin/info-terbaru/Eksotik_(3).png",
+    file: null
+  },
+
+  berita8: {
+    title: "Eksotik: Edukasi Statistik Bersama BPS Provinsi Banten di UNIBA",
+    date: "28 November 2024",
+    desc: `
+      BPS Provinsi Banten melalui program Eksotik menggelar edukasi dan sosialisasi statistik di Universitas Bina Bangsa pada 28 November 2024. Kegiatan ini menghadirkan Khafid Akhiriyanto, Statistisi Ahli Muda BPS Provinsi Banten, yang membahas cara membunyikan data statistik dengan analisis sederhana.
+    `,
+    img: "/assets/buletin/info-terbaru/Khafid_Pojok.png",
+    file: null
+  },
+
+  berita9: {
+    title: "Eksotik Kolaborasi: Kenalan dengan Statistik Keuangan",
+    date: "15 Mei 2025",
+    desc: `
+      BPS Provinsi Banten akan menggelar kegiatan Eksotik Kolaborasi pada 15 Mei 2025 di BPK PENABUR SMAK Penabur Serang. Acara ini menghadirkan Rizal Rahadiana, Statistisi Ahli Muda BPS, yang akan membahas pentingnya memahami statistik keuangan secara lebih dekat.
+    `,
+    img: "/assets/buletin/info-terbaru/Eksotik@2x-100.jpg",
+    file: null
+  },
+
+  berita10: {
+    title: "Eksotik: Edukasi Statistik BPS Provinsi Banten di Kampus",
+    date: "23 Oktober 2024",
+    desc: `
+      BPS Provinsi Banten melalui program Eksotik kembali hadir memberikan edukasi statistik kepada mahasiswa pada 23 Oktober 2024. Kegiatan ini berlangsung interaktif, menghadirkan suasana belajar yang santai namun penuh wawasan tentang pentingnya pemahaman data statistik dalam berbagai bidang kehidupan.
+    `,
+    img: "/assets/buletin/info-terbaru/Eksotik_(4).jpeg",
+    file: null
+  },
+
+  berita11: {
+    title: "Pojok Statistik: Dasar-dasar Infografis",
+    date: "23 April 2025",
+    desc: `
+      BPS Provinsi Banten melalui Pojok Statistik memberikan materi bertajuk Dasar-dasar Infografis dalam kegiatan Pembinaan Agen Statistik 2025. Materi ini disampaikan oleh Eben Baenuri, Statistisi Ahli Muda BPS Provinsi Banten, bertempat di Serang pada April 2025.
+    `,
+    img: "/assets/buletin/info-terbaru/potik_dasarInfografis.png",
+    file: null
+  },
 };
 
 // ======================= UTIL FUNCTION =======================
