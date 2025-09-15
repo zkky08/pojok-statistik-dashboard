@@ -222,6 +222,24 @@ const fotoData = {
     img: "/assets/dokumentasi/pembinaanDCserkot10.png", 
     date: "16 Juli 2025" 
   },
+  foto37: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 1: Penerapan Proses Bisnis Statistik (GSBPM)", 
+    desc: "Pembinaan Desa Cantik ke-1 membahas Program Desa Cantik 2025 serta penerapan Proses Bisnis Statistik (GSBPM). Materi yang disampaikan mencakup latar belakang, tujuan, output, dan dampak program. Tujuan utama Desa Cantik adalah meningkatkan literasi statistik, menstandarkan pengelolaan data, mengoptimalkan pemanfaatan data, serta membentuk agen statistik desa. Output yang diharapkan berupa profil/monografi desa, publikasi statistik, website data, hingga penetapan Desa Cantik terbaik. Dampak jangka panjangnya adalah meningkatnya kualitas data desa sehingga mendukung pengambilan keputusan berbasis data dan pembangunan yang lebih tepat sasaran. Selain itu, disampaikan pula penerapan GSBPM sebagai kerangka kerja standar internasional dalam proses statistik. Tahapannya meliputi perencanaan (identify needs, design, build), pengumpulan data (collect), pengolahan dan analisis (process, analyze), hingga penyebarluasan serta evaluasi (disseminate, evaluate). Melalui model ini, data desa dapat dikelola secara sistematis, terintegrasi, dan berkelanjutan. Diskusi menghasilkan kesepakatan bahwa Program Desa Cantik akan mengadopsi GSBPM, mengoptimalkan pemanfaatan data administrasi dan big data, serta fokus pada peningkatan kapasitas agen statistik. Tindak lanjutnya, agen statistik akan melaksanakan pengumpulan, pengolahan, dan publikasi data sesuai kerangka GSBPM.",
+    img: "/assets/dokumentasi/pembinaanDCtangsel1.png", 
+    date: "09 Mei 2025" 
+  },
+  foto38: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 2: Identifikasi Kebutuhan Kelurahan (Lanjutan)", 
+    desc: "Pembinaan Desa Cantik di Kelurahan Pakulonan difokuskan pada identifikasi potensi dan kebutuhan data sebagai langkah awal dalam penerapan Program Cinta Statistik 2025. Diskusi menghasilkan beberapa poin penting, antara lain belum tersedianya data monografi terbaru serta sistem informasi desa (SID) yang memadai, dan ketiadaan website kelurahan. Di sisi lain, terdapat potensi unggulan yang dapat dikembangkan, yaitu persebaran UMKM yang merata di wilayah Pakulonan serta daya tarik wisata kuliner di beberapa lokasi strategis. Dari hasil diskusi, disepakati bahwa tindak lanjut utama adalah melakukan pembaruan data monografi agar informasi dasar kelurahan lebih akurat dan mutakhir. Selain itu, Tim Pembina Desa Cantik akan memberikan pembinaan lebih lanjut mengenai pengelolaan serta pemanfaatan data statistik. Langkah ini diharapkan dapat memperkuat kapasitas kelurahan dalam menyediakan data yang berkualitas, sekaligus mendorong pemanfaatannya untuk perencanaan pembangunan berbasis potensi lokal.",
+    img: "/assets/dokumentasi/pembinaanDCtangse2.png", 
+    date: "16 Mei 2025" 
+  },
+  foto39: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 3: Penyajian Data dengan Tabel dan Grafik", 
+    desc: "Pembinaan kali ini berfokus pada penyajian data dengan tabel dan grafik serta teknik penyebarluasan data. Materi meliputi tujuan dan komponen penyusunan tabel, jenis-jenis tabel (satu arah, dua arah, tiga arah), serta teknik penyajian tabel panjang. Untuk grafik, dijelaskan keunggulannya dalam menyampaikan informasi yang lebih menarik dan mudah dipahami, serta berbagai jenis grafik seperti garis, batang, lingkaran, piktogram, dan cartogram. Panduan pemilihan grafik juga diberikan agar sesuai dengan tujuan, jenis data, dan target pengguna. Selain itu, narasumber menekankan pentingnya penyebarluasan data melalui publikasi, poster, website resmi, dan media sosial dengan memperhatikan konsistensi format dan sumber data. Dalam sesi praktik, peserta membuat tabel terkait jumlah apotek, tempat praktik dokter, dan sarana kesehatan, serta menyusun tiga tabel sesuai format BPS. Hasil praktik ditampilkan dalam bentuk tabel dan grafik, antara lain Grafik Rasio Penduduk Kelurahan Pakulonan Tahun 2021–2024, Grafik Jumlah Penduduk Berdasarkan Jenis Kelamin Tahun 2024, serta Tabel Jumlah Penduduk Berdasarkan Jenis Kelamin dan Rasio Tahun 2021–2024. Data yang digunakan bersumber dari DKB Disdukcapil, dan hasil praktik ini menjadi dasar peningkatan keterampilan agen statistik dalam mengolah dan menyajikan data secara informatif dan sesuai standar.",
+    img: "/assets/dokumentasi/pembinaanDCtangse3.png", 
+    date: "23 Mei 2025" 
+  },
 };
 
 const keysFoto = Object.keys(fotoData);
