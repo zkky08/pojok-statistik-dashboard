@@ -240,6 +240,18 @@ const fotoData = {
     img: "/assets/dokumentasi/pembinaanDCtangse3.png", 
     date: "23 Mei 2025" 
   },
+  foto40: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 4: Analisis Sederhana", 
+    desc: "Pembinaan kali ini membahas analisis data sederhana dengan fokus pada analisis deskriptif. Kegiatan dihadiri oleh Lurah Pakulonan, Bapak Dwisantoso, Sekretaris Lurah Bapak Imam Hadi, serta pemateri Bapak Ahmad Jailani dan Ibu Santi Nurhayati. Dalam sesi pembukaan, Bapak Imam menekankan pentingnya pembangunan website kelurahan yang sesuai dengan kebutuhan spesifik masyarakat, bukan sekadar menggunakan template dari Dinas Kominfo. Setelah itu, sesi materi dimulai dengan penjelasan dasar analisis data, khususnya perbedaan antara statistik deskriptif dan inferensia. Pada pembinaan ini, peserta difokuskan pada penerapan analisis deskriptif serta tahapan analisis menurut GSBPM yang mencakup penyusunan naskah output, validasi data, interpretasi output, hingga kebijakan penyajian data. Materi lebih lanjut menjelaskan jenis data kategorik (nominal dan ordinal) serta data numerik (interval dan rasio). Peserta juga dibekali pemahaman mengenai ukuran statistik dalam analisis deskriptif, seperti rate, rasio, proporsi, dan jumlah mutlak, serta konsep ukuran pemusatan (mean, median, modus) dan ukuran penyebaran (standar deviasi). Melalui pembinaan ini, agen statistik Pakulonan diharapkan mampu mengolah data menjadi informasi yang jelas, ringkas, dan bermanfaat sebagai dasar pengambilan keputusan maupun penyusunan publikasi kelurahan.",
+    img: "/assets/dokumentasi/pembinaanDCtangse4.png", 
+    date: "28 Mei 2025" 
+  },
+  foto41: { 
+    title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 5: Penyajian Data dengan Infografis", 
+    desc: "Pembinaan kali ini berfokus pada penyajian data dengan infografis sebagai strategi komunikasi statistik yang efektif. Materi yang disampaikan mencakup definisi infografis sebagai cara memvisualisasikan informasi kompleks agar lebih mudah dipahami, serta keunggulannya dalam menyederhanakan penjelasan panjang atau tabel rumit menjadi visual yang menarik. Narasumber juga menjelaskan jenis-jenis infografis, yaitu statis, dinamis (audio-video), dan interaktif, serta elemen penting dalam desain seperti kejelasan data, visual yang menarik, kemudahan pemahaman, dan kemudahan distribusi. Selain itu, dipaparkan langkah-langkah pembuatan infografis mulai dari pengumpulan data, penentuan tujuan, perencanaan, pemilihan aplikasi (online/offline), evaluasi data, desain, hingga proses rilis. Sebagai tindak lanjut, peserta melakukan praktik langsung pembuatan infografis menggunakan Canva dengan tema jumlah fasilitas kesehatan di Kelurahan Pakulonan. Hasil praktik menunjukkan bahwa agen statistik mulai mampu mengubah data numerik menjadi tampilan visual yang lebih komunikatif, sehingga data dapat lebih mudah dipahami masyarakat umum. Kegiatan ini diharapkan meningkatkan keterampilan peserta dalam menyebarluaskan data desa secara menarik dan efektif melalui berbagai media.",
+    img: "/assets/dokumentasi/pembinaanDCtangse5.png", 
+    date: "05 Juni 2025" 
+  },
 };
 
 const keysFoto = Object.keys(fotoData);
