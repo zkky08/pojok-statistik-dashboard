@@ -2,73 +2,566 @@
 const fotoData = {
   foto1: { 
     title: "Kegiatan EKSOTIK", 
-    desc: "Foto di atas memperlihatkan suasana kegiatan pembelajaran yang berlangsung di ruang kelas. Kegiatan ini diisi oleh pemateri/dosen yang sedang menyampaikan materi di depan kelas, sementara para peserta/mahasiswa mengikuti dengan antusias dan tertib. Seluruh peserta duduk dengan rapi serta memperhatikan penjelasan yang diberikan. Fasilitas ruang kelas dilengkapi pencahayaan yang baik, proyektor untuk presentasi, serta tata ruang yang mendukung suasana belajar kondusif. Dokumentasi ini menunjukkan bahwa kegiatan berlangsung dengan lancar, interaktif, dan sesuai dengan tujuan yang telah direncanakan.",
+    desc: `
+    <ul>
+      <li>Foto di atas memperlihatkan suasana <b>kegiatan pembelajaran</b> yang berlangsung di ruang kelas.</li>
+      <li>Kegiatan ini diisi oleh <b>pemateri/dosen</b> yang sedang menyampaikan materi di depan kelas.
+        <ul>
+          <li>Para peserta/mahasiswa mengikuti dengan penuh <i>antusias</i> dan tetap tertib.</li>
+          <li>Seluruh peserta duduk dengan rapi serta memperhatikan penjelasan yang diberikan secara serius.</li>
+          <li>Interaksi antara pemateri dan peserta menciptakan suasana belajar yang lebih hidup.</li>
+        </ul>
+      </li>
+      <li>Fasilitas ruang kelas mendukung kegiatan pembelajaran dengan baik:
+        <ul>
+          <li>Pencahayaan yang terang sehingga membuat ruangan nyaman.</li>
+          <li><b>Proyektor</b> untuk presentasi, membantu penyampaian materi lebih jelas dan menarik.</li>
+          <li>Tata ruang yang tertata rapi sehingga memudahkan peserta untuk fokus.</li>
+        </ul>
+      </li>
+      <li>Dokumentasi ini menunjukkan bahwa kegiatan:
+        <ul>
+          <li>Berlangsung dengan <b>lancar</b> sesuai rencana yang telah disusun.</li>
+          <li>Memiliki nuansa <i>interaktif</i>, di mana peserta tidak hanya mendengarkan tetapi juga berpartisipasi dalam diskusi.</li>
+          <li>Sesuai dengan tujuan utama untuk menciptakan suasana belajar yang kondusif, efektif, dan menyenangkan.</li>
+        </ul>
+      </li>
+      <li>Dari dokumentasi ini juga terlihat bahwa:
+        <ul>
+          <li>Peserta mampu menjaga sikap disiplin dan aktif selama pembelajaran.</li>
+          <li>Pemateri berhasil menyampaikan materi dengan gaya komunikasi yang mudah dipahami.</li>
+          <li>Kegiatan semacam ini dapat menjadi contoh baik bagi proses pembelajaran di kesempatan berikutnya.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/eksotik_23_10_24_(1).jpeg", 
     date: "23 Oktober 2024" 
   },
   foto2: { 
     title: "Kegiatan EKSOTIK", 
-    desc: "Foto ini mendokumentasikan kegiatan EKSOTIK Pojok Statistik UNIBA yang dilaksanakan pada bulan Desember 2024. Terlihat pemateri sedang menyampaikan materi di depan kelas dengan menggunakan perangkat presentasi, sementara para peserta mengikuti dengan serius dan antusias. Suasana ruang kelas mendukung jalannya kegiatan dengan tata ruang yang rapi serta fasilitas yang memadai. Dokumentasi ini menunjukkan bahwa kegiatan berlangsung lancar, interaktif, serta memberikan manfaat akademik bagi peserta.",
+    desc: `
+    <ul>
+      <li>Foto ini mendokumentasikan kegiatan <b>EKSOTIK Pojok Statistik UNIBA</b> yang dilaksanakan pada <b>Desember 2024</b>.</li>
+      <li>Terlihat <b>pemateri</b> sedang menyampaikan materi di depan kelas dengan menggunakan perangkat presentasi.
+        <ul>
+          <li>Para peserta mengikuti penyampaian dengan penuh <i>keseriusan</i> dan <i>antusiasme</i>.</li>
+          <li>Pemateri memanfaatkan <b>slide presentasi</b> untuk menjelaskan konsep statistik secara lebih jelas.</li>
+          <li>Interaksi antara pemateri dan peserta berjalan baik melalui sesi tanya jawab singkat.</li>
+        </ul>
+      </li>
+      <li>Suasana ruang kelas mendukung jalannya kegiatan:
+        <ul>
+          <li>Tata ruang yang rapi membuat peserta nyaman dalam mengikuti pembelajaran.</li>
+          <li>Fasilitas seperti <b>proyektor</b>, pencahayaan yang cukup, dan kursi yang tertata mendukung proses belajar.</li>
+          <li>Lingkungan kelas yang kondusif mendorong fokus dan konsentrasi penuh peserta.</li>
+        </ul>
+      </li>
+      <li>Dokumentasi ini menunjukkan bahwa kegiatan:
+        <ul>
+          <li>Berlangsung dengan <b>lancar</b> sesuai rencana yang telah disusun.</li>
+          <li>Memiliki nuansa <i>interaktif</i> dengan partisipasi aktif mahasiswa.</li>
+          <li>Memberikan <b>manfaat akademik</b> berupa pemahaman tambahan terkait literasi statistik.</li>
+        </ul>
+      </li>
+      <li>Dari kegiatan ini dapat disimpulkan bahwa:
+        <ul>
+          <li>Peserta tidak hanya memperoleh teori, tetapi juga pengalaman belajar yang aplikatif.</li>
+          <li>Kegiatan <i>EKSOTIK Pojok Statistik</i> berperan penting dalam menumbuhkan minat mahasiswa terhadap data.</li>
+          <li>Acara ini menjadi sarana yang efektif untuk menghubungkan materi statistik dengan praktik di lapangan.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/eksotik_10_12_24_(2).jpeg", 
     date: "10 Desember 2024" 
   },
   foto3: { 
     title: "Rapat Pojok Statistik", 
-    desc: "Foto ini mendokumentasikan kegiatan rapat yang dilaksanakan di ruang Pojok Statistik Universitas Bina Bangsa (UNIBA). Terlihat beberapa peserta rapat sedang berdiskusi secara serius terkait pengembangan program serta pemanfaatan fasilitas Pojok Statistik sebagai pusat pembelajaran data dan literasi statistik. Latar belakang ruangan menampilkan identitas Pojok Statistik dengan berbagai poster informasi dan papan nama resmi. Dokumentasi ini menunjukkan suasana rapat yang kondusif, komunikatif, dan berorientasi pada penguatan kegiatan akademik maupun literasi statistik di lingkungan kampus.",
+    desc: `
+    <ul>
+      <li>Foto ini mendokumentasikan kegiatan <b>rapat</b> yang dilaksanakan di ruang <b>Pojok Statistik Universitas Bina Bangsa (UNIBA)</b>.</li>
+      <li>Terlihat beberapa peserta rapat sedang berdiskusi secara serius.
+        <ul>
+          <li>Topik utama pembahasan adalah <b>pengembangan program</b> serta pemanfaatan fasilitas <i>Pojok Statistik</i>.</li>
+          <li>Pojok Statistik dipandang sebagai <b>pusat pembelajaran data</b> dan peningkatan literasi statistik di lingkungan kampus.</li>
+          <li>Diskusi berlangsung dengan suasana yang terbuka, di mana setiap peserta dapat menyampaikan gagasan dan masukan.</li>
+        </ul>
+      </li>
+      <li>Latar belakang ruangan menampilkan identitas <i>Pojok Statistik</i>:
+        <ul>
+          <li>Terdapat berbagai <b>poster informasi</b> yang berisi edukasi tentang data dan statistik.</li>
+          <li>Papan nama resmi memperkuat identitas ruang sebagai bagian dari kerja sama BPS dengan universitas.</li>
+          <li>Tata ruang sederhana namun tetap memberikan nuansa akademik yang kuat.</li>
+        </ul>
+      </li>
+      <li>Dokumentasi ini menunjukkan bahwa rapat:
+        <ul>
+          <li>Berlangsung dalam suasana <b>kondusif</b> dan penuh semangat kolaborasi.</li>
+          <li>Menunjukkan komunikasi yang <i>komunikatif</i> antara peserta dari berbagai latar belakang.</li>
+          <li>Berorientasi pada penguatan kegiatan akademik dan literasi statistik di kampus.</li>
+        </ul>
+      </li>
+      <li>Dari kegiatan ini dapat ditarik beberapa poin penting:
+        <ul>
+          <li>Adanya komitmen bersama untuk menjadikan <i>Pojok Statistik</i> sebagai ruang belajar yang aktif dan produktif.</li>
+          <li>Keseriusan peserta rapat mencerminkan dukungan penuh terhadap upaya peningkatan literasi data di kalangan mahasiswa.</li>
+          <li>Kegiatan ini juga menjadi bukti nyata kolaborasi antara BPS dan perguruan tinggi dalam membangun ekosistem akademik berbasis data.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/rapat_potik.jpeg", 
     date: "15 Maret 2025" 
   },
   foto4: { 
     title: "Pembinaan Agen Pojok Statistik", 
-    desc: "Foto ini mendokumentasikan kegiatan Pembinaan Agen Pojok Statistik yang diselenggarakan pada bulan November 2024. Kegiatan berlangsung di ruang kelas dengan suasana yang kondusif, di mana narasumber berdiri di depan ruangan memberikan arahan dan materi pembinaan kepada para peserta. Para agen Pojok Statistik tampak antusias dan aktif mengikuti kegiatan, mencerminkan semangat untuk meningkatkan kapasitas serta peran mereka dalam mendukung literasi dan pemanfaatan data statistik di lingkungan kampus. Dokumentasi ini menunjukkan bahwa kegiatan pembinaan berjalan dengan baik, interaktif, dan sesuai dengan tujuan penguatan kompetensi agen Pojok Statistik..",
+    desc: `
+    <ul>
+      <li>Foto ini mendokumentasikan kegiatan <b>Pembinaan Agen Pojok Statistik</b> yang diselenggarakan pada <b>November 2024</b>.</li>
+      <li>Kegiatan berlangsung di ruang kelas dengan suasana yang <b>kondusif</b>.
+        <ul>
+          <li><b>Narasumber</b> berdiri di depan ruangan memberikan arahan dan materi pembinaan kepada peserta.</li>
+          <li>Materi yang disampaikan mencakup penguatan peran agen dalam mendukung <i>literasi statistik</i> di kampus.</li>
+          <li>Peserta diberikan kesempatan untuk berdiskusi, bertanya, dan berbagi pengalaman lapangan.</li>
+        </ul>
+      </li>
+      <li>Para <b>agen Pojok Statistik</b> tampak antusias dan aktif mengikuti kegiatan.
+        <ul>
+          <li>Antusiasme terlihat dari respon cepat terhadap pertanyaan dan aktivitas kelompok.</li>
+          <li>Peserta menunjukkan <i>semangat belajar</i> yang tinggi untuk meningkatkan kapasitas diri.</li>
+          <li>Diskusi interaktif membantu peserta memahami peran penting agen statistik di kampus.</li>
+        </ul>
+      </li>
+      <li>Dokumentasi ini menunjukkan bahwa kegiatan pembinaan:
+        <ul>
+          <li>Berjalan dengan <b>baik</b> sesuai dengan rencana yang telah disusun.</li>
+          <li>Memiliki suasana <i>interaktif</i> antara narasumber dan peserta.</li>
+          <li>Sesuai dengan tujuan utama yaitu penguatan kompetensi agen <i>Pojok Statistik</i>.</li>
+        </ul>
+      </li>
+      <li>Dari kegiatan ini dapat disimpulkan bahwa:
+        <ul>
+          <li>Agen Pojok Statistik semakin siap berperan sebagai <b>penyambung literasi data</b> di lingkungan akademik.</li>
+          <li>Kegiatan pembinaan semacam ini menjadi wadah penting untuk meningkatkan keterampilan komunikasi data.</li>
+          <li>Program berkelanjutan akan memperkuat kontribusi agen dalam mendukung pemanfaatan data statistik secara luas.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/pembinaan_agen_11_24.jpeg", 
     date: "20 Maret 2025" 
   },
   foto5: { 
     title: "Pembinaan Desain Publikasi", 
-    desc: "Foto ini mendokumentasikan kegiatan Pembinaan Agen Pojok Statistik yang difokuskan pada pembuatan layout desain publikasi dan infografis. Dalam kegiatan ini, peserta dibimbing langsung oleh pendamping untuk memahami teknik penyusunan desain publikasi berbasis data serta penyajian informasi dalam bentuk infografis yang menarik dan mudah dipahami. Terlihat para agen aktif berdiskusi, mencatat, serta berlatih menggunakan materi pendukung. Dokumentasi ini menunjukkan suasana pembinaan yang interaktif, kreatif, dan bertujuan untuk meningkatkan keterampilan agen Pojok Statistik dalam mengolah serta menyebarluaskan informasi statistik secara visual.",
+    desc: `
+    <ul>
+      <li>Foto ini mendokumentasikan kegiatan <b>Pembinaan Agen Pojok Statistik</b> yang difokuskan pada <b>pembuatan layout desain publikasi</b> dan <b>infografis</b>.</li>
+      <li>Dalam kegiatan ini, peserta mendapatkan bimbingan langsung dari <b>pendamping</b>.
+        <ul>
+          <li>Peserta diarahkan untuk memahami teknik penyusunan desain publikasi berbasis data.</li>
+          <li>Pendamping menekankan pentingnya menyajikan informasi dalam bentuk <i>infografis</i> yang menarik dan mudah dipahami.</li>
+          <li>Materi pelatihan mencakup pengenalan prinsip desain, pemilihan warna, tipografi, serta tata letak visual.</li>
+        </ul>
+      </li>
+      <li>Para <b>agen Pojok Statistik</b> terlihat aktif dalam kegiatan.
+        <ul>
+          <li>Mereka berdiskusi mengenai cara menyajikan data agar lebih komunikatif.</li>
+          <li>Peserta mencatat poin-poin penting yang disampaikan oleh pendamping.</li>
+          <li>Latihan praktik menggunakan <i>materi pendukung</i> membantu memperkuat pemahaman teknis.</li>
+        </ul>
+      </li>
+      <li>Dokumentasi ini menunjukkan suasana pembinaan yang <b>interaktif</b> dan <b>kreatif</b>.
+        <ul>
+          <li>Kegiatan mendorong kolaborasi antara peserta dalam menghasilkan karya desain.</li>
+          <li>Terdapat sesi umpan balik langsung agar peserta dapat memperbaiki hasil desain mereka.</li>
+          <li>Fasilitas yang tersedia, seperti komputer dan proyektor, mendukung kelancaran pembelajaran.</li>
+        </ul>
+      </li>
+      <li>Tujuan kegiatan ini adalah untuk:
+        <ul>
+          <li>Meningkatkan <b>keterampilan agen</b> dalam mengolah data menjadi informasi visual yang mudah dipahami.</li>
+          <li>Mendorong agen agar mampu menyebarluaskan informasi statistik dengan cara yang lebih <i>informatif</i> dan <i>atraktif</i>.</li>
+          <li>Memperkuat peran Pojok Statistik sebagai pusat literasi data di lingkungan akademik.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/pembinaan_agen_LayoutDesignPublikasi.jpeg", 
     date: "Dd Mm Yyyy" 
   },
   foto6: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Pandeglang Tahap 1", 
-    desc: "Acara dimulai dengan pembukaan oleh Lurah Juhut, Muhamad Syahrul, dilanjutkan pemaparan materi dari tim Desa Cantik BPS Kabupaten Pandeglang. Materi utama menekankan bahwa desa kini dipandang sebagai subyek sekaligus ujung tombak pembangunan, sehingga penguatan literasi dan pengelolaan data menjadi kunci untuk pembangunan yang tepat sasaran. Program Desa Cantik bertujuan meningkatkan literasi statistik perangkat desa dan masyarakat, menstandardisasi pengelolaan data, mengoptimalkan pemanfaatan data, serta membentuk agen statistik sebagai aktor utama. Tahapan pelaksanaan mencakup koordinasi, identifikasi potensi desa, perencanaan, hingga pelaksanaan, dengan rujukan pada Sistem Statistik Nasional (SSN) dan Generic Statistical Business Process Model (GSBPM). Output yang ditargetkan antara lain monografi desa, publikasi desa dalam angka, infografis, serta meningkatnya kemampuan agen statistik dalam menyajikan data. Dalam sesi diskusi, ditegaskan bahwa agen statistik tidak memperoleh honor finansial, tetapi perannya penting dalam keberhasilan program. Agen statistik diutamakan berasal dari perangkat desa dengan jumlah sesuai keputusan kepala desa, dan penerapan standar internasional GSBPM dilakukan secara bertahap. Program Desa Cantik tidak mencakup penyediaan otomatisasi atau pengadaan barang, melainkan fokus pada peningkatan kapasitas SDM. Saat ini beberapa desa telah memiliki SK agen statistik, dengan pembinaan lanjutan yang dijadwalkan fleksibel sesuai kesepakatan. Kerja sama BPS dengan desa berlangsung hingga Oktober 2024, namun pembinaan tetap melekat sehingga desa dapat meminta pendampingan meski di luar periode program.",
+    desc: `
+    <ul>
+      <li>Acara dimulai dengan <b>pembukaan</b> oleh <b>Lurah Juhut, Muhamad Syahrul</b>, kemudian dilanjutkan pemaparan materi dari <b>tim Desa Cantik BPS Kabupaten Pandeglang</b>.</li>
+      <li>Materi utama menekankan pentingnya peran desa:
+        <ul>
+          <li>Desa dipandang sebagai <b>subyek sekaligus ujung tombak pembangunan</b>.</li>
+          <li><b>Penguatan literasi</b> dan <b>pengelolaan data</b> menjadi kunci pembangunan yang tepat sasaran.</li>
+        </ul>
+      </li>
+      <li>Program <b>Desa Cantik</b> memiliki tujuan utama:
+        <ul>
+          <li>Meningkatkan literasi statistik perangkat desa dan masyarakat.</li>
+          <li>Menstandardisasi sistem <i>pengelolaan data</i> agar lebih terstruktur.</li>
+          <li>Mengoptimalkan pemanfaatan data untuk perencanaan pembangunan.</li>
+          <li>Membentuk <b>agen statistik</b> sebagai aktor utama di desa.</li>
+        </ul>
+      </li>
+      <li>Tahapan pelaksanaan program mencakup:
+        <ul>
+          <li>Koordinasi awal dengan perangkat desa.</li>
+          <li>Identifikasi potensi dan kebutuhan desa.</li>
+          <li>Penyusunan perencanaan kegiatan.</li>
+          <li>Pelaksanaan dengan rujukan pada <i>Sistem Statistik Nasional (SSN)</i> dan <i>Generic Statistical Business Process Model (GSBPM)</i>.</li>
+        </ul>
+      </li>
+      <li>Output yang ditargetkan antara lain:
+        <ul>
+          <li><b>Monografi desa</b> yang berisi profil lengkap desa.</li>
+          <li><b>Publikasi Desa dalam Angka</b> sebagai sumber informasi statistik resmi.</li>
+          <li><i>Infografis</i> untuk menyajikan data secara visual dan menarik.</li>
+          <li>Meningkatnya kemampuan <b>agen statistik</b> dalam menyajikan data.</li>
+        </ul>
+      </li>
+      <li>Dalam sesi diskusi, ditegaskan beberapa poin penting:
+        <ul>
+          <li><b>Agen statistik</b> tidak memperoleh honor finansial, namun perannya sangat penting bagi keberhasilan program.</li>
+          <li>Agen statistik diutamakan berasal dari perangkat desa dengan jumlah ditentukan oleh kepala desa.</li>
+          <li>Penerapan standar internasional <i>GSBPM</i> dilakukan secara bertahap.</li>
+        </ul>
+      </li>
+      <li>Program <b>Desa Cantik</b> memiliki batasan:
+        <ul>
+          <li>Tidak mencakup otomatisasi sistem secara langsung.</li>
+          <li>Tidak termasuk pengadaan barang, melainkan fokus pada peningkatan kapasitas <i>SDM</i>.</li>
+        </ul>
+      </li>
+      <li>Status pelaksanaan program:
+        <ul>
+          <li>Beberapa desa telah memiliki <b>SK agen statistik</b>.</li>
+          <li>Pembinaan lanjutan dijadwalkan secara fleksibel sesuai kebutuhan dan kesepakatan bersama.</li>
+          <li>Kerja sama BPS dengan desa berlangsung hingga <b>Oktober 2024</b>, namun pendampingan tetap dapat diminta meski di luar periode program.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/pembinaanDCpandeglang1.jpg", 
     date: "9 Mei 2025" 
   },
   foto7: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Pandeglang Tahap 2", 
-    desc: "Acara dimoderatori oleh Fajar Sidik Karimulloh dari tim Desa Cantik BPS Pandeglang, dengan materi utama tentang Metadata Statistik, Satu Data Desa Indonesia, serta Identifikasi Kebutuhan Desa. Metadata dijelaskan sebagai informasi yang menggambarkan data statistik secara detail, mencakup terminologi, definisi, klasifikasi, lokasi, metodologi, dan publikasi. Manfaat metadata berbeda bagi pembina, produsen, wali, dan pengguna data, antara lain untuk meningkatkan efisiensi, menghindari duplikasi, mencegah kesalahan, serta memudahkan pemahaman dan pengelolaan data. Identifikasi kebutuhan desa menjadi tahap awal Program Desa Cantik, dengan tujuan mengetahui profil, potensi, masalah, dan program yang diperlukan desa, menggunakan teknik wawancara, forum diskusi, serta instrumen online yang dikirimkan ke BPS. Kegiatan juga dilanjutkan dengan pendampingan pengisian tabel publikasi output Desa Cantik 2025. Dalam sesi diskusi, dibahas contoh dokumen metadata, perbedaan pencatatan penduduk berdasarkan data defacto (BPS) dan dejure (Disdukcapil), serta pentingnya menghindari duplikasi data meski tidak ada larangan tertulis. Pengisian form identifikasi dilakukan bertahap sesuai ketersediaan data desa, dan untuk metadata diperlukan akun yang dikoordinasikan dengan kecamatan dan Diskominfo. Selain itu, publikasi data desa diharapkan selengkap mungkin dengan meminta data tambahan dari pihak terkait, seperti puskesmas atau bidan desa, agar hasil publikasi lebih komprehensif.",
+    desc: `
+    <ul>
+      <li>Acara dimoderatori oleh <b>Fajar Sidik Karimulloh</b> dari tim <b>Desa Cantik BPS Pandeglang</b>, dengan materi utama mencakup:
+        <ul>
+          <li><b>Metadata Statistik</b></li>
+          <li><b>Satu Data Desa Indonesia</b></li>
+          <li><b>Identifikasi Kebutuhan Desa</b></li>
+        </ul>
+      </li>
+      <li><b>Metadata Statistik</b> dijelaskan sebagai informasi yang menggambarkan data secara detail:
+        <ul>
+          <li>Mencakup terminologi, definisi, klasifikasi, lokasi, metodologi, dan publikasi.</li>
+          <li>Memiliki manfaat berbeda bagi pembina, produsen, wali, dan pengguna data.</li>
+          <li>Manfaat metadata antara lain:
+            <ul>
+              <li>Meningkatkan efisiensi pengelolaan data.</li>
+              <li>Menghindari duplikasi pencatatan.</li>
+              <li>Mencegah terjadinya kesalahan.</li>
+              <li>Memudahkan pemahaman dan penggunaan data.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><b>Identifikasi kebutuhan desa</b> menjadi tahap awal Program Desa Cantik.
+        <ul>
+          <li>Tujuannya untuk mengetahui profil, potensi, masalah, serta program yang diperlukan desa.</li>
+          <li>Metode yang digunakan:
+            <ul>
+              <li>Wawancara langsung dengan perangkat desa.</li>
+              <li>Forum diskusi bersama masyarakat desa.</li>
+              <li>Instrumen online yang dikirimkan ke BPS.</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Kegiatan juga dilanjutkan dengan <b>pendampingan pengisian tabel publikasi output Desa Cantik 2025</b>.</li>
+      <li>Dalam sesi diskusi, dibahas berbagai topik:
+        <ul>
+          <li>Contoh dokumen metadata yang digunakan dalam praktik.</li>
+          <li>Perbedaan pencatatan penduduk:
+            <ul>
+              <li><i>Defacto</i> (versi BPS)</li>
+              <li><i>Dejure</i> (versi Disdukcapil)</li>
+            </ul>
+          </li>
+          <li>Pentingnya menghindari duplikasi data meskipun tidak ada larangan tertulis.</li>
+        </ul>
+      </li>
+      <li><b>Pengisian form identifikasi</b> dilakukan secara bertahap sesuai ketersediaan data desa.
+        <ul>
+          <li>Untuk metadata diperlukan akun yang dikoordinasikan dengan kecamatan dan Diskominfo.</li>
+        </ul>
+      </li>
+      <li><b>Publikasi data desa</b> diharapkan selengkap mungkin.
+        <ul>
+          <li>Desa diminta melengkapi data tambahan dari pihak terkait.</li>
+          <li>Contoh pihak yang dapat dimintai data tambahan:
+            <ul>
+              <li><b>Puskesmas</b></li>
+              <li><b>Bidan desa</b></li>
+            </ul>
+          </li>
+          <li>Hal ini bertujuan agar publikasi lebih komprehensif dan bermanfaat.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/pembinaanDCpandeglang2.jpg", 
     date: "20 Mei 2025" 
   },
   foto8: { 
     title: "Pencanangan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak", 
-    desc: "Pada 28 April 2025, Desa Sumurbandung resmi dicanangkan sebagai Desa Cantik 2025, menandai dimulainya program pembinaan desa untuk meningkatkan kualitas dan kesejahteraan masyarakat. Acara ini dihadiri oleh berbagai Organisasi Perangkat Daerah (OPD) terkait, seperti Dinas Komunikasi dan Informatika (Kominfo), Badan Perencanaan Pembangunan, DPMD, serta Camat Cikulur, Babinsa, Bhabinkamtibmas, tokoh masyarakat, tokoh agama, dan ketua RT/RW. Acara pencanangan Desa Cantik 2025 di Desa Sumurbandung diawali dengan pembukaan yang dipandu oleh Master of Ceremony (MC). MC menyampaikan ucapan selamat datang kepada seluruh tamu undangan dan menjelaskan secara singkat tujuan kegiatan, yaitu pencanangan program Desa Cantik yang bertujuan meningkatkan kualitas pengelolaan data desa untuk mendukung pembangunan. Selanjutnya, acara dilanjutkan dengan arahan dan paparan dari Camat Cikulur. Dalam arahannya, Camat menekankan pentingnya sinergi antara pemerintah desa, kecamatan, dan BPS dalam mengoptimalkan pemanfaatan data untuk perencanaan pembangunan yang tepat sasaran. Setelah itu, Kepala Desa Sumurbandung memberikan sambutan. Beliau menyampaikan rasa terima kasih atas kepercayaan yang diberikan kepada Desa Sumurbandung sebagai desa binaan program Desa Cantik, serta menyatakan komitmen perangkat desa untuk aktif mengikuti pembinaan yang akan dilaksanakan. Acara kemudian dilanjutkan dengan paparan dari Kepala BPS Kabupaten Lebak. Dalam paparannya, beliau menjelaskan konsep dan tujuan program Desa Cantik, serta manfaat yang akan diperoleh desa jika mampu mengelola data secara akurat, mutakhir, dan berkelanjutan. Sebagai penutup sesi sambutan, Ketua Tim Pembina Desa Cantik BPS Provinsi Banten menyampaikan materi pembinaan. Beliau menjelaskan peran BPS provinsi dalam mendukung pembinaan Desa Cantik di seluruh wilayah Banten, termasuk strategi pendampingan, penyediaan instrumen, dan penguatan kapasitas aparatur desa dalam pengelolaan data statistik. Puncak acara adalah pencanangan resmi oleh Kepala Dinas DPMD Kabupaten Lebak. Momen ini menjadi tonggak penting bagi Desa Sumurbandung dalam upaya menjadi desa yang lebih maju, mandiri, dan berbasis data. Dukungan semua pihak diharapkan dapat membawa perubahan positif bagi desa dan masyarakat di masa depan.",
+    desc: `
+    <ul>
+      <li>Pada <b>28 April 2025</b>, <b>Desa Sumurbandung</b> resmi dicanangkan sebagai <b>Desa Cantik 2025</b>, menandai dimulainya program pembinaan desa untuk meningkatkan kualitas dan kesejahteraan masyarakat.</li>
+      <li>Acara ini dihadiri oleh berbagai <b>Organisasi Perangkat Daerah (OPD)</b> dan tokoh masyarakat:
+        <ul>
+          <li>Dinas Komunikasi dan Informatika (<i>Kominfo</i>), Badan Perencanaan Pembangunan, dan <b>DPMD</b>.</li>
+          <li><b>Camat Cikulur</b>, Babinsa, dan Bhabinkamtibmas.</li>
+          <li>Tokoh masyarakat, tokoh agama, serta ketua RT/RW setempat.</li>
+        </ul>
+      </li>
+      <li>Rangkaian acara dimulai dengan <b>pembukaan</b> yang dipandu oleh <b>Master of Ceremony (MC)</b>.
+        <ul>
+          <li>MC menyampaikan ucapan selamat datang kepada seluruh tamu undangan.</li>
+          <li>MC juga menjelaskan tujuan kegiatan, yaitu pencanangan program <b>Desa Cantik</b> untuk meningkatkan pengelolaan data desa.</li>
+        </ul>
+      </li>
+      <li>Acara dilanjutkan dengan arahan dari <b>Camat Cikulur</b>.
+        <ul>
+          <li>Camat menekankan pentingnya <b>sinergi</b> antara pemerintah desa, kecamatan, dan BPS.</li>
+          <li>Optimalisasi pemanfaatan data disebut sebagai kunci <i>perencanaan pembangunan tepat sasaran</i>.</li>
+        </ul>
+      </li>
+      <li><b>Kepala Desa Sumurbandung</b> kemudian memberikan sambutan.
+        <ul>
+          <li>Menyampaikan terima kasih atas kepercayaan yang diberikan kepada desanya sebagai desa binaan program Desa Cantik.</li>
+          <li>Menegaskan komitmen perangkat desa untuk aktif mengikuti pembinaan.</li>
+        </ul>
+      </li>
+      <li>Acara berlanjut dengan paparan dari <b>Kepala BPS Kabupaten Lebak</b>.
+        <ul>
+          <li>Menjelaskan konsep dan tujuan program Desa Cantik.</li>
+          <li>Memaparkan manfaat yang akan diperoleh desa bila mampu mengelola data secara <b>akurat</b>, <b>mutakhir</b>, dan <b>berkelanjutan</b>.</li>
+        </ul>
+      </li>
+      <li>Sebagai penutup sesi sambutan, <b>Ketua Tim Pembina Desa Cantik BPS Provinsi Banten</b> menyampaikan materi pembinaan.
+        <ul>
+          <li>Menjelaskan peran BPS Provinsi dalam mendukung pembinaan Desa Cantik di seluruh wilayah Banten.</li>
+          <li>Strategi pendampingan, penyediaan instrumen, serta penguatan kapasitas aparatur desa menjadi fokus utama.</li>
+        </ul>
+      </li>
+      <li><b>Puncak acara</b> adalah pencanangan resmi oleh <b>Kepala Dinas DPMD Kabupaten Lebak</b>.
+        <ul>
+          <li>Momen ini menjadi tonggak penting bagi Desa Sumurbandung dalam upaya menjadi desa yang lebih maju, mandiri, dan berbasis data.</li>
+          <li>Dukungan dari semua pihak diharapkan dapat membawa perubahan positif bagi desa dan masyarakat di masa depan.</li>
+        </ul>
+      </li>
+    </ul>
+    `,
     img: "/assets/dokumentasi/penancanganDClebak.png", 
     date: "28 April 2025" 
   },
   foto9: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 1: Identifikasi Kebutuhan Data", 
-    desc: "Pada tanggal 30 April 2025 telah dilaksanakan kegiatan Pembinaan Desa Cantik di Desa Sumurbandung. Kegiatan ini membahas materi Identifikasi Kebutuhan Data yang bertujuan untuk membantu desa memahami jenis dan sumber data yang diperlukan dalam perencanaan pembangunan. Peserta memperoleh penjelasan tentang pentingnya data yang akurat dan terbarukan, teknik mengidentifikasi data prioritas, serta pemanfaatannya dalam mendukung kebijakan desa. Melalui pembinaan ini, diharapkan perangkat desa mampu menyusun daftar kebutuhan data sesuai potensi dan permasalahan wilayah, sehingga pengelolaan data desa menjadi lebih terarah dan bermanfaat bagi masyarakat.",
+    desc: `
+    <p>Pada tanggal <b>30 April 2025</b> telah dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> di Desa Sumurbandung. 
+      Kegiatan ini membahas materi <i>Identifikasi Kebutuhan Data</i> yang bertujuan untuk membantu desa memahami berbagai jenis serta sumber data yang diperlukan dalam proses <b>perencanaan pembangunan</b>. 
+      Melalui pembinaan ini, para peserta didorong untuk lebih sadar akan pentingnya pengelolaan data yang sistematis dan berkesinambungan, karena data menjadi dasar utama dalam merancang program desa yang efektif.</p>
+
+      <p>Peserta memperoleh penjelasan yang cukup komprehensif tentang:</p>
+      <ul>
+        <li><b>Pentingnya data yang akurat dan terbarukan</b>
+          <ul>
+            <li>Data yang valid dapat mendukung <i>transparansi</i> dan akuntabilitas desa.</li>
+            <li>Informasi yang mutakhir membantu perangkat desa mengambil keputusan yang sesuai dengan kondisi terkini.</li>
+          </ul>
+        </li>
+        <li><b>Teknik mengidentifikasi data prioritas</b>
+          <ul>
+            <li>Menentukan data mana yang paling mendesak untuk kebutuhan pembangunan.</li>
+            <li>Mengelompokkan data berdasarkan bidang, misalnya kesehatan, pendidikan, atau ekonomi lokal.</li>
+          </ul>
+        </li>
+        <li><b>Pemanfaatan data dalam mendukung kebijakan desa</b>
+          <ul>
+            <li>Data digunakan sebagai <i>bukti nyata</i> dalam penyusunan rencana kerja tahunan.</li>
+            <li>Membantu desa dalam menyusun program yang tepat sasaran dan menghindari kebijakan yang tidak relevan.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Melalui pembinaan ini, diharapkan perangkat desa mampu:</p>
+      <ul>
+        <li>Menyusun <b>daftar kebutuhan data</b> yang sesuai dengan potensi lokal dan permasalahan wilayah.</li>
+        <li>Mengembangkan kemampuan dalam <i>analisis sederhana</i> untuk memahami tren dari data yang dimiliki.</li>
+        <li>Mewujudkan pengelolaan data desa yang lebih terarah, terstruktur, serta bermanfaat bagi peningkatan kualitas layanan masyarakat.</li>
+      </ul>
+
+      <p>Pada akhirnya, kegiatan ini tidak hanya memperkaya pengetahuan peserta, tetapi juga menegaskan bahwa <b>data merupakan aset strategis</b> bagi desa. 
+      Dengan dukungan semua pihak, pengelolaan data yang baik akan menjadi pondasi penting untuk menciptakan pembangunan desa yang lebih maju, mandiri, dan berkelanjutan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak1.png", 
     date: "30 April 2025" 
   },
   foto10: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 2: Teknik Pengumpulan Data", 
-    desc: "Pada tanggal 7 Mei 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik dengan materi Teknik Pengumpulan Data. Kegiatan ini bertujuan meningkatkan kemampuan perangkat desa dalam mengumpulkan data secara efektif, akurat, dan sesuai standar. Peserta mendapatkan pemahaman mengenai berbagai metode pengumpulan data, seperti survei, wawancara, dan observasi, termasuk cara menentukan responden dan menyusun instrumen yang tepat. Melalui pembinaan ini, diharapkan desa mampu memperoleh data yang valid sebagai dasar perencanaan dan evaluasi program pembangunan.",
+    desc: `
+    <p>Pada tanggal <b>7 Mei 2025</b>, di Desa Sumurbandung telah dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> dengan materi utama <b>Teknik Pengumpulan Data</b>. 
+      Kegiatan ini bertujuan untuk meningkatkan kemampuan perangkat desa dalam mengumpulkan data secara <b>efektif</b>, <b>akurat</b>, dan sesuai standar yang telah ditetapkan oleh lembaga resmi. 
+      Data yang baik dan terstruktur akan menjadi fondasi penting bagi desa untuk menyusun program pembangunan yang berdaya guna.</p>
+
+      <p>Peserta mendapatkan pemahaman mengenai berbagai metode pengumpulan data, antara lain:</p>
+      <ul>
+        <li><b>Survei</b>
+          <ul>
+            <li>Digunakan untuk menjangkau banyak responden sekaligus dalam waktu relatif singkat.</li>
+            <li>Membantu memperoleh gambaran umum mengenai kondisi sosial, ekonomi, maupun demografi desa.</li>
+            <li>Jika dirancang dengan baik, survei dapat menghasilkan informasi yang representatif dan dapat dipertanggungjawabkan.</li>
+          </ul>
+        </li>
+        <li><b>Wawancara</b>
+          <ul>
+            <li>Memberikan kesempatan untuk menggali informasi lebih mendalam dari responden tertentu.</li>
+            <li>Cocok untuk mengumpulkan data kualitatif yang memerlukan penjelasan detail dan narasi pengalaman.</li>
+            <li>Teknik ini sangat membantu ketika desa ingin memahami persoalan yang tidak dapat diukur hanya dengan angka.</li>
+          </ul>
+        </li>
+        <li><b>Observasi</b>
+          <ul>
+            <li>Melibatkan pengamatan langsung terhadap kondisi lapangan, lingkungan, maupun aktivitas masyarakat.</li>
+            <li>Bermanfaat untuk melengkapi data survei dan wawancara dengan bukti nyata yang lebih objektif.</li>
+            <li>Observasi juga membantu memvalidasi data yang diperoleh dari sumber lain, sehingga hasilnya lebih meyakinkan.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Selain memahami metode, peserta juga mendapatkan penjelasan tentang aspek penting dalam pelaksanaan pengumpulan data, seperti:</p>
+      <ul>
+        <li><b>Menentukan responden</b> yang tepat sesuai kebutuhan data dan tujuan pembangunan desa.</li>
+        <li><b>Menyusun instrumen</b> seperti kuesioner, daftar pertanyaan, atau pedoman wawancara agar pengumpulan data lebih terarah dan tidak menyimpang dari sasaran.</li>
+        <li><b>Menjaga etika</b> dalam proses pengumpulan data, termasuk menghargai privasi responden dan menjelaskan tujuan penelitian secara transparan.</li>
+      </ul>
+
+      <p>Melalui pembinaan ini, diharapkan perangkat desa mampu memperoleh data yang <b>valid</b>, <b>mutakhir</b>, dan <b>dapat dipertanggungjawabkan</b> sebagai dasar dalam <i>perencanaan</i> serta <i>evaluasi program pembangunan</i>. 
+      Dengan data yang baik, desa dapat menyusun kebijakan yang lebih tepat sasaran, mengalokasikan anggaran secara efektif, dan memperkuat transparansi publik. 
+      Selain itu, data yang terbuka juga mendorong partisipasi masyarakat dalam pembangunan desa, sehingga ke depan Desa Sumurbandung dapat berkembang menjadi desa yang lebih <b>mandiri</b>, <b>berdaya saing</b>, dan berorientasi pada kebutuhan warganya.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak2.png", 
     date: "07 Mei 2025" 
   },
   foto11: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 3: Teknik Pengolahan Data", 
-    desc: "Pada tanggal 14 Mei 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik dengan materi Teknik Pengolahan Data. Kegiatan ini membekali peserta dengan keterampilan mengolah data secara sistematis agar informasi yang dihasilkan akurat dan mudah dipahami. Peserta mempelajari proses mulai dari pembersihan data (data cleaning), pengkodean, tabulasi, hingga penyajian dalam bentuk tabel, grafik, dan diagram. Pembinaan ini diharapkan mampu meningkatkan kapasitas perangkat desa dalam mengubah data mentah menjadi informasi yang bermanfaat untuk mendukung pengambilan keputusan dan perencanaan pembangunan desa.",
+    desc: `
+    <p>Pada tanggal <b>14 Mei 2025</b>, di Desa Sumurbandung telah dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> dengan materi utama <b>Teknik Pengolahan Data</b>. 
+      Kegiatan ini dirancang untuk membekali para peserta, khususnya perangkat desa, dengan keterampilan dalam mengolah data secara <b>sistematis</b> agar informasi yang dihasilkan akurat, relevan, dan mudah dipahami oleh berbagai pihak. 
+      Data yang telah diolah dengan baik akan menjadi dasar penting bagi desa untuk <i>perencanaan pembangunan</i>, pelaporan kegiatan, serta evaluasi program yang sedang berjalan.</p>
+
+      <p>Dalam pembinaan ini, peserta mempelajari beberapa tahapan penting dalam pengolahan data, antara lain:</p>
+      <ul>
+        <li><b>Pembersihan Data (Data Cleaning)</b>
+          <ul>
+            <li>Menghapus data yang tidak relevan, duplikat, atau salah input agar dataset lebih rapi.</li>
+            <li>Memastikan tidak ada nilai kosong yang dapat mengganggu hasil analisis.</li>
+            <li>Proses ini sangat krusial karena kualitas data mentah akan menentukan kualitas informasi akhir.</li>
+          </ul>
+        </li>
+        <li><b>Pengkodean Data</b>
+          <ul>
+            <li>Mengubah jawaban atau kategori kualitatif menjadi kode numerik agar lebih mudah dianalisis.</li>
+            <li>Mempercepat proses tabulasi dan meminimalisir kesalahan dalam pengolahan manual.</li>
+            <li>Memberikan struktur yang konsisten pada data sehingga lebih mudah dipahami oleh perangkat lunak analisis.</li>
+          </ul>
+        </li>
+        <li><b>Tabulasi</b>
+          <ul>
+            <li>Mengelompokkan data dalam bentuk tabel yang terstruktur dan jelas.</li>
+            <li>Memudahkan perbandingan antar variabel dan mendukung analisis statistik sederhana.</li>
+            <li>Hasil tabulasi dapat digunakan sebagai bahan dasar untuk membuat grafik atau diagram yang lebih visual.</li>
+          </ul>
+        </li>
+        <li><b>Penyajian Data</b>
+          <ul>
+            <li>Menggunakan tabel, grafik, dan diagram untuk menampilkan informasi dengan lebih menarik dan mudah dipahami.</li>
+            <li>Visualisasi yang baik membantu pembuat kebijakan maupun masyarakat umum memahami kondisi nyata desa.</li>
+            <li>Dengan penyajian yang jelas, data tidak hanya menjadi angka, tetapi juga menjadi cerita yang bermakna.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Selain itu, peserta juga dibimbing untuk memahami <b>standar etika</b> dalam pengolahan data, seperti menjaga kerahasiaan informasi responden dan menghindari manipulasi angka yang dapat menyesatkan. 
+      Mereka dilatih untuk selalu bersikap <i>objektif</i> dan mengutamakan transparansi, sehingga data desa benar-benar dapat dipercaya sebagai dasar kebijakan.</p>
+
+      <p>Melalui pembinaan ini, diharapkan perangkat desa memiliki kemampuan untuk mengubah data mentah menjadi <b>informasi yang bermanfaat</b>, <b>dapat dipertanggungjawabkan</b>, dan <b>berdaya guna</b>. 
+      Informasi tersebut tidak hanya mendukung pengambilan keputusan internal, tetapi juga menjadi bahan penting dalam <i>musyawarah desa</i>, penyusunan laporan ke pemerintah daerah, serta sarana komunikasi kepada masyarakat luas. 
+      Dengan peningkatan kapasitas ini, Desa Sumurbandung dapat semakin <b>mandiri</b> dalam mengelola data, memperkuat akuntabilitas publik, dan memastikan setiap program pembangunan benar-benar sesuai dengan kebutuhan masyarakat.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak3.png", 
     date: "14 Mei 2025" 
   },
   foto12: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 4: Teknik Penyimpanan Data", 
-    desc: "Pada tanggal 21 Mei 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik dengan materi Teknik Penyimpanan Data. Kegiatan ini bertujuan memberikan pemahaman kepada perangkat desa tentang cara menyimpan data secara terstruktur, aman, dan mudah diakses kembali. Peserta mendapatkan penjelasan mengenai penggunaan format file yang tepat, pengelompokan data berdasarkan jenis, pembuatan cadangan (backup), serta pemanfaatan media penyimpanan digital dan fisik. Melalui pembinaan ini, diharapkan desa mampu menjaga keamanan dan keberlanjutan data, sehingga dapat dimanfaatkan secara optimal untuk perencanaan dan pelayanan masyarakat.",
+    desc: `
+    <p>Pada tanggal <b>21 Mei 2025</b>, di Desa Sumurbandung telah dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> dengan materi <b>Teknik Penyimpanan Data</b>. 
+      Kegiatan ini bertujuan untuk memberikan pemahaman yang mendalam kepada perangkat desa mengenai cara menyimpan data secara <b>terstruktur</b>, <b>aman</b>, dan <b>mudah diakses kembali</b>. 
+      Dengan manajemen penyimpanan data yang baik, desa dapat memastikan bahwa informasi yang terkumpul tidak hanya tersimpan rapi, tetapi juga dapat dimanfaatkan untuk perencanaan, pelayanan masyarakat, serta mendukung transparansi pemerintahan desa.</p>
+
+      <p>Dalam pembinaan ini, peserta mendapatkan penjelasan tentang berbagai aspek penting penyimpanan data, meliputi:</p>
+      <ul>
+        <li><b>Penggunaan Format File yang Tepat</b>
+          <ul>
+            <li>Memahami perbedaan format file seperti <i>CSV</i>, <i>XLSX</i>, <i>PDF</i>, atau <i>DOCX</i> sesuai kebutuhan analisis maupun pelaporan.</li>
+            <li>Menekankan pentingnya konsistensi penggunaan format agar memudahkan integrasi dengan aplikasi lain.</li>
+            <li>Contoh: data penduduk disimpan dalam format tabel <i>Excel</i> untuk memudahkan tabulasi, sementara laporan kegiatan disimpan dalam <i>PDF</i> untuk menjaga keaslian dokumen.</li>
+          </ul>
+        </li>
+        <li><b>Pengelompokan Data Berdasarkan Jenis</b>
+          <ul>
+            <li>Mengelompokkan data sesuai kategori, seperti data kependudukan, data keuangan desa, data pembangunan, dan data kegiatan sosial.</li>
+            <li>Pengelompokan ini mempermudah pencarian kembali ketika data diperlukan, serta menghindari tumpang tindih antar file.</li>
+            <li>Peserta juga diberi contoh struktur folder digital yang rapi dan terstandar.</li>
+          </ul>
+        </li>
+        <li><b>Pembuatan Cadangan (Backup)</b>
+          <ul>
+            <li>Menjelaskan pentingnya membuat cadangan data secara berkala untuk mencegah kehilangan informasi akibat kerusakan perangkat atau bencana.</li>
+            <li>Peserta diperkenalkan pada konsep <i>backup ganda</i>, yaitu menyimpan salinan di perangkat lokal dan di penyimpanan eksternal/cloud.</li>
+            <li>Disampaikan pula strategi <i>backup otomatis</i> menggunakan layanan digital agar proses lebih efisien.</li>
+          </ul>
+        </li>
+        <li><b>Pemanfaatan Media Penyimpanan</b>
+          <ul>
+            <li>Memahami kelebihan dan kekurangan media penyimpanan fisik (hard disk, flashdisk, arsip kertas) dan media digital (cloud storage, server lokal).</li>
+            <li>Ditekankan perlunya keseimbangan antara <i>keamanan</i> dan <i>kemudahan akses</i> dalam memilih media penyimpanan.</li>
+            <li>Contoh: data sensitif seperti laporan keuangan lebih aman disimpan di server dengan sistem proteksi, sedangkan data umum bisa dibagikan melalui cloud untuk akses cepat.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Selain aspek teknis, pembinaan ini juga menekankan pentingnya <b>keamanan data</b>. 
+      Peserta diingatkan untuk selalu menjaga kerahasiaan informasi sensitif, menerapkan sistem sandi (password), serta memberikan hak akses terbatas hanya kepada pihak yang berwenang. 
+      Mereka juga diperkenalkan pada praktik <i>data governance</i>, yaitu tata kelola data yang menekankan integritas, akurasi, dan keberlanjutan.</p>
+
+      <p>Melalui kegiatan ini, perangkat desa diharapkan semakin terampil dalam mengelola data, tidak hanya dari sisi pengumpulan dan pengolahan, tetapi juga dalam menjaga penyimpanan jangka panjang. 
+      Dengan kemampuan tersebut, Desa Sumurbandung mampu memastikan bahwa setiap data yang dikumpulkan benar-benar menjadi <b>aset berharga</b> bagi pembangunan, pelayanan publik, dan peningkatan kualitas hidup masyarakat desa.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak4.png", 
     date: "21 Mei 2025" 
   },
@@ -286,7 +779,7 @@ function renderFoto(index) {
 
   document.getElementById("detailTitle").innerText = item.title;
   document.getElementById("detailDate").innerText = item.date;
-  document.getElementById("detailDesc").innerText = item.desc;
+  document.getElementById("detailDesc").innerHTML = item.desc;
   document.getElementById("detailImg").src = item.img;
 
   currentIndex = index;

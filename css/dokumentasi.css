@@ -75,3 +75,21 @@ body {
   font-size: 1rem;
   line-height: 1;
 }
+
+/* Styling Paragraf */
+/* Styling list */
+#detailDesc ul {
+  list-style-type: disc;     /* bullet bulat penuh */
+  padding-left: 1.5rem;      /* kasih indentasi */
+  margin-bottom: 1rem;       /* jarak antar list */
+}
+
+#detailDesc ul ul {
+  list-style-type: circle;   /* sublist lingkaran kosong */
+  padding-left: 1.5rem;
+}
+
+#detailDesc li {
+  margin-bottom: 0.5rem;     /* spasi antar item list */
+  line-height: 1.6;          /* biar lebih enak dibaca */
+}

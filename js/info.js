@@ -171,29 +171,29 @@ const beritaData = {
     date: "25 Juli 2025",
     desc: `
       <ul>
-  <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui program <i>Eksotik</i> akan menggelar edukasi dan sosialisasi statistik di Universitas Bina Bangsa pada <b>25 Juli 2025</b>.</li>
-  <li>Acara ini mengangkat tema <i>“Statistik Itu Estetik: Biar Paham, Bukan Cuma Posting”</i>
-    <ul>
-      <li>Dihadiri oleh <b>Maulani, S.Stat., M.Si.</b> sebagai narasumber yang berpengalaman di bidang statistik terapan.</li>
-      <li>Peserta akan mendapatkan pemahaman mendalam mengenai <i>data driven decision making</i> yang kini menjadi kebutuhan penting di era digital.</li>
-      <li>Kegiatan ini juga menekankan pentingnya literasi statistik bagi mahasiswa agar mampu menganalisis informasi secara kritis.</li>
-    </ul>
-  </li>
-  <li>Selain sesi utama, acara akan dilengkapi dengan:
-    <ul>
-      <li><b>Workshop interaktif</b> untuk melatih keterampilan dasar analisis data.</li>
-      <li><b>Sesi tanya jawab</b> yang memungkinkan peserta berdiskusi langsung dengan narasumber.</li>
-      <li>Pameran kecil mengenai publikasi resmi BPS, termasuk <i>infografis</i> dan data terbaru Provinsi Banten.</li>
-    </ul>
-  </li>
-  <li>Tujuan utama kegiatan ini adalah:
-    <ul>
-      <li>Meningkatkan kesadaran bahwa <b>statistik bukan hanya angka</b>, tetapi juga alat komunikasi informasi yang efektif.</li>
-      <li>Mendorong mahasiswa untuk lebih aktif memanfaatkan data dalam penelitian maupun karya ilmiah.</li>
-      <li>Mengubah pandangan bahwa statistik itu rumit menjadi lebih menarik, sederhana, dan <i>estetik</i>.</li>
-    </ul>
-  </li>
-</ul>
+        <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui program <i>Eksotik</i> akan menggelar edukasi dan sosialisasi statistik di Universitas Bina Bangsa pada <b>25 Juli 2025</b>.</li>
+        <li>Acara ini mengangkat tema <i>“Statistik Itu Estetik: Biar Paham, Bukan Cuma Posting”</i>
+          <ul>
+            <li>Dihadiri oleh <b>Maulani, S.Stat., M.Si.</b> sebagai narasumber yang berpengalaman di bidang statistik terapan.</li>
+            <li>Peserta akan mendapatkan pemahaman mendalam mengenai <i>data driven decision making</i> yang kini menjadi kebutuhan penting di era digital.</li>
+            <li>Kegiatan ini juga menekankan pentingnya literasi statistik bagi mahasiswa agar mampu menganalisis informasi secara kritis.</li>
+          </ul>
+        </li>
+        <li>Selain sesi utama, acara akan dilengkapi dengan:
+          <ul>
+            <li><b>Workshop interaktif</b> untuk melatih keterampilan dasar analisis data.</li>
+            <li><b>Sesi tanya jawab</b> yang memungkinkan peserta berdiskusi langsung dengan narasumber.</li>
+            <li>Pameran kecil mengenai publikasi resmi BPS, termasuk <i>infografis</i> dan data terbaru Provinsi Banten.</li>
+          </ul>
+        </li>
+        <li>Tujuan utama kegiatan ini adalah:
+          <ul>
+            <li>Meningkatkan kesadaran bahwa <b>statistik bukan hanya angka</b>, tetapi juga alat komunikasi informasi yang efektif.</li>
+            <li>Mendorong mahasiswa untuk lebih aktif memanfaatkan data dalam penelitian maupun karya ilmiah.</li>
+            <li>Mengubah pandangan bahwa statistik itu rumit menjadi lebih menarik, sederhana, dan <i>estetik</i>.</li>
+          </ul>
+        </li>
+      </ul>
     `,
     img: "/assets/buletin/info-terbaru/Eksotik_(3).png",
     file: null
@@ -204,36 +204,36 @@ const beritaData = {
     date: "26 Februari 2025",
     desc: `
       <ul>
-  <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> menggelar <b>kuliah tamu</b> yang diikuti dengan antusias oleh mahasiswa di lingkungan kampus.</li>
-  <li>Kegiatan ini menghadirkan tim <b>Humas BPS</b> yang berperan penting dalam menyampaikan informasi publik.
-    <ul>
-      <li>Mereka berbagi wawasan tentang pentingnya memahami serta mengomunikasikan <i>data statistik</i> secara efektif di <b>era digital</b>.</li>
-      <li>Paparan materi mencakup bagaimana data dapat digunakan untuk mendukung <i>evidence-based policy</i> di berbagai bidang.</li>
-      <li>Mahasiswa juga diajak memahami cara menghindari kesalahan interpretasi data yang sering terjadi di media sosial maupun publikasi informal.</li>
-    </ul>
-  </li>
-  <li>Antusiasme mahasiswa terlihat dari:
-    <ul>
-      <li>Banyaknya pertanyaan kritis yang diajukan seputar penggunaan data dalam penelitian dan dunia kerja.</li>
-      <li>Diskusi aktif mengenai tantangan menyajikan data dalam bentuk yang lebih <i>user-friendly</i> agar mudah dipahami masyarakat umum.</li>
-      <li>Keterlibatan mahasiswa dalam <b>simulasi sederhana</b> mengolah data dan menyajikan hasilnya dalam bentuk <i>infografis</i>.</li>
-    </ul>
-  </li>
-  <li>Selain itu, acara ini juga memberikan manfaat tambahan berupa:
-    <ul>
-      <li><b>Peningkatan literasi statistik</b> sebagai bekal penting dalam menghadapi banjir informasi di era digital.</li>
-      <li><b>Inspirasi karier</b> di bidang statistik, data science, dan komunikasi publik.</li>
-      <li>Motivasi agar mahasiswa dapat menjadi agen perubahan yang mampu menyebarkan informasi berbasis data secara akurat.</li>
-    </ul>
-  </li>
-  <li>Melalui kegiatan ini, diharapkan mahasiswa semakin sadar bahwa:
-    <ul>
-      <li><b>Statistik bukan sekadar angka</b>, tetapi juga sarana untuk menguatkan komunikasi publik dan pengambilan keputusan.</li>
-      <li>Kemampuan memahami data akan memberikan <i>nilai tambah</i> dalam studi maupun karier profesional di masa depan.</li>
-      <li>Kuliah tamu semacam ini merupakan jembatan penting antara dunia akademik dan lembaga resmi negara.</li>
-    </ul>
-  </li>
-</ul>
+        <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> menggelar <b>kuliah tamu</b> yang diikuti dengan antusias oleh mahasiswa di lingkungan kampus.</li>
+        <li>Kegiatan ini menghadirkan tim <b>Humas BPS</b> yang berperan penting dalam menyampaikan informasi publik.
+          <ul>
+            <li>Mereka berbagi wawasan tentang pentingnya memahami serta mengomunikasikan <i>data statistik</i> secara efektif di <b>era digital</b>.</li>
+            <li>Paparan materi mencakup bagaimana data dapat digunakan untuk mendukung <i>evidence-based policy</i> di berbagai bidang.</li>
+            <li>Mahasiswa juga diajak memahami cara menghindari kesalahan interpretasi data yang sering terjadi di media sosial maupun publikasi informal.</li>
+          </ul>
+        </li>
+        <li>Antusiasme mahasiswa terlihat dari:
+          <ul>
+            <li>Banyaknya pertanyaan kritis yang diajukan seputar penggunaan data dalam penelitian dan dunia kerja.</li>
+            <li>Diskusi aktif mengenai tantangan menyajikan data dalam bentuk yang lebih <i>user-friendly</i> agar mudah dipahami masyarakat umum.</li>
+            <li>Keterlibatan mahasiswa dalam <b>simulasi sederhana</b> mengolah data dan menyajikan hasilnya dalam bentuk <i>infografis</i>.</li>
+          </ul>
+        </li>
+        <li>Selain itu, acara ini juga memberikan manfaat tambahan berupa:
+          <ul>
+            <li><b>Peningkatan literasi statistik</b> sebagai bekal penting dalam menghadapi banjir informasi di era digital.</li>
+            <li><b>Inspirasi karier</b> di bidang statistik, data science, dan komunikasi publik.</li>
+            <li>Motivasi agar mahasiswa dapat menjadi agen perubahan yang mampu menyebarkan informasi berbasis data secara akurat.</li>
+          </ul>
+        </li>
+        <li>Melalui kegiatan ini, diharapkan mahasiswa semakin sadar bahwa:
+          <ul>
+            <li><b>Statistik bukan sekadar angka</b>, tetapi juga sarana untuk menguatkan komunikasi publik dan pengambilan keputusan.</li>
+            <li>Kemampuan memahami data akan memberikan <i>nilai tambah</i> dalam studi maupun karier profesional di masa depan.</li>
+            <li>Kuliah tamu semacam ini merupakan jembatan penting antara dunia akademik dan lembaga resmi negara.</li>
+          </ul>
+        </li>
+      </ul>
     `,
     img: "/assets/buletin/info-terbaru/kuliah_tamu.jpeg",
     file: null
@@ -244,29 +244,29 @@ const beritaData = {
     date: "28 November 2024",
     desc: `
       <ul>
-  <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui program <i>Eksotik</i> menggelar <b>edukasi dan sosialisasi statistik</b> di Universitas Bina Bangsa pada <b>28 November 2024</b>.</li>
-  <li>Kegiatan ini menghadirkan <b>Khafid Akhiriyanto</b>, <i>Statistisi Ahli Muda</i> BPS Provinsi Banten.
-    <ul>
-      <li>Beliau membahas bagaimana cara <b>membunyikan data statistik</b> dengan analisis sederhana agar lebih mudah dipahami oleh masyarakat umum.</li>
-      <li>Materi yang disampaikan mencakup pentingnya penyajian data yang jelas, ringkas, dan memiliki nilai praktis.</li>
-      <li>Peserta diperkenalkan pada contoh penerapan analisis sederhana yang relevan dengan isu sehari-hari.</li>
-    </ul>
-  </li>
-  <li>Tujuan utama kegiatan ini adalah:
-    <ul>
-      <li>Meningkatkan pemahaman mahasiswa tentang bagaimana <i>data statistik</i> dapat menjadi sarana komunikasi yang efektif.</li>
-      <li>Mendorong generasi muda untuk lebih aktif dalam membaca, menafsirkan, dan menggunakan data dalam pengambilan keputusan.</li>
-      <li>Menunjukkan bahwa <b>statistik bukan hanya teori</b>, tetapi juga dapat diterapkan secara langsung dalam kehidupan nyata.</li>
-    </ul>
-  </li>
-  <li>Dengan adanya program ini, diharapkan mahasiswa mampu:
-    <ul>
-      <li>Mengembangkan keterampilan berpikir kritis berbasis data.</li>
-      <li>Menghindari kesalahan dalam memahami informasi yang tersebar di media digital.</li>
-      <li>Menjadi agen literasi statistik yang dapat menyebarkan informasi akurat dan bermanfaat.</li>
-    </ul>
-  </li>
-</ul>
+        <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui program <i>Eksotik</i> menggelar <b>edukasi dan sosialisasi statistik</b> di Universitas Bina Bangsa pada <b>28 November 2024</b>.</li>
+        <li>Kegiatan ini menghadirkan <b>Khafid Akhiriyanto</b>, <i>Statistisi Ahli Muda</i> BPS Provinsi Banten.
+          <ul>
+            <li>Beliau membahas bagaimana cara <b>membunyikan data statistik</b> dengan analisis sederhana agar lebih mudah dipahami oleh masyarakat umum.</li>
+            <li>Materi yang disampaikan mencakup pentingnya penyajian data yang jelas, ringkas, dan memiliki nilai praktis.</li>
+            <li>Peserta diperkenalkan pada contoh penerapan analisis sederhana yang relevan dengan isu sehari-hari.</li>
+          </ul>
+        </li>
+        <li>Tujuan utama kegiatan ini adalah:
+          <ul>
+            <li>Meningkatkan pemahaman mahasiswa tentang bagaimana <i>data statistik</i> dapat menjadi sarana komunikasi yang efektif.</li>
+            <li>Mendorong generasi muda untuk lebih aktif dalam membaca, menafsirkan, dan menggunakan data dalam pengambilan keputusan.</li>
+            <li>Menunjukkan bahwa <b>statistik bukan hanya teori</b>, tetapi juga dapat diterapkan secara langsung dalam kehidupan nyata.</li>
+          </ul>
+        </li>
+        <li>Dengan adanya program ini, diharapkan mahasiswa mampu:
+          <ul>
+            <li>Mengembangkan keterampilan berpikir kritis berbasis data.</li>
+            <li>Menghindari kesalahan dalam memahami informasi yang tersebar di media digital.</li>
+            <li>Menjadi agen literasi statistik yang dapat menyebarkan informasi akurat dan bermanfaat.</li>
+          </ul>
+        </li>
+      </ul>
     `,
     img: "/assets/buletin/info-terbaru/Khafid_Pojok.png",
     file: null
@@ -277,29 +277,29 @@ const beritaData = {
     date: "15 Mei 2025",
     desc: `
       <ul>
-  <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> akan menggelar kegiatan <i>Eksotik Kolaborasi</i> pada <b>15 Mei 2025</b> di <b>BPK PENABUR SMAK Penabur Serang</b>.</li>
-  <li>Acara ini menghadirkan <b>Rizal Rahadiana</b>, <i>Statistisi Ahli Muda</i> BPS.
-    <ul>
-      <li>Beliau akan membahas pentingnya memahami <b>statistik keuangan</b> secara lebih dekat.</li>
-      <li>Paparan materi dirancang agar siswa dapat melihat bagaimana data keuangan memengaruhi kebijakan publik dan kehidupan sehari-hari.</li>
-      <li>Peserta diperkenalkan dengan contoh sederhana mengenai analisis tren keuangan yang mudah dipahami.</li>
-    </ul>
-  </li>
-  <li>Manfaat utama kegiatan ini adalah:
-    <ul>
-      <li>Meningkatkan literasi siswa mengenai <i>data finansial</i> sebagai bagian penting dari pengelolaan informasi.</li>
-      <li>Memberikan gambaran nyata bahwa <b>statistik bukan hanya teori</b>, melainkan juga alat untuk memahami kondisi ekonomi.</li>
-      <li>Mendorong generasi muda untuk lebih bijak dalam membaca data keuangan yang tersebar di berbagai media.</li>
-    </ul>
-  </li>
-  <li>Melalui kegiatan ini, diharapkan siswa mampu:
-    <ul>
-      <li>Mengembangkan keterampilan dalam menganalisis data keuangan sederhana.</li>
-      <li>Menyadari peran penting statistik dalam kehidupan modern, khususnya di bidang ekonomi.</li>
-      <li>Menjadi generasi yang lebih kritis, analitis, dan peka terhadap isu keuangan berbasis data.</li>
-    </ul>
-  </li>
-</ul>
+        <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> akan menggelar kegiatan <i>Eksotik Kolaborasi</i> pada <b>15 Mei 2025</b> di <b>BPK PENABUR SMAK Penabur Serang</b>.</li>
+        <li>Acara ini menghadirkan <b>Rizal Rahadiana</b>, <i>Statistisi Ahli Muda</i> BPS.
+          <ul>
+            <li>Beliau akan membahas pentingnya memahami <b>statistik keuangan</b> secara lebih dekat.</li>
+            <li>Paparan materi dirancang agar siswa dapat melihat bagaimana data keuangan memengaruhi kebijakan publik dan kehidupan sehari-hari.</li>
+            <li>Peserta diperkenalkan dengan contoh sederhana mengenai analisis tren keuangan yang mudah dipahami.</li>
+          </ul>
+        </li>
+        <li>Manfaat utama kegiatan ini adalah:
+          <ul>
+            <li>Meningkatkan literasi siswa mengenai <i>data finansial</i> sebagai bagian penting dari pengelolaan informasi.</li>
+            <li>Memberikan gambaran nyata bahwa <b>statistik bukan hanya teori</b>, melainkan juga alat untuk memahami kondisi ekonomi.</li>
+            <li>Mendorong generasi muda untuk lebih bijak dalam membaca data keuangan yang tersebar di berbagai media.</li>
+          </ul>
+        </li>
+        <li>Melalui kegiatan ini, diharapkan siswa mampu:
+          <ul>
+            <li>Mengembangkan keterampilan dalam menganalisis data keuangan sederhana.</li>
+            <li>Menyadari peran penting statistik dalam kehidupan modern, khususnya di bidang ekonomi.</li>
+            <li>Menjadi generasi yang lebih kritis, analitis, dan peka terhadap isu keuangan berbasis data.</li>
+          </ul>
+        </li>
+      </ul>
     `,
     img: "/assets/buletin/info-terbaru/Eksotik@2x-100.jpg",
     file: null
@@ -310,29 +310,29 @@ const beritaData = {
     date: "23 Oktober 2024",
     desc: `
       <ul>
-  <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui program <i>Eksotik</i> kembali hadir memberikan <b>edukasi statistik</b> kepada mahasiswa pada <b>23 Oktober 2024</b>.</li>
-  <li>Kegiatan ini berlangsung secara <b>interaktif</b>, menghadirkan suasana belajar yang santai namun tetap penuh wawasan.
-    <ul>
-      <li>Materi utama berfokus pada pentingnya pemahaman <i>data statistik</i> dalam berbagai bidang kehidupan.</li>
-      <li>Peserta diajak memahami bagaimana data dapat menjadi dasar pengambilan keputusan yang lebih objektif.</li>
-      <li>Diskusi juga menyoroti contoh nyata penggunaan statistik dalam sektor pendidikan, kesehatan, dan ekonomi.</li>
-    </ul>
-  </li>
-  <li>Nilai tambah dari kegiatan ini antara lain:
-    <ul>
-      <li><b>Peningkatan literasi data</b> bagi mahasiswa agar lebih siap menghadapi tantangan era digital.</li>
-      <li>Latihan singkat mengenai cara membaca <i>infografis</i> dan tabel data resmi BPS.</li>
-      <li>Pemaparan strategi sederhana untuk menghindari kesalahan dalam menafsirkan informasi statistik.</li>
-    </ul>
-  </li>
-  <li>Dengan adanya program ini, diharapkan mahasiswa:
-    <ul>
-      <li>Lebih kritis dalam menganalisis informasi yang beredar di media sosial maupun berita.</li>
-      <li>Mampu mengaitkan teori yang dipelajari di kampus dengan <b>praktik nyata</b> di lapangan.</li>
-      <li>Termotivasi untuk menjadikan <i>statistik</i> sebagai bekal penting dalam riset, karya ilmiah, maupun karier profesional.</li>
-    </ul>
-  </li>
-</ul>
+        <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui program <i>Eksotik</i> kembali hadir memberikan <b>edukasi statistik</b> kepada mahasiswa pada <b>23 Oktober 2024</b>.</li>
+        <li>Kegiatan ini berlangsung secara <b>interaktif</b>, menghadirkan suasana belajar yang santai namun tetap penuh wawasan.
+          <ul>
+            <li>Materi utama berfokus pada pentingnya pemahaman <i>data statistik</i> dalam berbagai bidang kehidupan.</li>
+            <li>Peserta diajak memahami bagaimana data dapat menjadi dasar pengambilan keputusan yang lebih objektif.</li>
+            <li>Diskusi juga menyoroti contoh nyata penggunaan statistik dalam sektor pendidikan, kesehatan, dan ekonomi.</li>
+          </ul>
+        </li>
+        <li>Nilai tambah dari kegiatan ini antara lain:
+          <ul>
+            <li><b>Peningkatan literasi data</b> bagi mahasiswa agar lebih siap menghadapi tantangan era digital.</li>
+            <li>Latihan singkat mengenai cara membaca <i>infografis</i> dan tabel data resmi BPS.</li>
+            <li>Pemaparan strategi sederhana untuk menghindari kesalahan dalam menafsirkan informasi statistik.</li>
+          </ul>
+        </li>
+        <li>Dengan adanya program ini, diharapkan mahasiswa:
+          <ul>
+            <li>Lebih kritis dalam menganalisis informasi yang beredar di media sosial maupun berita.</li>
+            <li>Mampu mengaitkan teori yang dipelajari di kampus dengan <b>praktik nyata</b> di lapangan.</li>
+            <li>Termotivasi untuk menjadikan <i>statistik</i> sebagai bekal penting dalam riset, karya ilmiah, maupun karier profesional.</li>
+          </ul>
+        </li>
+      </ul>
     `,
     img: "/assets/buletin/info-terbaru/Eksotik_(4).jpeg",
     file: null
@@ -343,29 +343,29 @@ const beritaData = {
     date: "23 April 2025",
     desc: `
       <ul>
-  <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui <i>Pojok Statistik</i> memberikan materi bertajuk <b>Dasar-dasar Infografis</b> dalam kegiatan <b>Pembinaan Agen Statistik 2025</b>.</li>
-  <li>Materi ini disampaikan oleh <b>Eben Baenuri</b>, <i>Statistisi Ahli Muda</i> BPS Provinsi Banten, bertempat di <b>Serang</b> pada <b>April 2025</b>.
-    <ul>
-      <li>Paparan berfokus pada teknik menyusun <i>infografis</i> yang informatif, menarik, dan mudah dipahami masyarakat.</li>
-      <li>Peserta dikenalkan pada prinsip dasar desain visual, seperti penggunaan warna, ikon, dan tata letak.</li>
-      <li>Materi juga menekankan pentingnya ketepatan data agar pesan yang disampaikan tidak menimbulkan kesalahpahaman.</li>
-    </ul>
-  </li>
-  <li>Tujuan utama dari sesi ini antara lain:
-    <ul>
-      <li><b>Meningkatkan keterampilan komunikasi statistik</b> bagi para agen statistik agar mampu menyampaikan data dengan cara yang lebih efektif.</li>
-      <li>Memberikan pemahaman bahwa <i>infografis</i> adalah jembatan antara data yang kompleks dengan masyarakat umum.</li>
-      <li>Melatih peserta untuk menghasilkan karya visual sederhana yang dapat digunakan dalam publikasi resmi maupun media sosial.</li>
-    </ul>
-  </li>
-  <li>Manfaat yang diharapkan dari kegiatan ini:
-    <ul>
-      <li>Peserta lebih percaya diri dalam mengolah data dan menyajikannya secara visual.</li>
-      <li>Terbangunnya budaya <b>literasi statistik</b> yang kuat di kalangan mahasiswa dan agen statistik muda.</li>
-      <li>Adanya kontribusi nyata dalam upaya BPS menyebarkan informasi berbasis data yang akurat dan mudah diakses publik.</li>
-    </ul>
-  </li>
-</ul>
+        <li><b>Badan Pusat Statistik (BPS) Provinsi Banten</b> melalui <i>Pojok Statistik</i> memberikan materi bertajuk <b>Dasar-dasar Infografis</b> dalam kegiatan <b>Pembinaan Agen Statistik 2025</b>.</li>
+        <li>Materi ini disampaikan oleh <b>Eben Baenuri</b>, <i>Statistisi Ahli Muda</i> BPS Provinsi Banten, bertempat di <b>Serang</b> pada <b>April 2025</b>.
+          <ul>
+            <li>Paparan berfokus pada teknik menyusun <i>infografis</i> yang informatif, menarik, dan mudah dipahami masyarakat.</li>
+            <li>Peserta dikenalkan pada prinsip dasar desain visual, seperti penggunaan warna, ikon, dan tata letak.</li>
+            <li>Materi juga menekankan pentingnya ketepatan data agar pesan yang disampaikan tidak menimbulkan kesalahpahaman.</li>
+          </ul>
+        </li>
+        <li>Tujuan utama dari sesi ini antara lain:
+          <ul>
+            <li><b>Meningkatkan keterampilan komunikasi statistik</b> bagi para agen statistik agar mampu menyampaikan data dengan cara yang lebih efektif.</li>
+            <li>Memberikan pemahaman bahwa <i>infografis</i> adalah jembatan antara data yang kompleks dengan masyarakat umum.</li>
+            <li>Melatih peserta untuk menghasilkan karya visual sederhana yang dapat digunakan dalam publikasi resmi maupun media sosial.</li>
+          </ul>
+        </li>
+        <li>Manfaat yang diharapkan dari kegiatan ini:
+          <ul>
+            <li>Peserta lebih percaya diri dalam mengolah data dan menyajikannya secara visual.</li>
+            <li>Terbangunnya budaya <b>literasi statistik</b> yang kuat di kalangan mahasiswa dan agen statistik muda.</li>
+            <li>Adanya kontribusi nyata dalam upaya BPS menyebarkan informasi berbasis data yang akurat dan mudah diakses publik.</li>
+          </ul>
+        </li>
+      </ul>
     `,
     img: "/assets/buletin/info-terbaru/potik_dasarInfografis.png",
     file: null
