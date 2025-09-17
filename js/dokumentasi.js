@@ -567,7 +567,50 @@ const fotoData = {
   },
   foto13: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 5: Teknik Analisa Data", 
-    desc: "Pada tanggal 28 Mei 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik dengan materi Teknik Analisis Data. Kegiatan ini bertujuan meningkatkan kemampuan perangkat desa dalam mengolah dan menafsirkan data untuk menghasilkan informasi yang relevan bagi perencanaan pembangunan. Peserta mendapatkan penjelasan mengenai konsep dasar analisis data, pemilihan metode analisis yang sesuai, serta cara membaca pola dan tren dari data yang dimiliki. Pembinaan ini diharapkan dapat membantu desa membuat keputusan yang berbasis data. sehingga program pembangunan menjadi lebih tepat sasaran dan efektif.",
+    desc: `
+    <p>Pada tanggal <b>28 Mei 2025</b>, di Desa Sumurbandung dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> dengan materi <b>Teknik Analisis Data</b>. 
+      Kegiatan ini dirancang untuk <b>meningkatkan kemampuan perangkat desa</b> dalam mengolah dan menafsirkan data, sehingga dapat menghasilkan informasi yang <i>relevan</i> serta dapat dipertanggungjawabkan sebagai dasar perencanaan pembangunan. 
+      Analisis data yang baik memungkinkan desa membuat keputusan yang lebih tepat, transparan, dan berbasis bukti nyata, bukan sekadar asumsi.</p>
+
+      <p>Dalam pembinaan ini, peserta mendapatkan penjelasan mendetail mengenai beberapa aspek utama, antara lain:</p>
+      <ul>
+        <li><b>Konsep Dasar Analisis Data</b>
+          <ul>
+            <li>Pengenalan istilah dasar seperti variabel, indikator, populasi, dan sampel.</li>
+            <li>Penjelasan mengapa analisis diperlukan untuk mengubah data mentah menjadi informasi bermakna.</li>
+            <li>Diberikan contoh sederhana seperti analisis pertumbuhan penduduk desa dari tahun ke tahun.</li>
+          </ul>
+        </li>
+        <li><b>Pemilihan Metode Analisis yang Sesuai</b>
+          <ul>
+            <li>Pembahasan metode deskriptif (misalnya rata-rata, persentase, distribusi frekuensi) untuk menggambarkan kondisi nyata desa.</li>
+            <li>Pengenalan analisis komparatif untuk membandingkan data antar periode atau antar wilayah.</li>
+            <li>Pemaparan singkat tentang analisis korelasi sederhana untuk melihat hubungan antar variabel, misalnya antara tingkat pendidikan dan tingkat pendapatan masyarakat.</li>
+          </ul>
+        </li>
+        <li><b>Membaca Pola dan Tren</b>
+          <ul>
+            <li>Peserta belajar mengenali tren dari data berkala, misalnya tren kesehatan, angka kelahiran, atau produktivitas pertanian.</li>
+            <li>Penjelasan mengenai pola musiman yang bisa memengaruhi data, contohnya lonjakan harga bahan pokok menjelang hari besar.</li>
+            <li>Pendampingan untuk membuat interpretasi yang benar, sehingga tidak salah dalam mengambil kesimpulan dari data yang tersedia.</li>
+          </ul>
+        </li>
+        <li><b>Penyajian Hasil Analisis</b>
+          <ul>
+            <li>Hasil analisis tidak hanya disampaikan dalam bentuk angka, tetapi juga dalam visualisasi seperti tabel, grafik, dan diagram.</li>
+            <li>Ditekankan pentingnya menyajikan data dalam format yang <i>mudah dipahami</i> oleh perangkat desa maupun masyarakat umum.</li>
+            <li>Contoh: tren kependudukan divisualkan dalam grafik garis, sementara perbandingan sektor ekonomi dapat ditampilkan dalam diagram batang.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Pembinaan ini juga menekankan pentingnya <b>ketelitian</b> dalam membaca hasil analisis, karena kesalahan kecil dapat berakibat pada pengambilan keputusan yang tidak tepat. 
+      Selain itu, peserta didorong untuk selalu melakukan <i>cross-check</i> atau validasi data agar informasi yang dihasilkan benar-benar akurat dan dapat dipertanggungjawabkan.</p>
+
+      <p>Melalui kegiatan ini, diharapkan perangkat desa semakin terampil dalam mengubah data mentah menjadi informasi yang bermanfaat. 
+      Dengan bekal analisis yang baik, Desa Sumurbandung dapat merancang program pembangunan yang lebih <b>tepat sasaran</b>, <b>efektif</b>, serta memberikan dampak nyata bagi kesejahteraan masyarakat.
+    </p>
+          `,
     img: "/assets/dokumentasi/pembinaanDClebak5.png", 
     date: "28 Mei 2025" 
   },
