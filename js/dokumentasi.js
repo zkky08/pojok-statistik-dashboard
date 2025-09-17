@@ -1326,96 +1326,171 @@ const fotoData = {
   foto27: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Cilegon Tahap 2: Literasi Statistik ke Aparat Kelurahan (Pengenalan GSBPM)", 
     desc: `
-    
+    <p><b>Rapat Literasi Statistik Kelurahan Citangkil</b> dilaksanakan pada <b>Rabu, 6 Agustus 2025</b>, dipimpin sekaligus dicatat oleh <b>Raisa Meidy Mustapa</b>. Fokus utama kegiatan adalah pengenalan <i>Generic Statistical Business Process Model</i> (<b>GSBPM</b>) sebagai kerangka internasional dalam pengelolaan siklus produksi data statistik.</p>
+
+      <p><b>Agenda kegiatan meliputi:</b></p>
+      <ul>
+        <li>Pengantar literasi statistik.</li>
+        <li>Pemaparan konsep GSBPM.</li>
+        <li>Penjelasan tahapan proses bisnis statistik.</li>
+        <li>Sesi diskusi interaktif.</li>
+        <li>Rencana tindak lanjut.</li>
+      </ul>
+
+      <p><b>Materi utama</b> mencakup:</p>
+      <ul>
+        <li>Definisi GSBPM sebagai model internasional pengelolaan data.</li>
+        <li>Tujuan penerapan: memastikan data dikelola secara konsisten dan akuntabel.</li>
+        <li>Delapan tahapan utama mulai dari <i>specify needs</i> hingga <i>evaluate</i>.</li>
+      </ul>
+
+      <p><b>Hasil diskusi:</b></p>
+      <ul>
+        <li>GSBPM dapat diterapkan dalam pengelolaan data lokal, seperti updating kependudukan, potensi desa, dan data sektoral kelurahan.</li>
+        <li>Aparat kelurahan menekankan pentingnya pencatatan proses agar setiap langkah terdokumentasi dengan baik.</li>
+        <li>Pertanyaan mengenai integrasi GSBPM dengan website Desa Cantik dan publikasi kelurahan dijawab dengan penegasan bahwa model ini menjaga validitas, konsistensi, serta keterjangkauan data.</li>
+      </ul>
+
+      <p><b>Kesimpulan:</b><br>
+      Penerapan <b>GSBPM</b> dinilai sangat relevan untuk meningkatkan kualitas tata kelola data di tingkat kelurahan sekaligus mendukung prinsip <i>pembangunan berbasis data</i>, yang menjadi tujuan utama program <b>Desa Cantik</b>.
+    </p>
     `,
     img: "/assets/dokumentasi/pembinaanDCcilegon2.png", 
     date: "06 Agustus 2025" 
   },
-  foto27: { 
+  foto28: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 1", 
-    desc: "Notulensi pembinaan Desa Cantik di Kelurahan Curug pada 14 Mei 2025 dilaksanakan di Aula Kelurahan dengan dihadiri aparat kelurahan, ketua RW, beberapa ketua RT, serta BPS Kota Serang. Kegiatan dibuka dengan sambutan dan arahan dari Lurah Curug, Bu Sutihat. Materi utama yang dibahas adalah teknik pengumpulan data dan *Survei Preneur*. *Survei Preneur* dijelaskan sebagai kegiatan pengumpulan data ketenagakerjaan untuk menjaring wirausaha dan calon wirausaha di Kelurahan Curug. Tata cara pengisian survei disampaikan kepada peserta pembinaan agar dapat diteruskan kepada warga di masing-masing RT. Pengisian survei dilakukan secara daring melalui tautan **s.bps.go.id/Survei\_Preneur**, dengan tujuan mendukung pemetaan potensi kewirausahaan di wilayah tersebut.",
+    desc: `
+    <p><b>Notulensi Pembinaan Desa Cantik di Kelurahan Curug</b> dilaksanakan pada <b>14 Mei 2025</b> di Aula Kelurahan Curug. Kegiatan ini dihadiri oleh <b>aparat kelurahan</b>, <b>ketua RW</b>, beberapa <b>ketua RT</b>, serta perwakilan dari <b>BPS Kota Serang</b>. Acara dibuka dengan sambutan dan arahan dari <b>Lurah Curug, Bu Sutihat</b>, yang menekankan pentingnya partisipasi masyarakat dalam mendukung program Desa Cantik.</p>
+
+      <p><b>Materi utama</b> yang disampaikan dalam kegiatan ini meliputi:</p>
+      <ul>
+        <li><b>Teknik pengumpulan data</b> untuk memastikan informasi yang diperoleh dari warga bersifat akurat dan dapat dipertanggungjawabkan.</li>
+        <li>Pengenalan <i>Survei Preneur</i>, yaitu kegiatan pengumpulan data ketenagakerjaan yang dirancang untuk <b>menjaring wirausaha dan calon wirausaha</b> di Kelurahan Curug.</li>
+      </ul>
+
+      <p><b>Survei Preneur</b> memiliki beberapa poin penting, antara lain:</p>
+      <ul>
+        <li>Dilaksanakan secara <b>daring</b> melalui tautan resmi: <a href="https://s.bps.go.id/Survei_Preneur"><b>s.bps.go.id/Survei_Preneur</b></a>.</li>
+        <li><b>Tata cara pengisian</b> dijelaskan secara rinci agar peserta pembinaan dapat menyampaikan informasi tersebut kepada warga di masing-masing RT.</li>
+        <li>Data yang dikumpulkan mencakup identitas dasar responden, status ketenagakerjaan, pengalaman usaha, serta minat dalam mengembangkan usaha baru.</li>
+      </ul>
+
+      <p><b>Tujuan utama</b> survei ini adalah:</p>
+      <ul>
+        <li>Mendukung pemetaan potensi kewirausahaan di Kelurahan Curug.</li>
+        <li>Memberikan gambaran yang jelas tentang kondisi tenaga kerja dan calon wirausaha lokal.</li>
+        <li>Menjadi dasar perumusan kebijakan serta program <b>pemberdayaan masyarakat berbasis data</b>.</li>
+      </ul>
+
+      <p>Melalui kegiatan ini, diharapkan Kelurahan Curug mampu mengelola data kewirausahaan secara lebih <b>terstruktur, akurat, dan partisipatif</b>, sekaligus memperkuat peran <b>Desa Cantik</b> dalam pembangunan berbasis statistik.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCserkot1.png", 
     date: "14 Mei 2025" 
   },
-  foto28: { 
+  foto29: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 2", 
-    desc: "Pembinaan Desa Cantik Kelurahan Curug pada 21 Mei 2025 bertempat di Aula Kelurahan dan dihadiri oleh aparat kelurahan, ketua RW, ketua RT, serta BPS Kota Serang. Kegiatan dibuka dengan sambutan Lurah Curug, Bu Sutihat, dilanjutkan dengan materi mengenai *Survei Preneur*. Survei ini bertujuan memperoleh statistik ketenagakerjaan, khususnya dalam rangka menjaring wirausaha dan calon wirausaha di Kelurahan Curug. Dalam pembinaan tersebut dijelaskan tata cara pengisian *Survei Preneur* yang harus diteruskan kepada warga melalui ketua RT masing-masing, dengan mekanisme pengisian daring di tautan **s.bps.go.id/Survei\_Preneur**. Namun, capaian survei masih rendah hampir di seluruh RT. Permasalahan utama yang dihadapi adalah keterbatasan kemampuan ketua RT dan warga dalam mengakses serta mengisi survei secara online, sehingga menjadi perhatian untuk tindak lanjut pembinaan berikutnya.",
+    desc: `
+    <p><b>Pembinaan Desa Cantik Kelurahan Curug</b> pada <b>21 Mei 2025</b> bertempat di Aula Kelurahan dan dihadiri oleh <b>aparat kelurahan</b>, <b>ketua RW</b>, <b>ketua RT</b>, serta <b>BPS Kota Serang</b>. Acara dibuka dengan sambutan dari <b>Lurah Curug, Bu Sutihat</b>, yang menekankan pentingnya kegiatan ini dalam mendukung pembangunan berbasis data di tingkat kelurahan.</p>
+
+      <p><b>Materi utama</b> difokuskan pada pengenalan <i>Survei Preneur</i>. Survei ini memiliki tujuan utama untuk memperoleh <b>statistik ketenagakerjaan</b>, khususnya dalam rangka <b>menjaring wirausaha dan calon wirausaha</b> di Kelurahan Curug.</p>
+
+      <p><b>Tata cara pengisian Survei Preneur</b> dijelaskan kepada para peserta pembinaan agar dapat diteruskan kepada warga melalui masing-masing ketua RT, dengan mekanisme <b>pengisian daring</b> pada tautan resmi: 
+      <a href="https://s.bps.go.id/Survei_Preneur" style="color:blue;"><i>s.bps.go.id/Survei_Preneur</i></a>.</p>
+
+      <p><b>Kendala utama</b> yang ditemukan dalam pelaksanaan survei ini adalah:</p>
+      <ul>
+        <li><b>Capaian survei masih rendah</b> hampir di seluruh RT.</li>
+        <li>Keterbatasan kemampuan sebagian ketua RT dan warga dalam mengakses serta mengisi survei secara online.</li>
+      </ul>
+
+      <p><b>Ringkasan Inti Rapat:</b></p>
+      <ul>
+        <li><i>Survei Preneur</i> menjadi instrumen penting dalam memetakan potensi kewirausahaan di Kelurahan Curug.</li>
+        <li>Perlu peningkatan <b>literasi digital</b> aparat RT dan warga untuk mendorong partisipasi yang lebih luas.</li>
+        <li>Kegiatan tindak lanjut pembinaan akan difokuskan pada solusi teknis serta pendampingan agar pengisian survei lebih mudah dan merata.</li>
+      </ul>
+
+      <p>Kegiatan pembinaan ini diharapkan menjadi langkah awal memperkuat peran <b>Desa Cantik</b> dalam mengelola data kewirausahaan secara lebih <b>akurat, partisipatif, dan bermanfaat</b> untuk pembangunan kelurahan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCserkot2.png", 
     date: "21 Mei 2025" 
   },
-  foto29: { 
+  foto30: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 3", 
-    desc: "Notulensi pembinaan Desa Cantik Kelurahan Curug pada 28 Mei 2025 di Aula Kelurahan Curug dihadiri oleh aparat kelurahan dan BPS Kota Serang. Materi pembinaan berfokus pada teknik penyajian data, yang menekankan bahwa data tidak hanya dikumpulkan, tetapi juga harus disajikan dalam berbagai bentuk seperti tabel, grafik, infografis, maupun buku publikasi. Target utama dari kegiatan ini adalah penerbitan **Buku Kelurahan Curug dalam Angka 2024**. Selain itu, dilaporkan bahwa *Survei Preneur* telah diisi oleh 454 penduduk usia 15 tahun ke atas, atau sekitar 13 persen dari target. Capaian ini menunjukkan perlunya dukungan lebih lanjut dari Lurah dan aparat kelurahan untuk mendorong para ketua RT dan warga agar lebih aktif berpartisipasi, demi keberhasilan pelaksanaan survei tersebut.",
+    desc: "",
     img: "/assets/dokumentasi/pembinaanDCserkot3.png", 
     date: "28 Mei 2025" 
   },
-  foto30: { 
+  foto31: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 4", 
     desc: "Pembinaan Desa/Kelurahan Cantik kali ini difokuskan pada penyusunan publikasi Kelurahan Curug dalam Angka. Kegiatan diikuti oleh tiga aparat staf kelurahan yang memiliki kemampuan mengoperasikan Microsoft Word dan Excel, serta tiga pegawai organik BPS Kota Serang. Publikasi yang disusun mengacu pada Kecamatan dalam Angka dan Kota Serang dalam Angka, dengan sumber data berasal dari kelurahan, instansi terkait di tingkat kelurahan, kecamatan, maupun Kota Serang. Adapun rencana penyelesaian publikasi ditargetkan pada pertengahan Juli 2025, sehingga diperlukan koordinasi dan konsolidasi data secara intensif agar publikasi dapat tersusun dengan baik, lengkap, dan tepat waktu.",
     img: "/assets/dokumentasi/pembinaanDCserkot4.png", 
     date: "04 Mei 2025" 
   },
-  foto31: { 
+  foto32: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 5", 
     desc: "Pembinaan kali ini difokuskan pada pengolahan data menggunakan aplikasi SPSS 22. Peserta yang direncanakan tiga orang staf kelurahan, namun yang hadir hanya dua orang karena satu peserta berhalangan. Sebelumnya, aplikasi SPSS 22 telah berhasil diinstal pada dua laptop yang digunakan dalam pelatihan. Materi pembelajaran menggunakan raw data Survei Preneur yang sudah selesai dikumpulkan. Langkah awal dilakukan pemeriksaan serta validasi data untuk mengidentifikasi kesalahan dan ketidakkonsistenan. Walaupun proses pemeriksaan data belum selesai, peserta langsung diajarkan cara membuat tabulasi data dan mempraktikkannya secara langsung menggunakan SPSS.",
     img: "/assets/dokumentasi/pembinaanDCserkot5.png", 
     date: "11 Juni 2025" 
   },
-  foto32: { 
+  foto33: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 6", 
     desc: "Pembinaan pada pertemuan keenam masih difokuskan pada pengolahan data menggunakan aplikasi SPSS 22 dengan melibatkan tiga orang agen statistik dari aparat kelurahan. Materi menggunakan raw data Survei Preneur yang telah terkumpul. Kegiatan dimulai dengan pemeriksaan dan validasi data untuk memastikan tidak ada kesalahan atau ketidakkonsistenan. Selanjutnya, agen statistik diajarkan cara membuat tabel-tabel sederhana dari hasil Survei Preneur dan langsung mempraktikkannya. Beberapa tabel berhasil disusun oleh peserta, dan mereka didorong untuk terus mencoba serta memperdalam pemahaman pengolahan data dengan SPSS secara mandiri.",
     img: "/assets/dokumentasi/pembinaanDCserkot6.png", 
     date: "18 Juni 2025" 
   },
-  foto33: { 
+  foto34: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 7", 
     desc: "Pembinaan Desa/Kelurahan Cantik kali ini membahas teknik membuat infografis dengan pemateri dari tim Pojok Statistik UNIBA Serang serta Pembina Desa Cantik BPS Provinsi Banten. Peserta diperkenalkan pada berbagai aplikasi yang dapat digunakan untuk membuat infografis, seperti Adobe, PowerPoint, Canva, maupun aplikasi daring lainnya. Pemateri menekankan bahwa penggunaan Adobe dan PowerPoint lebih disarankan karena fleksibilitas serta hasil desain yang lebih optimal untuk kebutuhan publikasi data kelurahan.",
     img: "/assets/dokumentasi/pembinaanDCserkot7.png", 
     date: "25 Juni 2025" 
   },
-  foto34: { 
+  foto35: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 8", 
     desc: "Pembinaan kali ini berfokus pada teknik menyajikan dan memaparkan data menggunakan PowerPoint dengan peserta sebanyak 7 agen statistik dari aparat kelurahan. Materi menekankan pentingnya penyajian data dalam bentuk point-point singkat, sehingga pemaparan lebih ringkas dan mudah dipahami. Peserta diarahkan untuk memaksimalkan penggunaan tabel dan grafik dalam presentasi, serta jika memungkinkan menambahkan infografis agar data lebih menarik dan komunikatif ketika dipaparkan kepada audiens.",
     img: "/assets/dokumentasi/pembinaanDCserkot8.png", 
     date: "02 Juli 2025" 
   },
-  foto35: { 
+  foto36: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 9", 
     desc: "Pembinaan menghadirkan tim Pembina Desa Cantik BPS Provinsi Banten serta Pembina Desa Cantik BPS Kota Serang sebagai narasumber. Peserta terdiri dari agen statistik aparat kelurahan, mahasiswa UPG yang sedang KKM, serta tim Pembina Desa Cantik BPS Kota Serang. Materi yang dipaparkan meliputi statistik kriminalitas oleh BPS Provinsi Banten dan profil Kelurahan Curug beserta statistik ketenagakerjaan oleh BPS Kota Serang. Kegiatan dilanjutkan dengan sesi tanya jawab untuk memperdalam pemahaman peserta.",
     img: "/assets/dokumentasi/pembinaanDCserkot9.png", 
     date: "09 Juli 2025" 
   },
-  foto36: { 
+  foto37: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Serang Tahap 10", 
     desc: "Pembinaan kali ini berfokus pada penyelesaian penyusunan Publikasi Kelurahan Curug dalam Angka dengan peserta utama dari agen statistik kelurahan. Kegiatan diarahkan untuk meninjau kembali kelengkapan data yang sudah dihimpun, mengidentifikasi tabel-tabel yang masih kosong, serta menelusuri sumber data yang diperlukan agar publikasi dapat tersusun secara lengkap dan akurat. Selain itu, peserta juga mendiskusikan kebutuhan penambahan tabel-tabel penting terkait kondisi Kelurahan Curug agar publikasi menjadi lebih komprehensif. Pada sektor pertanian, diputuskan untuk menggunakan data Sensus Pertanian 2023 sebagai sumber resmi, sehingga informasi yang disajikan dalam publikasi sesuai dengan data terbaru dan dapat dipertanggungjawabkan.",
     img: "/assets/dokumentasi/pembinaanDCserkot10.png", 
     date: "16 Juli 2025" 
   },
-  foto37: { 
+  foto38: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 1: Penerapan Proses Bisnis Statistik (GSBPM)", 
     desc: "Pembinaan Desa Cantik ke-1 membahas Program Desa Cantik 2025 serta penerapan Proses Bisnis Statistik (GSBPM). Materi yang disampaikan mencakup latar belakang, tujuan, output, dan dampak program. Tujuan utama Desa Cantik adalah meningkatkan literasi statistik, menstandarkan pengelolaan data, mengoptimalkan pemanfaatan data, serta membentuk agen statistik desa. Output yang diharapkan berupa profil/monografi desa, publikasi statistik, website data, hingga penetapan Desa Cantik terbaik. Dampak jangka panjangnya adalah meningkatnya kualitas data desa sehingga mendukung pengambilan keputusan berbasis data dan pembangunan yang lebih tepat sasaran. Selain itu, disampaikan pula penerapan GSBPM sebagai kerangka kerja standar internasional dalam proses statistik. Tahapannya meliputi perencanaan (identify needs, design, build), pengumpulan data (collect), pengolahan dan analisis (process, analyze), hingga penyebarluasan serta evaluasi (disseminate, evaluate). Melalui model ini, data desa dapat dikelola secara sistematis, terintegrasi, dan berkelanjutan. Diskusi menghasilkan kesepakatan bahwa Program Desa Cantik akan mengadopsi GSBPM, mengoptimalkan pemanfaatan data administrasi dan big data, serta fokus pada peningkatan kapasitas agen statistik. Tindak lanjutnya, agen statistik akan melaksanakan pengumpulan, pengolahan, dan publikasi data sesuai kerangka GSBPM.",
     img: "/assets/dokumentasi/pembinaanDCtangsel1.png", 
     date: "09 Mei 2025" 
   },
-  foto38: { 
+  foto39: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 2: Identifikasi Kebutuhan Kelurahan (Lanjutan)", 
     desc: "Pembinaan Desa Cantik di Kelurahan Pakulonan difokuskan pada identifikasi potensi dan kebutuhan data sebagai langkah awal dalam penerapan Program Cinta Statistik 2025. Diskusi menghasilkan beberapa poin penting, antara lain belum tersedianya data monografi terbaru serta sistem informasi desa (SID) yang memadai, dan ketiadaan website kelurahan. Di sisi lain, terdapat potensi unggulan yang dapat dikembangkan, yaitu persebaran UMKM yang merata di wilayah Pakulonan serta daya tarik wisata kuliner di beberapa lokasi strategis. Dari hasil diskusi, disepakati bahwa tindak lanjut utama adalah melakukan pembaruan data monografi agar informasi dasar kelurahan lebih akurat dan mutakhir. Selain itu, Tim Pembina Desa Cantik akan memberikan pembinaan lebih lanjut mengenai pengelolaan serta pemanfaatan data statistik. Langkah ini diharapkan dapat memperkuat kapasitas kelurahan dalam menyediakan data yang berkualitas, sekaligus mendorong pemanfaatannya untuk perencanaan pembangunan berbasis potensi lokal.",
     img: "/assets/dokumentasi/pembinaanDCtangsel2.png", 
     date: "16 Mei 2025" 
   },
-  foto39: { 
+  foto40: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 3: Penyajian Data dengan Tabel dan Grafik", 
     desc: "Pembinaan kali ini berfokus pada penyajian data dengan tabel dan grafik serta teknik penyebarluasan data. Materi meliputi tujuan dan komponen penyusunan tabel, jenis-jenis tabel (satu arah, dua arah, tiga arah), serta teknik penyajian tabel panjang. Untuk grafik, dijelaskan keunggulannya dalam menyampaikan informasi yang lebih menarik dan mudah dipahami, serta berbagai jenis grafik seperti garis, batang, lingkaran, piktogram, dan cartogram. Panduan pemilihan grafik juga diberikan agar sesuai dengan tujuan, jenis data, dan target pengguna. Selain itu, narasumber menekankan pentingnya penyebarluasan data melalui publikasi, poster, website resmi, dan media sosial dengan memperhatikan konsistensi format dan sumber data. Dalam sesi praktik, peserta membuat tabel terkait jumlah apotek, tempat praktik dokter, dan sarana kesehatan, serta menyusun tiga tabel sesuai format BPS. Hasil praktik ditampilkan dalam bentuk tabel dan grafik, antara lain Grafik Rasio Penduduk Kelurahan Pakulonan Tahun 2021–2024, Grafik Jumlah Penduduk Berdasarkan Jenis Kelamin Tahun 2024, serta Tabel Jumlah Penduduk Berdasarkan Jenis Kelamin dan Rasio Tahun 2021–2024. Data yang digunakan bersumber dari DKB Disdukcapil, dan hasil praktik ini menjadi dasar peningkatan keterampilan agen statistik dalam mengolah dan menyajikan data secara informatif dan sesuai standar.",
     img: "/assets/dokumentasi/pembinaanDCtangsel3.png", 
     date: "23 Mei 2025" 
   },
-  foto40: { 
+  foto41: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 4: Analisis Sederhana", 
     desc: "Pembinaan kali ini membahas analisis data sederhana dengan fokus pada analisis deskriptif. Kegiatan dihadiri oleh Lurah Pakulonan, Bapak Dwisantoso, Sekretaris Lurah Bapak Imam Hadi, serta pemateri Bapak Ahmad Jailani dan Ibu Santi Nurhayati. Dalam sesi pembukaan, Bapak Imam menekankan pentingnya pembangunan website kelurahan yang sesuai dengan kebutuhan spesifik masyarakat, bukan sekadar menggunakan template dari Dinas Kominfo. Setelah itu, sesi materi dimulai dengan penjelasan dasar analisis data, khususnya perbedaan antara statistik deskriptif dan inferensia. Pada pembinaan ini, peserta difokuskan pada penerapan analisis deskriptif serta tahapan analisis menurut GSBPM yang mencakup penyusunan naskah output, validasi data, interpretasi output, hingga kebijakan penyajian data. Materi lebih lanjut menjelaskan jenis data kategorik (nominal dan ordinal) serta data numerik (interval dan rasio). Peserta juga dibekali pemahaman mengenai ukuran statistik dalam analisis deskriptif, seperti rate, rasio, proporsi, dan jumlah mutlak, serta konsep ukuran pemusatan (mean, median, modus) dan ukuran penyebaran (standar deviasi). Melalui pembinaan ini, agen statistik Pakulonan diharapkan mampu mengolah data menjadi informasi yang jelas, ringkas, dan bermanfaat sebagai dasar pengambilan keputusan maupun penyusunan publikasi kelurahan.",
     img: "/assets/dokumentasi/pembinaanDCtangsel4.png", 
     date: "28 Mei 2025" 
   },
-  foto41: { 
+  foto42: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 5: Penyajian Data dengan Infografis", 
     desc: "Pembinaan kali ini berfokus pada penyajian data dengan infografis sebagai strategi komunikasi statistik yang efektif. Materi yang disampaikan mencakup definisi infografis sebagai cara memvisualisasikan informasi kompleks agar lebih mudah dipahami, serta keunggulannya dalam menyederhanakan penjelasan panjang atau tabel rumit menjadi visual yang menarik. Narasumber juga menjelaskan jenis-jenis infografis, yaitu statis, dinamis (audio-video), dan interaktif, serta elemen penting dalam desain seperti kejelasan data, visual yang menarik, kemudahan pemahaman, dan kemudahan distribusi. Selain itu, dipaparkan langkah-langkah pembuatan infografis mulai dari pengumpulan data, penentuan tujuan, perencanaan, pemilihan aplikasi (online/offline), evaluasi data, desain, hingga proses rilis. Sebagai tindak lanjut, peserta melakukan praktik langsung pembuatan infografis menggunakan Canva dengan tema jumlah fasilitas kesehatan di Kelurahan Pakulonan. Hasil praktik menunjukkan bahwa agen statistik mulai mampu mengubah data numerik menjadi tampilan visual yang lebih komunikatif, sehingga data dapat lebih mudah dipahami masyarakat umum. Kegiatan ini diharapkan meningkatkan keterampilan peserta dalam menyebarluaskan data desa secara menarik dan efektif melalui berbagai media.",
     img: "/assets/dokumentasi/pembinaanDCtangsel5.png", 
