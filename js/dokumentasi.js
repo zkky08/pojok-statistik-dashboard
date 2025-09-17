@@ -1620,7 +1620,53 @@ const fotoData = {
   foto38: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 1: Penerapan Proses Bisnis Statistik (GSBPM)", 
     desc: `
-    
+    <p><b>Pembinaan Desa Cantik ke-1</b> membahas <b>Program Desa Cantik 2025</b> serta penerapan 
+      <i>Generic Statistical Business Process Model (GSBPM)</i>. 
+      Materi yang disampaikan mencakup latar belakang, tujuan, output, dan dampak program, 
+      sebagai dasar penguatan literasi statistik di tingkat desa.</p>
+
+      <p><b>Tujuan utama Program Desa Cantik</b> adalah:</p>
+      <ul>
+        <li>Meningkatkan <b>literasi statistik</b> aparat dan masyarakat desa.</li>
+        <li>Menstandarkan <b>pengelolaan data</b> di tingkat desa.</li>
+        <li>Mengoptimalkan <b>pemanfaatan data pembangunan</b>.</li>
+        <li>Membentuk <b>agen statistik desa</b> yang kompeten.</li>
+      </ul>
+
+      <p><b>Output program</b> yang diharapkan meliputi:</p>
+      <ul>
+        <li><b>Profil/monografi desa</b>.</li>
+        <li><b>Publikasi statistik</b> tematik maupun umum.</li>
+        <li><b>Website data desa</b> sebagai media diseminasi.</li>
+        <li>Penetapan <b>Desa Cantik terbaik</b> sebagai bentuk apresiasi.</li>
+      </ul>
+
+      <p><b>Dampak jangka panjang</b> dari program ini adalah meningkatnya <b>kualitas data desa</b>, 
+      sehingga dapat mendukung <b>pengambilan keputusan berbasis data</b> 
+      dan pembangunan yang lebih tepat sasaran.</p>
+
+      <p><b>Penerapan GSBPM</b> dijelaskan sebagai kerangka kerja standar internasional 
+      dalam proses statistik, yang terdiri atas tahapan:</p>
+      <ul>
+        <li><b>Perencanaan</b>: identify needs, design, build.</li>
+        <li><b>Pengumpulan data</b>: collect.</li>
+        <li><b>Pengolahan dan analisis</b>: process, analyze.</li>
+        <li><b>Penyebarluasan dan evaluasi</b>: disseminate, evaluate.</li>
+      </ul>
+
+      <p>Melalui model ini, <b>data desa</b> dapat dikelola secara <b>sistematis</b>, 
+      <b>terintegrasi</b>, dan <b>berkelanjutan</b>.</p>
+
+      <p><b>Hasil diskusi</b> menghasilkan kesepakatan untuk:</p>
+      <ul>
+        <li>Mengadopsi <b>GSBPM</b> dalam setiap tahapan pengelolaan data desa.</li>
+        <li>Mengoptimalkan pemanfaatan <b>data administrasi</b> dan <b>big data</b>.</li>
+        <li>Fokus pada <b>peningkatan kapasitas agen statistik</b>.</li>
+      </ul>
+
+      <p><b>Tindak lanjut</b>: Agen statistik akan melaksanakan <b>pengumpulan, pengolahan, dan publikasi data</b> 
+      sesuai kerangka kerja <b>GSBPM</b> untuk memperkuat budaya statistik di desa.
+    </p>
     `,
     img: "/assets/dokumentasi/pembinaanDCtangsel1.png", 
     date: "09 Mei 2025" 
