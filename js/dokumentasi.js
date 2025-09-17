@@ -188,7 +188,7 @@ const fotoData = {
     </ul>
     `,
     img: "/assets/dokumentasi/pembinaan_agen_LayoutDesignPublikasi.jpeg", 
-    date: "Dd Mm Yyyy" 
+    date: "2024" 
   },
   foto6: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Pandeglang Tahap 1", 
@@ -616,85 +616,718 @@ const fotoData = {
   },
   foto14: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 6: Teknik Penyajian Data", 
-    desc: "Pada tanggal 4 Juni 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik dengan materi Teknik Penyajian Data. Kegiatan ini membekali perangkat desa dengan keterampilan menyajikan data secara jelas, menarik, dan mudah dipahami. Peserta mempelajari prinsip-prinsip penyajian data, pemilihan bentuk visualisasi yang tepat (tabel, grafik, diagram, peta), serta penggunaan warna dan tata letak agar informasi tersampaikan efektif. Melalui pembinaan ini, diharapkan desa mampu mengkomunikasikan hasil pengolahan data secara informatif untuk mendukung transparansi, akuntabilitas, dan pengambilan keputusan.",
+    desc: `
+    <p>Pada tanggal <b>4 Juni 2025</b>, di Desa Sumurbandung dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> dengan materi <b>Teknik Penyajian Data</b>. 
+      Kegiatan ini bertujuan membekali perangkat desa dengan keterampilan praktis dalam menyajikan data agar informasi yang dihasilkan <b>jelas</b>, <b>menarik</b>, dan <b>mudah dipahami</b> oleh berbagai pihak. 
+      Penyajian data yang tepat tidak hanya meningkatkan pemahaman masyarakat, tetapi juga memperkuat <i>transparansi</i> dan <i>akuntabilitas</i> desa dalam mengelola informasi pembangunan.</p>
+
+      <p>Dalam kegiatan pembinaan, peserta memperoleh penjelasan tentang berbagai aspek penting, antara lain:</p>
+      <ul>
+        <li><b>Prinsip-prinsip Penyajian Data</b>
+          <ul>
+            <li>Pentingnya menampilkan data secara <i>sederhana</i> namun tetap informatif.</li>
+            <li>Peserta didorong untuk menghindari penggunaan angka yang terlalu rumit tanpa penjelasan tambahan.</li>
+            <li>Diberikan contoh penyajian data kependudukan yang ringkas, tetapi tetap menunjukkan tren dan distribusi dengan jelas.</li>
+          </ul>
+        </li>
+        <li><b>Pemilihan Bentuk Visualisasi yang Tepat</b>
+          <ul>
+            <li><b>Tabel</b> untuk menyajikan detail angka yang presisi, seperti jumlah penduduk per dusun.</li>
+            <li><b>Grafik</b> untuk memperlihatkan tren perkembangan, misalnya peningkatan produksi pertanian dari tahun ke tahun.</li>
+            <li><b>Diagram</b> lingkaran untuk menggambarkan proporsi, seperti persentase mata pencaharian warga.</li>
+            <li><b>Peta</b> tematik untuk menunjukkan sebaran fasilitas umum, potensi wilayah, atau tingkat partisipasi program desa.</li>
+          </ul>
+        </li>
+        <li><b>Penggunaan Warna dan Tata Letak</b>
+          <ul>
+            <li>Ditekankan pentingnya konsistensi warna agar tidak membingungkan pembaca.</li>
+            <li>Pemilihan palet warna yang ramah mata, dengan kombinasi kontras untuk menonjolkan informasi utama.</li>
+            <li>Tata letak yang rapi dan seimbang membantu pembaca lebih cepat menangkap pesan yang ingin disampaikan.</li>
+          </ul>
+        </li>
+        <li><b>Keterampilan Komunikasi Visual</b>
+          <ul>
+            <li>Peserta dilatih untuk menyampaikan data dengan narasi singkat yang mendukung visualisasi.</li>
+            <li>Penekanan pada pentingnya <i>storytelling dengan data</i>, sehingga angka tidak hanya berdiri sendiri tetapi membentuk cerita yang bermakna.</li>
+            <li>Simulasi penyajian data dilakukan agar peserta terbiasa berbicara di depan audiens dengan percaya diri.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Melalui pembinaan ini, perangkat desa diharapkan mampu menyajikan hasil pengolahan data secara <b>informatif</b> dan <b>komunikatif</b>. 
+      Data yang ditampilkan dengan visualisasi yang baik akan memperkuat kepercayaan masyarakat, mendukung <i>pengambilan keputusan berbasis data</i>, serta menjadi sarana evaluasi program pembangunan desa. 
+      Dengan begitu, Desa Sumurbandung dapat semakin maju, mandiri, dan akuntabel dalam pengelolaan informasi pembangunan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak6.png", 
     date: "04 Juni 2025" 
   },
   foto15: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 7: Manajemen Kualitas Data", 
-    desc: "Pada tanggal 11 Juni 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik dengan materi Manajemen Kualitas Data. Kegiatan ini bertujuan meningkatkan pemahaman perangkat desa mengenai pentingnya menjaga mutu data agar akurat, konsisten, lengkap, dan tepat waktu. Peserta mendapatkan penjelasan tentang prinsip-prinsip kualitas data, cara mendeteksi dan memperbaiki kesalahan data, serta langkah-langkah pengendalian kualitas selama proses pengumpulan, pengolahan, dan penyajian. Melalui pembinaan ini, diharapkan desa mampu menghasilkan data yang dapat dipercaya sebagai dasar perencanaan, evaluasi, dan pengambilan keputusan pembangunan.",
+    desc: `
+    <p>Pada tanggal <b>11 Juni 2025</b>, di Desa Sumurbandung dilaksanakan kegiatan <i>Pembinaan Desa Cantik</i> dengan materi <b>Manajemen Kualitas Data</b>. 
+      Kegiatan ini bertujuan meningkatkan pemahaman perangkat desa mengenai pentingnya menjaga mutu data agar <b>akurat</b>, <b>konsisten</b>, <b>lengkap</b>, dan <b>tepat waktu</b>. 
+      Mutu data yang terjamin tidak hanya bermanfaat bagi desa itu sendiri, tetapi juga mendukung pembangunan yang berkelanjutan dan berbasis bukti di tingkat kabupaten maupun provinsi.</p>
+
+      <p>Dalam pembinaan ini, peserta mendapatkan penjelasan mengenai berbagai aspek penting, antara lain:</p>
+      <ul>
+        <li><b>Prinsip-prinsip Kualitas Data</b>
+          <ul>
+            <li><b>Akurasi</b>: memastikan data yang dicatat sesuai dengan kondisi sebenarnya.</li>
+            <li><b>Konsistensi</b>: menjaga keseragaman format dan metode pencatatan antar periode.</li>
+            <li><b>Kelengkapan</b>: memastikan seluruh variabel dan indikator yang diperlukan tersedia.</li>
+            <li><b>Ketepatan waktu</b>: data dikumpulkan dan dipublikasikan sesuai jadwal sehingga relevan dengan kebutuhan.</li>
+          </ul>
+        </li>
+        <li><b>Deteksi dan Perbaikan Kesalahan Data</b>
+          <ul>
+            <li>Mempelajari teknik <i>data validation</i> untuk menemukan entri yang tidak logis.</li>
+            <li>Melakukan pengecekan silang antara sumber data berbeda, misalnya data kependudukan dan data pelayanan kesehatan.</li>
+            <li>Menggunakan metode koreksi manual dan digital untuk memperbaiki kesalahan pencatatan.</li>
+          </ul>
+        </li>
+        <li><b>Langkah-langkah Pengendalian Kualitas</b>
+          <ul>
+            <li>Pada tahap <b>pengumpulan</b>: memastikan instrumen sudah diuji coba dan enumerator terlatih.</li>
+            <li>Pada tahap <b>pengolahan</b>: melakukan proses <i>data cleaning</i> agar data siap dianalisis.</li>
+            <li>Pada tahap <b>penyajian</b>: memastikan tabel, grafik, dan infografis tidak menimbulkan bias interpretasi.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Melalui pembinaan ini, perangkat desa diharapkan mampu menghasilkan data yang <b>dapat dipercaya</b> dan <b>dapat dipertanggungjawabkan</b>. 
+      Data yang berkualitas akan menjadi dasar bagi <i>perencanaan pembangunan</i>, <i>evaluasi program</i>, serta pengambilan keputusan yang lebih tepat sasaran. 
+      Dengan demikian, Desa Sumurbandung dapat membangun sistem informasi desa yang lebih profesional dan berdaya guna bagi masyarakat.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak7.png", 
     date: "11 Juni 2025" 
   },
   foto16: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Lebak Tahap 8: Finalisasi", 
-    desc: "Pada tanggal 18 Juni 2025, di Desa Sumurbandung dilaksanakan Pembinaan Desa Cantik tahap Finalisasi. Kegiatan ini menjadi penutup rangkaian pembinaan tahun 2025 yang sebelumnya mencakup identifikasi kebutuhan data, teknik pengumpulan, pengolahan, penyimpanan, analisis, penyajian, dan manajemen kualitas data. Pada sesi ini, peserta melakukan evaluasi hasil pembinaan, meninjau kembali data yang telah dihimpun, serta memastikan kelengkapan, konsistensi, dan keterpaduan informasi yang akan digunakan desa. Melalui tahap finalisasi ini, diharapkan Desa Sumurbandung memiliki sistem pengelolaan data yang terstruktur dan siap dimanfaatkan untuk mendukung perencanaan pembangunan yang berbasis data.",
+    desc: `
+    <p>Pada tanggal <b>18 Juni 2025</b>, di Desa Sumurbandung dilaksanakan <i>Pembinaan Desa Cantik</i> tahap <b>Finalisasi</b>. 
+      Kegiatan ini menjadi penutup rangkaian pembinaan tahun 2025 yang sebelumnya telah mencakup berbagai materi penting, mulai dari <i>identifikasi kebutuhan data</i>, 
+      <i>teknik pengumpulan</i>, <i>pengolahan</i>, <i>penyimpanan</i>, <i>analisis</i>, <i>penyajian</i>, hingga <i>manajemen kualitas data</i>. 
+      Tahap finalisasi ini berperan sebagai momen refleksi untuk mengukur sejauh mana perangkat desa mampu memahami, menerapkan, dan mengintegrasikan seluruh materi yang telah dipelajari.</p>
+
+      <p>Pada sesi finalisasi, peserta melakukan beberapa aktivitas kunci, antara lain:</p>
+      <ul>
+        <li><b>Evaluasi Hasil Pembinaan</b>
+          <ul>
+            <li>Meninjau kembali catatan pembelajaran dari tiap pertemuan.</li>
+            <li>Mendiskusikan kesulitan yang dialami selama praktik lapangan.</li>
+            <li>Mengevaluasi peningkatan keterampilan perangkat desa dalam mengelola data.</li>
+          </ul>
+        </li>
+        <li><b>Pemeriksaan Data yang Dihimpun</b>
+          <ul>
+            <li>Mengecek kelengkapan variabel yang sudah dikumpulkan.</li>
+            <li>Melakukan uji konsistensi antar dokumen dan antar periode waktu.</li>
+            <li>Memastikan keterpaduan informasi antar bidang, misalnya data kependudukan, ekonomi, dan kesehatan.</li>
+          </ul>
+        </li>
+        <li><b>Finalisasi Sistem Pengelolaan Data</b>
+          <ul>
+            <li>Menyusun format standar untuk laporan dan publikasi data desa.</li>
+            <li>Membuat cadangan (<i>backup</i>) data untuk menjaga keamanan dan keberlanjutan.</li>
+            <li>Menerapkan prinsip transparansi agar data dapat dimanfaatkan masyarakat secara luas.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Melalui tahap <b>finalisasi</b> ini, Desa Sumurbandung diharapkan benar-benar siap dengan sistem pengelolaan data yang <b>terstruktur</b>, <b>terintegrasi</b>, 
+      dan <b>dapat dipertanggungjawabkan</b>. Data yang telah dihimpun akan menjadi dasar bagi <i>perencanaan pembangunan desa</i> yang lebih tepat sasaran, 
+      serta menjadi alat penting untuk meningkatkan <b>transparansi</b>, <b>akuntabilitas</b>, dan <b>partisipasi masyarakat</b> dalam pembangunan berkelanjutan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDClebak8.png", 
     date: "18 Juni 2025" 
   },
   foto17: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Tangerang", 
-    desc: "Kegiatan pembinaan literasi statistik bertema *Generic Statistical Business Process Model (GSBPM)* dan manajemen data di Aula Desa Sukawali dihadiri lengkap oleh aparat desa, agen statistik, mahasiswa magang, serta perwakilan warga, sehingga tingkat partisipasi mencapai 100%. Acara dibuka oleh Kepala Desa Sukawali yang menekankan pentingnya literasi statistik bagi desa dalam pengambilan keputusan berbasis data, disusul sambutan Kepala BPS Kabupaten Tangerang yang menegaskan urgensi GSBPM dan manajemen data dalam pembangunan desa serta apresiasi atas dukungan desa dalam penyelenggaraan kegiatan. Materi inti disampaikan oleh Pembina Desa Cantik BPS Kabupaten Tangerang, meliputi regulasi Sistem Statistik Nasional (SSN), konsep kegiatan statistik, GSBPM dengan delapan tahapan siklus statistik, serta prinsip *Satu Data Indonesia* yang menekankan standar data, metadata, interoperabilitas, dan penggunaan data induk. Dalam sesi diskusi, peserta menanyakan relevansi standardisasi, manfaat praktis GSBPM, kesiapan desa tanpa latar belakang statistik, penyusunan metadata, serta penerapan standar data dan interoperabilitas di tingkat desa. Jawaban narasumber menekankan bahwa standar data dan GSBPM justru mempermudah desa mengelola data agar konsisten, dapat dibandingkan, serta langsung terhubung dengan sistem kabupaten hingga pusat. Manfaat nyata GSBPM dan manajemen data bagi desa antara lain mempercepat pengusulan program, meningkatkan kepercayaan pemerintah pusat, menghindari tumpang tindih data, serta menghadirkan kebijakan berbasis bukti yang lebih tepat sasaran. Dengan demikian, Program Desa Cantik tidak hanya memperkuat kapasitas aparat desa sebagai produsen data, tetapi juga meneguhkan peran desa dalam mendukung Sistem Statistik Nasional dan mewujudkan Satu Data Indonesia.",
+    desc: `
+    <p>Kegiatan <b>pembinaan literasi statistik</b> bertema <i>Generic Statistical Business Process Model (GSBPM)</i> dan 
+      <b>manajemen data</b> dilaksanakan di Aula Desa Sukawali. Acara ini dihadiri lengkap oleh <b>aparat desa</b>, 
+      <b>agen statistik</b>, <b>mahasiswa magang</b>, serta <b>perwakilan warga</b>, sehingga tingkat partisipasi 
+      mencapai <b>100%</b>. Kehadiran semua unsur masyarakat desa menunjukkan tingginya antusiasme terhadap pentingnya 
+      pengelolaan data dan komitmen bersama dalam mewujudkan tata kelola desa berbasis data.</p>
+
+      <p>Rangkaian kegiatan berlangsung sebagai berikut:</p>
+      <ul>
+        <li><b>Pembukaan</b>
+          <ul>
+            <li>Acara dibuka oleh <b>Kepala Desa Sukawali</b> yang menekankan urgensi literasi statistik 
+            bagi desa sebagai dasar pengambilan keputusan berbasis data.</li>
+            <li>Sambutan dilanjutkan oleh <b>Kepala BPS Kabupaten Tangerang</b> yang menegaskan pentingnya 
+            penerapan <i>GSBPM</i> dan manajemen data dalam pembangunan desa.</li>
+            <li>Beliau juga menyampaikan apresiasi atas dukungan penuh perangkat desa dalam menyukseskan kegiatan ini.</li>
+          </ul>
+        </li>
+        
+        <li><b>Penyampaian Materi Inti</b>
+          <ul>
+            <li>Dibawakan oleh <b>Pembina Desa Cantik BPS Kabupaten Tangerang</b>.</li>
+            <li>Materi yang dipaparkan meliputi:
+              <ul>
+                <li><b>Regulasi Sistem Statistik Nasional (SSN)</b> sebagai landasan hukum penyelenggaraan statistik.</li>
+                <li><b>Konsep kegiatan statistik</b> yang mencakup tahapan penyusunan hingga pemanfaatan data.</li>
+                <li><i>Generic Statistical Business Process Model (GSBPM)</i> dengan <b>delapan tahapan siklus statistik</b>
+                mulai dari identifikasi kebutuhan, perancangan, pengumpulan, pengolahan, analisis, hingga diseminasi.</li>
+                <li>Prinsip <i>Satu Data Indonesia</i> yang menekankan <b>standar data</b>, <b>metadata</b>, 
+                <b>interoperabilitas</b>, dan pemanfaatan <b>data induk</b> secara konsisten.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li><b>Sesi Diskusi</b>
+          <ul>
+            <li>Peserta mengajukan pertanyaan seputar:
+              <ul>
+                <li>Relevansi standardisasi data di tingkat desa.</li>
+                <li>Manfaat praktis <i>GSBPM</i> dalam kegiatan statistik sehari-hari.</li>
+                <li>Kesiapan desa tanpa latar belakang statistik dalam menerapkan konsep ini.</li>
+                <li>Tahapan penyusunan metadata yang sesuai standar.</li>
+                <li>Penerapan interoperabilitas dan <i>standar data</i> agar terhubung dengan sistem kabupaten hingga pusat.</li>
+              </ul>
+            </li>
+            <li>Narasumber menegaskan bahwa:
+              <ul>
+                <li><b>Standar data</b> dan <i>GSBPM</i> justru mempermudah desa mengelola informasi agar konsisten dan akurat.</li>
+                <li>Penerapan standar membuat data desa <b>dapat dibandingkan</b> dengan kabupaten, provinsi, hingga nasional.</li>
+                <li>Dengan sistem yang terintegrasi, proses pelaporan menjadi lebih efisien dan mengurangi risiko duplikasi.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        
+        <li><b>Manfaat Nyata Bagi Desa</b>
+          <ul>
+            <li>Mempercepat penyusunan usulan program pembangunan desa.</li>
+            <li>Meningkatkan kepercayaan pemerintah pusat terhadap data yang disampaikan desa.</li>
+            <li>Menghindari tumpang tindih atau inkonsistensi data antar lembaga.</li>
+            <li>Mendorong kebijakan berbasis bukti (<i>evidence-based policy</i>) yang lebih tepat sasaran.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Dengan demikian, Program <b>Desa Cantik</b> tidak hanya memperkuat kapasitas aparat desa sebagai <i>produsen data</i>, 
+      tetapi juga meneguhkan peran desa dalam mendukung <b>Sistem Statistik Nasional (SSN)</b> dan mewujudkan <b>Satu Data Indonesia</b>. 
+      Kegiatan ini menjadi tonggak penting agar Desa Sukawali mampu menjadi contoh penerapan literasi statistik di tingkat lokal, 
+      serta memperlihatkan bahwa desa memiliki kontribusi besar dalam pembangunan berbasis data.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangerang.png", 
     date: "02 Mei 2025" 
   },
   foto18: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Serang: Identifikasi Kebutuhan Desa", 
-    desc: "Rapat sosialisasi Program Desa Cantik antara BPS Kabupaten Serang dan Pemerintah Desa Cikande Permai pada 30 April 2025 dipimpin oleh Kepala Desa Cikande Permai dan berlangsung di kantor desa. Materi pembinaan disampaikan oleh Novian Tamara dengan mengacu pada panduan resmi BPS, meliputi penjelasan umum tentang Desa Cantik sebagai upaya peningkatan literasi statistik, tata kelola dan skema pendampingan, serta identifikasi kebutuhan desa melalui instrumen kuesioner. Peserta diperkenalkan pada tujuan program seperti standardisasi pengelolaan data, pembentukan agen statistik, dan optimalisasi data dalam perencanaan pembangunan. Selain itu, dijelaskan tahapan pembinaan mulai dari sosialisasi, identifikasi potensi desa, perencanaan, pelaksanaan hingga monitoring dan evaluasi. Diskusi berlangsung aktif, dengan peserta menanyakan output program dan mahasiswa menunjukkan minat terlibat. Kepala desa menyatakan komitmen menunjuk agen statistik secara resmi serta mendukung keberlanjutan pembinaan. Hasil identifikasi kebutuhan desa menargetkan pengembangan website/dashboard statistik melalui platform DIGIDES, pembuatan infografis, pelaksanaan survei kepuasan layanan infrastruktur dan kinerja pemerintah desa, serta penerbitan lima publikasi statistik (profil desa, buku saku data strategis, analisis survei kepuasan, desa dalam angka, dan booklet potensi desa). Acara ditutup dengan semangat kolaborasi antara pembina, perangkat desa, dan masyarakat, dengan slogan *“DESA HEBAT, STATISTIK TEPAT!”*",
+    desc: `
+    <p><b>Rapat Sosialisasi Program Desa Cantik</b> antara <b>BPS Kabupaten Serang</b> dan <b>Pemerintah Desa Cikande Permai</b> 
+      dilaksanakan pada <b>30 April 2025</b> di kantor desa. Rapat dipimpin langsung oleh <b>Kepala Desa Cikande Permai</b>, 
+      menunjukkan keseriusan pemerintah desa dalam mendukung peningkatan literasi statistik. Kegiatan ini dihadiri oleh perangkat desa, 
+      mahasiswa magang, dan perwakilan masyarakat sehingga suasana rapat berjalan aktif dan partisipatif.</p>
+
+      <p><b>Materi pembinaan</b> disampaikan oleh <b>Novian Tamara</b> dengan mengacu pada panduan resmi BPS. 
+      Peserta diperkenalkan pada sejumlah pokok bahasan penting, di antaranya:</p>
+
+      <ul>
+        <li><b>Penjelasan umum tentang Desa Cantik</b>
+          <ul>
+            <li>Program sebagai upaya <i>peningkatan literasi statistik</i> di tingkat desa.</li>
+            <li>Pentingnya tata kelola data yang sistematis untuk pembangunan berbasis bukti.</li>
+            <li>Skema pendampingan dari BPS kepada desa mitra.</li>
+          </ul>
+        </li>
+
+        <li><b>Tujuan program</b>
+          <ul>
+            <li>Standardisasi <b>pengelolaan data desa</b> agar lebih konsisten dan terpercaya.</li>
+            <li>Pembentukan <b>agen statistik</b> sebagai penggerak literasi di tingkat lokal.</li>
+            <li>Optimalisasi pemanfaatan data dalam <b>perencanaan pembangunan desa</b>.</li>
+          </ul>
+        </li>
+
+        <li><b>Tahapan pembinaan</b>
+          <ul>
+            <li>Sosialisasi dan pengenalan program.</li>
+            <li>Identifikasi potensi dan kebutuhan desa melalui <i>instrumen kuesioner</i>.</li>
+            <li>Penyusunan rencana kegiatan yang berbasis data.</li>
+            <li>Pelaksanaan kegiatan secara bertahap.</li>
+            <li>Monitoring serta evaluasi hasil pembinaan untuk menjamin keberlanjutan.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><b>Diskusi</b> berlangsung interaktif, dengan beberapa hal yang mengemuka:</p>
+      <ul>
+        <li>Peserta menanyakan bentuk nyata <b>output program Desa Cantik</b> di desa mereka.</li>
+        <li>Mahasiswa magang menunjukkan <b>minat terlibat langsung</b> dalam kegiatan statistik desa.</li>
+        <li>Kepala Desa menyatakan <b>komitmen resmi</b> menunjuk agen statistik dan mendukung pembinaan berkelanjutan.</li>
+      </ul>
+
+      <p><b>Hasil identifikasi kebutuhan Desa Cikande Permai</b> menargetkan beberapa kegiatan strategis, antara lain:</p>
+      <ul>
+        <li>Pengembangan <b>website/dashboard statistik</b> berbasis platform <i>DIGIDES</i>.</li>
+        <li>Pembuatan <b>infografis</b> yang menarik dan mudah dipahami.</li>
+        <li>Pelaksanaan <b>survei kepuasan</b> masyarakat terhadap layanan infrastruktur dan kinerja pemerintah desa.</li>
+        <li>Penerbitan <b>lima publikasi statistik</b>, meliputi:
+          <ul>
+            <li>Profil desa.</li>
+            <li>Buku saku data strategis.</li>
+            <li>Analisis survei kepuasan masyarakat.</li>
+            <li><i>Desa dalam Angka</i>.</li>
+            <li>Booklet potensi desa.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p>Acara ditutup dengan semangat kolaborasi antara <b>pembina, perangkat desa, mahasiswa, dan masyarakat</b>. 
+      Momentum ini meneguhkan tekad bersama untuk menjadikan Desa Cikande Permai sebagai desa percontohan dalam pengelolaan data. 
+      Sosialisasi ditutup dengan seruan penuh semangat: <i><b>“DESA HEBAT, STATISTIK TEPAT!”</b></i>
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCserang1.png", 
     date: "30 April 2025" 
   },
   foto19: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kab. Serang: Briefing Petugas Survei Kepuasan Layanan Infrastruktur", 
-    desc: "Pelatihan dan briefing Survei Kepuasan Layanan Infrastruktur dan Kinerja Pemerintah Desa Cikande Permai 2025 dilaksanakan pada 23 Mei 2025 di Kantor Desa Cikande Permai, dipimpin oleh Kepala Desa Dayari, dengan peserta agen statistik, tim pembina BPS Kabupaten Serang, serta mahasiswa magang Unpam Serang. Acara membahas pentingnya data statistik sebagai dasar pembangunan, tujuan survei untuk menilai kepuasan masyarakat terhadap layanan infrastruktur dan kinerja pemerintah desa, serta penggunaan kerangka *Generic Statistical Business Process Model (GSBPM)* dalam pelaksanaan. Survei dirancang menggunakan metode wawancara langsung dengan kuesioner standar, mencakup seluruh 9 RW di Cikande Permai dengan responden rumah tangga. Pelatihan petugas lapangan dipandu oleh Novian Tamara bersama Maman, meliputi pemaparan materi, simulasi, serta penilaian kelulusan oleh Kepala Desa, di mana petugas yang lolos mendapat ID Card dan surat tugas. Rapat juga menetapkan timeline kegiatan mulai 22 Mei hingga 1 Juli 2025, dengan tahapan pelatihan, pencacahan, pengawasan, entri dan pembersihan data, analisis, hingga publikasi hasil. Tugas pencacah dan pengawas dijabarkan secara rinci, serta logistik berupa kuesioner, alat tulis, ID Card, surat tugas, dan daftar sampel didistribusikan. Seluruh biaya survei ditanggung oleh pemerintah desa, dengan pengawasan dari tim PDCS BPS Kabupaten Serang. Rapat ditutup dengan pesan menjaga etika, objektivitas, serta harapan agar hasil survei dapat memberi manfaat nyata bagi pembangunan desa, dengan semangat *“DESA HEBAT, STATISTIK TEPAT!”*.",
+    desc: `
+    <p><b>Pelatihan dan briefing Survei Kepuasan Layanan Infrastruktur dan Kinerja Pemerintah Desa Cikande Permai 2025</b> 
+      dilaksanakan pada <b>23 Mei 2025</b> di Kantor Desa Cikande Permai. Acara ini dipimpin langsung oleh <b>Kepala Desa Dayari</b> 
+      dan diikuti oleh <b>agen statistik</b>, <b>tim pembina BPS Kabupaten Serang</b>, serta <b>mahasiswa magang Unpam Serang</b>. 
+      Kehadiran peserta yang lengkap mencerminkan komitmen desa untuk melaksanakan survei ini dengan serius dan terarah.</p>
+
+      <p><b>Topik utama yang dibahas</b> dalam kegiatan ini meliputi:</p>
+      <ul>
+        <li>Pentingnya <b>data statistik</b> sebagai dasar pembangunan desa yang berbasis bukti.</li>
+        <li><b>Tujuan survei</b>, yaitu menilai tingkat kepuasan masyarakat terhadap:
+          <ul>
+            <li><b>Layanan infrastruktur</b> yang tersedia di desa.</li>
+            <li><b>Kinerja pemerintah desa</b> dalam memberikan pelayanan publik.</li>
+          </ul>
+        </li>
+        <li>Penerapan kerangka kerja <i>Generic Statistical Business Process Model (GSBPM)</i> sebagai acuan standar pelaksanaan survei.</li>
+      </ul>
+
+      <p><b>Desain survei</b> disusun secara rinci agar hasilnya valid dan representatif, mencakup:</p>
+      <ul>
+        <li>Metode pengumpulan data menggunakan <b>wawancara langsung</b> dengan kuesioner standar.</li>
+        <li>Cakupan wilayah seluruh <b>9 RW</b> di Desa Cikande Permai.</li>
+        <li>Responden adalah <b>rumah tangga terpilih</b> yang mewakili populasi desa.</li>
+      </ul>
+
+      <p><b>Pelatihan petugas lapangan</b> dipandu oleh <b>Novian Tamara</b> bersama <b>Maman</b>, meliputi:</p>
+      <ul>
+        <li>Pemaparan materi secara teori tentang prosedur pencacahan.</li>
+        <li>Simulasi wawancara langsung untuk melatih keterampilan komunikasi.</li>
+        <li>Penilaian kelulusan oleh <b>Kepala Desa</b> sebagai bentuk verifikasi kesiapan petugas.</li>
+        <li>Petugas yang dinyatakan lulus diberikan <b>ID Card</b> dan <b>surat tugas resmi</b> sebagai tanda legalitas.</li>
+      </ul>
+
+      <p><b>Rapat juga menetapkan timeline kegiatan</b> dari <b>22 Mei hingga 1 Juli 2025</b>, dengan tahapan:</p>
+      <ul>
+        <li>Pelatihan petugas.</li>
+        <li>Pencacahan lapangan di seluruh wilayah sasaran.</li>
+        <li>Pengawasan lapangan untuk menjamin kualitas data.</li>
+        <li>Entri data dan proses <i>data cleaning</i>.</li>
+        <li>Analisis hasil survei.</li>
+        <li>Publikasi hasil survei untuk disampaikan kepada masyarakat dan pemangku kepentingan.</li>
+      </ul>
+
+      <p><b>Tugas dan tanggung jawab</b> dijabarkan secara jelas, meliputi:</p>
+      <ul>
+        <li><b>Pencacah</b> bertugas melakukan wawancara langsung kepada responden dengan penuh etika dan objektivitas.</li>
+        <li><b>Pengawas</b> bertugas memastikan kualitas data tetap terjaga, memberikan bimbingan, serta melakukan pemeriksaan lapangan.</li>
+      </ul>
+
+      <p><b>Distribusi logistik</b> juga dilakukan, mencakup:
+      <ul>
+        <li>Kuesioner standar.</li>
+        <li>Alat tulis.</li>
+        <li>ID Card petugas.</li>
+        <li>Surat tugas resmi.</li>
+        <li>Daftar sampel responden.</li>
+      </ul>
+      Seluruh logistik dikelola secara transparan agar pelaksanaan survei berjalan lancar.</p>
+
+      <p>Penting untuk dicatat bahwa <b>seluruh biaya survei ditanggung oleh Pemerintah Desa</b>, 
+      dengan pengawasan langsung dari <b>tim PDCS BPS Kabupaten Serang</b> demi menjaga kualitas dan akuntabilitas. 
+      Acara ditutup dengan pesan penting agar petugas selalu menjunjung tinggi <b>etika, profesionalitas, dan objektivitas</b> dalam setiap tahap kegiatan.</p>
+
+      <p>Dengan semangat kebersamaan, peserta meyakini bahwa hasil survei ini akan memberikan <b>manfaat nyata</b> bagi pembangunan desa, 
+      serta memperkuat arah kebijakan yang berbasis data. Penutup rapat ditandai dengan seruan penuh semangat: 
+      <i><b>“DESA HEBAT, STATISTIK TEPAT!”</b></i>
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCserang2.png", 
     date: "23 Mei 2025" 
   },
   foto20: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Lanjutan Kab. Serang: Pengecekan Progress Pembuatan Publikasi Statistik", 
-    desc: "Pembinaan lanjutan Program Desa Cinta Statistik (Desa Cantik) di Desa Cikande Permai pada 26 Juni 2025 dipimpin oleh Kepala Desa Dayari dan difokuskan pada evaluasi progres pembuatan publikasi statistik desa. Narasumber dari BPS Kabupaten Serang memaparkan materi teknis pengelolaan data mulai dari pengumpulan, pengolahan, analisis deskriptif, tata kelola data dan sistem informasi, penyajian serta diseminasi, hingga pentingnya metadata sebagai pelengkap setiap publikasi. Pembina Desa Cantik menekankan percepatan penyusunan lima publikasi yang direncanakan, pentingnya koordinasi lintas penanggung jawab, serta konsistensi data agar informasi yang dihasilkan kredibel dan bermanfaat bagi perencanaan desa. Agen statistik desa menyampaikan beberapa kendala, antara lain keterbatasan kemampuan teknis, waktu yang terbagi karena persiapan peringatan HUT desa, dan koordinasi antar tim yang belum optimal. Lima publikasi yang tengah disusun adalah Buku Profil Desa, Buku Saku Data Strategis, Analisis Survei Kepuasan Layanan Infrastruktur dan Kinerja Pemerintah Desa, Desa Dalam Angka, serta Booklet Potensi Desa. Sebagai tindak lanjut, ditetapkan penyusunan jadwal percepatan, pendampingan teknis oleh BPS, pembentukan grup koordinasi lintas publikasi, serta review internal sebelum publikasi. Rapat ditutup dengan komitmen bersama untuk menyelesaikan publikasi secara tepat waktu dan berkualitas, menguatkan budaya statistik desa dengan semangat “DESA HEBAT, STATISTIK TEPAT!”.",
+    desc: `
+    <p><b>Pembinaan lanjutan Program Desa Cinta Statistik (Desa Cantik)</b> di Desa Cikande Permai 
+      dilaksanakan pada <b>26 Juni 2025</b> dan dipimpin oleh <b>Kepala Desa Dayari</b>. 
+      Fokus utama kegiatan ini adalah <b>evaluasi progres penyusunan publikasi statistik desa</b> yang menjadi target bersama.</p>
+
+      <p><b>Narasumber dari BPS Kabupaten Serang</b> menyampaikan materi teknis secara komprehensif, meliputi:</p>
+      <ul>
+        <li>Pengumpulan dan pengolahan data desa.</li>
+        <li>Analisis deskriptif untuk penyajian informasi.</li>
+        <li>Tata kelola data dan sistem informasi.</li>
+        <li>Penyajian serta diseminasi hasil publikasi.</li>
+        <li>Pentingnya <b>metadata</b> sebagai pelengkap setiap publikasi.</li>
+      </ul>
+
+      <p><b>Pembina Desa Cantik</b> menekankan hal-hal penting berikut:</p>
+      <ul>
+        <li>Percepatan penyusunan lima publikasi desa yang telah direncanakan.</li>
+        <li>Pentingnya koordinasi lintas penanggung jawab agar pekerjaan lebih terarah.</li>
+        <li>Konsistensi data agar informasi yang dihasilkan <b>kredibel, akurat, dan bermanfaat</b> untuk perencanaan pembangunan desa.</li>
+      </ul>
+
+      <p><b>Agen statistik desa</b> turut menyampaikan beberapa kendala yang dihadapi, antara lain:</p>
+      <ul>
+        <li>Keterbatasan kemampuan teknis dalam pengolahan data.</li>
+        <li>Waktu yang terbagi karena persiapan peringatan <b>HUT Desa</b>.</li>
+        <li>Koordinasi antar tim yang masih belum optimal.</li>
+      </ul>
+
+      <p><b>Lima publikasi desa yang sedang disusun</b> adalah:</p>
+      <ul>
+        <li><b>Buku Profil Desa</b></li>
+        <li><b>Buku Saku Data Strategis</b></li>
+        <li><b>Analisis Survei Kepuasan Layanan Infrastruktur dan Kinerja Pemerintah Desa</b></li>
+        <li><b>Desa Dalam Angka</b></li>
+        <li><b>Booklet Potensi Desa</b></li>
+      </ul>
+
+      <p><b>Rencana tindak lanjut</b> yang disepakati mencakup:</p>
+      <ul>
+        <li>Penyusunan <b>jadwal percepatan</b> penyelesaian publikasi.</li>
+        <li>Pendampingan teknis berkelanjutan oleh tim <b>BPS Kabupaten Serang</b>.</li>
+        <li>Pembentukan <b>grup koordinasi lintas publikasi</b> untuk memperlancar komunikasi.</li>
+        <li>Pelaksanaan <b>review internal</b> sebelum publikasi resmi diterbitkan.</li>
+      </ul>
+
+      <p>Kegiatan pembinaan ini ditutup dengan <b>komitmen bersama</b> untuk menyelesaikan seluruh publikasi 
+      secara tepat waktu dan berkualitas, sebagai langkah nyata menguatkan budaya statistik di tingkat desa. 
+      Acara ditutup dengan semangat penuh optimisme melalui slogan: 
+      <i><b>“DESA HEBAT, STATISTIK TEPAT!”</b></i>
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCserang3.png", 
     date: "26 Juni 2025" 
   },
   foto21: { 
     title: "Evaluasi Akhir Program Desa Cinta Statistik (DesaCantik) Kab. Serang: Ekpos Data Desa Cinta Statistik Cikande Permai", 
-    desc: "Ekspose Data Desa Cantik Cikande Permai dilaksanakan pada 31 Juli 2025 di Kantor Desa Cikande Permai, dipimpin oleh Kepala Desa dan dihadiri Camat Mochamad Agus, tim BPS Kabupaten Serang, serta aparat desa. Dalam sambutannya, Camat menyampaikan harapan agar Desa Cikande Permai dapat meraih prestasi hingga tingkat nasional melalui program ini. Novian Tamara menegaskan bahwa dalam tiga bulan pembinaan, desa berhasil meningkatkan literasi statistik aparat dengan membentuk 17 agen statistik—jumlah terbanyak di Provinsi Banten—yang kini mampu membuat infografis, publikasi, serta melaksanakan survei secara mandiri. Survei Kepuasan Layanan Infrastruktur menghasilkan indeks 85,15, sementara indeks Kinerja Pemerintah Desa mencapai 85,65, keduanya menunjukkan tingkat kepuasan masyarakat yang sangat tinggi. Selain itu, Asep Suryana menyampaikan bahwa Desa Cikande Permai berhasil meluncurkan dua website penyajian data, yakni website Digides dan website Desa Cantik, yang kini dapat diakses masyarakat dengan fitur cukup lengkap. Capaian ini memperlihatkan kesiapan desa dalam mengelola dan mendiseminasikan data secara profesional serta memperkuat posisinya sebagai desa percontohan statistik di Kabupaten Serang.",
+    desc: `
+    <p><b>Ekspose Data Desa Cantik Cikande Permai</b> diselenggarakan pada <b>31 Juli 2025</b> di Kantor Desa Cikande Permai, 
+      dipimpin langsung oleh <b>Kepala Desa</b> dan dihadiri oleh <b>Camat Mochamad Agus</b>, 
+      tim <b>BPS Kabupaten Serang</b>, serta seluruh perangkat desa. 
+      Acara ini menjadi momen penting untuk menampilkan hasil pembinaan Program Desa Cantik selama tiga bulan terakhir.</p>
+
+      <p>Dalam sambutannya, <b>Camat Mochamad Agus</b> menyampaikan apresiasi dan harapan agar Desa Cikande Permai 
+      dapat meraih prestasi hingga ke tingkat nasional melalui penguatan literasi statistik. 
+      Sementara itu, <b>Novian Tamara</b> menegaskan bahwa melalui pembinaan intensif, 
+      desa berhasil meningkatkan kapasitas aparatur dalam bidang statistik dengan capaian yang sangat membanggakan.</p>
+
+      <p><b>Beberapa capaian utama yang dipaparkan meliputi:</b></p>
+      <ul>
+        <li>Pembentukan <b>17 agen statistik desa</b>—jumlah terbanyak di Provinsi Banten—yang kini mampu menyusun publikasi, membuat infografis, dan melaksanakan survei secara mandiri.</li>
+        <li>Pelaksanaan <b>Survei Kepuasan Layanan Infrastruktur</b> yang menghasilkan indeks <b>85,15</b> dan 
+            <b>Indeks Kinerja Pemerintah Desa</b> dengan capaian <b>85,65</b>, keduanya menunjukkan tingkat kepuasan masyarakat yang sangat tinggi.</li>
+        <li>Peluncuran <b>dua website penyajian data</b>, yaitu <b>website Digides</b> dan <b>website Desa Cantik</b>, 
+            yang dapat diakses masyarakat dengan fitur informatif dan cukup lengkap.</li>
+      </ul>
+
+      <p><b>Asep Suryana</b> menambahkan bahwa keberhasilan ini mencerminkan kesiapan Desa Cikande Permai dalam mengelola, 
+      menyajikan, dan mendiseminasikan data secara profesional. Dengan capaian tersebut, 
+      desa tidak hanya memperkuat kapasitas aparatur dan masyarakat dalam literasi statistik, 
+      tetapi juga menegaskan posisinya sebagai <b>desa percontohan statistik di Kabupaten Serang</b>.</p>
+
+      <p>Melalui ekspose ini, Desa Cikande Permai meneguhkan komitmennya untuk terus mendukung pembangunan berbasis data, 
+      serta mengimplementasikan semangat <i><b>“DESA HEBAT, STATISTIK TEPAT!”</b></i> sebagai pilar utama perencanaan desa yang modern dan berdaya saing.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCserang4.png", 
     date: "31 Juli 2025" 
   },
   foto22: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Tahap 1: Sosialisasi Desa Cinta Statistik 2025", 
-    desc: "Sosialisasi Program Desa Cantik 2025 oleh Tim Pembina Desa Cantik Provinsi Banten dilaksanakan pada Jumat, 2 Mei 2025 melalui Zoom Meeting dengan peserta dari BPS Kota Tangerang, tim Desa Cantik, serta perwakilan agen statistik dari kelurahan penerima program Desa Cantik tahun 2021–2025. Ketua Tim Desa Cantik menjelaskan bahwa program ini berlandaskan pada UU Statistik, Perpres Satu Data Indonesia, Roadmap Reformasi Birokrasi, serta UU Desa. Program Desa Cantik menempatkan desa/kelurahan sebagai subjek pembangunan dengan tujuan meningkatkan literasi statistik, standarisasi pengelolaan data, optimalisasi pemanfaatan data pembangunan, serta pembentukan agen statistik di tingkat desa/kelurahan. Output pembinaan meliputi pengelolaan statistik di desa/kelurahan, terbentuknya agen statistik, piagam penghargaan, publikasi statistik (monografi/profil, publikasi tematik, dan website), hingga pemilihan Desa Cantik terbaik. Adapun kriteria desa/kelurahan Cantik mencakup belum pernah diajukan sebelumnya, dekat dengan kantor BPS setempat, memiliki fasilitas internet dan perangkat komputer memadai, serta aparat desa/kelurahan yang mampu mengoperasikan teknologi tersebut. Program ini diharapkan memperkuat kapasitas desa/kelurahan dalam mengelola dan memanfaatkan data sebagai dasar pembangunan yang lebih tepat sasaran.",
+    desc: `
+    <p><b>Sosialisasi Program Desa Cantik 2025</b> oleh <b>Tim Pembina Desa Cantik Provinsi Banten</b> 
+      dilaksanakan pada <b>Jumat, 2 Mei 2025</b> melalui <i>Zoom Meeting</i> dengan melibatkan peserta dari 
+      <b>BPS Kota Tangerang</b>, tim pelaksana Desa Cantik, serta perwakilan agen statistik dari kelurahan 
+      penerima program Desa Cantik tahun 2021–2025. Kegiatan ini menjadi sarana penting untuk menyamakan 
+      pemahaman sekaligus memperkuat komitmen seluruh pihak yang terlibat dalam implementasi program.</p>
+
+      <p>Dalam paparannya, <b>Ketua Tim Desa Cantik</b> menjelaskan bahwa program ini memiliki landasan hukum dan 
+      arah kebijakan yang jelas, yakni <i>UU Statistik</i>, <i>Perpres Satu Data Indonesia</i>, 
+      <i>Roadmap Reformasi Birokrasi</i>, serta <i>UU Desa</i>. Program Desa Cantik menempatkan desa atau 
+      kelurahan sebagai <b>subjek pembangunan</b> dengan tujuan meningkatkan literasi statistik, 
+      menstandarisasi pengelolaan data, mengoptimalkan pemanfaatan data pembangunan, serta membentuk 
+      <b>agen statistik</b> yang berperan sebagai motor penggerak pengelolaan data di tingkat desa/kelurahan.</p>
+
+      <p><b>Output pembinaan</b> yang diharapkan dari program ini antara lain:</p>
+      <ul>
+        <li>Terbangunnya <b>pengelolaan statistik desa/kelurahan</b> yang terstruktur dan berkelanjutan.</li>
+        <li>Terbentuknya <b>agen statistik</b> desa/kelurahan yang berkompeten.</li>
+        <li>Penerbitan <b>piagam penghargaan</b> bagi desa/kelurahan yang berhasil.</li>
+        <li>Publikasi statistik berupa <i>monografi/profil desa</i>, <i>publikasi tematik</i>, hingga <b>website resmi</b> sebagai media diseminasi data.</li>
+        <li>Adanya <b>pemilihan Desa Cantik terbaik</b> sebagai bentuk apresiasi atas kinerja dan inovasi.</li>
+      </ul>
+
+      <p>Sementara itu, <b>kriteria pemilihan desa/kelurahan Cantik</b> meliputi: 
+      belum pernah diajukan sebelumnya, memiliki lokasi yang relatif dekat dengan kantor BPS setempat, 
+      tersedianya fasilitas internet dan perangkat komputer yang memadai, serta aparat desa/kelurahan 
+      yang mampu mengoperasikan teknologi tersebut. Hal ini dipandang penting agar program dapat berjalan efektif 
+      dan memberikan hasil nyata di lapangan.</p>
+
+      <p>Melalui sosialisasi ini, diharapkan seluruh peserta memperoleh pemahaman menyeluruh mengenai 
+      arah kebijakan, tujuan, serta tahapan pelaksanaan Desa Cantik. Lebih jauh lagi, program ini diharapkan 
+      dapat <b>memperkuat kapasitas desa/kelurahan</b> dalam mengelola dan memanfaatkan data sebagai dasar 
+      pembangunan yang lebih tepat sasaran, berkelanjutan, dan selaras dengan semangat 
+      <i><b>Satu Data Indonesia</b></i>.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangkot1.png", 
     date: "02 Mei 2025" 
   },
   foto23: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Tahap 2: Pencanangan Desa Cantik Tahun 2025 sekaligus Pembinaan Desa Cantik", 
-    desc: "Pencanangan Desa Cantik Tahun 2025 sekaligus Pembinaan Kelurahan Pabuaran dilaksanakan pada Selasa, 6 Mei 2025 di Aula Kelurahan Pabuaran dengan dihadiri BPS Kota Tangerang, Bappeda, Diskominfo, Camat Karawaci, Lurah Pabuaran, Tim Desa Cantik, agen statistik, serta para ketua RW. Dalam sambutannya, Kepala BPS Kota Tangerang menegaskan bahwa program Desa Cantik bertujuan meningkatkan literasi statistik dan kemampuan pemerintah kelurahan dalam memanfaatkan data sebagai dasar perencanaan dan pengambilan keputusan. Kelurahan Pabuaran ditunjuk sebagai Kelurahan Cantik Tahun 2025, dengan tiga agen statistik (Reni Yulianti, Miranti Rahajeng, dan Chaerul Anwar), dan diharapkan mampu menghasilkan output berupa website, publikasi, booklet, leaflet, serta survei. Kepala Bappeda Kota Tangerang, Dr. Hj. Yeti Rohaeti, menekankan pentingnya data akurat dalam perencanaan pembangunan, penganggaran, hingga penyaluran bantuan agar lebih tepat sasaran. Beliau berharap Kelurahan Pabuaran mampu menjadi juara nasional Kelurahan Cantik. Selanjutnya, Ketua Tim Desa Cantik, I Ketut Suarsana, memberikan pembinaan mengenai tahapan kegiatan statistik sesuai GSBPM mulai dari identifikasi kebutuhan, desain, pengumpulan, pengolahan, analisis, hingga diseminasi dan evaluasi. Dalam sesi diskusi, muncul pertanyaan terkait alasan sensus dilakukan setiap 10 tahun sekali, pemanfaatan data BPS oleh pemerintah, hingga usulan pembuatan bank data sementara di tingkat RT/RW. BPS menjelaskan bahwa perbedaan data seringkali terjadi karena perbedaan konsep definisi dan kewenangan, sementara pencatatan keluar masuk penduduk menjadi kewenangan Kemendagri melalui NIK. Acara ditutup dengan penandatanganan Kelurahan Cantik, penyerahan sertifikat agen statistik, dan komitmen bersama untuk menyukseskan pembinaan di Kelurahan Pabuaran.",
+    desc: `
+    <p><b>Pencanangan Desa Cantik Tahun 2025</b> sekaligus <b>Pembinaan Kelurahan Pabuaran</b> 
+      dilaksanakan pada <b>Selasa, 6 Mei 2025</b> di Aula Kelurahan Pabuaran. 
+      Acara ini dihadiri oleh <b>BPS Kota Tangerang</b>, <b>Bappeda</b>, <b>Diskominfo</b>, <b>Camat Karawaci</b>, 
+      <b>Lurah Pabuaran</b>, Tim Desa Cantik, agen statistik, serta para ketua RW.</p>
+
+      <p><b>Kepala BPS Kota Tangerang</b> menegaskan tujuan utama program Desa Cantik, yaitu:</p>
+      <ul>
+        <li>Meningkatkan <b>literasi statistik</b> aparat kelurahan.</li>
+        <li>Memperkuat kemampuan pemanfaatan data sebagai dasar perencanaan dan pengambilan keputusan.</li>
+      </ul>
+
+      <p><b>Kelurahan Pabuaran</b> ditetapkan sebagai <b>Kelurahan Cantik 2025</b> dengan tiga agen statistik:</p>
+      <ul>
+        <li><b>Reni Yulianti</b></li>
+        <li><b>Miranti Rahajeng</b></li>
+        <li><b>Chaerul Anwar</b></li>
+      </ul>
+
+      <p><b>Output yang diharapkan</b> dari pembinaan ini mencakup:</p>
+      <ul>
+        <li>Pembuatan <b>website</b> kelurahan.</li>
+        <li>Penyusunan <b>publikasi</b> dan <b>booklet</b>.</li>
+        <li>Penerbitan <b>leaflet</b>.</li>
+        <li>Pelaksanaan <b>survei</b>.</li>
+      </ul>
+
+      <p><b>Kepala Bappeda Kota Tangerang, Dr. Hj. Yeti Rohaeti</b>, menekankan pentingnya:</p>
+      <ul>
+        <li><b>Data akurat</b> untuk perencanaan pembangunan dan penganggaran.</li>
+        <li>Ketepatan sasaran penyaluran bantuan berbasis data.</li>
+        <li>Harapan agar Kelurahan Pabuaran dapat menjadi <b>juara nasional</b> Kelurahan Cantik.</li>
+      </ul>
+
+      <p><b>Ketua Tim Desa Cantik, I Ketut Suarsana</b>, memberikan pembinaan mengenai tahapan <i>GSBPM</i>, meliputi:</p>
+      <ul>
+        <li>Identifikasi kebutuhan data.</li>
+        <li>Desain instrumen dan metode.</li>
+        <li>Pengumpulan dan pengolahan data.</li>
+        <li>Analisis dan diseminasi.</li>
+        <li>Evaluasi hasil.</li>
+      </ul>
+
+      <p><b>Sesi diskusi</b> membahas beberapa hal, antara lain:</p>
+      <ul>
+        <li>Alasan sensus dilakukan setiap 10 tahun.</li>
+        <li>Pemanfaatan data BPS oleh pemerintah.</li>
+        <li>Usulan pembuatan <b>bank data sementara</b> di tingkat RT/RW.</li>
+      </ul>
+
+      <p>Acara ditutup dengan <b>penandatanganan Kelurahan Cantik</b>, 
+      penyerahan sertifikat agen statistik, serta komitmen bersama untuk menyukseskan pembinaan. 
+      Kegiatan ini memperkuat peran data sebagai fondasi pembangunan kelurahan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangkot2.png", 
     date: "06 Mei 2025" 
   },
   foto24: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Tahap 3: Persiapan Pengumpulan Data Lapangan Kelurahan Pabuaran", 
-    desc: "Rapat persiapan pengumpulan data lapangan Kelurahan Pabuaran dilaksanakan pada Jumat, 20 Juni 2025, pukul 13.30 WIB di Aula Kelurahan Pabuaran, dengan dihadiri BPS Kota Tangerang, aparat kelurahan, tim Desa Cantik, agen statistik, dan PSM. Lurah Pabuaran, Agus Suhendar, menekankan pentingnya pendataan pengangguran sebagai dasar kebijakan pengurangan angka pengangguran, sedangkan Kepala BPS Kota Tangerang, Muladi Widastomo, menyoroti pentingnya sinergi antara BPS dan pemerintah kelurahan dalam menghasilkan data yang berkualitas sesuai kaidah statistik. Ketua Tim Desa Cantik, I Ketut Suarsana, memaparkan tahapan pengumpulan data sesuai GSBPM, mulai dari perancangan output, variabel, metode pengumpulan, hingga alur kerja. Ia menegaskan perlunya data primer maupun sekunder serta kesiapan sumber daya dalam pelaksanaan. Selanjutnya, Miranti Rahajeng bersama Anisa Rima Rahmawati memaparkan urgensi pendataan lengkap pengangguran di Kelurahan Pabuaran, dengan mengacu pada konsep dan definisi ketenagakerjaan, termasuk klasifikasi usia kerja, angkatan kerja, bukan angkatan kerja, serta definisi bekerja dan pengangguran. Rapat ini menjadi langkah awal strategis untuk memastikan data ketenagakerjaan yang valid sebagai dasar program pemberdayaan masyarakat.",
+    desc: `
+    <p><b>Rapat Persiapan Pengumpulan Data Lapangan Kelurahan Pabuaran</b> 
+      dilaksanakan pada <b>Jumat, 20 Juni 2025</b>, pukul <b>13.30 WIB</b> di Aula Kelurahan Pabuaran. 
+      Acara ini dihadiri oleh <b>BPS Kota Tangerang</b>, aparat kelurahan, tim Desa Cantik, agen statistik, dan PSM.</p>
+
+      <p><b>Lurah Pabuaran, Agus Suhendar</b>, menekankan bahwa:</p>
+      <ul>
+        <li>Pendataan pengangguran menjadi dasar <b>kebijakan pengurangan angka pengangguran</b>.</li>
+      </ul>
+
+      <p><b>Kepala BPS Kota Tangerang, Muladi Widastomo</b>, menyoroti hal penting berikut:</p>
+      <ul>
+        <li>Sinergi antara <b>BPS</b> dan <b>pemerintah kelurahan</b> sangat dibutuhkan.</li>
+        <li>Data yang dihasilkan harus berkualitas sesuai <i>kaidah statistik</i>.</li>
+      </ul>
+
+      <p><b>Ketua Tim Desa Cantik, I Ketut Suarsana</b>, memaparkan tahapan pengumpulan data sesuai <i>GSBPM</i>, meliputi:</p>
+      <ul>
+        <li>Perancangan output.</li>
+        <li>Penentuan variabel.</li>
+        <li>Pemilihan metode pengumpulan.</li>
+        <li>Penyusunan alur kerja.</li>
+      </ul>
+
+      <p>Beliau juga menegaskan perlunya:</p>
+      <ul>
+        <li>Pemanfaatan <b>data primer</b> maupun <b>sekunder</b>.</li>
+        <li>Kesiapan sumber daya dalam pelaksanaan.</li>
+      </ul>
+
+      <p><b>Miranti Rahajeng</b> bersama <b>Anisa Rima Rahmawati</b> menyampaikan urgensi pendataan lengkap pengangguran di Kelurahan Pabuaran dengan mengacu pada <b>konsep dan definisi ketenagakerjaan</b>, meliputi:</p>
+      <ul>
+        <li>Klasifikasi usia kerja.</li>
+        <li>Angkatan kerja.</li>
+        <li>Bukan angkatan kerja.</li>
+        <li>Definisi bekerja dan pengangguran.</li>
+      </ul>
+
+      <p>Rapat ini menjadi <b>langkah awal strategis</b> untuk memastikan tersedianya 
+      data ketenagakerjaan yang <b>valid</b> sebagai dasar program <b>pemberdayaan masyarakat</b>.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangkot3.png", 
     date: "20 Juni 2025" 
   },
   foto25: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Tahap 4: Pembahasan Tahapan GSBPM Pasca Pengumpulan Data", 
-    desc: "Rapat pembahasan tahapan GSBPM pasca pengumpulan data di Aula Kelurahan Pabuaran pada Selasa, 8 Juli 2025 membahas kelanjutan proses setelah pengumpulan data lapangan. Ketua Tim Desa Cantik, I Ketut Suarsana, menjelaskan empat tahap utama, yaitu pengolahan data, analisis, diseminasi, dan evaluasi. Pengolahan dilakukan untuk mengubah data mentah menjadi informasi yang bermakna, analisis menekankan penggunaan metode statistik yang tepat, diseminasi menyoroti pentingnya penyajian data melalui infografis dan media publikasi, sementara evaluasi difokuskan pada perbaikan SOP, variabel, dan penyajian data agar lebih efektif dan berdampak. Selain tahapan tersebut, dipaparkan pula hasil pendataan lengkap pengangguran di RW 01, RW 03, dan RW 07 Kelurahan Pabuaran. Hasilnya menunjukkan tingkat partisipasi angkatan kerja 60,34% dan tingkat pengangguran terbuka 2,30%. Mayoritas penganggur adalah laki-laki (76,92%), berusia 20–24 tahun, dan lulusan SMA (84,62%). Sebagian besar belum pernah mengikuti pelatihan (92,31%) maupun mendaftar ke bursa tenaga kerja (80,77%). Namun, terdapat minat tinggi terhadap pelatihan kerja (96,15%), dengan pilihan paling diminati adalah pelatihan konten kreator. Temuan ini diharapkan menjadi dasar kebijakan pemberdayaan masyarakat, khususnya dalam pengembangan keterampilan kerja yang relevan dengan kebutuhan zaman.",
+    desc: `
+    <p><b>Rapat Persiapan Pengumpulan Data Lapangan Kelurahan Pabuaran</b> 
+      dilaksanakan pada <b>Jumat, 20 Juni 2025</b>, pukul <b>13.30 WIB</b> di Aula Kelurahan Pabuaran. 
+      Acara ini dihadiri oleh <b>BPS Kota Tangerang</b>, aparat kelurahan, tim Desa Cantik, agen statistik, dan PSM.</p>
+
+      <p><b>Lurah Pabuaran, Agus Suhendar</b>, menekankan bahwa:</p>
+      <ul>
+        <li>Pendataan pengangguran menjadi dasar <b>kebijakan pengurangan angka pengangguran</b>.</li>
+      </ul>
+
+      <p><b>Kepala BPS Kota Tangerang, Muladi Widastomo</b>, menyoroti hal penting berikut:</p>
+      <ul>
+        <li>Sinergi antara <b>BPS</b> dan <b>pemerintah kelurahan</b> sangat dibutuhkan.</li>
+        <li>Data yang dihasilkan harus berkualitas sesuai <i>kaidah statistik</i>.</li>
+      </ul>
+
+      <p><b>Ketua Tim Desa Cantik, I Ketut Suarsana</b>, memaparkan tahapan pengumpulan data sesuai <i>GSBPM</i>, meliputi:</p>
+      <ul>
+        <li>Perancangan output.</li>
+        <li>Penentuan variabel.</li>
+        <li>Pemilihan metode pengumpulan.</li>
+        <li>Penyusunan alur kerja.</li>
+      </ul>
+
+      <p>Beliau juga menegaskan perlunya:</p>
+      <ul>
+        <li>Pemanfaatan <b>data primer</b> maupun <b>sekunder</b>.</li>
+        <li>Kesiapan sumber daya dalam pelaksanaan.</li>
+      </ul>
+
+      <p><b>Miranti Rahajeng</b> bersama <b>Anisa Rima Rahmawati</b> menyampaikan urgensi pendataan lengkap pengangguran di Kelurahan Pabuaran dengan mengacu pada <b>konsep dan definisi ketenagakerjaan</b>, meliputi:</p>
+      <ul>
+        <li>Klasifikasi usia kerja.</li>
+        <li>Angkatan kerja.</li>
+        <li>Bukan angkatan kerja.</li>
+        <li>Definisi bekerja dan pengangguran.</li>
+      </ul>
+
+      <p>Rapat ini menjadi <b>langkah awal strategis</b> untuk memastikan tersedianya 
+      data ketenagakerjaan yang <b>valid</b> sebagai dasar program <b>pemberdayaan masyarakat</b>.</p>
+
+      <p><b>Ringkasan acara lanjutan (8 Juli 2025)</b> menekankan kelanjutan tahapan <i>GSBPM</i> pasca pengumpulan data, yaitu:</p>
+      <ul>
+        <li><b>Pengolahan data</b> untuk mengubah data mentah menjadi informasi yang bermakna.</li>
+        <li><b>Analisis</b> dengan metode statistik yang tepat untuk menghasilkan informasi relevan.</li>
+        <li><b>Diseminasi</b> melalui infografis dan publikasi agar mudah dipahami masyarakat.</li>
+        <li><b>Evaluasi</b> terhadap SOP, variabel, dan penyajian data untuk perbaikan berkelanjutan.</li>
+      </ul>
+
+      <p>Selain itu, dipaparkan pula hasil pendataan pengangguran di beberapa RW:</p>
+      <ul>
+        <li>Tingkat partisipasi angkatan kerja: <b>60,34%</b>.</li>
+        <li>Tingkat pengangguran terbuka: <b>2,30%</b>.</li>
+        <li>Mayoritas penganggur adalah <b>laki-laki (76,92%)</b>, usia <b>20–24 tahun</b>, lulusan <b>SMA (84,62%)</b>.</li>
+        <li>Sebagian besar belum mengikuti pelatihan (92,31%) dan belum mendaftar ke bursa tenaga kerja (80,77%).</li>
+        <li>Minat tinggi terhadap pelatihan kerja (96,15%), terutama <i>pelatihan konten kreator</i>.</li>
+      </ul>
+
+      <p>Temuan ini menjadi dasar bagi kebijakan <b>pemberdayaan masyarakat</b>, khususnya dalam 
+      pengembangan keterampilan kerja yang relevan dengan kebutuhan zaman.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangkot4.png", 
     date: "08 Juli 2025" 
   },
   foto26: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Cilegon Tahap 1: Pembinaan Desa Cantik dan Literasi Statistik", 
-    desc: "Rapat pembinaan Desa Cantik dan literasi statistik pertama di Kelurahan Citangkil yang dilaksanakan pada 26 Mei 2025 di BPS Kota Cilegon dipimpin oleh Dadan Sudarmadi dan ditulis oleh Raisa Meidy Mustapa. Kegiatan ini mencakup empat agenda utama: pembinaan terkait GSBPM hingga penyajian data, pengenalan Google Sites dan Google Form, identifikasi kebutuhan data melalui kuesioner updating, serta pelatihan petugas dan sosialisasi updating data. Peserta dilibatkan secara aktif dalam praktik teknis, diskusi, serta simulasi penggunaan teknologi untuk mendukung pengelolaan data secara mandiri. Kegiatan ini menandai dimulainya pengumpulan data berbasis website dan pengisian mandiri di Kelurahan Citangkil, yang menjadi peluang sekaligus tantangan dalam memastikan kualitas data yang dihasilkan. Dalam sesi tanya jawab, peserta memperoleh penjelasan mengenai konsep pengangguran BPS, aksesibilitas Google Sites, penambahan menu informasi, serta solusi bagi responden lanjut usia yang kesulitan mengisi Google Form, yaitu dengan bantuan agen statistik. Tindak lanjut dari rapat meliputi penyusunan rencana teknis output data, revisi kuesioner, serta penetapan jadwal updating dengan pembagian peran RT/RW. Manfaat strategis yang diperoleh antara lain peningkatan pemahaman GSBPM, penguasaan teknologi daring, integrasi data dengan proses pengumpulan, serta keterlibatan aktif masyarakat. Kesimpulannya, kegiatan pembinaan ini menjadi langkah penting dalam literasi statistik untuk memperkuat kapasitas aparat dan masyarakat dalam pengelolaan data berbasis digital.",
+    desc: `
+    <p><b>Rapat Pembinaan Desa Cantik dan Literasi Statistik Pertama</b> di Kelurahan Citangkil 
+      dilaksanakan pada <b>26 Mei 2025</b> di <b>BPS Kota Cilegon</b>, dipimpin oleh <b>Dadan Sudarmadi</b> 
+      dan ditulis oleh <b>Raisa Meidy Mustapa</b>. 
+      Acara ini menjadi langkah awal penting dalam membangun literasi statistik di tingkat kelurahan.</p>
+
+      <p><b>Empat agenda utama</b> yang dibahas meliputi:</p>
+      <ul>
+        <li>Pembinaan terkait <i>Generic Statistical Business Process Model (GSBPM)</i> hingga penyajian data.</li>
+        <li>Pengenalan <b>Google Sites</b> dan <b>Google Form</b> sebagai media pengelolaan data daring.</li>
+        <li>Identifikasi kebutuhan data melalui <b>kuesioner updating</b>.</li>
+        <li>Pelatihan petugas serta sosialisasi mekanisme <b>updating data</b>.</li>
+      </ul>
+
+      <p>Peserta terlibat secara aktif dalam:</p>
+      <ul>
+        <li>Praktik teknis penggunaan aplikasi.</li>
+        <li>Diskusi mengenai kendala dan solusi teknis.</li>
+        <li>Simulasi pengelolaan data berbasis <i>website</i> dan pengisian mandiri.</li>
+      </ul>
+
+      <p><b>Sesi tanya jawab</b> menyoroti beberapa hal penting, antara lain:</p>
+      <ul>
+        <li>Konsep <b>pengangguran</b> menurut BPS.</li>
+        <li>Aksesibilitas dan fleksibilitas penggunaan <b>Google Sites</b>.</li>
+        <li>Penambahan menu informasi pada website.</li>
+        <li>Solusi bagi responden <i>lanjut usia</i> yang kesulitan mengisi <b>Google Form</b>, yaitu dengan bantuan agen statistik.</li>
+      </ul>
+
+      <p><b>Tindak lanjut</b> dari rapat ini mencakup:</p>
+      <ul>
+        <li>Penyusunan <b>rencana teknis output data</b>.</li>
+        <li>Revisi instrumen <b>kuesioner updating</b>.</li>
+        <li>Penetapan <b>jadwal updating</b> dengan pembagian peran RT/RW.</li>
+      </ul>
+
+      <p><b>Manfaat strategis</b> yang diperoleh peserta adalah:</p>
+      <ul>
+        <li>Peningkatan pemahaman terhadap <b>GSBPM</b>.</li>
+        <li>Penguasaan teknologi daring untuk mendukung pengelolaan data.</li>
+        <li>Integrasi proses pengumpulan dan penyajian data secara digital.</li>
+        <li>Keterlibatan aktif masyarakat dalam literasi statistik.</li>
+      </ul>
+
+      <p><b>Kesimpulan:</b> Kegiatan pembinaan ini menjadi <b>langkah penting</b> 
+      dalam memperkuat kapasitas aparat dan masyarakat Kelurahan Citangkil 
+      dalam <i>pengelolaan data berbasis digital</i> yang efektif dan berkelanjutan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCcilegon1.png", 
     date: "26 Mei 2025" 
   },
   foto27: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Cilegon Tahap 2: Literasi Statistik ke Aparat Kelurahan (Pengenalan GSBPM)", 
-    desc: "Rapat literasi statistik untuk aparat Kelurahan Citangkil pada Rabu, 6 Agustus 2025, yang dipimpin sekaligus dicatat oleh Raisa Meidy Mustapa, berfokus pada pengenalan *Generic Statistical Business Process Model* (GSBPM). Kegiatan ini diawali dengan pengantar literasi statistik, dilanjutkan pemaparan konsep GSBPM, tahapan proses bisnis statistik, sesi diskusi, dan ditutup dengan rencana tindak lanjut. Materi utama menjelaskan definisi GSBPM sebagai model internasional untuk mengelola siklus produksi data statistik, tujuan penerapannya untuk memastikan data dikelola secara konsisten dan akuntabel, serta delapan tahap utama mulai dari *specify needs* hingga *evaluate*. Diskusi menghasilkan pemahaman bahwa GSBPM dapat diterapkan pada pengelolaan data lokal seperti updating kependudukan, potensi desa, dan data sektoral kelurahan. Aparat kelurahan menekankan pentingnya pencatatan proses agar setiap langkah terdokumentasi dengan baik. Pertanyaan seputar integrasi GSBPM dengan website Desa Cantik dan publikasi kelurahan dijawab dengan penekanan bahwa model ini akan membantu menjaga validitas, konsistensi, dan keterjangkauan data. Kesimpulannya, penerapan GSBPM dinilai relevan untuk meningkatkan kualitas tata kelola data di tingkat kelurahan sekaligus mendukung prinsip pembangunan berbasis data yang menjadi tujuan utama program Desa Cantik.",
+    desc: `
+    
+    `,
     img: "/assets/dokumentasi/pembinaanDCcilegon2.png", 
     date: "06 Agustus 2025" 
   },
