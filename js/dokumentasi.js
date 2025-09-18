@@ -1673,25 +1673,177 @@ const fotoData = {
   },
   foto39: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 2: Identifikasi Kebutuhan Kelurahan (Lanjutan)", 
-    desc: "Pembinaan Desa Cantik di Kelurahan Pakulonan difokuskan pada identifikasi potensi dan kebutuhan data sebagai langkah awal dalam penerapan Program Cinta Statistik 2025. Diskusi menghasilkan beberapa poin penting, antara lain belum tersedianya data monografi terbaru serta sistem informasi desa (SID) yang memadai, dan ketiadaan website kelurahan. Di sisi lain, terdapat potensi unggulan yang dapat dikembangkan, yaitu persebaran UMKM yang merata di wilayah Pakulonan serta daya tarik wisata kuliner di beberapa lokasi strategis. Dari hasil diskusi, disepakati bahwa tindak lanjut utama adalah melakukan pembaruan data monografi agar informasi dasar kelurahan lebih akurat dan mutakhir. Selain itu, Tim Pembina Desa Cantik akan memberikan pembinaan lebih lanjut mengenai pengelolaan serta pemanfaatan data statistik. Langkah ini diharapkan dapat memperkuat kapasitas kelurahan dalam menyediakan data yang berkualitas, sekaligus mendorong pemanfaatannya untuk perencanaan pembangunan berbasis potensi lokal.",
+    desc: `
+    <p><b>Pembinaan Desa Cantik di Kelurahan Pakulonan</b> difokuskan pada 
+      <b>identifikasi potensi</b> dan <b>kebutuhan data</b> sebagai langkah awal 
+      dalam penerapan <b>Program Cinta Statistik 2025</b>.</p>
+
+      <p><b>Hasil diskusi</b> menghasilkan beberapa poin penting, antara lain:</p>
+      <ul>
+        <li>Belum tersedianya <b>data monografi terbaru</b>.</li>
+        <li>Belum adanya <b>sistem informasi desa (SID)</b> yang memadai.</li>
+        <li><b>Ketiadaan website kelurahan</b> sebagai media informasi publik.</li>
+      </ul>
+
+      <p><b>Potensi unggulan Kelurahan Pakulonan</b> yang dapat dikembangkan:</p>
+      <ul>
+        <li><b>Persebaran UMKM</b> yang cukup merata di berbagai wilayah.</li>
+        <li><b>Daya tarik wisata kuliner</b> di beberapa lokasi strategis.</li>
+      </ul>
+
+      <p><b>Tindak lanjut utama</b> yang disepakati adalah melakukan 
+      <b>pembaruan data monografi</b> agar informasi dasar kelurahan lebih akurat dan mutakhir. 
+      Selain itu, <b>Tim Pembina Desa Cantik</b> akan memberikan 
+      <b>pembinaan lanjutan</b> mengenai pengelolaan dan pemanfaatan data statistik.</p>
+
+      <p>Langkah ini diharapkan dapat <b>memperkuat kapasitas kelurahan</b> 
+      dalam menyediakan data berkualitas sekaligus 
+      <b>mendorong perencanaan pembangunan berbasis potensi lokal</b>.
+    </p>  
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangsel2.png", 
     date: "16 Mei 2025" 
   },
   foto40: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 3: Penyajian Data dengan Tabel dan Grafik", 
-    desc: "Pembinaan kali ini berfokus pada penyajian data dengan tabel dan grafik serta teknik penyebarluasan data. Materi meliputi tujuan dan komponen penyusunan tabel, jenis-jenis tabel (satu arah, dua arah, tiga arah), serta teknik penyajian tabel panjang. Untuk grafik, dijelaskan keunggulannya dalam menyampaikan informasi yang lebih menarik dan mudah dipahami, serta berbagai jenis grafik seperti garis, batang, lingkaran, piktogram, dan cartogram. Panduan pemilihan grafik juga diberikan agar sesuai dengan tujuan, jenis data, dan target pengguna. Selain itu, narasumber menekankan pentingnya penyebarluasan data melalui publikasi, poster, website resmi, dan media sosial dengan memperhatikan konsistensi format dan sumber data. Dalam sesi praktik, peserta membuat tabel terkait jumlah apotek, tempat praktik dokter, dan sarana kesehatan, serta menyusun tiga tabel sesuai format BPS. Hasil praktik ditampilkan dalam bentuk tabel dan grafik, antara lain Grafik Rasio Penduduk Kelurahan Pakulonan Tahun 2021–2024, Grafik Jumlah Penduduk Berdasarkan Jenis Kelamin Tahun 2024, serta Tabel Jumlah Penduduk Berdasarkan Jenis Kelamin dan Rasio Tahun 2021–2024. Data yang digunakan bersumber dari DKB Disdukcapil, dan hasil praktik ini menjadi dasar peningkatan keterampilan agen statistik dalam mengolah dan menyajikan data secara informatif dan sesuai standar.",
+    desc: `
+    <p><b>Pembinaan kali ini</b> berfokus pada <b>penyajian data</b> dengan <b>tabel</b> dan <b>grafik</b> 
+      serta <b>teknik penyebarluasan data</b>.</p>
+
+      <p><b>Materi yang disampaikan</b> meliputi:</p>
+      <ul>
+        <li><b>Tabel</b>:
+          <ul>
+            <li>Tujuan dan komponen penyusunan tabel.</li>
+            <li>Jenis-jenis tabel: satu arah, dua arah, tiga arah.</li>
+            <li>Teknik penyajian tabel panjang.</li>
+          </ul>
+        </li>
+        <li><b>Grafik</b>:
+          <ul>
+            <li>Keunggulan grafik dalam menyampaikan informasi lebih menarik dan mudah dipahami.</li>
+            <li>Jenis grafik: garis, batang, lingkaran, piktogram, cartogram.</li>
+            <li>Panduan pemilihan grafik sesuai tujuan, jenis data, dan target pengguna.</li>
+          </ul>
+        </li>
+        <li><b>Penyebarluasan data</b>:
+          <ul>
+            <li>Melalui publikasi, poster, website resmi, dan media sosial.</li>
+            <li>Menekankan konsistensi format dan sumber data.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><b>Sesi praktik</b> meliputi penyusunan tabel dan grafik dengan topik:
+      <ul>
+        <li>Tabel jumlah apotek, tempat praktik dokter, dan sarana kesehatan.</li>
+        <li>Tiga tabel sesuai format BPS.</li>
+        <li><i>Grafik Rasio Penduduk Kelurahan Pakulonan Tahun 2021–2024</i>.</li>
+        <li><i>Grafik Jumlah Penduduk Berdasarkan Jenis Kelamin Tahun 2024</i>.</li>
+        <li><i>Tabel Jumlah Penduduk Berdasarkan Jenis Kelamin dan Rasio Tahun 2021–2024</i>.</li>
+      </ul>
+      </p>
+
+      <p><b>Sumber data</b> berasal dari <b>DKB Disdukcapil</b>. Hasil praktik ini menjadi dasar 
+      peningkatan keterampilan <b>agen statistik</b> dalam mengolah dan menyajikan data 
+      secara <b>informatif</b> dan sesuai <b>standar</b>.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangsel3.png", 
     date: "23 Mei 2025" 
   },
   foto41: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 4: Analisis Sederhana", 
-    desc: "Pembinaan kali ini membahas analisis data sederhana dengan fokus pada analisis deskriptif. Kegiatan dihadiri oleh Lurah Pakulonan, Bapak Dwisantoso, Sekretaris Lurah Bapak Imam Hadi, serta pemateri Bapak Ahmad Jailani dan Ibu Santi Nurhayati. Dalam sesi pembukaan, Bapak Imam menekankan pentingnya pembangunan website kelurahan yang sesuai dengan kebutuhan spesifik masyarakat, bukan sekadar menggunakan template dari Dinas Kominfo. Setelah itu, sesi materi dimulai dengan penjelasan dasar analisis data, khususnya perbedaan antara statistik deskriptif dan inferensia. Pada pembinaan ini, peserta difokuskan pada penerapan analisis deskriptif serta tahapan analisis menurut GSBPM yang mencakup penyusunan naskah output, validasi data, interpretasi output, hingga kebijakan penyajian data. Materi lebih lanjut menjelaskan jenis data kategorik (nominal dan ordinal) serta data numerik (interval dan rasio). Peserta juga dibekali pemahaman mengenai ukuran statistik dalam analisis deskriptif, seperti rate, rasio, proporsi, dan jumlah mutlak, serta konsep ukuran pemusatan (mean, median, modus) dan ukuran penyebaran (standar deviasi). Melalui pembinaan ini, agen statistik Pakulonan diharapkan mampu mengolah data menjadi informasi yang jelas, ringkas, dan bermanfaat sebagai dasar pengambilan keputusan maupun penyusunan publikasi kelurahan.",
+    desc: `
+    <p><b>Pembinaan kali ini</b> membahas <b>analisis data sederhana</b> dengan fokus pada 
+      <b>analisis deskriptif</b>. Kegiatan dihadiri oleh <b>Lurah Pakulonan</b>, 
+      Bapak Dwisantoso, <b>Sekretaris Lurah</b> Bapak Imam Hadi, serta pemateri 
+      Bapak Ahmad Jailani dan Ibu Santi Nurhayati.</p>
+
+      <p><b>Sesi pembukaan</b> disampaikan oleh Bapak Imam yang menekankan pentingnya 
+      <b>pembangunan website kelurahan</b> sesuai dengan kebutuhan spesifik masyarakat, 
+      bukan sekadar menggunakan <i>template</i> dari Dinas Kominfo.</p>
+
+      <p><b>Sesi materi</b> dimulai dengan penjelasan dasar analisis data, khususnya 
+      perbedaan antara <b>statistik deskriptif</b> dan <b>inferensia</b>. 
+      Peserta kemudian difokuskan pada penerapan analisis deskriptif serta tahapan analisis menurut 
+      <i>Generic Statistical Business Process Model (GSBPM)</i> yang mencakup:</p>
+      <ul>
+        <li>Penyusunan naskah output.</li>
+        <li>Validasi data.</li>
+        <li>Interpretasi output.</li>
+        <li>Kebijakan penyajian data.</li>
+      </ul>
+
+      <p><b>Materi lebih lanjut</b> menjelaskan:</p>
+      <ul>
+        <li>Jenis data:
+          <ul>
+            <li><b>Kategorik</b>: nominal, ordinal.</li>
+            <li><b>Numerik</b>: interval, rasio.</li>
+          </ul>
+        </li>
+        <li>Ukuran statistik dalam analisis deskriptif:
+          <ul>
+            <li>Rate, rasio, proporsi, jumlah mutlak.</li>
+            <li>Ukuran pemusatan: mean, median, modus.</li>
+            <li>Ukuran penyebaran: standar deviasi.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <p><b>Hasil pembinaan</b> diharapkan mampu meningkatkan kapasitas 
+      <b>agen statistik Pakulonan</b> dalam mengolah data menjadi informasi yang 
+      <b>jelas</b>, <b>ringkas</b>, dan <b>bermanfaat</b> sebagai dasar pengambilan keputusan 
+      maupun penyusunan publikasi kelurahan.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangsel4.png", 
     date: "28 Mei 2025" 
   },
   foto42: { 
     title: "Pembinaan Program Desa Cinta Statistik (DesaCantik) Kota Tangerang Selatan Tahap 5: Penyajian Data dengan Infografis", 
-    desc: "Pembinaan kali ini berfokus pada penyajian data dengan infografis sebagai strategi komunikasi statistik yang efektif. Materi yang disampaikan mencakup definisi infografis sebagai cara memvisualisasikan informasi kompleks agar lebih mudah dipahami, serta keunggulannya dalam menyederhanakan penjelasan panjang atau tabel rumit menjadi visual yang menarik. Narasumber juga menjelaskan jenis-jenis infografis, yaitu statis, dinamis (audio-video), dan interaktif, serta elemen penting dalam desain seperti kejelasan data, visual yang menarik, kemudahan pemahaman, dan kemudahan distribusi. Selain itu, dipaparkan langkah-langkah pembuatan infografis mulai dari pengumpulan data, penentuan tujuan, perencanaan, pemilihan aplikasi (online/offline), evaluasi data, desain, hingga proses rilis. Sebagai tindak lanjut, peserta melakukan praktik langsung pembuatan infografis menggunakan Canva dengan tema jumlah fasilitas kesehatan di Kelurahan Pakulonan. Hasil praktik menunjukkan bahwa agen statistik mulai mampu mengubah data numerik menjadi tampilan visual yang lebih komunikatif, sehingga data dapat lebih mudah dipahami masyarakat umum. Kegiatan ini diharapkan meningkatkan keterampilan peserta dalam menyebarluaskan data desa secara menarik dan efektif melalui berbagai media.",
+    desc: `
+    <p><b>Pembinaan kali ini</b> berfokus pada <b>penyajian data dengan infografis</b> 
+      sebagai strategi komunikasi statistik yang efektif. Materi yang disampaikan mencakup 
+      definisi infografis sebagai cara memvisualisasikan informasi kompleks agar lebih mudah dipahami, 
+      serta keunggulannya dalam menyederhanakan penjelasan panjang atau tabel rumit menjadi visual yang menarik.</p>
+
+      <p><b>Jenis-jenis infografis</b> yang dijelaskan meliputi:</p>
+      <ul>
+        <li>Infografis <b>statis</b>.</li>
+        <li>Infografis <b>dinamis</b> (audio-video).</li>
+        <li>Infografis <b>interaktif</b>.</li>
+      </ul>
+
+      <p><b>Elemen penting dalam desain infografis</b> meliputi:</p>
+      <ul>
+        <li>Kejelasan data.</li>
+        <li>Visual yang menarik.</li>
+        <li>Kemudahan pemahaman.</li>
+        <li>Kemudahan distribusi.</li>
+      </ul>
+
+      <p><b>Langkah-langkah pembuatan infografis</b> yang dipaparkan adalah:</p>
+      <ul>
+        <li>Pengumpulan data.</li>
+        <li>Penentuan tujuan.</li>
+        <li>Perencanaan.</li>
+        <li>Pemilihan aplikasi (<i>online/offline</i>).</li>
+        <li>Evaluasi data.</li>
+        <li>Desain.</li>
+        <li>Proses rilis.</li>
+      </ul>
+
+      <p><b>Praktik langsung</b> dilakukan dengan menggunakan <b>Canva</b> bertema 
+      jumlah fasilitas kesehatan di Kelurahan Pakulonan. 
+      Hasil praktik menunjukkan bahwa agen statistik mulai mampu mengubah data numerik menjadi tampilan visual yang lebih komunikatif, 
+      sehingga data dapat lebih mudah dipahami masyarakat umum.</p>
+
+      <p><b>Manfaat kegiatan</b> ini diharapkan dapat meningkatkan keterampilan peserta 
+      dalam menyebarluaskan data desa secara <b>menarik</b> dan <b>efektif</b> melalui berbagai media.
+    </p>
+    `,
     img: "/assets/dokumentasi/pembinaanDCtangsel5.png", 
     date: "05 Juni 2025" 
   },
