@@ -123,36 +123,29 @@
 
   <!-- Cari Data -->
   <section id="cari-data" class="relative py-16 bg-gray-100">
-    <div class="max-w-4xl mx-auto text-center px-6">
+    <div class="max-w-3xl mx-auto text-center px-6">
       <h2 data-aos="fade-up" class="text-2xl font-bold mb-2">
         Temukan Dokumentasi, Infografis, dan Berita
       </h2>
       <p data-aos="fade-up" data-aos-delay="150" class="mb-6 text-gray-600">
-        Cari dan filter dokumentasi, infografis, dan berita berdasarkan kategori atau kata kunci.
+        Cari dokumentasi, infografis, dan berita berdasarkan jenis konten atau kata kunci.
       </p>
 
-      <!-- Form -->
+      <!-- Form Minimalis -->
       <div data-aos="zoom-in" data-aos-delay="300"
           class="card-form flex flex-col md:flex-row gap-4">
         <select data-aos="fade-up" data-aos-delay="400" class="p-2 rounded flex-1">
-          <option value="">= Pilih Jenis Konten =</option>
+          <option value="" disabled selected hidden>Pilih Jenis Konten</option>
           <option value="dokumentasi">Dokumentasi</option>
           <option value="infografis">Infografis</option>
           <option value="berita">Berita</option>
         </select>
 
-        <select data-aos="fade-up" data-aos-delay="500" class="p-2 rounded flex-1">
-          <option value="">= Pilih Kategori =</option>
-          <option value="kegiatan">Kegiatan</option>
-          <option value="statistik">Statistik</option>
-          <option value="publikasi">Publikasi</option>
-        </select>
-
-        <input data-aos="fade-up" data-aos-delay="600"
+        <input data-aos="fade-up" data-aos-delay="500"
               type="text" placeholder="Cari berdasarkan kata kunci" 
               class="p-2 rounded flex-1">
 
-        <button data-aos="zoom-in" data-aos-delay="700"
+        <button data-aos="zoom-in" data-aos-delay="600"
                 class="px-6 py-2 text-white rounded-lg">
           Cari
         </button>
