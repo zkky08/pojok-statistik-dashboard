@@ -125,25 +125,35 @@
   <section id="cari-data" class="relative py-16 bg-gray-100">
     <div class="max-w-4xl mx-auto text-center px-6">
       <h2 data-aos="fade-up" class="text-2xl font-bold mb-2">
-        Temukan Data Statistik Anda
+        Temukan Dokumentasi, Infografis, dan Berita
       </h2>
       <p data-aos="fade-up" data-aos-delay="150" class="mb-6 text-gray-600">
-        Cari dan filter data sektoral berdasarkan wilayah, kategori, atau jenis indikator. Mempermudah penelitian dan analisis dengan cepat.
+        Cari dan filter dokumentasi, infografis, dan berita berdasarkan kategori atau kata kunci.
       </p>
 
       <!-- Form -->
       <div data-aos="zoom-in" data-aos-delay="300"
-          class="bg-white rounded-lg shadow-md p-6 flex flex-col md:flex-row gap-4">
-        <select data-aos="fade-up" data-aos-delay="400" class="border p-2 rounded flex-1">
-          <option>Wilayah / Kabupaten / Kota</option>
+          class="card-form flex flex-col md:flex-row gap-4">
+        <select data-aos="fade-up" data-aos-delay="400" class="p-2 rounded flex-1">
+          <option value="">= Pilih Jenis Konten =</option>
+          <option value="dokumentasi">Dokumentasi</option>
+          <option value="infografis">Infografis</option>
+          <option value="berita">Berita</option>
         </select>
-        <select data-aos="fade-up" data-aos-delay="500" class="border p-2 rounded flex-1">
-          <option>Sektor / Kategori Statistik</option>
+
+        <select data-aos="fade-up" data-aos-delay="500" class="p-2 rounded flex-1">
+          <option value="">= Pilih Kategori =</option>
+          <option value="kegiatan">Kegiatan</option>
+          <option value="statistik">Statistik</option>
+          <option value="publikasi">Publikasi</option>
         </select>
+
         <input data-aos="fade-up" data-aos-delay="600"
-              type="text" placeholder="Cari berdasarkan ID atau kata kunci" class="border p-2 rounded flex-1">
+              type="text" placeholder="Cari berdasarkan kata kunci" 
+              class="p-2 rounded flex-1">
+
         <button data-aos="zoom-in" data-aos-delay="700"
-                class="px-6 py-2 bg-blue-900 text-white rounded-lg">
+                class="px-6 py-2 text-white rounded-lg">
           Cari
         </button>
       </div>
