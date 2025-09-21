@@ -1861,6 +1861,15 @@ fetch("http://localhost:3000/dokumentasi")
   })
   .catch(err => console.error("Gagal ambil data:", err));
 
+// Fungsi helper untuk format tanggal
+function formatTanggal(dateStr) {
+  return new Date(dateStr).toLocaleDateString("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+}
+
 // Generate Card
 function renderCards() {
   const grid = document.querySelector('#dokumentasi .grid');
@@ -1870,12 +1879,15 @@ function renderCards() {
     const card = document.createElement('div');
     card.className = 'doc-card';
 
+    // Format tanggal untuk ditampilkan
+    const tanggalFormatted = formatTanggal(item.date);
+
     card.innerHTML = `
       <img src="${item.img}" alt="${item.title}" 
            class="w-full h-44 object-cover rounded-t-lg transition-transform duration-500 hover:scale-105">
 
       <div class="content">
-        <p class="text-sm text-gray-500 mb-1">${item.date}</p>
+        <p class="text-sm text-gray-500 mb-1">${tanggalFormatted}</p>
         <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
       </div>
     `;
@@ -1884,6 +1896,7 @@ function renderCards() {
     grid.appendChild(card);
   });
 }
+
 
 // Render Detail
 function renderFoto(index) {
