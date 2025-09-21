@@ -1856,19 +1856,27 @@ let currentIndex = 0;
 fetch("http://localhost:3000/dokumentasi")
   .then(res => res.json())
   .then(data => {
-    fotoData = data; // simpan data ke array
+    // simpan data ke array
+    fotoData = data;
+
+    // Urutkan di sini (ubah ASC/DESC sesuai kebutuhan)
+    fotoData.sort((a, b) => new Date(a.date) - new Date(b.date)); // ASC (lama → baru)
+    // fotoData.sort((a, b) => new Date(b.date) - new Date(a.date)); // DESC (baru → lama)
+
     renderCards();   // render grid setelah data berhasil diambil
   })
   .catch(err => console.error("Gagal ambil data:", err));
 
+
 // Fungsi helper untuk format tanggal
-function formatTanggal(dateStr) {
-  return new Date(dateStr).toLocaleDateString("id-ID", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  });
+// fungsi format tanggal tetap sama
+function formatTanggal(dateString) {
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  return new Date(dateString).toLocaleDateString('id-ID', options);
 }
+
+fotoData.sort((a, b) => new Date(b.date) - new Date(a.date));
+
 
 // Generate Card
 function renderCards() {
@@ -1879,15 +1887,12 @@ function renderCards() {
     const card = document.createElement('div');
     card.className = 'doc-card';
 
-    // Format tanggal untuk ditampilkan
-    const tanggalFormatted = formatTanggal(item.date);
-
     card.innerHTML = `
       <img src="${item.img}" alt="${item.title}" 
            class="w-full h-44 object-cover rounded-t-lg transition-transform duration-500 hover:scale-105">
 
       <div class="content">
-        <p class="text-sm text-gray-500 mb-1">${tanggalFormatted}</p>
+        <p class="text-sm text-gray-500 mb-1">${formatTanggal(item.date)}</p>
         <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
       </div>
     `;
@@ -1896,7 +1901,6 @@ function renderCards() {
     grid.appendChild(card);
   });
 }
-
 
 // Render Detail
 function renderFoto(index) {

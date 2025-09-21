@@ -23,9 +23,12 @@ db.connect(err => {
 });
 
 // API endpoint
-app.get("/dokumentasi", (req, res) => {
-  db.query("SELECT * FROM tb_dokumentasi ORDER BY date DESC", (err, results) => {
-    if (err) return res.status(500).json({ error: err.message });
+app.get('/dokumentasi', (req, res) => {
+  const sql = "SELECT * FROM dokumentasi ORDER BY date ASC"; // ascending
+  // kalau mau terbaru dulu: ORDER BY date DESC
+
+  db.query(sql, (err, results) => {
+    if (err) throw err;
     res.json(results);
   });
 });
