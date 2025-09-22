@@ -33,6 +33,18 @@ app.get('/dokumentasi', (req, res) => {
   });
 });
 
+// Endpoint ambil berita
+app.get("/berita", (req, res) => {
+  const sql = "SELECT * FROM berita ORDER BY date DESC"; // urutkan terbaru → lama
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error("Error ambil berita:", err);
+      return res.status(500).json({ error: "Gagal ambil data berita" });
+    }
+    res.json(results);
+  });
+});
+
 // Jalankan server
 app.listen(3000, () => {
   console.log("Server berjalan di http://localhost:3000");
