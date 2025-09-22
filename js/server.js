@@ -24,7 +24,7 @@ db.connect(err => {
 
 // API endpoint
 app.get('/dokumentasi', (req, res) => {
-  const sql = "SELECT * FROM dokumentasi ORDER BY date ASC"; // ascending
+  const sql = "SELECT * FROM tb_dokumentasi ORDER BY date ASC"; // ascending
   // kalau mau terbaru dulu: ORDER BY date DESC
 
   db.query(sql, (err, results) => {
