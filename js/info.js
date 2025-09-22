@@ -447,4 +447,20 @@ document.addEventListener("DOMContentLoaded", () => {
   cards.forEach(card => observer.observe(card));
 });
 
-// ================= NOTIFIKASI =================
+// =============================
+// Tombol Back-to-Top
+// =============================
+const backToTopBtn = document.getElementById("backToTopBtn");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("show");
+  } else {
+    backToTopBtn.classList.remove("show");
+  }
+});
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
