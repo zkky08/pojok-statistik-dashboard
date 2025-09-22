@@ -1,4 +1,4 @@
-// js/dokumentasi.js
+// ================= DATA DOKUMENTASI =================
 let fotoData = [];
 let currentIndex = 0;
 
@@ -6,27 +6,24 @@ let currentIndex = 0;
 fetch("http://localhost:3000/dokumentasi")
   .then(res => res.json())
   .then(data => {
-    // simpan data ke array
     fotoData = data;
 
-    // Urutkan di sini (ubah ASC/DESC sesuai kebutuhan)
-    fotoData.sort((a, b) => new Date(a.date) - new Date(b.date)); // ASC (lama → baru)
-    // fotoData.sort((a, b) => new Date(b.date) - new Date(a.date)); // DESC (baru → lama)
+    // ASC → lama ke baru
+    data.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-    renderCards();   // render grid setelah data berhasil diambil
+
+    renderCards();
   })
   .catch(err => console.error("Gagal ambil data:", err));
 
-
-// Fungsi helper untuk format tanggal
-// fungsi format tanggal tetap sama
+// ================= Fungsi Format Tanggal (Konsisten) =================
 function formatTanggal(dateString) {
-  const options = { day: 'numeric', month: 'long', year: 'numeric' };
-  return new Date(dateString).toLocaleDateString('id-ID', options);
+  return new Date(dateString).toLocaleDateString("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
 }
-
-fotoData.sort((a, b) => new Date(b.date) - new Date(a.date));
-
 
 // Generate Card
 function renderCards() {
@@ -59,21 +56,13 @@ function renderFoto(index) {
   const detail = document.getElementById("detailDokumentasi");
   detail.classList.remove("hidden");
 
-  // Format tanggal
-  let tanggal = new Date(item.date).toLocaleDateString("id-ID", {
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  });
-
   document.getElementById("detailTitle").innerText = item.title;
-  document.getElementById("detailDate").innerText = tanggal;
+  document.getElementById("detailDate").innerText = formatTanggal(item.date);
   document.getElementById("detailDesc").innerHTML = item.desc;
   document.getElementById("detailImg").src = item.img;
 
   currentIndex = index;
 }
-
 
 // Navigasi
 document.getElementById("nextBtn").addEventListener("click", () => {
@@ -84,7 +73,6 @@ document.getElementById("prevBtn").addEventListener("click", () => {
   let prev = (currentIndex - 1 + fotoData.length) % fotoData.length;
   renderFoto(prev);
 });
-
 
 // =============================
 // Tombol Back-to-Top

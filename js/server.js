@@ -34,8 +34,8 @@ app.get('/dokumentasi', (req, res) => {
 });
 
 // Endpoint ambil berita
-app.get("/berita", (req, res) => {
-  const sql = "SELECT * FROM berita ORDER BY date DESC"; // urutkan terbaru → lama
+app.get("/info", (req, res) => {
+  const sql = "SELECT * FROM tb_info ORDER BY date ASC"; // urutkan terbaru → lama
   db.query(sql, (err, results) => {
     if (err) {
       console.error("Error ambil berita:", err);

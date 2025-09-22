@@ -371,22 +371,32 @@
 //     file: null
 //   },
 // };
-// ================= DATA DOKUMENTASI =================
+// ================= DATA INFO =================
 let beritaData = [];
 let currentIndex = 0;
 
 // Ambil data dari backend
-fetch("http://localhost:3000/berita")
+fetch("http://localhost:3000/info")
   .then(res => res.json())
   .then(data => {
     beritaData = data;
 
-    // urutkan data (ASC/DSC sesuai kebutuhan)
-    beritaData.sort((a, b) => new Date(b.date) - new Date(a.date)); // terbaru dulu
+    // ASC → lama ke baru
+    data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
 
     renderCards();
   })
   .catch(err => console.error("Gagal ambil data berita:", err));
+
+// ================= Fungsi Format Tanggal (Konsisten) =================
+function formatTanggal(dateString) {
+  return new Date(dateString).toLocaleDateString("id-ID", {
+    day: "numeric",
+    month: "long",
+    year: "numeric"
+  });
+}
 
 // Fungsi potong teks
 function truncateText(text, maxLength) {
@@ -406,7 +416,7 @@ function renderCards() {
     card.innerHTML = `
       <img src="${item.img}" alt="${item.title}" class="w-full h-44 object-cover rounded-t-lg transition-transform duration-500 hover:scale-105">
       <div class="p-4 flex flex-col flex-grow">
-        <p class="text-sm text-gray-500 mb-1">${new Date(item.date).toLocaleDateString("id-ID")}</p>
+        <p class="text-sm text-gray-500 mb-1">${formatTanggal(item.date)}</p>
         <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
         <p class="text-gray-700 text-sm flex-grow">
           ${truncateText(item.desc.replace(/<[^>]+>/g, ''), 120)}
@@ -441,7 +451,7 @@ function renderBerita(index) {
   detailSection.classList.remove("hidden");
 
   document.getElementById("detailTitle").innerText = item.title;
-  document.getElementById("detailDate").innerText = new Date(item.date).toLocaleDateString("id-ID");
+  document.getElementById("detailDate").innerText = formatTanggal(item.date);
   document.getElementById("detailDesc").innerHTML = item.desc;
   document.getElementById("detailImg").src = item.img;
 
@@ -457,7 +467,6 @@ document.getElementById("prevBtn").addEventListener("click", () => {
   let prevIndex = (currentIndex - 1 + beritaData.length) % beritaData.length;
   renderBerita(prevIndex);
 });
-
 
 // =============================
 // Tombol Back-to-Top
@@ -476,3 +485,4 @@ backToTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+// ================= DATA DOKUMENTASI =================
