@@ -31,7 +31,7 @@ const beritaData = {
       menjelang <strong>Sensus Ekonomi 2026</strong>.</p>
     `,
     img: "/assets/buletin/info-terbaru/Penabur 15052025@2x-100 (1).jpg",
-    file: "/assets/materi/Stop_Stecu_kependudukan.pptm"
+    file: null
   },
 
   berita2: {
