@@ -11,7 +11,6 @@ fetch("http://localhost:3000/info")
     // ASC → lama ke baru
     data.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-
     renderCards();
   })
   .catch(err => console.error("Gagal ambil data berita:", err));
@@ -46,7 +45,7 @@ function renderCards() {
         <p class="text-sm text-gray-500 mb-1">${formatTanggal(item.date)}</p>
         <h3 class="text-lg font-semibold mb-2">${item.title}</h3>
         <p class="text-gray-700 text-sm flex-grow">
-          ${truncateText(item.desc.replace(/<[^>]+>/g, ''), 120)}
+          ${truncateText(item.desk.replace(/<[^>]+>/g, ''), 120)}
         </p>
       </div>
     `;
@@ -79,7 +78,7 @@ function renderBerita(index) {
 
   document.getElementById("detailTitle").innerText = item.title;
   document.getElementById("detailDate").innerText = formatTanggal(item.date);
-  document.getElementById("detailDesc").innerHTML = item.desc;
+  document.getElementById("detailDesc").innerHTML = item.desk;
   document.getElementById("detailImg").src = item.img;
 
   currentIndex = index;

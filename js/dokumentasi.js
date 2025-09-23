@@ -11,7 +11,6 @@ fetch("http://localhost:3000/dokumentasi")
     // ASC → lama ke baru
     data.sort((a, b) => new Date(a.date) - new Date(b.date));
 
-
     renderCards();
   })
   .catch(err => console.error("Gagal ambil data:", err));
@@ -58,7 +57,7 @@ function renderFoto(index) {
 
   document.getElementById("detailTitle").innerText = item.title;
   document.getElementById("detailDate").innerText = formatTanggal(item.date);
-  document.getElementById("detailDesc").innerHTML = item.desc;
+  document.getElementById("detailDesc").innerHTML = item.desk;
   document.getElementById("detailImg").src = item.img;
 
   currentIndex = index;
@@ -91,3 +90,4 @@ backToTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+// =============================
