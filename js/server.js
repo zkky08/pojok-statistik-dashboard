@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-// Koneksi database
+// ================= Koneksi Database =================
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",     // ganti sesuai user database kamu
@@ -22,30 +22,43 @@ db.connect(err => {
   console.log("Terhubung ke database MySQL ✅");
 });
 
-// API endpoint
+// ================= Endpoint Dokumentasi =================
 app.get('/dokumentasi', (req, res) => {
-  const sql = "SELECT * FROM tb_dokumentasi ORDER BY date ASC"; // ascending
-  // kalau mau terbaru dulu: ORDER BY date DESC
-
-  db.query(sql, (err, results) => {
-    if (err) throw err;
-    res.json(results);
-  });
-});
-
-// Endpoint ambil berita
-app.get("/info", (req, res) => {
-  const sql = "SELECT * FROM tb_info ORDER BY date ASC"; // urutkan terbaru → lama
+  const sql = "SELECT * FROM tb_dokumentasi ORDER BY date ASC"; // ASC = lama → baru
   db.query(sql, (err, results) => {
     if (err) {
-      console.error("Error ambil berita:", err);
-      return res.status(500).json({ error: "Gagal ambil data berita" });
+      console.error("Error ambil dokumentasi:", err);
+      return res.status(500).json({ error: "Gagal ambil data dokumentasi" });
     }
     res.json(results);
   });
 });
 
-// Jalankan server
+// ================= Endpoint Info =================
+app.get("/info", (req, res) => {
+  const sql = "SELECT * FROM tb_info ORDER BY date ASC"; // ASC = lama → baru
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error("Error ambil info:", err);
+      return res.status(500).json({ error: "Gagal ambil data info" });
+    }
+    res.json(results);
+  });
+});
+
+// ================= Endpoint Infografis =================
+app.get("/infografis", (req, res) => {
+  const sql = "SELECT * FROM tb_infografis ORDER BY date ASC"; // ASC = lama → baru
+  db.query(sql, (err, results) => {
+    if (err) {
+      console.error("Error ambil infografis:", err);
+      return res.status(500).json({ error: "Gagal ambil data infografis" });
+    }
+    res.json(results);
+  });
+});
+
+// ================= Jalankan Server =================
 app.listen(3000, () => {
   console.log("Server berjalan di http://localhost:3000");
 });
