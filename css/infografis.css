@@ -1,11 +1,13 @@
-/* Navbar links */
+/* ===================== */
+/* Navbar Links           */
+/* ===================== */
 .nav-link {
   position: relative;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #facc15; /* kuning Tailwind (yellow-400) */
+  color: #facc15; /* yellow-400 */
 }
 
 .nav-link::after {
@@ -23,116 +25,52 @@
   width: 100%;
 }
 
-/* Buttons */
-.btn-outline {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid white;
-  transition: all 0.3s ease;
-}
-
-.btn-outline:hover {
+/* ===================== */
+/* Card Styling (sama dokumentasi) */
+/* ===================== */
+.info-card {
   background: white;
-  color: #1e3a8a; /* blue-900 */
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.6s ease forwards;
 }
 
-.btn-primary {
-  padding: 0.5rem 1rem;
-  border-radius: 0.5rem;
-  background: #facc15;
-  color: #1e3a8a;
-  font-weight: 600;
-  transition: all 0.3s ease;
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.btn-primary:hover {
-  background: #fbbf24; /* yellow-500 */
+.info-card img {
+  width: 100%;
+  height: auto; /* 180px sama seperti dokumentasi */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.info-card:hover img {
   transform: scale(1.05);
 }
 
-/* Style tambahan di halaman daftar infografis */
-/* Ukuran gambar lebih kecil agar tidak sesak */
-.card-img {
-  @apply w-full h-28 object-cover;
+.info-card .content {
+  padding: 1rem;
 }
 
-/* Hover card */
-.card-hover {
-  @apply transition-all duration-300 ease-in-out bg-white rounded-xl shadow-md;
+/* ===================== */
+/* Detail Section         */
+/* ===================== */
+.hidden {
+  display: none;
 }
 
-/* Glow Kuning dengan Pulse */
-.card-hover:hover {
-  transform: translateY(-6px);
-  background-color: #f9fafb; /* bg-gray-100 */
-  box-shadow: 0 0 15px 4px rgba(250, 204, 21, 0.7);
-  animation: pulseGlow 1.5s infinite;
-}
-
-/* Animasi Pulse Glow */
-@keyframes pulseGlow {
-  0% {
-    box-shadow: 0 0 10px 2px rgba(250, 204, 21, 0.6);
-  }
-  50% {
-    box-shadow: 0 0 20px 6px rgba(250, 204, 21, 0.9);
-  }
-  100% {
-    box-shadow: 0 0 10px 2px rgba(250, 204, 21, 0.6);
-  }
-}
-
-/* Hover gambar */
-.card img {
-  @apply transition-transform duration-500;
-}
-
-.card:hover img {
-  @apply scale-105;
-}
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.8s ease-in-out;
-}
-
-
-/* Hover animasi untuk card infografis */
-.card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-
-/* Tambahan styling di halaman deskripsi infografis */
-.hidden { display: none; }
-
-.card {
-  @apply bg-white rounded-xl shadow-md hover:shadow-xl transition overflow-hidden block;
-}
-
-.card-img {
-  @apply w-full h-48 object-cover;
-}
-
-.btn-back {
-  @apply px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-yellow-400 transition;
-}
-
-.btn-back {
-  @apply px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-yellow-400 transition;
-}
-
+/* ===================== */
+/* Tombol Navigasi        */
+/* ===================== */
 .btn-nav {
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
@@ -149,11 +87,13 @@
   align-items: center;
   text-align: center;
 }
+
 .btn-nav:hover {
   background-color: #facc15; /* yellow-400 */
   color: #1e3a8a; /* blue-900 */
 }
-/* Khusus tombol berikutnya agar anak panah di atas dan teks di bawah */
+
+/* Tombol "Berikutnya" */
 #nextBtn {
   flex-direction: column;
   padding-top: 0.75rem;
@@ -169,93 +109,85 @@
   line-height: 1;
 }
 
-/* Tombol Download */
-.btn-download {
-  @apply bg-blue-900 text-white py-3 rounded-lg shadow-lg transition-colors duration-300 transform hover:-translate-y-1 hover:shadow-xl;
-}
-
-.btn-download:hover {
-  @apply bg-yellow-400;
-}
-
-.btn-download:hover .btn-text {
-  @apply text-blue-900; /* teks jadi biru saat hover */
-}
-
+/* ===================== */
+/* Tombol Download        */
+/* ===================== */
 .arrow-icon {
   transition: transform 0.3s ease;
 }
-
 #downloadBtn:hover .arrow-icon {
   transform: translateX(5px);
 }
 
-
-
-#detailImg {
-  @apply max-w-2xl w-full h-auto;
-}
-
-/* styling untuk deskripsi */
+/* ===================== */
+/* Styling Deskripsi Detail */
+/* ===================== */
 #detailDesc {
-  text-align: justify;    /* teks rata kiri-kanan */
-  max-width: 800px;       /* batasi lebar biar enak dibaca */
-  margin: 0 auto;         /* posisikan di tengah */
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.8;
   font-size: 1rem;
   color: #333;
 }
-
 #detailDesc p {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
-
 #detailDesc ol {
-  margin: 15px auto;
-  padding-left: 40px;     /* indentasi list */
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+#detailDesc ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
 }
 #detailDesc li {
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
-/* ===================== Back to Top ===================== */
+/* ===================== */
+/* Back to Top Button     */
+/* ===================== */
 .back-to-top {
   position: fixed;
-  bottom: 1.5rem; right: 1.5rem;
-  width: 50px; height: 50px;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
   background: #1d4ed8;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  color: white; font-size: 20px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   cursor: pointer;
-  opacity: 0; transform: translateY(30px);
-  visibility: hidden; pointer-events: none;
-  transition: opacity 0.4s ease, transform 0.4s ease, background 0.3s ease, visibility 0s linear 0.4s;
+  opacity: 0;
+  transform: translateY(30px);
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease,
+              background 0.3s ease, visibility 0.4s;
 }
+
 .back-to-top:hover {
-  background: #facc15; color: #1d4ed8;
+  background: #facc15;
+  color: #1d4ed8;
   transform: scale(1.1) translateY(0);
 }
+
 .back-to-top.show {
-  opacity: 1; transform: translateY(0);
-  visibility: visible; pointer-events: auto;
-  transition: opacity 0.4s ease, transform 0.4s ease, background 0.3s ease, visibility 0s;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
 }
+
 
 /* ===================== Animations ===================== */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes zoomIn {
-  from { opacity: 0; transform: scale(0.8); }
-  to   { opacity: 1; transform: scale(1); }
-}
-
-@keyframes pulse {
-  0%   { transform: scale(1); box-shadow: 0 0 0 0 rgba(30,58,138,0.6); }
-  70%  { transform: scale(1.2); box-shadow: 0 0 10px 6px rgba(30,58,138,0); }
-  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(30,58,138,0); }
 }

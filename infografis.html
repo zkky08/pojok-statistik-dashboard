@@ -1,158 +1,92 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Infografis - BPS Banten</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/infografis.css">
-    <!-- Icon font-awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- AOS CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infografis Statistik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/infografis.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Icon font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-900">
 
-    <!-- Navbar -->
-    <header class="bg-blue-900 text-white">
-        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-            <!-- Logo -->
-            <div class="flex items-center gap-3">
-                <a href="index.html"><img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10"></a>
-                <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
-            </div>
+  <!-- Navbar -->
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3">
+        <a href="index.html"><img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" class="h-10"></a>
+        <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
+      </div>
+      <nav>
+        <ul class="hidden md:flex gap-6 text-sm font-semibold">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="infografis.html" class="nav-link">Infografis</a></li>
+          <li><a href="info.html" class="nav-link">Info Terbaru</a></li>
+          <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
+          <li><a href="kontak.html" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <!-- Nav Links -->
-            <nav>
-                <ul class="hidden md:flex gap-6 text-sm font-semibold">
-                <li><a href="index.html" class="nav-link">Beranda</a></li>
-                <li><a href="#infografis" class="nav-link">Infografis</a></li>
-                <li><a href="info.html" class="nav-link">Info Terbaru</a></li>
-                <li><a href="dokumentasi.html" class="nav-link">Dokumentasi</a></li>
-                <li><a href="kontak.html" class="nav-link">Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- Hero -->
+  <section class="bg-blue-800 text-white py-16 text-center" data-aos="fade-down">
+    <h1 class="text-3xl font-bold mb-3">Infografis Statistik</h1>
+    <p class="text-gray-200">Kumpulan visualisasi data terbaru yang memudahkan Anda memahami informasi dengan cepat dan menarik.</p>
+  </section>
 
-    <!-- Hero -->
-    <section id="infografis" class="bg-blue-800 text-white py-16 text-center" data-aos="fade-down">
-        <h1 class="text-3xl font-bold mb-3">Infografis Statistik</h1>
-        <p class="text-gray-200">Kumpulan visualisasi data terbaru yang memudahkan Anda memahami informasi dengan cepat dan menarik.</p>
-    </section>
+  <!-- Grid Infografis -->
+  <section id="infografis" class="py-16 max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-blue-900 mb-12">Galeri Infografis</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+  </section>
 
-    <!-- Konten Grid Infografis -->
-    <!-- Halaman Daftar Infografis -->
-    <section id="listSection" class="max-w-7xl mx-auto px-6 py-16">
-        <h1 class="text-3xl font-bold mb-8 text-center">Infografis Statistik</h1>
-
-        <!-- Ubah ke grid-cols-4 -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-
-            <!-- Card 1 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover fade-in h-full flex flex-col">
-            <a href="infografis.html?id=kemiskinan" class="card">
-                <img src="/assets/infografis/Infografis pojok_Kemiskinan@4x.png" alt="Infografis 1" class="card-img">
-                <div class="p-4">
-                    <p class="text-sm text-gray-500 mb-1">Sun, 1 December 2024</p>
-                    <h3 class="font-semibold text-lg mb-2">Kemiskinan di Banten 2024</h3>
-                </div>
-            </a>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover fade-in h-full flex flex-col">
-            <a href="infografis.html?id=naker" class="card">
-                <img src="/assets/infografis/Infografis Naker@4x.png" alt="Infografis 2" class="card-img">
-                <div class="p-4">
-                    <p class="text-sm text-gray-500 mb-1">Fri, 29 November 2024</p>
-                    <h3 class="font-semibold text-lg mb-2">Ketenagakerjaan di Banten 2024</h3>
-                </div>
-            </a>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover fade-in h-full flex flex-col">
-            <a href="infografis.html?id=ekspor" class="card">
-                <img src="/assets/infografis/Ekspor2@3x-100.jpg" alt="Infografis 3" class="card-img">
-                <div class="p-4">
-                    <p class="text-sm text-gray-500 mb-1">Thu, 28 November 2024</p>
-                    <h3 class="font-semibold text-lg mb-2">Perkembangan Ekspor Nonmigas Banten 2025</h3>
-                </div>
-            </a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover fade-in h-full flex flex-col">
-            <a href="infografis.html?id=iklim" class="card">
-                <img src="/assets/infografis/KamisInfografis@4x.png" alt="Infografis 4" class="card-img">
-                <div class="p-4">
-                    <p class="text-sm text-gray-500 mb-1">Thu, 28 November 2024</p>
-                    <h3 class="font-semibold text-lg mb-2">Keadaan Iklim Banten 2023</h3>
-                </div>
-            </a>
-            </div>
-        </div>
-    </section>
-
-
-<!-- Halaman Detail Infografis -->
+  <!-- Detail Infografis -->
     <section id="detailSection" class="max-w-4xl mx-auto px-6 py-12 hidden">
-    
-    <!-- Gambar Infografis -->
     <div class="text-center mb-6">
         <img id="detailImg" src="" alt="Detail Infografis" 
-            class="mx-auto rounded-lg shadow-lg mb-4">
+            class="mx-auto rounded-lg shadow-lg mb-4 max-w-2xl w-full h-auto">
 
-        <button id="downloadBtn" class="btn-nav w-full flex items-center justify-center gap-2">
-            <span>Download Infografis</span>
-            <svg xmlns="http://www.w3.org/2000/svg" 
-                class="w-5 h-5 arrow-icon" fill="none" viewBox="0 0 24 24" 
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                    d="M4 12h16m0 0l-6-6m6 6l-6 6"/>
-            </svg>
+        <!-- Tombol Download -->
+        <button id="downloadBtn" 
+                class="btn-nav w-full flex items-center justify-center gap-2 mt-4">
+        <span>Download Infografis</span>
+        <i class="fas fa-download"></i>
         </button>
     </div>
 
-    <!-- Judul & Deskripsi -->
     <h1 id="detailTitle" class="text-2xl font-bold mb-4 text-center"></h1>
-    <p id="detailDesc" class="text-gray-600 mb-8 text-justify"></p>
+    <p id="detailDate" class="text-gray-500 mb-4 text-center"></p>
+    <p id="detailDesc" class="text-gray-700 mb-8 text-justify"></p>
 
-    <!-- Navigasi -->
     <div class="max-w-md mx-auto mt-8 flex justify-between items-center space-x-4">
-    <button id="prevBtn" class="btn-nav flex-1">← Sebelumnya</button>
-    <a href="infografis.html" class="btn-nav flex-1">Kembali</a>
-    <button id="nextBtn" class="btn-nav flex-1">
+        <button id="prevBtn" class="btn-nav flex-1">← Sebelumnya</button>
+        <a href="infografis.html" class="btn-nav flex-1">Kembali</a>
+        <button id="nextBtn" class="btn-nav flex-1">
         <span class="arrow">→</span>
         <span class="text">Berikutnya</span>
-    </button>
+        </button>
     </div>
     </section>
 
-
-    <!-- Tombol Back to Top -->
-    <button id="backToTopBtn" class="back-to-top">
+  <!-- Tombol Back to Top -->
+  <button id="backToTopBtn" class="back-to-top">
     <i class="fas fa-chevron-up"></i>
-    </button>
+  </button>
 
-    <!-- Footer -->
-    <footer class="bg-blue-900 text-white py-6 mt-10">
-        <div class="max-w-7xl mx-auto text-center text-sm">
-        Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+  </footer>
 
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 800, once: true });
-    </script>
-
-    <script src="/js/infografis.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+  <script src="js/infografis.js"></script>
 </body>
 </html>
