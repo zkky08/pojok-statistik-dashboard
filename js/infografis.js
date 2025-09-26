@@ -60,17 +60,15 @@ function renderDetail(index) {
   document.getElementById("detailDesc").innerHTML = item.desk;
   document.getElementById("detailImg").src = item.img;
 
-  // Tombol download
+  // 🔹 Tombol download → arahkan ke halaman confirm
   const downloadBtn = document.getElementById("downloadBtn");
   downloadBtn.onclick = () => {
-    const link = document.createElement("a");
-    link.href = item.img;
-    link.download = item.title.replace(/\s+/g, "_") + ".jpg";
-    link.click();
+    window.location.href = `confirm.html?id=${item.id}`;
   };
 
   currentIndex = index;
 }
+
 
 // ================= Navigasi =================
 document.getElementById("nextBtn").addEventListener("click", () => {

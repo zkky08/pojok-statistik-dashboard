@@ -1,22 +1,30 @@
-// Data materi sesuai id
-const data = {
-  kemiskinan: "/assets/infografis/Infografis pojok_Kemiskinan@4x.png",
-  naker: "/assets/infografis/Infografis Naker@4x.png",
-  ekspor: "/assets/infografis/Ekspor2@3x-100.jpg",
-  iklim: "/assets/infografis/KamisInfografis@4x.png"
-};
-
+// ================= Ambil Parameter ID =================
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-const backBtn = document.getElementById("backBtn");
-if (id) backBtn.href = `infografis.html?id=${id}`;
 
+// ================= Elemen DOM =================
 const form = document.getElementById("confirmForm");
 const progressContainer = document.getElementById("progressContainer");
 const progressBar = document.getElementById("progressBar");
 const countdownText = document.getElementById("countdownText");
+const backBtn = document.getElementById("backBtn");
 
-// === Event Submit ===
+if (id) backBtn.href = `infografis.html?id=${id}`;
+
+// ================= Ambil Data dari Backend =================
+let materi = null;
+
+if (id) {
+  fetch(`http://localhost:3000/confirm?id=${id}`)
+    .then(res => res.json())
+    .then(data => {
+      materi = data;
+      console.log("Materi untuk confirm:", materi);
+    })
+    .catch(err => console.error("Gagal ambil data confirm:", err));
+}
+
+// ================= Event Submit =================
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
@@ -26,7 +34,7 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  if (!id || !data[id]) {
+  if (!materi || !materi.img) {
     showPopup("❌ File Tidak Ditemukan", "Maaf, file materi tidak tersedia. Silakan coba lagi.");
     return;
   }
@@ -52,13 +60,10 @@ form.addEventListener("submit", (e) => {
       countdownText.textContent = "✅ Download dimulai!";
       progressBar.style.width = "100%";
 
-      // Buka file di tab baru
-      window.open(data[id], "_blank");
-
       // Auto-download
       const a = document.createElement("a");
-      a.href = data[id];
-      a.download = data[id].split("/").pop();
+      a.href = materi.img;
+      a.download = materi.title ? materi.title.replace(/\s+/g, "_") + ".jpg" : "materi.jpg";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -66,7 +71,7 @@ form.addEventListener("submit", (e) => {
       // Notifikasi selesai
       showToast("✅ Selesai mendownload! Terima kasih telah mendownload materi 🙏", 6000);
 
-      // Redirect ke halaman deskripsi infografis
+      // Redirect kembali ke detail infografis
       setTimeout(() => {
         window.location.href = `infografis.html?id=${id}`;
       }, 4000);
@@ -74,7 +79,7 @@ form.addEventListener("submit", (e) => {
   }, 1000);
 });
 
-// === Toast ===
+// ================= Toast =================
 function showToast(message, duration = 5000) {
   const toast = document.getElementById("toast");
   toast.textContent = message;
@@ -89,7 +94,7 @@ function showToast(message, duration = 5000) {
   }, duration);
 }
 
-// === Popup ===
+// ================= Popup =================
 function showPopup(title, message) {
   const overlay = document.getElementById("popup");
   const content = overlay.querySelector(".popup-content");
