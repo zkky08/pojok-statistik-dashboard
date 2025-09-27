@@ -134,24 +134,35 @@
       <!-- Form Minimalis -->
       <div data-aos="zoom-in" data-aos-delay="300"
           class="card-form flex flex-col md:flex-row gap-4">
-        <select data-aos="fade-up" data-aos-delay="400" class="p-2 rounded flex-1">
+        
+        <select id="typeSelect" data-aos="fade-up" data-aos-delay="400" class="p-2 rounded flex-1">
           <option value="" disabled selected hidden>Pilih Jenis Konten</option>
           <option value="dokumentasi">Dokumentasi</option>
           <option value="infografis">Infografis</option>
           <option value="berita">Berita</option>
         </select>
 
-        <input data-aos="fade-up" data-aos-delay="500"
-              type="text" placeholder="Cari berdasarkan kata kunci" 
-              class="p-2 rounded flex-1">
+        <!-- Input asli, ditambah ID -->
+        <div class="relative flex-1">
+          <input id="searchInput"
+                data-aos="fade-up" data-aos-delay="500"
+                type="text" placeholder="Cari berdasarkan kata kunci" 
+                class="p-2 rounded w-full">
+
+          <!-- Tempat suggestion -->
+          <div id="suggestions" 
+              class="absolute bg-white border rounded shadow-md w-full mt-1 hidden z-50 text-left">
+          </div>
+        </div>
 
         <button data-aos="zoom-in" data-aos-delay="600"
-                class="px-6 py-2 text-white rounded-lg">
+                class="px-6 py-2 text-white rounded-lg bg-blue-500">
           Cari
         </button>
       </div>
     </div>
   </section>
+
 
   <!-- Rekomendasi Layanan -->
   <section class="py-16 rekomendasi-layanan">

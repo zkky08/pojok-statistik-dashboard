@@ -75,6 +75,30 @@ app.get("/confirm", (req, res) => {
   });
 });
 
+// ================= Endpoint Search Suggestion =================
+app.get("/search", (req, res) => {
+  const { type, q } = req.query; // ambil ?type=dokumentasi&q=keyword
+
+  if (!q || q.trim() === "") {
+    return res.json([]); // kalau kosong balikin array kosong
+  }
+
+  let table = "";
+  if (type === "dokumentasi") table = "tb_dokumentasi";
+  else if (type === "infografis") table = "tb_infografis";
+  else if (type === "berita") table = "tb_info";
+  else return res.status(400).json({ error: "Tipe konten tidak valid" });
+
+  const sql = `SELECT id, title FROM ${table} WHERE title LIKE ? LIMIT 5`;
+
+  db.query(sql, [`%${q}%`], (err, results) => {
+    if (err) {
+      console.error("Error search:", err);
+      return res.status(500).json({ error: "Gagal ambil data search" });
+    }
+    res.json(results); // balikin array hasil
+  });
+});
 
 
 
