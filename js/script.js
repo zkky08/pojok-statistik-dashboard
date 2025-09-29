@@ -167,86 +167,188 @@ document.addEventListener("DOMContentLoaded", () => {
 // =============================
 // Search Suggestion (updated)
 // =============================
+// === Search Suggestion — replace your previous search block with this ===
 document.addEventListener("DOMContentLoaded", () => {
+  const API_BASE = "http://localhost:3000"; // sesuaikan jika beda
   const input = document.getElementById("searchInput");
-  const typeSelect = document.getElementById("typeSelect");
   const overlay = document.getElementById("autocompleteOverlay");
-  const suggestionsBox = document.getElementById("suggestions");
+  const suggestions = document.getElementById("suggestions");
+  const typeSelect = document.getElementById("typeSelect");
 
-  const API_BASE = "http://localhost:3000";
-  let currentSuggestion = "";
+  let currentSuggestion = ""; // full label dari suggestion pertama (untuk commit)
 
-  input.addEventListener("input", async () => {
-    const query = input.value.trim();
-    const type = typeSelect.value;
+  if (!input || !overlay || !suggestions) {
+    console.warn("Autocomplete: elemen tidak lengkap (searchInput / autocompleteOverlay / suggestions).");
+    return;
+  }
 
-    overlay.textContent = "";
-    suggestionsBox.innerHTML = "";
-    suggestionsBox.classList.add("hidden");
-    currentSuggestion = "";
+  // Copy some computed styles from input -> overlay supaya text sejajar
+  (function syncOverlayStyle() {
+    const cs = window.getComputedStyle(input);
+    // padding/font/line-height harus sama agar overlay nempel pas
+    overlay.style.padding = cs.padding;
+    overlay.style.font = cs.font;
+    overlay.style.lineHeight = cs.lineHeight;
+    overlay.style.height = cs.height;
+    // pointer events none supaya input tetap menerima klik/ketik
+    overlay.style.pointerEvents = "none";
+  })();
 
-    if (query.length < 1 || !type) return;
+  // helper: render overlay sebagai "query (transparent) + suffix (gray)"
+  function renderOverlayFromLabel(label, query) {
+    if (!label || !query) {
+      overlay.innerHTML = "";
+      currentSuggestion = "";
+      return;
+    }
+
+    const lowerLabel = label.toLowerCase();
+    const lowerQuery = query.toLowerCase();
+    const matchIndex = lowerLabel.indexOf(lowerQuery);
+
+    // hanya tampilkan overlay kalau query ada di label
+    if (matchIndex === -1) {
+      overlay.innerHTML = ""; // no visible autocomplete
+      currentSuggestion = "";
+      return;
+    }
+
+    // kita TIDAK menampilkan bagian 'before' (prefix) — hanya menampilkan suffix
+    const suffix = label.slice(matchIndex + query.length);
+    if (!suffix) {
+      overlay.innerHTML = ""; // tidak ada yang perlu ditambahkan
+      currentSuggestion = label;
+      return;
+    }
+
+    // overlay = transparent(query) + gray(suffix)
+    // note: menggunakan kelas Tailwind 'text-transparent' & 'text-gray-400' — kalau tidak pakai tailwind,
+    // ganti dengan inline style: <span style="color:transparent">...</span> etc.
+    overlay.innerHTML = `<span class="text-transparent">${escapeHtml(query)}</span><span class="text-gray-400">${escapeHtml(suffix)}</span>`;
+    currentSuggestion = label;
+  }
+
+  // small helper to avoid XSS if labels contain HTML
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, function (m) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[m];
+    });
+  }
+
+  // fetch & render suggestions
+  async function fetchAndRender(query, type) {
+    // safety: require type (server.js expects type param). 
+    if (!type) {
+      // optional: you can allow searching across all types by changing server logic
+      overlay.innerHTML = "";
+      suggestions.innerHTML = "";
+      suggestions.classList.add("hidden");
+      currentSuggestion = "";
+      return;
+    }
+
+    // server currently blocks q.length < 2 — jika kamu ingin 1-char search, ubah server.js
+    if (!query || query.length < 1) {
+      overlay.innerHTML = "";
+      suggestions.innerHTML = "";
+      suggestions.classList.add("hidden");
+      currentSuggestion = "";
+      return;
+    }
 
     try {
       const url = `${API_BASE}/search?type=${encodeURIComponent(type)}&q=${encodeURIComponent(query)}`;
       const res = await fetch(url);
-      if (!res.ok) return;
-
-      const data = await res.json();
-      if (!Array.isArray(data) || data.length === 0) return;
-
-      // Ambil hasil pertama untuk overlay
-      const firstLabel = data[0].title ?? data[0].judul ?? data[0].name ?? "";
-      if (firstLabel.toLowerCase().startsWith(query.toLowerCase())) {
-        currentSuggestion = firstLabel;
-        overlay.textContent = query + firstLabel.slice(query.length);
+      if (!res.ok) {
+        console.error("Autocomplete fetch error:", res.status);
+        overlay.innerHTML = "";
+        suggestions.innerHTML = "";
+        suggestions.classList.add("hidden");
+        currentSuggestion = "";
+        return;
       }
 
-      // Dropdown suggestion
-      const limitedData = data.slice(0, 5);
-      limitedData.forEach(row => {
-        const label = row.title ?? row.judul ?? row.name ?? "";
-        const id = row.id ?? row.ID ?? "";
+      const data = await res.json();
+      if (!Array.isArray(data) || data.length === 0) {
+        overlay.innerHTML = "";
+        suggestions.innerHTML = "";
+        suggestions.classList.add("hidden");
+        currentSuggestion = "";
+        return;
+      }
 
-        const item = document.createElement("div");
-        item.textContent = label;
-        item.dataset.id = id;
-        item.className = "p-2 cursor-pointer hover:bg-gray-400";
-        item.addEventListener("click", () => {
+      // Normalize label field (server might use 'title' or 'judul' or 'name')
+      const firstLabel = (data[0].title ?? data[0].judul ?? data[0].name ?? data[0].nama ?? "") + "";
+      renderOverlayFromLabel(firstLabel, query);
+
+      // render dropdown (limit 5)
+      suggestions.innerHTML = "";
+      const limited = data.slice(0, 5);
+      limited.forEach(row => {
+        const label = (row.title ?? row.judul ?? row.name ?? row.nama ?? "") + "";
+        const id = row.id ?? row.ID ?? row.id_info ?? "";
+
+        const div = document.createElement("div");
+        div.className = "p-2 hover:bg-gray-100 cursor-pointer";
+        div.textContent = label;
+        div.addEventListener("click", () => {
           input.value = label;
-          overlay.textContent = "";
-          suggestionsBox.classList.add("hidden");
+          overlay.innerHTML = "";
+          suggestions.innerHTML = "";
+          suggestions.classList.add("hidden");
+          currentSuggestion = "";
 
-          if (type === 'dokumentasi') window.location.href = `/dokumentasi.html?id=${id}`;
-          if (type === 'infografis') window.location.href = `/infografis.html?id=${id}`;
-          if (type === 'berita') window.location.href = `/berita.html?id=${id}`;
+          // navigasi sesuai type (sesuaikan path bila perlu)
+          if (type === "dokumentasi") window.location.href = `/dokumentasi.html?id=${id}`;
+          else if (type === "infografis") window.location.href = `/infografis.html?id=${id}`;
+          else if (type === "berita") window.location.href = `/berita.html?id=${id}`;
         });
-        suggestionsBox.appendChild(item);
+        suggestions.appendChild(div);
       });
-      suggestionsBox.classList.remove("hidden");
-
+      suggestions.classList.remove("hidden");
     } catch (err) {
-      console.error("Error fetch:", err);
+      console.error("Error fetch autocomplete:", err);
+      overlay.innerHTML = "";
+      suggestions.innerHTML = "";
+      suggestions.classList.add("hidden");
+      currentSuggestion = "";
+    }
+  }
+
+  // event input
+  input.addEventListener("input", (e) => {
+    const q = input.value;
+    const type = typeSelect ? typeSelect.value : null;
+    // NOTE: if your server requires q.length >= 2, adjust check accordingly
+    if (!q || q.length < 1) {
+      overlay.innerHTML = "";
+      suggestions.innerHTML = "";
+      suggestions.classList.add("hidden");
+      currentSuggestion = "";
+      return;
+    }
+    // fetch suggestions
+    fetchAndRender(q, type);
+  });
+
+  // accept suggestion with Tab or ArrowRight
+  input.addEventListener("keydown", (e) => {
+    if ((e.key === "Tab" || e.key === "ArrowRight") && currentSuggestion) {
+      e.preventDefault();
+      input.value = currentSuggestion;
+      overlay.innerHTML = "";
+      suggestions.innerHTML = "";
+      suggestions.classList.add("hidden");
+      currentSuggestion = "";
     }
   });
 
-  // Tekan → atau Tab untuk commit overlay
-  input.addEventListener("keydown", (e) => {
-    if ((e.key === "ArrowRight" || e.key === "Tab") && currentSuggestion) {
-      input.value = currentSuggestion;
-      overlay.textContent = "";
-      suggestionsBox.classList.add("hidden");
-      e.preventDefault();
-    }
-  });
-
-  // Klik luar → tutup dropdown
-  // Tekan → atau Tab untuk "commit" suggestion
-  input.addEventListener("keydown", (e) => {
-    if ((e.key === "ArrowRight" || e.key === "Tab") && currentSuggestion) {
-      input.value = currentSuggestion;
-      overlay.textContent = "";
-      e.preventDefault();
+  // click outside closes dropdown (but allow clicks on suggestions to register)
+  document.addEventListener("click", (ev) => {
+    if (!ev.target.closest("#searchInput") && !ev.target.closest("#suggestions")) {
+      suggestions.classList.add("hidden");
+      overlay.innerHTML = "";
+      currentSuggestion = "";
     }
   });
 });
