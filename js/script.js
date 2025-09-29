@@ -167,57 +167,56 @@ document.addEventListener("DOMContentLoaded", () => {
 // =============================
 // Search Suggestion (updated)
 // =============================
-const input = document.getElementById("searchInput");
-const typeSelect = document.getElementById("typeSelect");
-const suggestionsBox = document.getElementById("suggestions");
+document.addEventListener("DOMContentLoaded", () => {
+  const input = document.getElementById("searchInput");
+  const typeSelect = document.getElementById("typeSelect");
+  const overlay = document.getElementById("autocompleteOverlay");
+  const suggestionsBox = document.getElementById("suggestions");
 
-// alamat backend (pakai host:port tempat express berjalan)
-const API_BASE = "http://localhost:3000"; // kalau servermu di 127.0.0.1:3000, ganti jadi "http://127.0.0.1:3000"
+  const API_BASE = "http://localhost:3000";
+  let currentSuggestion = "";
 
-input.addEventListener("input", async () => {
-  const query = input.value.trim();
-  const type = typeSelect.value;
+  input.addEventListener("input", async () => {
+    const query = input.value.trim();
+    const type = typeSelect.value;
 
-  // minimal 2 karakter agar tidak spam request
-  if (query.length < 2 || !type) {
+    overlay.textContent = "";
     suggestionsBox.innerHTML = "";
     suggestionsBox.classList.add("hidden");
-    return;
-  }
+    currentSuggestion = "";
 
-  try {
-    const url = `${API_BASE}/search?type=${encodeURIComponent(type)}&q=${encodeURIComponent(query)}`;
-    const res = await fetch(url);
+    if (query.length < 1 || !type) return;
 
-    // cek dulu status response, kalau bukan OK jangan panggil res.json()
-    if (!res.ok) {
-      console.error("Search request failed:", res.status, res.statusText);
-      suggestionsBox.innerHTML = `<div class="p-2 text-sm text-gray-500">Terjadi kesalahan (kode ${res.status}).</div>`;
-      suggestionsBox.classList.remove("hidden");
-      return;
-    }
+    try {
+      const url = `${API_BASE}/search?type=${encodeURIComponent(type)}&q=${encodeURIComponent(query)}`;
+      const res = await fetch(url);
+      if (!res.ok) return;
 
-    const data = await res.json();
+      const data = await res.json();
+      if (!Array.isArray(data) || data.length === 0) return;
 
-    // Batasi maksimal 5 hasil di frontend
-    const limitedData = data.slice(0, 3);
+      // Ambil hasil pertama untuk overlay
+      const firstLabel = data[0].title ?? data[0].judul ?? data[0].name ?? "";
+      if (firstLabel.toLowerCase().startsWith(query.toLowerCase())) {
+        currentSuggestion = firstLabel;
+        overlay.textContent = query + firstLabel.slice(query.length);
+      }
 
-    suggestionsBox.innerHTML = "";
-    if (Array.isArray(data) && data.length > 0) {
-      data.forEach(row => {
-        // aman: dukung beberapa kemungkinan nama kolom (title / judul / name)
-        const label = row.title ?? row.judul ?? row.name ?? Object.values(row)[1] ?? Object.values(row)[0] ?? "";
+      // Dropdown suggestion
+      const limitedData = data.slice(0, 5);
+      limitedData.forEach(row => {
+        const label = row.title ?? row.judul ?? row.name ?? "";
         const id = row.id ?? row.ID ?? "";
 
         const item = document.createElement("div");
         item.textContent = label;
         item.dataset.id = id;
-        item.className = "p-2 cursor-pointer hover:bg-gray-200";
+        item.className = "p-2 cursor-pointer hover:bg-gray-400";
         item.addEventListener("click", () => {
           input.value = label;
+          overlay.textContent = "";
           suggestionsBox.classList.add("hidden");
 
-          // opsi: arahkan ke halaman detail jika mau
           if (type === 'dokumentasi') window.location.href = `/dokumentasi.html?id=${id}`;
           if (type === 'infografis') window.location.href = `/infografis.html?id=${id}`;
           if (type === 'berita') window.location.href = `/berita.html?id=${id}`;
@@ -225,25 +224,33 @@ input.addEventListener("input", async () => {
         suggestionsBox.appendChild(item);
       });
       suggestionsBox.classList.remove("hidden");
-    } else {
-      suggestionsBox.innerHTML = `<div class="p-2 text-sm text-gray-500">Tidak ada hasil</div>`;
-      suggestionsBox.classList.remove("hidden");
+
+    } catch (err) {
+      console.error("Error fetch:", err);
     }
-  } catch (err) {
-    console.error("Error fetch:", err);
-    suggestionsBox.innerHTML = `<div class="p-2 text-sm text-gray-500">Gagal menghubungi server.</div>`;
-    suggestionsBox.classList.remove("hidden");
-  }
+  });
+
+  // Tekan → atau Tab untuk commit overlay
+  input.addEventListener("keydown", (e) => {
+    if ((e.key === "ArrowRight" || e.key === "Tab") && currentSuggestion) {
+      input.value = currentSuggestion;
+      overlay.textContent = "";
+      suggestionsBox.classList.add("hidden");
+      e.preventDefault();
+    }
+  });
+
+  // Klik luar → tutup dropdown
+  // Tekan → atau Tab untuk "commit" suggestion
+  input.addEventListener("keydown", (e) => {
+    if ((e.key === "ArrowRight" || e.key === "Tab") && currentSuggestion) {
+      input.value = currentSuggestion;
+      overlay.textContent = "";
+      e.preventDefault();
+    }
+  });
 });
-
-// klik di luar tutup dropdown
-document.addEventListener("click", (e) => {
-  if (!suggestionsBox.contains(e.target) && e.target !== input) {
-    suggestionsBox.classList.add("hidden");
-  }
-});
-
-
+// =============================
 
 // Accordion FAQ
 const faqButtons = document.querySelectorAll(".faq-btn");

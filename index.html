@@ -142,27 +142,30 @@
           <option value="berita">Berita</option>
         </select>
 
-        <!-- Input asli, ditambah ID -->
         <div class="relative flex-1">
+          <!-- Input utama -->
           <input id="searchInput"
                 data-aos="fade-up" data-aos-delay="500"
-                type="text" placeholder="Cari berdasarkan kata kunci" 
-                class="p-2 rounded w-full">
+                type="text" placeholder="Cari berdasarkan kata kunci"
+                class="p-2 rounded w-full relative bg-transparent text-black z-10">
 
-          <!-- Tempat suggestion -->
-          <div id="suggestions" 
+          <!-- Auto Copmplete Overlay -->
+          <div id="autocompleteOverlay"
+              class="absolute top-0 left-0 p-2 w-full text-gray-400 pointer-events-none z-0"></div>
+
+          <!-- Drop down suggestion -->
+          <div id="suggestions"
               class="absolute bg-white border rounded shadow-md w-full mt-1 hidden z-50 text-left">
           </div>
         </div>
 
-        <button data-aos="zoom-in" data-aos-delay="600"
+        <button type="button" data-aos="zoom-in" data-aos-delay="600"
                 class="px-6 py-2 text-white rounded-lg bg-blue-500">
           Cari
         </button>
       </div>
     </div>
   </section>
-
 
   <!-- Rekomendasi Layanan -->
   <section class="py-16 rekomendasi-layanan">

@@ -77,26 +77,28 @@ app.get("/confirm", (req, res) => {
 
 // ================= Endpoint Search Suggestion =================
 app.get("/search", (req, res) => {
-  const { type, q } = req.query; // ambil ?type=dokumentasi&q=keyword
+  const type = req.query.type;
+  const q = req.query.q;
 
-  if (!q || q.trim() === "") {
-    return res.json([]); // kalau kosong balikin array kosong
+  if (!q || q.length < 2) {
+    return res.json([]); // biar ga bikin error
   }
 
-  let table = "";
-  if (type === "dokumentasi") table = "tb_dokumentasi";
-  else if (type === "infografis") table = "tb_infografis";
-  else if (type === "berita") table = "tb_info";
-  else return res.status(400).json({ error: "Tipe konten tidak valid" });
-
-  const sql = `SELECT id, title FROM ${table} WHERE title LIKE ? LIMIT 5`;
+  let sql = "";
+  if (type === "dokumentasi") {
+    sql = "SELECT * FROM tb_dokumentasi WHERE title LIKE ?";
+  } else if (type === "infografis") {
+    sql = "SELECT * FROM tb_infografis WHERE title LIKE ?";
+  } else if (type === "berita") {
+    sql = "SELECT * FROM tb_berita WHERE title LIKE ?";
+  }
 
   db.query(sql, [`%${q}%`], (err, results) => {
     if (err) {
-      console.error("Error search:", err);
+      console.error("Error query:", err);
       return res.status(500).json({ error: "Gagal ambil data search" });
     }
-    res.json(results); // balikin array hasil
+    res.json(results);
   });
 });
 
