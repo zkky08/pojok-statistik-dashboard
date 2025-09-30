@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
           // navigasi sesuai type (sesuaikan path bila perlu)
           if (type === "dokumentasi") window.location.href = `/dokumentasi.html?id=${id}`;
           else if (type === "infografis") window.location.href = `/infografis.html?id=${id}`;
-          else if (type === "berita") window.location.href = `/berita.html?id=${id}`;
+          else if (type === "berita") window.location.href = `/info.html?id=${id}`;
         });
         suggestions.appendChild(div);
       });

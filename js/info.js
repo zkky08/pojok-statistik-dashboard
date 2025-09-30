@@ -3,17 +3,33 @@ let beritaData = [];
 let currentIndex = 0;
 
 // Ambil data dari backend
-fetch("http://localhost:3000/info")
-  .then(res => res.json())
-  .then(data => {
-    beritaData = data;
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const beritaId = params.get("id");
 
-    // ASC → lama ke baru
-    data.sort((a, b) => new Date(a.date) - new Date(b.date));
+  fetch("http://localhost:3000/info")
+    .then(res => res.json())
+    .then(data => {
+      beritaData = data;
 
-    renderCards();
-  })
-  .catch(err => console.error("Gagal ambil data berita:", err));
+      // urutkan ASC
+      data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+      if (beritaId) {
+        // cari index berita sesuai ID
+        const index = data.findIndex(item => item.id == beritaId || item.ID == beritaId);
+        if (index !== -1) {
+          renderBerita(index); // langsung buka detail
+        } else {
+          renderCards(); // fallback kalau ID tidak ketemu
+        }
+      } else {
+        renderCards(); // default: daftar card
+      }
+    })
+    .catch(err => console.error("Gagal ambil data berita:", err));
+});
+
 
 // ================= Fungsi Format Tanggal (Konsisten) =================
 function formatTanggal(dateString) {
@@ -111,4 +127,4 @@ backToTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
-// ================= DATA DOKUMENTASI =================
+// ================= =================
