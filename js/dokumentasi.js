@@ -3,17 +3,32 @@ let fotoData = [];
 let currentIndex = 0;
 
 // Ambil data dari backend
-fetch("http://localhost:3000/dokumentasi")
-  .then(res => res.json())
-  .then(data => {
-    fotoData = data;
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const dokId = params.get("id");
 
-    // ASC → lama ke baru
-    data.sort((a, b) => new Date(a.date) - new Date(b.date));
+  fetch("http://localhost:3000/dokumentasi")
+    .then(res => res.json())
+    .then(data => {
+      fotoData = data;
 
-    renderCards();
-  })
-  .catch(err => console.error("Gagal ambil data:", err));
+      // urutkan ASC (lama ke baru)
+      data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+      if (dokId) {
+        // cari index sesuai ID
+        const index = data.findIndex(item => item.id == dokId || item.ID == dokId);
+        if (index !== -1) {
+          renderFoto(index); // langsung render detail
+        } else {
+          renderCards(); // fallback
+        }
+      } else {
+        renderCards(); // default daftar card
+      }
+    })
+    .catch(err => console.error("Gagal ambil data dokumentasi:", err));
+});
 
 // ================= Fungsi Format Tanggal (Konsisten) =================
 function formatTanggal(dateString) {

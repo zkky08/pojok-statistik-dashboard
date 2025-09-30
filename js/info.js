@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("Gagal ambil data berita:", err));
 });
 
-
 // ================= Fungsi Format Tanggal (Konsisten) =================
 function formatTanggal(dateString) {
   return new Date(dateString).toLocaleDateString("id-ID", {

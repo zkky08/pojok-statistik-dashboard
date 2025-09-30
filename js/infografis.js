@@ -3,17 +3,32 @@ let infografisData = [];
 let currentIndex = 0;
 
 // Ambil data dari backend
-fetch("http://localhost:3000/infografis")
-  .then(res => res.json())
-  .then(data => {
-    infografisData = data;
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const infografisId = params.get("id");
 
-    // ASC → lama ke baru
-    data.sort((a, b) => new Date(a.date) - new Date(b.date));
+  fetch("http://localhost:3000/infografis")
+    .then(res => res.json())
+    .then(data => {
+      infografisData = data;
 
-    renderCards();
-  })
-  .catch(err => console.error("Gagal ambil data infografis:", err));
+      // ASC → lama ke baru
+      data.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+      if (infografisId) {
+        // cari index infografis sesuai ID
+        const index = data.findIndex(item => item.id == infografisId || item.ID == infografisId);
+        if (index !== -1) {
+          renderDetail(index); // langsung buka detail infografis
+        } else {
+          renderCards(); // fallback kalau ID tidak ditemukan
+        }
+      } else {
+        renderCards(); // default → tampilkan daftar infografis
+      }
+    })
+    .catch(err => console.error("Gagal ambil data infografis:", err));
+});
 
 // ================= Fungsi Format Tanggal (Konsisten) =================
 function formatTanggal(dateString) {
