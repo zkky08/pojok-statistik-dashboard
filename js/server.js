@@ -90,7 +90,7 @@ app.get("/search", (req, res) => {
   } else if (type === "infografis") {
     sql = "SELECT * FROM tb_infografis WHERE title LIKE ?";
   } else if (type === "berita") {
-    sql = "SELECT * FROM tb_berita WHERE title LIKE ?";
+    sql = "SELECT * FROM tb_info WHERE title LIKE ?";
   }
 
   db.query(sql, [`%${q}%`], (err, results) => {
