@@ -16,7 +16,6 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body class="font-sans antialiased">
 
@@ -39,42 +38,10 @@
           <li><a href="#info-terbaru" class="nav-link">Info Terbaru</a></li>
           <li><a href="#layanan" class="nav-link">Dokumentasi</a></li>
           <li><a href="#kontak" class="nav-link">Kontak</a></li>
-          <li>
-            <button id="openIndexAdminLogin" class="bg-yellow-400 text-blue-900 px-3 py-1 rounded">Admin</button>
-          </li>
         </ul>
       </nav>
     </div>
   </header>
-
-  <!-- Admin toolbar (hidden by default, shown when admin logged in) -->
-  <div id="adminToolbar" class="admin-toolbar" style="display:none">
-    <a id="adminDashboardLink" href="/pages/admin-dashboard.html">Dashboard Admin</a>
-    <button id="adminQuickAdd">Tambah Data</button>
-    <button id="adminLogoutBtn">Logout</button>
-  </div>
-
-  <!-- Index admin login modal -->
-  <div id="indexAdminModal" class="admin-modal" style="display:none">
-    <div class="modal-card">
-      <header>Admin Login</header>
-      <form id="indexAdminLoginForm" class="space-y-3">
-        <div>
-          <label class="block text-sm font-medium">Username</label>
-          <input id="indexAdminUsername" type="text" class="mt-1 p-2 border rounded w-full" required>
-        </div>
-        <div>
-          <label class="block text-sm font-medium">Password</label>
-          <input id="indexAdminPassword" type="password" class="mt-1 p-2 border rounded w-full" required>
-        </div>
-        <div class="modal-actions">
-          <button type="button" id="indexAdminCancel" class="px-3 py-1">Batal</button>
-          <button type="submit" class="bg-blue-900 text-white px-3 py-1 rounded">Masuk</button>
-        </div>
-        <div id="indexAdminError" class="text-red-600 text-sm mt-2"></div>
-      </form>
-    </div>
-  </div>
 
   <!-- Hero Section -->
   <section id="beranda" class="hero">
