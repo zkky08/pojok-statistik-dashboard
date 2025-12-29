@@ -16,6 +16,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/admin.css">
 </head>
 <body class="font-sans antialiased">
 
@@ -42,6 +43,13 @@
       </nav>
     </div>
   </header>
+
+  <!-- Admin toolbar (hidden by default, shown when admin logged in) -->
+  <div id="adminToolbar" class="admin-toolbar" style="display:none">
+    <a id="adminDashboardLink" href="/pages/admin-dashboard.html">Dashboard Admin</a>
+    <button id="adminQuickAdd">Tambah Data</button>
+    <button id="adminLogoutBtn">Logout</button>
+  </div>
 
   <!-- Hero Section -->
   <section id="beranda" class="hero">

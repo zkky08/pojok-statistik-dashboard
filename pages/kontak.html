@@ -10,6 +10,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/kontak.css">
+    <link rel="stylesheet" href="/css/admin.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
@@ -42,6 +43,13 @@
         </nav>
         </div>
     </header>
+
+        <!-- Admin toolbar (hidden by default) -->
+        <div id="adminToolbar" class="admin-toolbar" style="display:none">
+            <a id="adminDashboardLink" href="/pages/admin-dashboard.html">Dashboard Admin</a>
+            <button id="adminQuickAdd">Tambah Data</button>
+            <button id="adminLogoutBtn">Logout</button>
+        </div>
 
     <!-- Hero -->
     <section class="bg-blue-800 text-white text-center py-12" data-aos="fade-down">

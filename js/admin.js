@@ -127,3 +127,21 @@ if (window.location.pathname.endsWith('/pages/admin-profile.html')) {
     });
   })();
 }
+
+// Show/hide admin toolbar on any page
+document.addEventListener('DOMContentLoaded', () => {
+  const toolbar = document.getElementById('adminToolbar');
+  const token = getToken();
+  if (!toolbar) return;
+  if (token) {
+    toolbar.style.display = 'flex';
+    const btnLogout = document.getElementById('adminLogoutBtn');
+    const btnDash = document.getElementById('adminDashboardLink');
+    const btnAdd = document.getElementById('adminQuickAdd');
+    if (btnLogout) btnLogout.addEventListener('click', () => { clearToken(); window.location.reload(); });
+    if (btnDash) btnDash.addEventListener('click', (e) => { /* let default navigate */ });
+    if (btnAdd) btnAdd.addEventListener('click', () => { window.location.href = '/pages/admin-dashboard.html'; });
+  } else {
+    toolbar.style.display = 'none';
+  }
+});
