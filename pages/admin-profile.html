@@ -4,13 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Profile - dBesT</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <!-- Icon font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans antialiased">
-  <header class="bg-blue-900 text-white py-4">
-    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
-      <h1 class="text-lg font-semibold">Profil Admin</h1>
-      <a href="/pages/admin-dashboard.html" class="text-yellow-400 font-semibold">Dashboard</a>
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <div class="flex items-center gap-3">
+        <a href="/index.html">
+          <img src="/assets/logo/Logo dbest@2x.png" alt="Logo dBest" id="logoReload" class="h-10">
+        </a>
+        <img src="/assets/logo/Logo BPS Banten Warna (1).png" alt="Logo BPS" class="h-10">
+        <h1 class="text-lg font-semibold">Profil Admin</h1>
+      </div>
+
+      <div>
+        <a href="/pages/admin-dashboard.html" class="text-yellow-400 font-semibold">Dashboard</a>
+      </div>
     </div>
   </header>
 
@@ -35,6 +56,30 @@
     </form>
   </main>
 
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: { delay: 4000, disableOnInteraction: false },
+      pagination: { el: ".swiper-pagination", clickable: true },
+      breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } }
+    });
+  </script>
+
+  <script src="/js/script.js"></script>
   <script src="/js/admin.js"></script>
+
+  <footer class="bg-blue-900 text-white py-6 text-center text-sm">
+    <p>Copyright &copy; 2025 Dzaky Hasan & Tim Kreatif Pojok Statistik Uniba. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
