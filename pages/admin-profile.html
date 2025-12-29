@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Profile - dBesT</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="font-sans antialiased">
+  <header class="bg-blue-900 text-white py-4">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-lg font-semibold">Profil Admin</h1>
+      <a href="/pages/admin-dashboard.html" class="text-yellow-400 font-semibold">Dashboard</a>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto mt-8 p-6 bg-white rounded shadow">
+    <form id="profileForm" class="space-y-3">
+      <div>
+        <label class="block text-sm font-medium">Nama</label>
+        <input id="profileName" class="mt-1 p-2 border rounded w-full">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Email</label>
+        <input id="profileEmail" class="mt-1 p-2 border rounded w-full">
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Password (ubah jika perlu)</label>
+        <input id="profilePassword" type="password" class="mt-1 p-2 border rounded w-full">
+      </div>
+      <div>
+        <button type="submit" class="bg-blue-900 text-white px-3 py-1 rounded">Simpan</button>
+        <span id="profileMsg" class="ml-3 text-sm text-green-600"></span>
+      </div>
+    </form>
+  </main>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - dBesT</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="font-sans antialiased bg-gray-50">
+  <header class="bg-blue-900 text-white py-4">
+    <div class="max-w-4xl mx-auto px-6">
+      <h1 class="text-xl font-bold">Admin Panel</h1>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto mt-12 p-6 bg-white rounded-lg shadow">
+    <h2 class="text-2xl font-semibold mb-4">Masuk sebagai Admin</h2>
+
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label class="block text-sm font-medium">Username</label>
+        <input id="username" type="text" class="mt-1 p-2 border rounded w-full" required>
+      </div>
+      <div>
+        <label class="block text-sm font-medium">Password</label>
+        <input id="password" type="password" class="mt-1 p-2 border rounded w-full" required>
+      </div>
+      <div>
+        <button type="submit" class="bg-blue-900 text-white px-4 py-2 rounded">Login</button>
+      </div>
+      <div id="loginError" class="text-red-600"></div>
+    </form>
+
+    <p class="mt-4 text-sm text-gray-600">Halaman login ini hanya untuk admin yang berwenang.</p>
+  </main>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>

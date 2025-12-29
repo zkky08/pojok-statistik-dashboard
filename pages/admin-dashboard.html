@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - dBesT</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="font-sans antialiased">
+  <header class="bg-blue-900 text-white">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <div class="flex items-center gap-3">
+        <a href="/index.html"><img src="/assets/logo/Logo dbest@2x.png" class="h-10"></a>
+        <h1 class="text-lg font-semibold">Admin Dashboard</h1>
+      </div>
+      <div>
+        <button id="btnLogout" class="bg-yellow-400 text-blue-900 px-3 py-1 rounded">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-8">
+    <section class="grid md:grid-cols-3 gap-6 mb-8">
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="font-semibold">Total Dokumentasi</h3>
+        <p id="statDokumentasi" class="text-3xl font-bold">-</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="font-semibold">Total Infografis</h3>
+        <p id="statInfografis" class="text-3xl font-bold">-</p>
+      </div>
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="font-semibold">Total Buletin/Info</h3>
+        <p id="statInfo" class="text-3xl font-bold">-</p>
+      </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-6">
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="font-semibold mb-3">Input Data (Admin)</h3>
+        <form id="insertForm" class="space-y-3">
+          <select id="insertType" class="p-2 border rounded w-full">
+            <option value="infografis">Infografis</option>
+            <option value="dokumentasi">Dokumentasi</option>
+            <option value="info">Buletin/Info</option>
+          </select>
+          <input id="insertTitle" placeholder="Judul" class="p-2 border rounded w-full">
+          <textarea id="insertContent" placeholder="Deskripsi / Konten" class="p-2 border rounded w-full"></textarea>
+          <input id="insertExtra" placeholder="File / Image URL (opsional)" class="p-2 border rounded w-full">
+          <div>
+            <button type="submit" class="bg-blue-900 text-white px-3 py-1 rounded">Masukkan</button>
+            <span id="insertMsg" class="ml-3 text-sm text-green-600"></span>
+          </div>
+        </form>
+      </div>
+
+      <div class="p-6 bg-white rounded shadow">
+        <h3 class="font-semibold mb-3">History Input</h3>
+        <div id="historyList" class="text-sm text-gray-700 max-h-64 overflow-auto"></div>
+      </div>
+    </section>
+
+    <section class="mt-8 p-6 bg-white rounded shadow">
+      <h3 class="font-semibold mb-3">Profil Admin</h3>
+      <div id="profileBox" class="text-sm text-gray-800"></div>
+      <a href="/pages/admin-profile.html" class="inline-block mt-3 text-blue-900 font-semibold hover:underline">Edit Profil →</a>
+    </section>
+  </main>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
