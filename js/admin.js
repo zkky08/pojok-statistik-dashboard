@@ -145,3 +145,31 @@ document.addEventListener('DOMContentLoaded', () => {
     toolbar.style.display = 'none';
   }
 });
+
+// Index modal login handling
+document.addEventListener('DOMContentLoaded', () => {
+  const openBtn = document.getElementById('openIndexAdminLogin');
+  const modal = document.getElementById('indexAdminModal');
+  const cancel = document.getElementById('indexAdminCancel');
+  const form = document.getElementById('indexAdminLoginForm');
+  const errEl = document.getElementById('indexAdminError');
+  if (!openBtn || !modal || !form) return;
+  openBtn.addEventListener('click', () => { modal.style.display = 'flex'; errEl.textContent = ''; });
+  cancel.addEventListener('click', () => { modal.style.display = 'none'; });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const username = document.getElementById('indexAdminUsername').value;
+    const password = document.getElementById('indexAdminPassword').value;
+    try {
+      const res = await fetch('/admin/login', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ username, password }) });
+      const data = await res.json();
+      if (!res.ok) { errEl.textContent = data.error || 'Login gagal'; return; }
+      saveToken(data.token);
+      // go to dashboard
+      window.location.href = '/pages/admin-dashboard.html';
+    } catch (err) {
+      errEl.textContent = 'Gagal terhubung ke server';
+    }
+  });
+});
