@@ -1,0 +1,194 @@
+/* ===================== */
+/* Navbar Links           */
+/* ===================== */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #facc15; /* yellow-400 */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #facc15;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ===================== */
+/* Card Styling (sama dokumentasi) */
+/* ===================== */
+.info-card {
+  background: white;
+  border-radius: 0.75rem; /* rounded-xl */
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.info-card img {
+  width: 100%;
+  height: auto; /* 180px sama seperti dokumentasi */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* sesudah */
+.info-card img:hover {
+  transform: scale(1.05);
+}
+
+.info-card .content {
+  padding: 1rem;
+}
+
+/* ===================== */
+/* Detail Section         */
+/* ===================== */
+.hidden {
+  display: none;
+}
+
+/* ===================== */
+/* Tombol Navigasi        */
+/* ===================== */
+.btn-nav {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  background-color: #1e3a8a; /* blue-900 */
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-nav:hover {
+  background-color: #facc15; /* yellow-400 */
+  color: #1e3a8a; /* blue-900 */
+}
+
+/* Tombol "Berikutnya" */
+#nextBtn {
+  flex-direction: column;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+#nextBtn .arrow {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+#nextBtn .text {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* ===================== */
+/* Tombol Download        */
+/* ===================== */
+.arrow-icon {
+  transition: transform 0.3s ease;
+}
+#downloadBtn:hover .arrow-icon {
+  transform: translateX(5px);
+}
+
+/* ===================== */
+/* Styling Deskripsi Detail */
+/* ===================== */
+#detailDesc {
+  text-align: justify;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+#detailDesc p {
+  margin-bottom: 1rem;
+}
+#detailDesc ol {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: decimal;
+}
+#detailDesc ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+#detailDesc li {
+  margin-bottom: 0.5rem;
+}
+
+/* ===================== */
+/* Back to Top Button     */
+/* ===================== */
+.back-to-top {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: #1d4ed8;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease,
+              background 0.3s ease, visibility 0.4s;
+}
+
+.back-to-top:hover {
+  background: #facc15;
+  color: #1d4ed8;
+  transform: scale(1.1) translateY(0);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+
+/* ===================== Animations ===================== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

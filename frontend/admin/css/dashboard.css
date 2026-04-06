@@ -1,0 +1,666 @@
+/* ================== RESET ================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f4f6f9;
+  color: #1f2937;
+}
+
+/* ================== LAYOUT ================== */
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ================== SIDEBAR ================== */
+.sidebar {
+  width: 240px;
+  background: #0f2a44;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.logo .pojok {
+  color: #22c55e;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.sidebar nav a i {
+  width: 18px;
+}
+
+.sidebar nav a:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.sidebar nav a.active {
+  background: #22c55e;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ================== MAIN ================== */
+.main {
+  flex: 1;
+  padding: 20px 30px;
+}
+
+/* ================== NAVBAR ================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.navbar h2 {
+  font-size: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.user i {
+  font-size: 22px;
+  color: #2563eb;
+}
+
+#logoutBtn {
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#logoutBtn:hover {
+  background: #dc2626;
+}
+
+/* ================== CARDS ================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card i {
+  font-size: 32px;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* CARD COLORS */
+.card.blue i {
+  background: #2563eb;
+}
+
+.card.green i {
+  background: #16a34a;
+}
+
+.card.orange i {
+  background: #f97316;
+}
+
+/* ================== WELCOME ================== */
+.welcome {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.welcome h3 {
+  margin-bottom: 6px;
+}
+
+.welcome p {
+  color: #6b7280;
+}
+
+
+/* ============================
+   ADMIN TABLE STYLING
+============================ */
+
+#adminSection h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+/* table wrapper */
+#adminTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* header */
+#adminTable thead {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+}
+
+#adminTable th {
+  padding: 14px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+}
+
+/* body */
+#adminTable td {
+  padding: 14px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#adminTable tbody tr:hover {
+  background-color: #f1f5f9;
+  transition: background 0.2s ease;
+}
+
+/* action buttons */
+#adminTable button {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+/* edit button */
+#adminTable button:first-child {
+  background-color: #2563eb;
+  color: white;
+}
+
+#adminTable button:first-child:hover {
+  background-color: #1d4ed8;
+}
+
+/* delete button */
+#adminTable button:last-child {
+  background-color: #dc2626;
+  color: white;
+}
+
+#adminTable button:last-child:hover {
+  background-color: #b91c1c;
+}
+
+/* super admin text */
+#adminTable em {
+  color: #16a34a;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* ============================
+   ADMIN FORM STYLING
+============================ */
+
+#adminForm {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#adminForm input,
+#adminForm select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+#adminForm input:focus,
+#adminForm select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+#adminForm button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* save */
+#adminForm button[type="submit"] {
+  background-color: #2563eb;
+  color: white;
+}
+
+#adminForm button[type="submit"]:hover {
+  background-color: #1d4ed8;
+}
+
+/* cancel */
+#btnCancelAdmin {
+  background-color: #e5e7eb;
+  color: #374151;
+  margin-left: 8px;
+}
+
+#btnCancelAdmin:hover {
+  background-color: #d1d5db;
+}
+
+/* ============================
+   ROLE BADGE
+============================ */
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+/* ADMIN */
+.role-admin {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+/* SUPER ADMIN */
+.role-super {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+/* ======================
+   INFOGRAFIS
+====================== */
+
+.infografis-section {
+  margin-top: 40px;
+}
+
+.infografis-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.infografis-form {
+  max-width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.infografis-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  margin-bottom: 12px;
+}
+
+.infografis-form button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.infografis-form button:hover {
+  background: #1d4ed8;
+}
+
+/* GRID */
+.infografis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.infografis-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.infografis-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.infografis-card .content {
+  padding: 14px;
+}
+
+.infografis-card h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.infografis-card button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+/* ======================
+   INFO / BERITA
+====================== */
+
+#beritaSection {
+  margin-top: 40px;
+}
+
+#beritaSection h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* FORM BERITA */
+#beritaForm {
+  max-width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+#beritaForm input,
+#beritaForm textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+#beritaForm textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+#beritaForm input:focus,
+#beritaForm textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+#beritaForm button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#beritaForm button:hover {
+  background: #1d4ed8;
+}
+
+/* GRID BERITA
+   (pakai gaya infografis biar konsisten) */
+#beritaGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD BERITA */
+#beritaGrid > div {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#beritaGrid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+#beritaGrid h4 {
+  font-size: 15px;
+  margin: 12px 14px 6px;
+}
+
+#beritaGrid small {
+  margin: 0 14px;
+  display: block;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+#beritaGrid p {
+  margin: 8px 14px 14px;
+  font-size: 13px;
+  color: #374151;
+}
+
+/* BUTTON HAPUS */
+#beritaGrid button {
+  margin: 0 14px 14px;
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#beritaGrid button:hover {
+  background: #b91c1c;
+}
+
+/* ======================
+   DOKUMENTASI
+====================== */
+
+#dokumentasiSection {
+  margin-top: 40px;
+}
+
+#dokumentasiSection h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+/* FORM DOKUMENTASI */
+#dokumentasiForm {
+  max-width: 500px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+#dokumentasiForm input,
+#dokumentasiForm textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+#dokumentasiForm textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+#dokumentasiForm input:focus,
+#dokumentasiForm textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+#dokumentasiForm button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#dokumentasiForm button:hover {
+  background: #1d4ed8;
+}
+
+/* GRID DOKUMENTASI */
+#dokumentasiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* CARD DOKUMENTASI */
+#dokumentasiGrid .infografis-card {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+#dokumentasiGrid img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+#dokumentasiGrid .content {
+  padding: 14px;
+}
+
+#dokumentasiGrid h4 {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+#dokumentasiGrid small {
+  display: block;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+#dokumentasiGrid p {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 12px;
+}
+
+/* BUTTON HAPUS */
+#dokumentasiGrid button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#dokumentasiGrid button:hover {
+  background: #b91c1c;
+}

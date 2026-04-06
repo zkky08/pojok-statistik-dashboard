@@ -1,2 +1,0 @@
-# dbstweb
-bikin web

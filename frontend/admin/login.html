@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body class="login-page relative flex items-center justify-center min-h-screen">
+
+  <!-- Background -->
+  <div class="absolute inset-0 w-full h-full">
+    <img src="../admin/assets/background/banten-2021-edit.JPG"
+         alt="Background"
+         class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+  </div>
+
+  <!-- Card -->
+  <div class="login-card relative z-10 bg-white/95 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-md text-center animate-scale-in">
+
+    <h1 class="text-2xl font-bold text-blue-900 mb-3">
+      Login Admin
+    </h1>
+    <p class="text-gray-600 mb-6">
+      Masukkan akun admin untuk mengakses dashboard.
+    </p>
+
+    <form id="loginForm" class="space-y-4">
+      <input
+        type="text"
+        id="usernameInput"
+        placeholder="Username admin"
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+        required
+      />
+
+      <input
+        type="password"
+        id="passwordInput"
+        placeholder="Password"
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+        required
+      />
+
+      <button
+        type="submit"
+        class="w-full py-3 rounded-lg font-semibold transition">
+        Login
+      </button>
+    </form>
+
+    <p id="errorText" class="text-red-600 text-sm mt-4 hidden"></p>
+
+  </div>
+
+  <!-- Toast -->
+  <div id="toast"
+       class="fixed top-6 left-1/2 -translate-x-1/2
+              bg-blue-900 text-white px-5 py-3 rounded-xl
+              shadow-lg opacity-0 -translate-y-5
+              transition-all duration-500 text-sm font-medium z-50">
+  </div>
+
+  <!-- 🔐 TAMBAHAN AES-128 (WAJIB, TANPA MENGUBAH HTML ASLI) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+  <!-- LOGIN SCRIPT -->
+  <script src="./js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard Admin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font & Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/dashboard.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="logo" id="logoHome" style="cursor:pointer;">
+      <span class="pojok">pojok</span> statistik
+    </div>
+
+    <nav>
+      <a id="menuDashboard" class="active"><i class="fas fa-home"></i> Dashboard</a>
+      <a id="menuInfografis"><i class="fas fa-image"></i> Infografis</a>
+      <a id="menuBerita"><i class="fas fa-newspaper"></i> Info / Berita</a>
+      <a id="menuDokumentasi"><i class="fas fa-folder-open"></i> Dokumentasi</a>
+
+      <!-- MANAJEMEN ADMIN (BARU) -->
+      <a id="menuAdmin" style="cursor:pointer;">
+        <i class="fas fa-users-cog"></i> Manajemen Admin
+      </a>
+    </nav>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <h2>Dashboard (UNIBA)</h2>
+      <div class="user">
+        <i class="fas fa-user-circle"></i>
+        <span>Admin</span>
+        <button id="logoutBtn">Logout</button>
+      </div>
+    </header>
+
+    <!-- CARDS -->
+    <section class="cards">
+
+      <div class="card blue">
+        <i class="fas fa-image"></i>
+        <div>
+          <h3>Infografis</h3>
+          <p id="countInfografis">0</p>
+        </div>
+      </div>
+
+      <div class="card green">
+        <i class="fas fa-newspaper"></i>
+        <div>
+          <h3>Info / Berita</h3>
+          <p id="countInfo">0</p>
+        </div>
+      </div>
+
+      <div class="card orange">
+        <i class="fas fa-folder-open"></i>
+        <div>
+          <h3>Dokumentasi</h3>
+          <p id="countDokumentasi">0</p>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- WELCOME -->
+    <section class="welcome">
+      <h3>Selamat datang, <b>Admin Pojok Statistik</b>!</h3>
+      <p>Anda adalah admin Pojok Statistik Virtual UNIBA.</p>
+    </section>
+
+    <!-- ======================
+         MANAJEMEN ADMIN
+    ======================= -->
+    <section id="adminSection" style="display:none; margin-top:40px;">
+
+      <h3>Manajemen Admin</h3>
+
+      <!-- TABLE ADMIN -->
+      <table id="adminTable" border="1" cellpadding="8" cellspacing="0" style="width:100%;">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- diisi JS -->
+        </tbody>
+      </table>
+
+      <!-- FORM ADD / EDIT -->
+      <form id="adminForm" style="margin-top:25px; max-width:400px;">
+        <input type="hidden" id="adminId">
+
+        <input
+          type="text"
+          id="adminUsername"
+          placeholder="Username"
+          required
+        />
+        <br><br>
+
+        <input
+          type="password"
+          id="adminPassword"
+          placeholder="Password (kosongkan jika tidak diubah)"
+        />
+        <br><br>
+
+        <select id="adminRole">
+          <option value="admin">Admin</option>
+          <option value="super">Super Admin</option>
+        </select>
+        <br><br>
+
+        <button type="submit">Simpan</button>
+        <button type="button" id="btnCancelAdmin">Batal</button>
+      </form>
+
+      <p id="adminMsg" style="margin-top:10px;"></p>
+
+    </section>
+
+    <!-- ======================
+     INFOGRAFIS SECTION
+    ====================== -->
+    <section id="infografisSection" class="infografis-section" style="display:none;">
+
+      <h3>Manajemen Infografis</h3>
+
+      <!-- FORM TAMBAH INFOGRAFIS -->
+      <form id="infografisForm" class="infografis-form">
+        <input
+          type="text"
+          id="infografisJudul"
+          placeholder="Judul Infografis"
+          required
+        />
+
+        <input
+          type="file"
+          id="infografisGambar"
+          accept="image/*"
+          required
+        />
+
+        <textarea
+          id="infografisDesk"
+          placeholder="Deskripsi infografis"
+          rows="3"
+          style="width:100%; padding:12px; margin-bottom:12px;"
+        ></textarea>
+
+        <input
+          type="date"
+          id="infografisDate"
+          style="width:100%; padding:12px; margin-bottom:12px;"
+        />
+
+        <button type="submit">Tambah Infografis</button>
+      </form>
+
+      <p id="infografisMsg"></p>
+
+      <!-- GRID INFOGRAFIS -->
+      <div id="infografisGrid" class="infografis-grid">
+        <!-- card infografis muncul di sini -->
+      </div>
+
+    </section>
+
+     <!-- ======================
+         INFO / BERITA
+    ======================= -->
+    <section id="beritaSection" style="display:none;">
+      <h3>Manajemen Info / Berita</h3>
+
+      <form id="beritaForm">
+        <input id="beritaJudul" placeholder="Judul Berita" required><br><br>
+        <input id="beritaGambar" placeholder="URL Gambar" required><br><br>
+        <textarea id="beritaDesk" placeholder="Deskripsi"></textarea><br><br>
+        <input type="date" id="beritaDate" required><br><br>
+        <button type="submit">Tambah</button>
+      </form>
+
+      <p id="beritaMsg"></p>
+      <div id="beritaGrid"></div>
+    </section>
+
+  <!-- ======================
+     DOKUMENTASI SECTION
+    ====================== -->
+    <section id="dokumentasiSection" class="infografis-section" style="display:none;">
+
+      <h3>Manajemen Dokumentasi</h3>
+
+      <!-- FORM TAMBAH DOKUMENTASI -->
+      <form id="dokumentasiForm" class="infografis-form">
+
+        <input
+          type="text"
+          id="dokumentasiJudul"
+          placeholder="Judul Dokumentasi"
+          required
+        />
+
+        <input
+          type="file"
+          id="infografisGambar"
+          accept="image/*"
+          required
+        />
+
+        <textarea
+          id="dokumentasiDesk"
+          placeholder="Deskripsi dokumentasi"
+          rows="3"
+          style="width:100%; padding:12px; margin-bottom:12px;"
+        ></textarea>
+
+        <input
+          type="date"
+          id="dokumentasiDate"
+          style="width:100%; padding:12px; margin-bottom:12px;"
+        />
+
+        <button type="submit">Tambah Dokumentasi</button>
+      </form>
+
+      <p id="dokumentasiMsg"></p>
+
+      <!-- GRID DOKUMENTASI -->
+      <div id="dokumentasiGrid" class="infografis-grid">
+        <!-- card dokumentasi muncul di sini -->
+      </div>
+
+    </section>
+
+  </main>
+</div>
+
+<!-- AES -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+<script src="./js/dashboard.js"></script>
+
+</body>
+</html>
