@@ -402,3 +402,39 @@ FodyWeavers.xsd
 #################################
 .env
 backend/.env
+
+# ======================
+# NODE MODULES
+# ======================
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# ======================
+# ENV (SENSITIVE FILES)
+# ======================
+.env
+backend/.env
+
+# ======================
+# LOG FILES
+# ======================
+*.log
+npm-debug.log*
+
+# ======================
+# EDITOR / IDE
+# ======================
+.vscode/
+
+# ======================
+# OS FILES
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# BUILD FILES
+# ======================
+dist/
+build/
