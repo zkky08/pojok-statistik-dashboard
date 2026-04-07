@@ -16,5 +16,3 @@ Website dashboard yang dikembangkan untuk media informasi Pojok Statistik Univer
 - JavaScript
 - Node.js
 - MySQL
-
-## 📂 Struktur Project
